@@ -4,7 +4,6 @@ title: Key Concepts
 has_children: true
 has_toc: false
 nav_order: 4
-nav_exclude: true
 ---
 
 This section contains a series of individual self-contained articles on specific concepts within the Network Canvas software.
