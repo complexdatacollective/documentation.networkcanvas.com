@@ -71,8 +71,8 @@ You may have heard of it (it is popular in open source software) but it provides
 
 These freedoms are protected by some requirements built into the GPL license:
 
-*   Any modifications must be made available under the GPL license
-*   You must include a copy of the original source code with any versions you distribute, making it possible for others to modify
+* Any modifications must be made available under the GPL license
+* You must include a copy of the original source code with any versions you distribute, making it possible for others to modify
 
 We have guidelines on managing contributions and collaborations to the project that we will be happy to discuss later if that interests you. We believe the fact that this is an open source software that is “owned” by a not for profit entity means that it should be possible to make extending it compatible with the policies of grant awarding bodies.
 
