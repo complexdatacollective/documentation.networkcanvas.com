@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Variable and Input Types
+title: Input Controls
 parent: Key Concepts
-nav_exclude: true
 ---
 ## Variable Types
 
