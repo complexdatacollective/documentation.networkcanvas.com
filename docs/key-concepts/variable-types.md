@@ -4,7 +4,7 @@ title: Variable Types
 parent: Key Concepts
 ---
 
-The Network Canvas software supports modelling data using a standard of variety data types. Below you will find these types summarized, along with relevant information about their limitations and features.
+The Network Canvas software supports modeling data using a standard of variety data types. Below you will find these types summarized, along with relevant information about their limitations and features.
 
 > ## Boolean
 > Represents dichotomous categories with only two possible values (e.g. true/false)
