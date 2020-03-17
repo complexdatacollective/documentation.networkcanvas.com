@@ -91,4 +91,6 @@ VisualAnalogScale
 MinLength
 MaxLength
 customizable
+parse_block_html
+no_toc
 
