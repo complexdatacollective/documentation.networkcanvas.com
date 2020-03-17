@@ -12,9 +12,9 @@ Pairing is the process which enables communication between a Network Canvas clie
 
 _Automatic Discovery_
 
-Pairing can be accomplished manually or via the automatic discovery feature. If you are using a Windows machine, you must first install Apple's Bonjour software in order to enable the automatic discovery feature. You will be prompted to install this program when you open the Network Canvas app after installation. If you are using a machine operating macOS or iOS, bonjour software is already built-in, so no additional installation is required. Note: the automatic discovery feature is not available for machines running Linux.
+Pairing can be accomplished manually or via the automatic discovery feature. If you are using a Windows machine, you must first install Apple's Bonjour software in order to enable the automatic discovery feature. You will be prompted to install this program when you open the Network Canvas app after installation. If you are using a machine operating macOS or iOS, Bonjour software is already built-in, so no additional installation is required. Note: the automatic discovery feature is not available for machines running Linux.
 
-[screenshot of bonjour installation request]
+[screenshot of Bonjour installation request]
 
 Bonjour functions as a "go-between" to facilitate communication between the Network Canvas client and Server over a local network (i.e. the same WiFi or wired Ethernet connection). Once installed, it works silently in the background to communicate information across a network. Note: you are not required to install Bonjour to use Network Canvas. However, without it you will not be able to use the automatic discovery option to pair with Server. 
 
