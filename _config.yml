@@ -9,7 +9,7 @@ collections:
     title: Uploads
     output: true
 email: info@networkcanvas.com
-description: Welcome to the Network Canvas documentation website.
+description: Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research.
 baseurl: ''
 github_username: codaco
 markdown: kramdown
