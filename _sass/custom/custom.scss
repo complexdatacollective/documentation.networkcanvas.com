@@ -123,3 +123,31 @@ blockquote {
     padding: 2rem 2rem 1rem 4rem;
     border-left: 1rem solid $color-neon-coral;
 }
+
+
+.variable-definition {
+  background-color: #F6F7F9;
+  margin: 2rem 0;
+  padding: 2rem 2rem 1rem 4rem;
+  border-radius: 20px;
+
+  img {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  ul.good-practices, ul.bad-practices {
+    list-style: none;
+  }
+
+  ul.good-practices li:before {
+    content: '✓';
+    color: $color-primary;
+  }
+
+  ul.bad-practices li:before {
+    content: '✘';
+    color: $color-neon-coral;
+  }
+}
