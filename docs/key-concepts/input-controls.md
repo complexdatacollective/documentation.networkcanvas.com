@@ -23,7 +23,8 @@ Options are displayed vertically, to allow for longer labels and to create a mor
 ### Do
 
 {: .good-practices}
-- Some things that are good
+- You can select multiple items in one control. 
+- xx
 
 {: .no_toc}
 ### Don't
