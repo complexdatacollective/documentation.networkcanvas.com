@@ -77,13 +77,13 @@ A Likert scale is a control to allow participants to select from an ordered seri
 
 {: .good-practices}
 - Consider whether you want to provide a middle choice or not and mark it as neutral/ambivalent (e.g., "neither agree nor disagree" rather than unsure.  
-- Consider whether you need more than five categories. Much research suggests there's limited power in using seven or more categories rather than just 5 (or even 3, xx.ref)
+- Consider whether you need more than five categories. Much research suggests there's limited power in using seven or more categories rather than just 5 (or even 3).
 
 {: .no_toc}
 ### Don't
 
 {: .bad-practices}
-- Put the response cateogires out of order.
+- Put the response categories out of order.
 
 </div>
 
