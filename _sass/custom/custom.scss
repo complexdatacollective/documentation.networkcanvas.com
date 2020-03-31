@@ -136,18 +136,18 @@ blockquote {
     max-width: 450px;
     margin: 0 auto;
   }
+}
 
-  ul.good-practices, ul.bad-practices {
-    list-style: none;
-  }
+ul.good-practices, ul.bad-practices {
+  list-style: none;
+}
 
-  ul.good-practices li:before {
-    content: '✓';
-    color: $color-primary;
-  }
+ul.good-practices li:before {
+  content: '✓';
+  color: $color-primary;
+}
 
-  ul.bad-practices li:before {
-    content: '✘';
-    color: $color-neon-coral;
-  }
+ul.bad-practices li:before {
+  content: '✘';
+  color: $color-neon-coral;
 }

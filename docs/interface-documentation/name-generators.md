@@ -6,29 +6,65 @@ nav_exclude: true
 ---
 ## Overview
 
-The Name Generator interface allows you to define prompts to elicit and collect the names, and other attribute data, of individuals who comprise the social network of your study participants.
+Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in the network you are hoping to study.
 
-There are four name generator options in Network Canvas which are detailed below. In each, you will define the stage name (i.e. a name to help you identify the stage in the timeline view of Architect and Network Canvas), the node type (e.g. person, place, etc.) to be generated on the stage, and the particular prompt(s) you use to elicit alter data from your participants.
+There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas, which are available to be added to your study, and can be configured within Architect.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/5.png" caption="Available Name Generator Interfaces in Network Canvas" %}{: .macos-screenshot }
+{% include nc-image src="/assets/img/interface-documentation/name-generators/5.png" caption="Available Name Generator Interfaces in Architect" %}{: .macos-screenshot }
 
-## Name Generator (using Forms)
+Each of these Interfaces is designed for a specific type of alter elicitation, with several associated advantages and disadvantages. Although they have some configuration options that are [shared with all other Network Canvas Interfaces](./shared.md), this article will focus on options specific to name generators.
 
-This name generator allows you to configure a [form](../key-concepts/forms.md) that your participant will complete for every node they create. This form can include one or multiple fields to capture specific attribute data on each node using a corresponding input control.
+## Quick Add, and Form based Name Generators
+
+Both the "Name Generator (Using Forms)" and the "Name Generator (Quick Add)" Interfaces share some common visual elements.
+
+{% include nc-image src="/assets/img/interface-documentation/name-generators/preview.png" %}
+
+The **prompt** area, where the task is explained to the participant (see: [prompts](../key-concepts/prompts.md)), a **node list** area where alters that have been elicited are displayed, a **primary action button** that triggers the node elicitation process, and (optionally) one or more [Side Panels](#side-panels).
+
+Beyond this, you have a choice about how precisely alters should be created - either using a full featured form, or using a simple "quick add" method.
+
+### Using Forms
+
+When using the "Name Generator (using forms)" Interface, the primary action button will trigger a form that participants must complete to create an alter. This form can include one or more fields to capture specific attribute data on each node (see our [key concepts article on forms](../key-concepts/forms.md) for further information on creating a form). This interface therefore combines the process of generating alters with the ability to do some basic attribute collection, or name interpreting, tasks.
 
 {% include nc-image src="/assets/img/interface-documentation/name-generators/ng-form.png" caption="An example form" %}{: .macos-screenshot }
 
-For each field you configure, you will create a corresponding variable, prompt, and input control to collect the response. You also have the option of assigning validation for each field depending on the variable type to be collected. For example, you may configure a field within your form to elicit a name for which you might define the variable as "alter_name" and the prompt as "What is this person's name?" using a text input control. To ensure that this field is completed for every node nominated, you can assign a validation of "required".
+{: .no_toc}
+#### Do
 
-## Name Generator (Quick Add)
+{: .good-practices}
+- Use this interface when you want to collect small amounts of attribute data at the same time as a node is elicited. This can be more efficient than adding additional [Per Alter Form](./per-alter-form.md) Interfaces, or dedicated name interpreter Interfaces later.
+- Ensure you collect a value for a variable called `name` on your form, so that [node labelling](../key-concepts/node-labelling.md) works correctly.
+
+{: .no_toc}
+#### Don't
+
+{: .bad-practices}
+- Resist the urge to create long forms with many items. This may discourage participants from naming additional alters, as it will make the task of nominating an alter more burdensome.
+- Avoid attributes that might be better considered relative to other nodes in the network. For example, perceptual scales may benefit from using the [Ordinal Bin](./ordinal-bin.md) Interface.
+
+### Quick Add
 
 This name generator allows study participants to rapidly create nodes using a single field form in response to the prompt(s) you define on this stage. To configure this interface, you will define a single "quick add variable" to store the value of the form. In most cases, you will call this variable "name."
 
 {% include nc-image src="/assets/img/interface-documentation/name-generators/ng-quick.png" caption="A quick add Name Generator" %}{: .macos-screenshot }
 
-You have the option to assign one or multiple additional variables to nodes nominated in response to a particular prompt within this interface. You may wish to do this either to help track where a node was elicited or to reflect a name interpreter element of your prompt (e.g. adding a variable called "close_friend" to a prompt asking about closeness).  
+You have the option to assign one or multiple additional variables to nodes nominated in response to a particular prompt within this interface. You may wish to do this either to help track where a node was elicited or to reflect a name interpreter element of your prompt (e.g. adding a variable called "close_friend" to a prompt asking about closeness).
 
-## Name Generator (roster small) and Name Generator (roster large)
+### Side Panels
+
+Both of these name generators can use Side Panels. Side panels are a powerful feature that allows you to use network data from either the in-progress interview or from a network data file uploaded to your Architect asset library to assist with name generation activities.
+
+For example, you might configure several prompts within your name generator that potentially have overlap in the participant’s social network. In this case, it might make sense to bring nodes previously nominated onto a subsequent screen so that a participant could easily list them again, if relevant.
+
+{% include nc-image src="/assets/img/interface-documentation/name-generators/4.png" caption="Configuring a side panel" %}{: .macos-screenshot }
+
+A side panel can also be created using a network data file (e.g. a roster) where you may want a participant to nominate nodes by selecting from a predetermined list. It is important to note that the exact same list will appear on subsequent side panels within the name generator unless you create a rule(s) to filter the data to be shown on the panel.
+
+Side panels can be expanded or contracted in the interview by clicking on the heading.
+
+## Small Roster Name Generator
 
 These name generators are configured the same way, but accommodate different roster sizes. Datasets containing up to 100 nodes are suitable for use in the small roster name generator and those in excess of 100 nodes are suitable for the large roster name generator.
 
@@ -47,12 +83,6 @@ If using the small roster name generator, you will next define how the cards con
 
 If using the large roster name generator, you will next define the properties of the search function participants will use to locate nodes within the roster. You have the option of allowing participants to search for nodes using any or all of the attributes you have selected to display on the cards representing alter data. You also have the option of specifying the search accuracy used to determine how close the text a participant types must be to an attribute to be considered a match.
 
-## Side Panels
+## Large Roster Name Generator
 
-Side panels are an important feature available in both the name generator using forms or quick add. A side panel allows you to use network data from either the in-progress interview or from a network data file uploaded to your Architect asset library to assist with name generation activities.
 
-For example, you might configure several prompts within your name generator that potentially have overlap in the participant’s social network. In this case, it might make sense to bring nodes previously nominated onto a subsequent screen so that a participant could easily list them again, if relevant.
-
-{% include nc-image src="/assets/img/interface-documentation/name-generators/4.png" caption="Configuring a side panel" %}{: .macos-screenshot }
-
-A side panel can also be created using a network data file (e.g. a roster) where you may want a participant to nominate nodes by selecting from a predetermined list. It is important to note that the exact same list will appear on subsequent side panels within the name generator unless you create a rule(s) to filter the data to be shown on the panel.
