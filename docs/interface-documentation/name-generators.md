@@ -6,9 +6,9 @@ nav_exclude: true
 ---
 ## Overview
 
-Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in the network you are hoping to study.
+Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in your study's networks.
 
-There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas, which are available to be added to your study, and can be configured within Architect.
+There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
 
 {% include nc-image src="/assets/img/interface-documentation/name-generators/5.png" caption="Available Name Generator Interfaces in Architect" %}{: .macos-screenshot }
 
