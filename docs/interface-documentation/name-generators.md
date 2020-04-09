@@ -114,8 +114,14 @@ When using the "Large Roster Name Generator" Interface, the primary action butto
 #### Do
 
 {: .good-practices}
-- Ensure that the roster data file used has name attribute data labeled propertly to avoid inadvertantly producing a card display error.
+- Ensure that the roster data file used has name attribute data labeled properly to avoid inadvertantly producing a card display error.
 - Define the searchable properties and search accuracy criteria to help participants locate nodes within the roster. 
+
+{: .no_toc}
+#### Don't
+
+{: .bad-practices}
+- Avoid using this Interface with roster datasets of 100 nodes or smaller. For smaller rosters, use the Small Roster Name Generator.
 
 | Important considerations for large rosters                          |
 | :----------------------------------------------------------- |
