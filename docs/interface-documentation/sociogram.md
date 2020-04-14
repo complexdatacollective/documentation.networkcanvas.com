@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sociogram
+title: Sociogram and Narrative
 parent: Interface Documentation
 nav_exclude: true
 ---
