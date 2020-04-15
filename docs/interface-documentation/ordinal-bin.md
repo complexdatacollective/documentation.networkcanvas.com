@@ -20,7 +20,7 @@ The Ordinal Bin is a name interpreter Interface that captures ordinal data on th
 #### Do
 
 {: .good-practices}
-- Use this Interface to collect ordinal or interval scale data on alters. Although a scale can be added as an input control on other interfaces, the drag and drop functionality on the Ordinal Bin provides a tactile method to capturing these data that is engaging for participants. 
+- Use this Interface to collect ordinal or interval scale data on alters. Although a Likert Scale can be added as an [input control](../key-concepts/input-control.md) on other interfaces, the drag and drop functionality on the Ordinal Bin provides a tactile method to capturing these data that is engaging for participants. 
 
 {: .no_toc}
 #### Don't
