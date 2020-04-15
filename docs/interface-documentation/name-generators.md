@@ -97,7 +97,7 @@ When using the "Small Roster Name Generator" Interface, cards representing node 
 #### Do
 
 {: .good-practices}
-- Ensure that the roster data file used has name attribute data properly labeled to avoid inadvertantly producing a card display error.
+- Ensure that the roster data file used has name attribute data properly labeled to avoid inadvertently producing a card display error.
 - Configure the display and sorting options of the cards to help improve a participant's ability to locate nodes within the roster. 
  
 {: .no_toc}
@@ -114,7 +114,7 @@ When using the "Large Roster Name Generator" Interface, the primary action butto
 #### Do
 
 {: .good-practices}
-- Ensure that the roster data file used has name attribute data labeled properly to avoid inadvertantly producing a card display error.
+- Ensure that the roster data file used has name attribute data labeled properly to avoid inadvertently producing a card display error.
 - Define the searchable properties and search accuracy criteria to help participants locate nodes within the roster. 
 
 {: .no_toc}
