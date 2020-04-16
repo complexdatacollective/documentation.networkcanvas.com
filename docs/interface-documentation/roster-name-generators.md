@@ -25,7 +25,7 @@ Both of these interfaces require you to have a datafile that represents your ros
 
 | Roster size constraints                          |
 | :----------------------------------------------------------- |
-| We have tested a 60,000 node roster in the Large Roster Name Generator with success, however, rosters of this size are not without problems. If your study requires such a roster, please be prepared for the loading and search functions to slow down considerably. The upper limit of this interface is largely dependent on both the device you use and your usability threshold, so a powerful laptop might be required particularly for larger datasets. For information on devices, please see our article on [choosing a device for your study](../../research-design/choosing-hardware).
+| We have tested a 60,000 node roster in the Large Roster Name Generator with success, however, rosters of this size are not without problems. If your study requires such a roster, please be prepared for the loading and search functions to slow down considerably. The upper limit of this interface is largely dependent on both the device you use and your usability threshold, so a powerful laptop might be required particularly for larger datasets. For information on devices, please see our article on [choosing a device for your study](../../research-design/choosing-hardware).|
 {: .key-concept }
 
 ## Small Roster Name Generator

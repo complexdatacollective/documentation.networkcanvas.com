@@ -3,16 +3,31 @@ layout: default
 title: Skip Logic
 parent: Key Concepts
 ---
-## Skip logic 
+## Overview
 
-Skip logic refers to the rules you define at the stage-level which direct the path a participant takes through your study. You utilize skip logic within your protocol to determine whether or not a given stage is shown to a participant based upon their responses to previous survey questions. 
+Skip logic is a feature within Network Canvas that allows you to skip stages within the interview, based on the current information in the interview network. By skipping or showing certain stages, you are able to direct the path a participant takes through your protocol.
 
-For example, if a participant indicates they have never used drugs before, you may want to configure your survey to skip subsequent screens asking about the places where and the people with whom the participant has used drugs. 
-To configure skip logic for a stage, open it from the timeline view, and expand the section called "Skipping and Filtering". 
+As an illustration: if a participant indicates on an ego form stage that they have never used drugs, you may configure your protocol using skip logic to not show them subsequent name interpreter screens that ask about drug use with alters.
 
-[screenshot of expanded section]
+## Skip Logic Rules
 
-Skip logic is configured based upon the rules you define for alters, ego, or edges. All rules are reduced to a simple true/false for either skipping or showing the stage in question. If you use the “Skip this stage if” option and no node in the network meets the rules you defined, then the interview stage will be skipped altogether. Conversely, if you use the “Show this stage if” option and at least one node in the network meets the rules you defined for the particular stage, then the stage will be shown. 
+The following is a high level overview of the way that this feature operates:
+
+- Skip logic is configured by creating one or more **rules**, based on the attributes of ego, alters, or edges. 
+- These rules resolve to either **true** or **false** when the interview is in progress. 
+- The value of the individual rules is then **aggregated** (based on if Network Canvas is told to consider them individually or collectively) into a global true or false outcome for the entire skip logic function.
+- Based on this global outcome, the stage will either be shown or skipped.
+
+There are various types of rule, depending on the network entity that is being targeted:
+
+- **"Type" Rules**: These rules allow you to query if a given entity of a specified type exists in the network, using either the `exists` or `not exists` operator. This rule type is available for alter and edge rules.
+- **"Variable" Rules**: These rules allow you to query the value of a variable on a given entity type. For example, you may query the value of a variable called `age` on an alter type called 'Person'. You can evaluate the result using one of several logical operators, that vary depending on the variable type. For example, number variables will let you query using operators such as 'greater than' and 'less than'. This rule type applies to alter and ego rules only.
+
+## The Join Operator
+
+Rules are chained together, or 'joined', using either `AND` or `OR` logic. The choice of join operator can have an extremely significant impact on the way that your rules are collectively evaluated.
+
+## Worked Example
 
 [screenshot of rule definition]
 
@@ -26,4 +41,6 @@ In either case, once you create more than one rule in your skip logic for a give
 
 [screenshot of skip logic rules implement for above example showing match all criteria]
 
-You may include as many rules for a given stage that you wish, applying them to alters, edges, and egos as is appropriate. Finally, all skip logic can be modified and deleted at the location you defined it simply by clicking on the rule itself or selecting the ‘x’ in the corner of the rule, respectively. 
+## Adding Skip Logic to a Stage
+
+You may include as many rules for a given stage that you wish, applying them to alters, edges, and egos as is appropriate. Finally, all skip logic can be modified and deleted at the location you defined it simply by clicking on the rule itself or selecting the ‘x’ in the corner of the rule, respectively.
