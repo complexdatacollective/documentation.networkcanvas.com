@@ -85,30 +85,29 @@ table.key-concept {
   }
 
   td, tr, th {
-    font-size: 1rem !important;
     border: 0;
     margin: 0;
     background: transparent;
     color: $color-cyber-grape;
   }
 
-  td {
-    padding: 0;
-  }
-
   thead {
-    padding: 0;
 
     tr {
       th {
-        font-size: 1.2rem !important;
-        padding: 0 0 1em;
+        letter-spacing: .15rem;
+        text-transform: uppercase;
       }
     }
   }
 
   tbody{
-    padding: 0;
+
+    tr {
+      td {
+        line-height: 1.575;
+      }
+    }
   }
 
   thead, tbody {
@@ -150,4 +149,10 @@ ul.good-practices li:before {
 ul.bad-practices li:before {
   content: '✘';
   color: $color-neon-coral;
+}
+
+.last-updated {
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
 }
