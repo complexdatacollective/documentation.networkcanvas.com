@@ -1,9 +1,0 @@
-<div class="tip-box tip-info">
-    <div class="tip-img-wrapper">
-        <img src="{{ "assets/img/tip-info.svg" | absolute_url }}" alt="Info">
-    </div>
-    <div class="tip-content-wrapper">
-            <p class="tip-title">TIP:</p>
-            <p class="tip-content">{{include.content}}</p>
-        </div>
-</div>
