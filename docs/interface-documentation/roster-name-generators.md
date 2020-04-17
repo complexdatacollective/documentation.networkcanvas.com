@@ -86,5 +86,5 @@ As a general rule of thumb search accuracy should increase as roster size increa
 
 {: .bad-practices}
 - Avoid using this Interface with roster datasets of 100 nodes or smaller. For smaller rosters, use the Small Roster Name Generator.
-- Avoid using this interface on devices with a software keyboard, particularly where they also have a small (< 9">) screen. The software keyboard will cover a substantial area of the screen, and make the process of searching and nominating more tedious.
+- Avoid using this interface on devices with a software keyboard, particularly where they also have a small (< 9") screen. The software keyboard will cover a substantial area of the screen, and make the process of searching and nominating more tedious.
 - Set all properties to be searchable. This will cause slow performance and less accurate search results. Ensure that you test your search feature thoroughly.

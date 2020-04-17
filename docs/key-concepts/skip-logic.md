@@ -5,37 +5,56 @@ parent: Key Concepts
 ---
 ## Overview
 
-Skip logic is a feature within Network Canvas that allows you to skip stages within the interview, based on the current information in the interview network. By skipping or showing certain stages, you are able to direct the path a participant takes through your protocol.
+Skip logic is a feature within Network Canvas that allows you to conditionally skip or show stages within the interview, based on the current information in the interview network. By skipping or showing certain stages, you are able to direct the path a participant takes through your protocol.
 
-As an illustration: if a participant indicates on an ego form stage that they have never used drugs, you may configure your protocol using skip logic to not show them subsequent name interpreter screens that ask about drug use with alters.
+For example, if a participant indicates on an ego form stage that they have never used drugs, you may configure your protocol using skip logic to not show them subsequent name interpreter stages that ask about drug use with alters.
+
+The following is a high level overview of the way that this feature works:
+
+- Skip logic is configured by creating one or more **rules**, based on the attributes of ego, alters, or edges.
+- These rules resolve to either **true** or **false** when the the stage is about to be shown.
+- The value of the individual rules is then **aggregated** into a global true or false value, using either `AND` or `OR` logic.
+- The aggregated result is then evaluated in terms of if the intent is to describe when to **show** the stage, or when to **skip** the stage.
+- Based on this, the stage will either be shown or skipped.
 
 ## Skip Logic Rules
 
-The following is a high level overview of the way that this feature operates:
-
-- Skip logic is configured by creating one or more **rules**, based on the attributes of ego, alters, or edges. 
-- These rules resolve to either **true** or **false** when the interview is in progress. 
-- The value of the individual rules is then **aggregated** (based on if Network Canvas is told to consider them individually or collectively) into a global true or false outcome for the entire skip logic function.
-- Based on this global outcome, the stage will either be shown or skipped.
-
-There are various types of rule, depending on the network entity that is being targeted:
+Constructing rules is the most fundamental part of creating skip logic. There are various types of rule, depending on the network entity that is being targeted:
 
 - **"Type" Rules**: These rules allow you to query if a given entity of a specified type exists in the network, using either the `exists` or `not exists` operator. This rule type is available for alter and edge rules.
 - **"Variable" Rules**: These rules allow you to query the value of a variable on a given entity type. For example, you may query the value of a variable called `age` on an alter type called 'Person'. You can evaluate the result using one of several logical operators, that vary depending on the variable type. For example, number variables will let you query using operators such as 'greater than' and 'less than'. This rule type applies to alter and ego rules only.
 
 ## The Join Operator
 
-Rules are chained together, or 'joined', using either `AND` or `OR` logic. The choice of join operator can have an extremely significant impact on the way that your rules are collectively evaluated.
+Rules are chained together (or 'joined') using either `AND` or `OR` logic, which is set in the skip logic configuration section using the "Must match" options "all rules" and "any rules" respectively.
 
-## Worked Example
+![image](/assets/img/key-concepts/skip-logic/must-match.png)
 
-[screenshot of rule definition]
+The choice of join operator can have an extremely significant impact on the way that your rules are collectively evaluated. One way of thinking about the difference is that you should use the "all rules" option in situations where there is only *one* scenario where a stage should be shown. You can then add as many rules as you need to ensure that this scenario is as specific as possible.
 
-Let’s say, for example, you are using a Categorical Bin interface to capture relationship types of alters. You define the options as ‘friend’, ‘spouse/partner’, ‘coworker’, ‘parent’, ‘sibling’, ‘child’, ‘uncle/aunt’, or ‘grandparent’ with corresponding values of 1, 2, 3, 4, 5, 6, 7, and 8. In the subsequent stage you use another Categorical Bin, but this one to capture type of relatedness of alters to ego (e.g. ‘biological’, ‘step’, ‘adoptive’, ‘through marriage’, etc.). Now let’s imagine that a participant does not nominate any alters to whom they are related (i.e. they have only nominated friends, spouse/partners, and/or coworkers). In such an instance, the type of relatedness stage would be irrelevant and, therefore, implementing skip logic to skip this stage entirely for such a participant would both increase efficiency and minimize respondent burden. 
+Alternatively, use the "any rules" option for situations where there are many reasons a stage should be shown. For example you may show an information screen with an embedded intervention video if a participant has demonstrated any one of a number of risk behaviors.
+
+## Skip or Show
+
+Before we know the final outcome of the skip logic rule, we have to consider one last configurable property: the "show this stage if" or "skip this stage if" selector. This option simply allows you to decide if a 'true' outcome from evaluating your rules should cause the stage to be skipped or to be shown. This effectively allows you to write rules in terms of _negatives_ - that is, to instead write rules that define when a stage should be **shown** rather than when it should be skipped. This can be more useful if you have a lot of values to include or exclude.
+
+For example, if you wished to skip a stage based on if a categorical variable with many options is set to all but one possible value, you would typically have to write a rule for each value, and use the `OR` operator. However, if you were to set the skip logic to "show this stage if", you would only need to define a single rule, that included the value that is specifically permissible.
+
+{% include tip-info.md content="Take extra care to think through the logical repercussions of your join operator when changing this property, as it can be somewhat counter-intuitive. It is very easy to make your rule too specific using the `AND` operator!" markdown=true %}
+
+## Extended Example
+
+Since skip logic can be confusing to new users, we have provided an extended example below.
+
+Consider an interview where you are using a [Categorical Bin Interface](../../interface-documentation/categorical-bin) to classify the participant's relationship with alters. You define options including 'friend', 'spouse/partner', 'coworker', 'parent', 'sibling', 'child', 'uncle/aunt', or 'grandparent' with corresponding values of 1, 2, 3, 4, 5, 6, 7, and 8.
+
+In the following stage you want to use another Categorical Bin, but this time to capture type of relatedness of alters to ego (e.g. 'biological', 'step', 'adoptive', 'through marriage', etc.). Now let us imagine that a participant did not nominate any alters to whom they are related (i.e. they have only nominated friends, spouse/partners, and/or coworkers). In such an instance, the type of relatedness stage would be irrelevant and, therefore, implementing skip logic to skip this stage entirely for such a participant would both increase efficiency and minimize respondent burden.
+
+We implemented a simple skip logic rule to address this, as follows:
 
 [screenshot of skip logic implemented]
 
-In the above example, you could also configure your skip logic to achieve the same outcome by implementing the converse rule (i.e. skip screen if alter of a type Person with Relationship excludes 4, 5, 6, 7, or 8). 
+In the above example, you could also configure your skip logic to achieve the same outcome by implementing the inverse rule (i.e. skip screen if alter of a type Person with Relationship excludes 4, 5, 6, 7, or 8).
 
 In either case, once you create more than one rule in your skip logic for a given stage, you need to determine whether you want all the rules matched or just any of the rules matched. In keeping with the examples above, let’s imagine that you want to create a subsequent screen to capture data about a participant’s biological nuclear family. You want this screen to be shown if a participant previously nominated alters with Relationship type ‘parent’, ‘sibling’ or ‘child’ and where these alters include type Relatedness of ‘biological’. Here you would use the all match criteria since you would not want the stage to be shown if the participant has alters in their network of Relationship type ‘parent’, ‘sibling’ or ‘child’ but none of them include type Relatedness ‘biological’. 
 
