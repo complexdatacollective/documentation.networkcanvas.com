@@ -22,10 +22,11 @@ The Per Alter Edge Form is an Interface that collects attribute data on the edge
 {: .good-practices}
 - Use this Interface as a simple way to systematically collect data on edges. 
 - Use the introductory panel to orient participants to the tasks within the form they will complete for each edge.
+- Consider including form fields to capture temporal data which utilize [input controls](../key-concepts/input-controls.md) like the DatePicker.
 
 {: .no_toc}
 #### Don't
 
 {: .bad-practices}
 - Avoid overloading this Interface with too many fields and/or text-heavy prompts. 
-- Do not use this Interface in place of a dyad census as participants will only be asked to provide data on existing edges between alters rather than all possible alter combinations. If your study requires a [Dyad Census](add link), learn more about that Interface here. 
+- Do not use this Interface in place of a dyad census as participants will only be asked to provide data on existing edges between alters rather than all possible alter combinations. If your study requires a [Dyad Census](add link) you can add and configure that Interface in Architect. 
