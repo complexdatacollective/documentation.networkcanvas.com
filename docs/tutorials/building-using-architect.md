@@ -189,7 +189,7 @@ Repeat this process for the second prompt, this time using the text “Are there
 
 You can optionally preview the interface at this point, checking that the prompts and the form look and function as you expected. When you are satisfied, click continue to add your stage.
 
-{% include tip-info content="At any point during this tutorial, free free to click the “Save” button in the bottom bar when on the timeline view, or select “File -> Save” from the menu." %}
+{% include tip-info.md content="At any point during this tutorial, free free to click the “Save” button in the bottom bar when on the timeline view, or select “File -> Save” from the menu." %}
 
 ## Creating a Sociogram
 
@@ -212,7 +212,7 @@ The sociogram interface has some unique configuration options. One of which is t
 
 For our scenario, we will select “Circles” and enter “1” as the number of circles to use.
 
-{% include tip-info content="You should think carefully about how the choices you make regarding the background will impact the way your participants position their nodes." %}
+{% include tip-info.md content="You should think carefully about how the choices you make regarding the background will impact the way your participants position their nodes." %}
 
 Next, we will create some prompts to frame the task. Prompts on the Sociogram are more complex than the prompts we worked with on the Name Generator interface. Under the prompts section, click the “Create New” button.
 
