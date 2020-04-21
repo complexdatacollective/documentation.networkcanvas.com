@@ -47,4 +47,4 @@ Network Canvas supports MP4 and MOV video file formats. Take special care when u
 
 ### Network
 
-Network Canvas supports network data in CSV format. the heading row will be used to set variable names for any nodes brought in to the interview. Ensure that you have a row called "name" to take advantage of automatic [node labelling](./node-labelling.md). Download a simple example csv file from [here](../../../assets/previousInterview.csv).
+Network Canvas supports network data in CSV format. the heading row will be used to set variable names for any nodes brought in to the interview. Ensure that you have a row called "name" to take advantage of automatic [node labelling](./node-labelling.md). Download a simple example CSV file from [here](../../../assets/previousInterview.csv).
