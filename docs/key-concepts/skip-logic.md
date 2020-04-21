@@ -26,11 +26,13 @@ Constructing rules is the most fundamental part of creating skip logic. There ar
 
 ## The Join Operator
 
-Rules are chained together (or 'joined') using either `AND` or `OR` logic, which is set in the skip logic configuration section using the "Must match" options "all rules" and "any rules" respectively.
+Rules are chained together (or 'joined') using either `AND` or `OR` logic, which is set in the skip logic configuration section using the "Must match" options "all rules" and "any rules" respectively. The joining operators govern how multiple rules are evaluated together to determine the overall boolean value that the query returns.
+
+If rules are joined by `AND` statements, and all individual rules evaluate to `true`, so will the top level constraint (for example: `true && true === true`). Conversely, if any individual rules evaluate to false, so too will the top level constraint (`true && false === false`). If rules are joined by `OR` statements, any individual rule evaluating truthfully will cause the top level constraint to also evaluate as true (`true || false || false === true`).
 
 ![image](/assets/img/key-concepts/skip-logic/must-match.png)
 
-The choice of join operator can have an extremely significant impact on the way that your rules are collectively evaluated. One way of thinking about the difference is that you should use the "all rules" option in situations where there is only *one* scenario where a stage should be shown. You can then add as many rules as you need to ensure that this scenario is as specific as possible.
+This means that the choice of join operator can have an extremely significant impact on the way that your rules are collectively evaluated. One way of thinking about the difference is that you should use the "all rules" option in situations where there is only *one* scenario where a stage should be shown. You can then add as many rules as you need to ensure that this scenario is as specific as possible.
 
 Alternatively, use the "any rules" option for situations where there are many reasons a stage should be shown. For example you may show an information screen with an embedded intervention video if a participant has demonstrated any one of a number of risk behaviors.
 
