@@ -1,0 +1,90 @@
+---
+layout: default
+title: Small and Large Roster
+parent: Interface Documentation
+nav_exclude: true
+---
+## Overview
+
+Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in your study's networks.
+
+There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
+
+{% include nc-image src="/assets/img/interface-documentation/name-generators/5.png" caption="Available Name Generator Interfaces in Architect" %}{: .macos-screenshot }
+
+Each of these Interfaces is designed for a specific type of alter elicitation, with several associated advantages and disadvantages. Although they have some configuration options that are [shared with all other Network Canvas Interfaces](./shared.md), this article will focus on options specific to roster based name generators.
+
+Roster name generators are useful when you have a known set of network members that you want your participant to be able to nominate. The "Small Roster Name Generator" and the "Large Roster Name Generator" Interfaces differ in two crucial ways:
+
+- The **size** of the roster data they are designed to work with.
+- The **method** of nominating a member of the roster to be brought into the interview network.
+
+## Defining a Roster
+
+Both of these interfaces require you to have a datafile that represents your roster. See our article on [network assets](../../key-concepts/assets) for more information about how to create such a file. Have this file, or a suitable mock file, ready before you attempt to configure either of these interfaces.
+
+| Roster size constraints                          |
+| :----------------------------------------------------------- |
+| We have tested a 60,000 node roster in the Large Roster Name Generator with success, however, rosters of this size are not without problems. If your study requires such a roster, please be prepared for the loading and search functions to slow down considerably. The upper limit of this interface is largely dependent on both the device you use and your usability threshold, so a powerful laptop might be required particularly for larger datasets. For information on devices, please see our article on [choosing a device for your study](../../research-design/choosing-hardware).
+{: .key-concept }
+
+## Small Roster Name Generator
+
+When using the "Small Roster Name Generator" Interface, cards representing node data from a predetermined roster will be displayed to a participant. This Interface is intended to accommodate roster data files containing up to 100 nodes, with the idea that the list view allows for simple and fast scanning of the roster by a participant, supported by sorting and filtering where necessary.
+
+{% include nc-image src="/assets/img/interface-documentation/name-generators/small-roster.png" caption="The Small Roster Name Generator in use" %}{: .macos-screenshot }
+
+By default, cards will display the `name` attribute from the roster data as a card title, and will sort the cards in the order the nodes are defined in the data file. These options can be configured from within architect. Note that you are able to define both the default sorting options, and allow the user to sort themselves by multiple properties.
+
+{% include nc-image src="/assets/img/interface-documentation/name-generators/6.png" caption="Configuring card display options" %}{: .macos-screenshot }
+
+{: .no_toc}
+### Do
+
+{: .good-practices}
+- Ensure that the roster data file used has `name` attribute to avoid seeing "No name variable!" on your cards. See our article on [node labelling](../../key-concepts/node-labelling) for more information on this topic.
+- Configure the display and sorting options of the cards to help improve a participant's ability to locate nodes within the roster.
+
+{: .no_toc}
+### Don't
+
+{: .bad-practices}
+- Avoid using this Interface with larger roster datasets that may benefit from the search function only available in the Large Roster Name Generator Interface.
+- Add needless attributes to the sort options. This will confuse users and may potentially cause display issues on smaller screens. Aim for no more than 3 sortable properties.
+
+## Large Roster Name Generator
+
+The Large Roster Name Generator, as the name implies, has been designed specifically around significantly larger datasets. If your roster contains over 100 nodes, you should consider if the Large Roster Name Generator will provide a better user experience for your participants.
+
+Nominating an alter within this interfaces uses the following process:
+
+1. The primary action button triggers a search box, into which a participant can type to search for nodes based on the search options (see below) you have configured.
+2. As the participant begins typing, all node data that meets the criteria will be displayed as cards above the search box.
+3. The participant may then tap (or click) one **or more** cards, to nominate them. As this happens, a node button with a plus icon will appear on the right edge of the search panel, and the number will increment as each card is selected.
+4. Any nominated nodes will not be added to the interview until the plus button is clicked. Multiple searches can be completed with the search panel still open, meaning the participant does not need to click the plus button after each search - merely when they feel they have finished the task.
+
+{% include nc-image src="/assets/img/interface-documentation/name-generators/large-roster.png" caption="The Large Roster Name Generator in use" %}{: .macos-screenshot }
+
+By default, the cards will display the **name** attribute from the roster data as the card title. As with the Small Roster Name Generator, the display options of these cards are completely configurable. You should display all attributes that a participant might need to disambiguate roster nodes with similar names.
+
+The search function is also heavily configurable, allowing you to choose which attributes from the roster are indexed, as well as the accuracy (or 'fuzziness') of the search matching. These options are powerful, and should be configured carefully. Each attribute added to the searchable properties list will decrease the performance of the search function, and may make matches less accurate. Similarly, using too stringent or too lax search accuracy will compromise the ability of participants to locate nodes in the roster.
+
+As a general rule of thumb search accuracy should increase as roster size increases, and only attributes containing terms participants are likely to search by should be included as indexed attributes. 
+
+{% include nc-image src="/assets/img/interface-documentation/name-generators/search-options.png" caption="Configuring search options within Architect" %}{: .macos-screenshot }
+
+{: .no_toc}
+### Do
+
+{: .good-practices}
+- Ensure that the roster data file used has `name` attribute to avoid seeing "No name variable!" on your cards. See our article on [node labelling](../../key-concepts/node-labelling) for more information on this topic.
+- Configure the display options of the cards to help improve a participant's ability to identify and disambiguate nodes within the roster.
+- Define and test appropriate searchable properties and search accuracy criteria to help participants locate nodes within the roster.
+
+{: .no_toc}
+### Don't
+
+{: .bad-practices}
+- Avoid using this Interface with roster datasets of 100 nodes or smaller. For smaller rosters, use the Small Roster Name Generator.
+- Avoid using this interface on devices with a software keyboard, particularly where they also have a small (< 9">) screen. The software keyboard will cover a substantial area of the screen, and make the process of searching and nominating more tedious.
+- Set all properties to be searchable. This will cause slow performance and less accurate search results. Ensure that you test your search feature thoroughly.

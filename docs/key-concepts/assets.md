@@ -3,28 +3,48 @@ layout: default
 title: Assets
 parent: Key Concepts
 ---
-## Assets
+## Overview
 
-You can view and manage any protocol assets in Architect by pressing the red ‘manage assets’ button in the upper right hand corner of the protocol overview screen.
+In Architect, 'assets' are any external files that you use within your interview. These can be media files, such as audio, images, or even video. They can also be network data files that you can use as a roster. Careful use of assets can improve the interview experience for your participants, or enable different types of interview workflow.
 
-[screenshot of manage assets button]
+Once added to your protocol in Architect, assets are stored within the `.netcanvas` file itself. Because of this, you will need to handle updating or removing assets from within Architect.
 
-Under the manage assets screen, you can browse, filter, and delete files for use in your protocol. Assets include image, audio, video, or external data files, such as a roster for use in the roster-based name generator. To add an asset to the asset library, simply drag and drop or browse for the file you wish to import. 
+{% include tip-caution.md content="Asset use in Network Canvas interviews can **heavily** impact performance. This means that protocols take longer to install on devices, and some stages may take much longer to load. Special care must be taken to appropriately resize and compress your assets before importing them, and you must ensure that you have tested your protocol on your intended field devices to ascertain performance levels.<br><br>As a general guide, you should aim to have your total protocol file size be less than 20mb." markdown= true %}
 
-[screenshot of manage assets dashboard]
+## Adding Assets from a Stage
 
-Assets can be used to concretize aspects of your survey for your participants, including instructional information for specific screens or providing a background to a certain activity. The asset library accommodates typical image, audio, and video file sizes with no explicit limits, but keep in mind that larger files may take slightly longer to appear in the asset library.
+Many stages allow you to add assets directly while configuring them. This is designed to provide a more seamless flow when creating your interview protocol. Examples of this include background images on the Sociogram interface, roster files in either of the roster Name Generators, and media files on the Information interface.
 
-_Image_
-Network Canvas supports JPEG and PNG image file formats. 
+If the stage you are supporting uses an asset it will provide an interface for you to add it directly, and will give instructions about which type of asset is required.
 
-_Audio_
-Network Canvas supports MP3 and WAV audio file formats. 
+{% include nc-image src="/assets/img/key-concepts/assets/bg-asset.png" caption="Adding a background image to a Sociogram" %}
 
-_Video_
-Network Canvas supports MP4 and MOV video file formats. 
+## Adding and Removing Assets from the Asset Manager
 
-_Network_ (external data files)
-External network data files, such as a roster, are supported as assets in either JSON or CSV format. If using a CSV, ensure that you have a heading row (which will become node attributes), and that you have an attribute in this row called "name." If using a JSON, ensure it contains a “nodes” and/or “edges” list in the root object. 
+For a more broad overview of all assets within your current protocol, click the green 'manage assets' button in the upper right hand corner of the protocol overview card, when looking at the timeline. This will open the Asset Manager.
 
-The tested upper limit for large external network data assets in Network Canvas is a 100,000 node dataset. However, it is important to keep in mind that the upper limit is greatly dependent on the device you are using and your usability threshold. The larger your network data asset, the more important it will be to use a powerful laptop and maintain some flexibility about an interface operating somewhat slower than usual. Smaller node datasets of 600 have been piloted successfully with no compromise to interface transitions whatsoever.
+![image](/assets/img/key-concepts/assets/manage-assets-button.png)
+
+Under the manage assets screen, you can browse, filter, and delete any existing assets, as well as add new ones. To add a new asset to the asset library, simply drag and drop a file into the designated area, or browse for the file you wish to import.
+
+{% include nc-image src="/assets/img/key-concepts/assets/asset-library.png" caption="The asset library screen" %}
+
+You will notice that existing assets that are unused show a red "unused" pill. This indicates that they are able to be deleted. Attempting to delete an asset that is in use within your interview will be prevented. You must first update or remove all uses of an asset before you can delete it.
+
+## Supported File Types
+
+### Image
+
+Network Canvas supports JPEG, GIF, and PNG image file formats.
+
+### Audio
+
+Network Canvas supports MP3, AIFF, M4A, and MP4 audio file formats.
+
+### Video
+
+Network Canvas supports MP4 and MOV video file formats. Take special care when using video to make your files as small as possible.
+
+### Network
+
+Network Canvas supports network data in CSV format. the heading row will be used to set variable names for any nodes brought in to the interview. Ensure that you have a row called "name" to take advantage of automatic [node labelling](./node-labelling.md). Download a simple example csv file from [here](../../../assets/previousInterview.csv).
