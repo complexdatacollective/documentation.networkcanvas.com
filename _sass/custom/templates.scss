@@ -41,6 +41,8 @@
   padding: 0;
   font-weight: 700;
   margin-bottom: 0.25rem;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
 }
 
 .tip-box p.tip-content {
@@ -48,6 +50,10 @@
   order: 1;
   margin-bottom: 0;
   font-size: 1rem;
+
+  code {
+    color: $color-neon-coral;
+  }
 }
 
 .tip-info {
