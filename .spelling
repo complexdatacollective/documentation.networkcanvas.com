@@ -103,3 +103,6 @@ close_friend
 searchability
 affordances
 searchable
+mDNS
+ZeroConf
+hostname
