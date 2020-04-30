@@ -39,7 +39,17 @@ This means that the choice of join operator can have an extremely significant im
 
 ### Extended Example
 
-Example here should cover edge rules, as these are more complex. Something like "nodes with attribute `drug_use = true` who have an edge of type sex".
+Since network filtering can be confusing to new users, here is an extended example to illustrate the feature that includes both node and edge rules.
+
+Consider an interview where you use the [Sociogram](../interface-documentation/sociogram.md) to generate sex ties between alters and to collect boolean attribute data on HIV status of alters. Let's imagine that you then want to use a [Per Alter Form](../interface-documentation/per-alter-form.md) or another name interpreter to capture data on drug use behavior of alters, but only those who are HIV+ `AND` who have a sex relationship. 
+
+To achieve network filtering accordingly, we implemented the following edge and node rules on the Per Alter Form:
+
+[screenshot of "nodes with attribute HIV_pos = true who have an edge of type sex"]
+
+Applying these rules within this stage determines that only HIV+ nodes who have a sex relationship will be shown. All nodes that do not have a sex relationship will be filtered out - even if they have attribute `HIV_pos = true`. 
+
+{% include tip-caution.md content="If your filter query (the sum of all defined rules within the stage) includes an edge rule, you will also filter alters. For example, if your rule is set to filter the existence of an edge type, such as "sex", any nodes that would become isolates as a result of this query are removed from the network." %}
 
 ## Network Filtering in a Side Panel
 
