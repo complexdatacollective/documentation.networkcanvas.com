@@ -1,24 +1,23 @@
 ---
 layout: default
-title: Sociogram and Narrative
+title: Sociogram
 parent: Interface Documentation
-nav_exclude: true
 ---
 ## Overview
 
-Sociograms are the visual mapping component of a network interview. On the Sociogram, participants draw ties between alters to signify the relationships between individuals within their personal network. 
+Sociograms are the visual mapping component of a network interview. On the Sociogram, participants draw ties between alters to signify the relationships between individuals within their personal network.
 
 There are two sociogram Interfaces in Network Canvas - one for data collection and one for data display - that can be added to your study and configured in Architect.
 
-[image 1]
+{% include nc-image src="/assets/img/interface-documentation/sociogram/1.png" %}{: .macos-screenshot }
 
 ## Sociogram
 
-When using the "Sociogram" Interface, participants position their alters and draw ties between them. The Interface can be used to create one or multiple edge types between alters in a participant's network, and to collect alter attribute data by highlighting alters where the variable value is true. 
+When using the "Sociogram" Interface, participants position their alters and draw ties between them. The Interface can be used to create one or multiple edge types between alters in a participant's network, and to collect alter attribute data by highlighting alters where the variable value is true.
 
-[image 2]
+{% include nc-image src="/assets/img/interface-documentation/sociogram/2.png" %}{: .macos-screenshot }
 
-[image 3]
+{% include nc-image src="/assets/img/interface-documentation/sociogram/3.png" %}{: .macos-screenshot }
 
 {: .no_toc}
 #### Do
@@ -26,25 +25,6 @@ When using the "Sociogram" Interface, participants position their alters and dra
 {: .good-practices}
 - Consider customizing the background image of the sociogram to orient participants to the activity or to add meaning to the layout variable (e.g. such as using quadrants). 
 - Ensure that the prompts used on this Interface are edge creation prompts - questions about the relationships between alters. 
-
-{: .no_toc}
-#### Don't
-
-{: .bad-practices}
-- Nodes positioned too close together may visually occlude one another or the edge between them. Caution participants not to place nodes directly on top of one another. 
-
-## Narrative
-
-On the "Narrative" Interface, alter edges, group and individual attribute variables can be displayed to elicit qualitative data from the participant about their network. Configured presets can be toggled on and off to reveal colored convex hulls representing group variables, highlighted nodes representing attribute data, and different edge types in the network. No data is collected on this Interface. 
-
-[image 4]
-
-{: .no_toc}
-#### Do
-
-{: .good-practices}
-- Utilize the freeze button to the left of the preset bar to hold annotations on the screen. You may wish to take a picture or record in some other way for your data collection.
-- Remember that in order for group variables to appear as convex hulls, two or more nodes must have this attribute.
 
 {: .no_toc}
 #### Don't
