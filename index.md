@@ -26,7 +26,7 @@ Please explore the pages and headings to the left. Aside from some top-level pag
 
 - **[Tutorials](./docs/tutorials/index.md)** - where you will find in-depth articles that take you through the most fundamental tasks you can accomplish with the software, such as building a protocol, running it in network canvas, and exporting data.
 - **[Key Concepts](./docs/key-concepts/index.md)** - which has self-contained articles on all the fundamental concepts within the Network Canvas software.
-- **Interface Documentation (coming soon)** - if you are looking for specific information about the configuration options of an interface, this section contains a page dedicated to each type.
+- **[Interface Documentation](./docs/interface-documentation/index.md)** - if you are looking for specific information about the configuration options of an interface, this section contains a page dedicated to each type.
 - **[Technical Documentation](./docs/technical-documentation/index.md)** - if you have more advanced technical questions, such as about the security implementation, or how to develop your own custom functionality within Network Canvas, this section provides articles on a variety of technical topics.
 
 Away from these sections, we have also created a section to help with the practical aspects of conducting a study using the Network Canvas software. The [Research Design] section covers:
