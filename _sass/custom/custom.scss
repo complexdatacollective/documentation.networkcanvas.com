@@ -156,3 +156,21 @@ ul.bad-practices li:before {
   text-transform: uppercase;
   font-size: 0.75rem;
 }
+
+ol:not(.inline_toc), ul {
+  li {
+    margin: 0.75em 0;
+    line-height: 1.575;
+  }
+}
+
+ol.inline_toc {
+  li {
+    ol {
+      li {
+        margin: 0;
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}

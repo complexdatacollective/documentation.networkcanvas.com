@@ -25,7 +25,7 @@ Both of these interfaces require you to have a datafile that represents your ros
 
 | Roster size constraints                          |
 | :----------------------------------------------------------- |
-| We have tested a 60,000 node roster in the Large Roster Name Generator with success, however, rosters of this size are not without problems. If your study requires such a roster, please be prepared for the loading and search functions to slow down considerably. The upper limit of this interface is largely dependent on both the device you use and your usability threshold, so a powerful laptop might be required particularly for larger datasets. For information on devices, please see our article on [choosing a device for your study](../../research-design/choosing-hardware).
+| We have tested a 60,000 node roster in the Large Roster Name Generator with success, however, rosters of this size are not without problems. If your study requires such a roster, please be prepared for the loading and search functions to slow down considerably. The upper limit of this interface is largely dependent on both the device you use and your usability threshold, so a powerful laptop might be required particularly for larger datasets. For information on devices, please see our article on [choosing a device for your study](../../research-design/choosing-hardware).|
 {: .key-concept }
 
 ## Small Roster Name Generator
@@ -86,5 +86,5 @@ As a general rule of thumb search accuracy should increase as roster size increa
 
 {: .bad-practices}
 - Avoid using this Interface with roster datasets of 100 nodes or smaller. For smaller rosters, use the Small Roster Name Generator.
-- Avoid using this interface on devices with a software keyboard, particularly where they also have a small (< 9">) screen. The software keyboard will cover a substantial area of the screen, and make the process of searching and nominating more tedious.
+- Avoid using this interface on devices with a software keyboard, particularly where they also have a small (< 9") screen. The software keyboard will cover a substantial area of the screen, and make the process of searching and nominating more tedious.
 - Set all properties to be searchable. This will cause slow performance and less accurate search results. Ensure that you test your search feature thoroughly.
