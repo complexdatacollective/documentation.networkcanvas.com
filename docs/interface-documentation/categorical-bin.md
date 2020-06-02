@@ -2,19 +2,18 @@
 layout: default
 title: Categorical Bin
 parent: Interface Documentation
-nav_exclude: true
 ---
 ## Overview
   
-[image 1]
+{% include nc-image src="assets/img/interface-documentation/categorical-bin/1.png" %}
 
 The Categorical Bin is a name interpreter Interface that collects nominal data on the alters in a participant's network. When using the Categorical Bin, participants drag and drop alters one-by-one into colorful circles which each represent a category of the categorical variable. Once placed, participants can tap on any category and move alters within that category to any other. 
 
-[image 2]
+{% include nc-image src="assets/img/interface-documentation/categorical-bin/2.png" %}
 
-[image 3]
+{% include nc-image src="assets/img/interface-documentation/categorical-bin/3.png" %}
 
-[image 4] 
+{% include nc-image src="assets/img/interface-documentation/categorical-bin/4.png" %}
 
 {: .no_toc}
 #### Do
