@@ -2,7 +2,6 @@
 layout: default
 title: Per Alter Edge Form
 parent: Interface Documentation
-nav_exclude: true
 ---
 ## Overview
 
