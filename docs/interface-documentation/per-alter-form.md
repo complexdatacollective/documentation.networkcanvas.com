@@ -6,15 +6,15 @@ nav_exclude: true
 ---
 ## Overview
 
-[image 1]
+{% include nc-image src="/assets/img/interface-documentation/per-alter-form/1.png" %}
 
 The Per Alter Form is a name interpreter Interface that captures attribute data on the alters in a participant's network. When using the Per Alter Form, participants review an introductory panel which describes the tasks on the stage and then complete a [form](../key-concepts/forms.md) on each node in their network. These forms are customizable and can include one or multiple fields to collect specific attribute data using a variety of [input controls](../key-concepts/input-controls.md). 
 
-[image 2]
+{% include nc-image src="/assets/img/interface-documentation/per-alter-form/2.png" %}
 
-[image 3]
+{% include nc-image src="/assets/img/interface-documentation/per-alter-form/3.png" %}
 
-[image 4]
+{% include nc-image src="/assets/img/interface-documentation/per-alter-form/4.png" %}
 
 {: .no_toc}
 #### Do
