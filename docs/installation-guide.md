@@ -20,39 +20,13 @@ Each application can be downloaded and installed individually. Architect and
 Server are desktop applications. Network Canvas can run on a desktop but it
 is also designed for tablet devices.
 
-## Compatibility Chart
-See the chart below for compatibility.
+## System Requirements
 
-|                                                             | Architect        | Server           | Network Canvas   |
-|-------------------------------------------------------------|:----------------:|:----------------:|:----------------:|
-| Microsoft Windows<sup><a href="#windows-compat">1</a></sup> | ✔              | ✔              | ✔              |
-| Apple macOS<sup><a href="#macos-compat">2</a></sup>         | ✔              | ✔              | ✔              |
-| Linux<sup><a href="#linux-compat">3</a></sup>               | ✔              | ✔              | ✔              |
-| Apple iOS tablet<sup><a href="#ios-compat">4</a></sup>      |                  |                  | ✔              |
-| Android tablet<sup><a href="#android-compat">5</a></sup>    |                  |                  | ✔              |
+All three applications are supported only when running on the latest version of the operating system or platform. At the time of writing, this means Windows 10 (1909), macOS 10.15.4, Android 10, and iPadOS 13.4.1.
 
-<div class="small">
-  <p><sup id="windows-compat">1</sup> Architect, Server and Network Canvas were tested on
-  Windows 10. We recommend at least 100MB of free space and 2GB of RAM.
-  Installation does not require administrator access. Automatic discovery of Server on the same network
-  requires the installation of Bonjour technology (integrated into the installer).</p>
+For desktop applications, we recommend a modern device, featuring a high resolution screen (greater than 900 pixels effective vertical resolution), ample RAM, and dedicated graphics. Performance may differ considerably depending on the power of the device that you use, and you should be aware that this can negatively impact the interview experience for your research participants, leading to poorer quality data.
 
-  <p><sup id="macos-compat">2</sup> Entire suite tested on Mac OS 10.13 High
-  Sierra and 10.14 Mojave. We recommend at least 100MB of free space and
-  2GB RAM.</p>
-
-  <p><sup id="linux-compat">3</sup> Entire suite tested on Ubuntu and Manjaro Linux. We
-  recommend at least 2GB of RAM. The applications will require approximately
-  100MB of space for a complete install. Additional configuration steps may be
-  required to enable automatic server discovery. Please contact us for details.</p>
-
-  <p><sup id="ios-compat">4</sup> Network Canvas is designed for larger tablet
-  devices. We strongly recommend a minimum 9.7" screen size. iOS 10+ required.</p>
-
-  <p><sup id="android-compat">5</sup> Network Canvas has been tested on a
-  Samsung Chromebook plus with 1GB RAM through Android app compatibility, and a Pixel C
-  Android tablet - both running Android 8.1. Requires Android version 7.1.1 or above.</p>
-</div>
+You may install and run the software on devices that do not meet these criteria, but we are unfortunately unable to offer support regarding technical issues if you do.
 
 ## Installation for Windows
 
@@ -130,13 +104,7 @@ compatibility) is not supported at present.
 
 ## Notes on installation for iOS
 
-We are managing the Network Canvas Alpha and Beta through Apple's Test Flight
-software. To install Network Canvas on your device, you will first need to
-download and install the Test Flight app from the Apple App Store.
-
-Once you have completed this, you can click on the following link to join the
-testing program: [Network Canvas on Apple TestFlight](https://testflight.apple.com/join/xHonPrKO).
+Network Canvas is available from the [Apple App Store](https://apps.apple.com/us/app/network-canvas/id1233134698)
 
 Network Canvas was developed on a 12.9" iPad pro, and will work best with
-larger iOS devices (9.7"+). A version of iOS greater than 10 is required to
-install and use the software.
+larger iOS devices (9.7"+).

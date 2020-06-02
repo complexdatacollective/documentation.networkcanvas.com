@@ -11,7 +11,7 @@
 .page-content ol {
   list-style: none;
   counter-reset: my-awesome-counter;
-  margin-left: 2rem;
+  margin: 0.5rem 1rem;
 }
 .page-content > ol > li {
   counter-increment: my-awesome-counter;
