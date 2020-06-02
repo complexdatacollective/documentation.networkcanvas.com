@@ -15,7 +15,9 @@ This is particularly useful in cases where the content of the stage does not app
 
 To configure network filtering within a stage, open the stage from the timeline view, and expand the section called "Network Filtering". From here, you have the ability to create one or more **rules** (of type alter or edge), as well as to set the **join operator** by determining if "all rules", or "any rule" must match.
 
-[screenshot of expanded section]
+{% include nc-image src="./assets/img/key-concepts/network-filtering/filtering-panel.png" caption="The network filtering section of an ordinal bin stage" %}
+
+{% include tip-info.md content="Network filtering is only available on *name interpreter* interfaces - interfaces that add attributes to nodes or edges. It is not available on specialist *name generator* interfaces." %}
 
 ### Filtering Rules
 
@@ -41,18 +43,20 @@ This means that the choice of join operator can have an extremely significant im
 
 Since network filtering can be confusing to new users, here is an extended example to illustrate the feature that includes both node and edge rules.
 
-Consider an interview where you use the [Sociogram](../interface-documentation/sociogram.md) to generate sex ties between alters and to collect boolean attribute data on HIV status of alters. Let's imagine that you then want to use a [Per Alter Form](../interface-documentation/per-alter-form.md) or another name interpreter to capture data on drug use behavior of alters, but only those who are HIV+ `AND` who have a sex relationship. 
+Consider an interview where you use the [Sociogram](../interface-documentation/sociogram.md) to generate sex ties between alters and to collect boolean attribute data on HIV status of alters. Let's imagine that you then want to use a [Per Alter Form](../interface-documentation/per-alter-form.md) or another name interpreter to capture data on drug use behavior of alters, but only those who are HIV positive *and* who have a sex relationship with another alter in the network.
 
-To achieve network filtering accordingly, we implemented the following edge and node rules on the Per Alter Form:
+To achieve this using network filtering, we implemented the following edge and node rules on the Per Alter Form:
 
-[screenshot of "nodes with attribute HIV_pos = true who have an edge of type sex"]
+{% include nc-image src="./assets/img/key-concepts/network-filtering/example.png" caption="Example rules showing of 'nodes with attribute HIV_pos = true who also have an edge of type sex'" %}
 
-Applying these rules within this stage determines that only HIV+ nodes who have a sex relationship will be shown. All nodes that do not have a sex relationship will be filtered out - even if they have attribute `HIV_pos = true`. 
+Applying these rules within this stage determines that only HIV+ nodes who have a sex relationship will be shown. All nodes that do not have a sex relationship will be filtered out - even if they have attribute `HIV_pos = true`.
 
-{% include tip-caution.md content="If your filter query (the sum of all defined rules within the stage) includes an edge rule, you will also filter alters. For example, if your rule is set to filter the existence of an edge type, such as "sex", any nodes that would become isolates as a result of this query are removed from the network." %}
+{% include tip-caution.md content="If your filter query (the sum of all defined rules within the stage) includes an edge rule, you will also filter alters. For example, if your rule is set to filter the existence of an edge type, such as 'sex', any nodes that would become isolates as a result of this query are removed from the network." %}
 
 ## Network Filtering in a Side Panel
 
 You also have the ability to filter the content of Name Generator [side panels](../interface-documentation/name-generator.md#side-panels) (where they are used). This features works exactly the same way as stage level network filtering, except that the results are only applied to the specific side panel you are configuring. Any filtering you set will apply across all prompts for that stage.
 
 This feature can be particularly useful if you wish to filter elements of a roster. For example, your roster may contain an attribute that represents graduation year that you could use to filter the side panel content for a question about classmates known from a certain year group.
+
+{% include nc-image src="./assets/img/key-concepts/network-filtering/side-panel.png" caption="Network filtering in a name generator side panel, using external data" %}
