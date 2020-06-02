@@ -2,19 +2,18 @@
 layout: default
 title: Ego Form
 parent: Interface Documentation
-nav_exclude: true
 ---
 ## Overview
 
-[image 1]
+{% include nc-image src="/assets/img/interface-documentation/ego-form/1.png" %}
 
 The Ego Form is an interface that collects data on your participant (ego). When using the Ego Form, participants complete a [form](../key-concepts/forms.md) about themselves that consists of one or more fields. This Interface also contains an embedded introductory panel where the purpose of the form can be described to a participant. 
 
-[image 2]
+{% include nc-image src="/assets/img/interface-documentation/ego-form/2.png" %}
 
-[image 3]
+{% include nc-image src="/assets/img/interface-documentation/ego-form/3.png" %}
 
-[image 4]
+{% include nc-image src="/assets/img/interface-documentation/ego-form/4.png" %}
 
 {: .no_toc}
 #### Do
