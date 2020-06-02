@@ -17,6 +17,18 @@ The following is a high level overview of the way that this feature works:
 - The aggregated result is then evaluated in terms of if the intent is to describe when to **show** the stage, or when to **skip** the stage.
 - Based on this, the stage will either be shown or skipped.
 
+## Adding Skip Logic to a Stage
+
+To add skip logic to a stage, open it from the timeline view, and click "Use skip logic" to expand the section.
+
+{% include nc-image src="./assets/img/key-concepts/skip-logic/skip-logic-section.png" caption="The skip logic section in a stage editor" %}
+
+To disable skip logic for a stage, click the toggle at the top of this section.
+
+You can see which stages have skip logic enabled by looking for the skip logic icon next to the stage on the timeline.
+
+{% include nc-image src="./assets/img/key-concepts/skip-logic/skip-icon.png" caption="Stage showing the skip logic icon in the timeline view" %}
+
 ## Skip Logic Rules
 
 Constructing rules is the most fundamental part of creating skip logic. There are various types of rule, depending on the network entity that is being targeted:
@@ -50,18 +62,14 @@ Since skip logic can be confusing to new users, we have provided an extended exa
 
 Consider an interview where you are using a [Categorical Bin Interface](../../interface-documentation/categorical-bin) to classify the participant's relationship with alters. You define options including 'friend', 'spouse/partner', 'coworker', 'parent', 'sibling', 'child', 'uncle/aunt', or 'grandparent' with corresponding values of 1, 2, 3, 4, 5, 6, 7, and 8.
 
+{% include nc-image src="./assets/img/key-concepts/skip-logic/categorical-variable.png" caption="Categorical variable for storing relationship type" %}
+
 In the following stage you want to use another Categorical Bin, but this time to capture type of relatedness of alters to ego (e.g. 'biological', 'step', 'adoptive', 'through marriage', etc.). Now let us imagine that a participant did not nominate any alters to whom they are related (i.e. they have only nominated friends, spouse/partners, and/or coworkers). In such an instance, the type of relatedness stage would be irrelevant and, therefore, implementing skip logic to skip this stage entirely for such a participant would both increase efficiency and minimize respondent burden.
 
 We implemented a simple skip logic rule to address this, as follows:
 
-[screenshot of skip logic implemented]
+{% include nc-image src="./assets/img/key-concepts/skip-logic/example.png" caption="Example skip logic rules that skip this stage if no alters of these relationship types exist" %}
 
 In the above example, you could also configure your skip logic to achieve the same outcome by implementing the inverse rule (i.e. skip screen if alter of a type Person with Relationship excludes 4, 5, 6, 7, or 8).
 
-In either case, once you create more than one rule in your skip logic for a given stage, you need to determine whether you want all the rules matched or just any of the rules matched. In keeping with the examples above, let's imagine that you want to create a subsequent screen to capture data about a participant's biological nuclear family. You want this screen to be shown if a participant previously nominated alters with Relationship type 'parent', 'sibling' or 'child' and where these alters include type Relatedness of 'biological'. Here you would use the all match criteria since you would not want the stage to be shown if the participant has alters in their network of Relationship type 'parent', 'sibling' or 'child' but none of them include type Relatedness 'biological'. 
-
-[screenshot of skip logic rules implement for above example showing match all criteria]
-
-## Adding Skip Logic to a Stage
-
-You may include as many rules for a given stage that you wish, applying them to alters, edges, and egos as is appropriate. Finally, all skip logic can be modified and deleted at the location you defined it simply by clicking on the rule itself or selecting the 'x' in the corner of the rule, respectively.
+In either case, once you create more than one rule in your skip logic for a given stage, you need to determine whether you want all the rules matched or just any of the rules matched. In keeping with the examples above, let's imagine that you want to create a subsequent screen to capture data about a participant's biological nuclear family. You want this screen to be shown if a participant previously nominated alters with Relationship type 'parent', 'sibling' or 'child' and where these alters include type Relatedness of 'biological'. Here you would use the `ALL` operator since you would not want the stage to be shown if the participant has alters in their network of Relationship type 'parent', 'sibling' or 'child' but none of them include type Relatedness 'biological'.
