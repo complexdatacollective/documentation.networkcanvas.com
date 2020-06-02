@@ -1,20 +1,20 @@
 ---
 layout: default
-title: Per Edge Form
+title: Per Alter Edge Form
 parent: Interface Documentation
 nav_exclude: true
 ---
 ## Overview
 
-[image 1]
+{% include nc-image src="/assets/img/interface-documentation/per-edge-form/1.png" %}
 
 The Per Alter Edge Form is an Interface that collects attribute data on the edges, or relationships, between nodes in a participant's network. When using the Per Alter Edge Form, participants review an introductory screen that describes the tasks on the stage and then complete a [form](../key-concepts/forms.md) for each edge they previously defined between pairs of alters within their network. These forms are customizable and can include one or multiple fields to collect specific edge attribute data.
 
-[image 2]
+{% include nc-image src="/assets/img/interface-documentation/per-edge-form/2.png" %}
 
-[image 3]
+{% include nc-image src="/assets/img/interface-documentation/per-edge-form/3.png" %}
 
-[image 4]
+{% include nc-image src="/assets/img/interface-documentation/per-edge-form/4.png" %}
 
 {: .no_toc}
 #### Do
