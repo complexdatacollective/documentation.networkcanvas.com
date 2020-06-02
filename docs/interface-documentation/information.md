@@ -6,13 +6,13 @@ nav_exclude: true
 ---
 ## Overview
 
-The Information Interface is a general purpose screen that can be used to present information to participants using a variety of text and media assets. For example, this screen can be useful to introduce a study or to provide instructions or context for a particular stage in the survey. 
+The Information Interface is a general purpose screen that can be used to present information to participants using a variety of text and media assets. For example, this screen can be useful to introduce a study or to provide instructions or context for a particular stage in the survey.
 
-[image 1]
+{% include nc-image src="/assets/img/interface-documentation/information/1.png" %}
 
-When using the Information Interface, you can incorporate one or multiple [assets](../key-concepts/assets.md) by either retrieving files from your asset library in Architect or locally from your device. No more than four asset files can be used at one time. 
+When using the Information Interface, you can incorporate one or multiple [assets](../key-concepts/assets.md) by either retrieving files from your asset library in Architect or locally from your device. No more than four asset files can be used at one time.
 
-[image 2]
+{% include nc-image src="/assets/img/interface-documentation/information/2.png" %}
 
 {: .no_toc}
 #### Do
