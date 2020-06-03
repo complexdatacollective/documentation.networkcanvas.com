@@ -96,19 +96,20 @@ A Likert scale is a control to allow participants to select from an ordered seri
 {: .no_toc}
 ### Purpose
 
-This is the purpose
+A number input is a control that provides a single field for integer data collection. Integers can be entered with a keyboard or, if available, a number pad will appear. 
 
 {: .no_toc}
 ### Do
 
 {: .good-practices}
-- Some things that are good
+- Set a validation to constrain the range of possible entries when the variable value should only be positive (e.g. age).
+- Use this control for capturing numeric data rather than the text input for cleaner data.
 
 {: .no_toc}
 ### Don't
 
 {: .bad-practices}
-- Some things that are bad
+- Do not use the number input to capture date data. Date data should be captured using the datepicker.
 
 </div>
 
@@ -121,19 +122,24 @@ This is the purpose
 {: .no_toc}
 ### Purpose
 
-This is the purpose
+A radio group is a control that allows participants to select a single choice from a group of (non-hierarchical) options.
+
+Options are displayed vertically, to allow for longer labels and to create a more scannable list.
 
 {: .no_toc}
 ### Do
 
 {: .good-practices}
-- Some things that are good
+- Create succinct labels for options to avoid issues with text wrapping.
+- Use this control when only one item should be selected.
 
 {: .no_toc}
 ### Don't
 
 {: .bad-practices}
-- Some things that are bad
+- Avoid using long radio groups as they can be difficult for a participant to view.
+- Items that are not selected provide an 'implied no', meaning that all items not selected by a participant do not apply to them. If you need explicit confirmation, consider using a different input control with a true/false value per option.
+- If a participant should be able to toggle multiple items for the variable in question, consider using the checkbox group instead. 
 
 </div>
 
@@ -146,19 +152,19 @@ This is the purpose
 {: .no_toc}
 ### Purpose
 
-This is the purpose
+A relative date picker is a control that provides a calendar date picker which automatically limits available dates relative to an "anchor date." An anchor date can be manually specified or configured to be the date of the interview session. 
 
 {: .no_toc}
 ### Do
 
 {: .good-practices}
-- Some things that are good
+- Specify the range of dates prior to or after the anchor date to broaden or shorten available dates a participant can select from. By default, the relative date picker uses 180 days prior to and 0 days after the anchor date. 
 
 {: .no_toc}
 ### Don't
 
 {: .bad-practices}
-- Some things that are bad
+- If you want to allow participants to be less granular in their date selection, such as just using a month or a year rather than a date, consider using the date picker control instead.
 
 </div>
 
@@ -171,19 +177,19 @@ This is the purpose
 {: .no_toc}
 ### Purpose
 
-This is the purpose
+A text area control provides participants a simple field for data entry of more than 30 characters.  
 
 {: .no_toc}
 ### Do
 
 {: .good-practices}
-- Some things that are good
+- Use the text area control for question prompts that require longer form responses from participants. This may be especially useful for qualitative studies.
 
 {: .no_toc}
 ### Don't
 
 {: .bad-practices}
-- Some things that are bad
+- Avoid using a text area control when the data you want could be more effectively captured as a categorical or numeric variable. 
 
 </div>
 
@@ -196,19 +202,19 @@ This is the purpose
 {: .no_toc}
 ### Purpose
 
-This is the purpose
+A text input control provides participants a field for simple data entry of up to approximately 30 characters.
 
 {: .no_toc}
 ### Do
 
 {: .good-practices}
-- Some things that are good
+- Consider using a text input control to capture address data or brief qualitative data. 
 
 {: .no_toc}
 ### Don't
 
 {: .bad-practices}
-- Some things that are bad
+- Participants are not able to paste text into the text input control, so it may be necessary to instruct participants to type directly into the field rather than use a secondary platform.
 
 </div>
 
@@ -221,19 +227,20 @@ This is the purpose
 {: .no_toc}
 ### Purpose
 
-This is the purpose
+A toggle control provides participants a switch that can be toggled on or off.
 
 {: .no_toc}
 ### Do
 
 {: .good-practices}
-- Some things that are good
+- Use a toggle to easily collect simple true/false variable values.
+- Consider using a toggle to set up simple network filtering rules. For example, you might create an is_ego variable that can be captured as an attribute on an [Ego Form](./ego-form.md) to identify the participant and filter their node from subsequent interview screens. 
 
 {: .no_toc}
 ### Don't
 
 {: .bad-practices}
-- Some things that are bad
+- Only use the toggle for dichotomous variables. Where a third option is required, consider using a radio group instead. 
 
 </div>
 
@@ -246,19 +253,20 @@ This is the purpose
 {: .no_toc}
 ### Purpose
 
-This is the purpose
+A toggle button group is a control that provides a nonhierarchical group of colorful circles that can be toggled on or off, and allows for multiple selection. 
 
 {: .no_toc}
 ### Do
 
 {: .good-practices}
-- Some things that are good
+- Use a toggle button group to collect categorical data particularly for smaller groups of items.
 
 {: .no_toc}
 ### Don't
 
 {: .bad-practices}
-- Some things that are bad
+- Avoid using labels longer than two words or it may be difficult for participants to clearly see the categories.
+- Avoid using more than 8 categories for a togglebutton group as the labels will become more obscured the more categories you include. 
 
 </div>
 
@@ -271,18 +279,19 @@ This is the purpose
 {: .no_toc}
 ### Purpose
 
-This is the purpose
+A visual analog scale is a control that sets a normalized value between 0 and 1 represented by the position of a slider between each end of a scale.
 
 {: .no_toc}
 ### Do
 
 {: .good-practices}
-- Some things that are good
+- Consider using a visual analog scale to collect variable data that is best represented on a continuum with a linear progression. Participants are able to give more precise responses on a continuum rather choose a specific option, like on a Likert scale.
 
 {: .no_toc}
 ### Don't
 
 {: .bad-practices}
-- Some things that are bad
+- Consider using another control for variables necessitating multiple predefined items.
+
 
 </div>
