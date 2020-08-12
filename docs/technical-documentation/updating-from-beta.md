@@ -11,11 +11,11 @@ We are excited to announce the release of the stable versions of the three apps 
 
 If you are currently using beta versions of our software, you may have seen a notice informing you that it is no longer supported. Going forward, we will only be providing support and updates for the stable versions of our software. This is because we made several important changes that cannot easily be back-ported.
 
-In order to avoid inconveniencing our users, we made the decision to keep the existing software unchanged, so that you can continue to use it while you need it.
+In order to avoid inconveniencing you, we made the decision to release these new versions alongside the existing software, and to keep the existing software unchanged, so that you can continue to use it for any in-progress data collection that might be underway.
 
-**IMPORTANT: it will not be possible to migrate existing data from Server or Network Canvas to the new versions.**
+**PLEASE NOTE: it will not be possible to migrate data from the beta versions of Server or Network Canvas to the stable versions.**
 
-Because of this, you should export all the data you require from both Server and Network Canvas before uninstalling the beta versions, and installing the stable versions. Protocols you have authored in Architect can be automatically upgraded by the stable version of Architect.
+Because of this, you should conclude any research and export all the data you require from both Server and Network Canvas before uninstalling the beta versions, and installing the stable versions. Protocols you have authored in Architect can be automatically upgraded by the stable version of Architect.
 
 ## Update process
 
