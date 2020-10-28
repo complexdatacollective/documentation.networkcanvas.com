@@ -84,7 +84,7 @@ installation on your devices from there:
 
 ### [Visit the Google Play Store listing for Network Canvas](https://play.google.com/store/apps/details?id=org.codaco.networkCanvas)
 
-Please note that Network Canvas requires Android version 7.1 or newer, and
+Please note that Network Canvas requires Android version 10 or newer, and
 will work best with larger tablet devices (9.7"+). Installation is restricted to devices
 that meet these criteria.
 
