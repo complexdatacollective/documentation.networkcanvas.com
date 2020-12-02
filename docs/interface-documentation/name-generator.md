@@ -28,7 +28,7 @@ Beyond this, you have a choice about how precisely alters should be created - ei
 
 ### Side Panels
 
-Both of these name generators can use Side Panels. Side panels are a powerful feature that allows you to use network data from either the in-progress interview or from a network data file uploaded to your Architect asset library to assist with name generation activities.
+Both of these name generators can use Side Panels. Side panels are a powerful feature that allows you to use network data from either the in-progress interview or from a network data file uploaded to your Architect resource library to assist with name generation activities.
 
 For example, when multiple prompts within a name generator have potential overlap in a participant's social network, it may be useful to bring nodes previously nominated onto a subsequent screen so that a participant can easily list them again.
 
