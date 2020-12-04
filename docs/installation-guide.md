@@ -6,15 +6,13 @@ last_modified_at: 2019-06-14
 ---
 
 ## Which application do I need?
-**Interviewer** runs Network Canvas protocols and collects data directly from participants. It is the
-application that an interviewer would use when in the field.
 
-**Architect** is the application for creating Network Canvas protocols.
+**Interviewer** runs Network Canvas protocols and collects data in the field.
+
+**Architect** is the application for building Network Canvas protocols.
 
 **Server** is the application that deploys Network Canvas protocols to Interviewer and receives
-and manages data collected in the field. Please note that you can also download protocols
-directly into Network Canvas. The function of Server is to manage a project
-with many cases across multiple devices.
+and manages data collected in the field. It is most useful for larger studies with multiple researchers collecting data at the same time.
 
 Each application of the Network Canvas Suite can be downloaded and installed individually. Architect and
 Server are desktop applications. Interviewer can run on a desktop but it
@@ -22,7 +20,7 @@ is also designed for tablet devices.
 
 ## System Requirements
 
-All three applications are supported only when running on the latest version of the operating system or platform. At the time of writing, this means Windows 10 (1909), macOS 10.15.4, Android 10, and iPadOS 14.2.
+All three applications are supported only when running on Windows 10 (1909) or newer, macOS 10.15.4 or newer, Android 10 or newer, and iPadOS 14.2 or newer.
 
 For desktop applications, we recommend a modern device, featuring a high resolution screen (greater than 900 pixels effective vertical resolution), ample RAM, and dedicated graphics. Performance may differ considerably depending on the power of the device that you use, and you should be aware that this can negatively impact the interview experience for your research participants, leading to poorer quality data.
 
@@ -103,7 +101,7 @@ compatibility) is not supported at present.
 
 ## Notes on installation for iOS
 
-Interviewer is available from the [Apple App Store](https://apps.apple.com/us/app/network-canvas/id1538673677), searchable as "Network Canvas Interviewer." 
+Interviewer is available from the [Apple App Store](https://apps.apple.com/us/app/network-canvas/id1538673677), searchable as "Network Canvas Interviewer."
 
 Interviewer was developed on a 12.9" iPad pro, and will work best with
 larger iOS devices (9.7"+).
