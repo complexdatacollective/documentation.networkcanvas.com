@@ -80,7 +80,7 @@ We have one prompt asking, "Within the past 12 months, which clinic or healthcar
 
 {% include nc-image src="/assets/img/sample-protocol/using-forms.png" caption="A name generator form" %}{: .macos-screenshot }
 
-## Name Generation Using Roster Data
+### Name Generation Using Roster Data
 
 Clicking the next button, we arrive at another name generator stage which allows a participant to nominate alters from a predetermined list (i.e., a roster). We have one prompt asking "please select any members of your degree class that you spend time with other than studying". Class members are added by selecting the appropriate "display card" on the scrollable roster. Multiple class members (alters) can be added at one time. Learn more about working with [roster data](../interface-documentation/roster-name-generators.md).
 
