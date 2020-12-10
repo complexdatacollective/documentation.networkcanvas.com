@@ -1,18 +1,18 @@
 ---
 layout: default
 parent: Tutorials
-title: A Sample Network Canvas Protocol
+title: A Sample Network Canvas Protocol in Interviewer
 nav_order: 1
-last_modified_at: 2020-12-07
+last_modified_at: 2020-12-10
 ---
 
-## Introduction to a Sample Network Canvas Protocol
+## Introduction to a Sample Network Canvas Protocol in Interviewer
 
 This article will introduce you to Interviewer by walking through a sample Network Canvas protocol. The protocol we have created for this example gives an overview of the main features and tasks of the tool, which we hope will help orient you to the different types of studies that can be conducted with Interviewer.
 
 You can download the protocol file for this demonstration yourself and import it into Interviewer to follow along. You can also open it within Architect to learn how it was configured and how to make changes. If you want to learn how to create this protocol from scratch, read the [building a protocol using architect](./building-using-architect.md) article.
 
-To download this protocol, click [here](../../../protocols/Public Health Protocol.netcanvas). To follow along on your own device, you will need to import the protocol using either a downloaded copy of this file, or by entering the URL `https://documentation.networkcanvas.com/protocols/Public%20Health%20Protocol.netcanvas` into Interviewer. Detailed information about importing a protocol into Interviewer is provided in the [Server and Interviewer Workflows](./server-workflows.md) article.
+To download this protocol, click [here](../../../protocols/Sample Protocol.netcanvas). To follow along on your own device, you will need to import the protocol using either a downloaded copy of this file, or by entering the URL `https://documentation.networkcanvas.com/protocols/Sample%20Protocol.netcanvas` into Interviewer. Detailed information about importing a protocol into Interviewer is provided in the [Server and Interviewer Workflows](./server-workflows.md) article.
 
 From here onward, we will assume that the protocol is already installed within Interviewer.
 
@@ -53,7 +53,9 @@ The first thing we see after starting the interview is a welcome screen, which i
 
 ### Name Generation Using Quick Add
 
-Clicking the next button, we encounter the first name generator stage of our interview, which is where the participant will name some alters. Here, we use the “quick add” Name Generator, which shows a single text field for name required in order to create an alter. We have two prompts which ask, "Within the past 6 months, who have you felt close to, or discussed important personal matters with", followed by, "Within the past 6 months, who have you discussed social networks research with?" We add individuals (alters) by clicking the button on the bottom right, typing the name of the person, and clicking enter. When you are finished, either click the button again, or click away, to close the input.
+Clicking the next button, we encounter the first name generator stage of our interview, which is where the participant will name some alters. Here, we use the “quick add” Name Generator, which shows a single text field for name required in order to create an alter. We have two prompts which ask, "Within the past 6 months, who have you felt close to, or discussed important personal matters with", followed by, "Within the past 6 months, who have you discussed social networks research with?" Note that you can reorder them by dragging the handle.
+
+We add individuals (alters) by clicking the button on the bottom right, typing the name of the person, and clicking enter. When you are finished, either click the button again, or click away, to close the input.
 
 {% include nc-image src="/assets/img/sample-protocol/quick-add.png" caption="The Name Generator (using quick add)" %}{: .macos-screenshot }
 
@@ -72,15 +74,15 @@ This is the first data collection “stage” of our interview, and it uses an i
 
 ### Name Generation Using Forms
 
-Clicking the next button, we encounter the second name generator stage of our interview, which uses forms to collect alter information. Instead of the node type person captured on the prior stage, this stage is collecting alter data on node type "Providers". 
+Clicking the next button, we encounter the second name generator stage of our interview, which uses forms to collect alter information. Instead of the node type person captured on the prior stage, this stage is collecting alter data on node type "Clinic". 
 
 {% include nc-image src="/assets/img/introduction-images/node-type-place.png" caption="A name generator for place" %}{: .macos-screenshot }
 
-We have one prompt asking, "Within the past 12 months, which clinic or healthcare providers have you visited?" We add providers by clicking the button on the bottom right, which shows a form we need to complete about each provider that is named.
+We have one prompt asking, "Within the past 12 months, which clinic or healthcare providers have you visited?" We add clinics by clicking the button on the bottom right, which shows a form we need to complete about each clinic or healthcare provider that is named.
 
 {% include nc-image src="/assets/img/sample-protocol/using-forms.png" caption="A name generator form" %}{: .macos-screenshot }
 
-### Name Generation Using Roster Data
+## Name Generation Using Roster Data
 
 Clicking the next button, we arrive at another name generator stage which allows a participant to nominate alters from a predetermined list (i.e., a roster). We have one prompt asking "please select any members of your degree class that you spend time with other than studying". Class members are added by selecting the appropriate "display card" on the scrollable roster. Multiple class members (alters) can be added at one time. Learn more about working with [roster data](../interface-documentation/roster-name-generators.md).
 
@@ -96,7 +98,7 @@ Clicking next will take us to a name generator stage using a large roster. Withi
 
 While Interviewer is optimized to report information about other individuals, we also provide the ability for researchers to capture data about the participant (ego). As you will learn when constructing a protocol, it is not required that a Network Canvas protocol ask the participant about themselves, but it is a common approach within many network studies.
 
-{% include nc-image src="/assets/img/sample-protocol/ego-form.png" caption="A Large Roster Name Generator" %}{: .macos-screenshot }
+{% include nc-image src="/assets/img/sample-protocol/ego-form.png" caption="A Large Roster Name Generator” %}{: .macos-screenshot }
 
 The Ego Form asks the participant to provide information about themselves. In this particular stage, we ask for a variety of individual level data using numerous input control types. The form includes validation, which requires you to enter the first and last name before proceeding onto the next screen. Such validations can be useful in preventing missing data.
 
@@ -156,8 +158,6 @@ If ‘Other’ is designated as a category on this Interface, a dialog with a te
 
 {% include nc-image src="/assets/img/sample-protocol/cat-bin-other.png" caption="Specifying the Context for “Other”" %}{: .macos-screenshot }
 
-## Skip Logic and Network Filtering
-
 ## The Narrative Interface
 
 The next stage of the interview uses the Narrative Interface. The Narrative Interface is designed to elicit qualitative information by displaying aspects of the participant’s network back to them. The stage is only for data visualization and does not collect any data within the app. 
@@ -176,10 +176,11 @@ Finally we reach the end of this hypothetical interview, and we are presented wi
 
 {% include nc-image src="/assets/img/sample-protocol/finish.png" caption="The finish interview screen" %}{: .macos-screenshot }
 
-Data management operations are covered in the [Server and Network Canvas Workflows](./server-workflows.md) article, but for now note that it is possible to remotely transfer the interview data to an instance of Server (if your device running Interviewer and your device running Server are paired), or to export a GraphML file or CSV by navigating to the “Export & Manage Interview Data” panel on the start screen of Interviewer.
+Data management operations are covered in the [Server and Interviewer Workflows](./server-workflows.md) article, but for now note that it is possible to remotely transfer the interview data to an instance of Server (if your device running Interviewer and your device running Server are paired), or to export a GraphML file or CSV by navigating to the “Export & Manage Interview Data” panel on the start screen of Interviewer.
 
 For now click “Finish” to return to the start screen.
 
 ## Next Steps
 
 Now that you have experienced the general flow of an interview in Network Canvas Interviewer from the participant perspective, you may wish to learn about how to begin to create your own protocol. For this, we suggest our article on [building a protocol using architect](./building-using-architect.md).
+
