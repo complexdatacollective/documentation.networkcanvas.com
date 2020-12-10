@@ -25,9 +25,10 @@ A BibTeX entry for LaTex users is:
 ```
 
 URLs for citing Network Canvas repositories are:
-- [https://github.com/codaco/Network-Canvas](https://github.com/codaco/Network-Canvas)
-- [https://github.com/codaco/Architect](https://github.com/codaco/Architect)
-- [https://github.com/codaco/Server](https://github.com/codaco/Server)
+
+- [https://github.com/complexdatacollective/Interviewer](https://github.com/complexdatacollective/Interviewer)
+- [https://github.com/complexdatacollective/Architect](https://github.com/complexdatacollective/Architect)
+- [https://github.com/complexdatacollective/Server](https://github.com/complexdatacollective/Server)
 
 Current downloads for the Network Canvas Software Suite are available at:
 - [https://networkcanvas.com/download.html](https://networkcanvas.com/download.html)
