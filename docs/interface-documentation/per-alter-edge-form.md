@@ -21,7 +21,7 @@ The Per Alter Edge Form is an Interface that collects attribute data on the edge
 {: .good-practices}
 - Use this Interface as a simple way to systematically collect data on edges. 
 - Use the introductory panel to orient participants to the tasks within the form they will complete for each edge.
-- Consider including form fields to capture temporal data which utilize [input controls](../key-concepts/input-controls.md) like the DatePicker.
+- Consider including form fields to capture temporal data which utilize [input controls](../key-concepts/input-controls.md) like the [DatePicker](/docs/key-concepts/input-controls/#date-picker).
 
 {: .no_toc}
 #### Don't
