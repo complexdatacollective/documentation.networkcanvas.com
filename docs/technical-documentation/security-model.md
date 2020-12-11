@@ -9,7 +9,7 @@ parent: Technical Documentation
 Security is an important consideration when handling study data.
 - Sessions may contain personal participant information which needs to be kept private
 - Protocols may include information about participants which needs to be kept private
-- Studies need to be able to insure that collected data is genuine to ensure the integrity
+- Studies need to be able to ensure that collected data is genuine to ensure the integrity
 of the research.
 
 ## What data needs to be secured
@@ -21,8 +21,8 @@ Protocols not only include the general structure of an interview but any dataset
 ### Session data
 
 Session data is the term used to describe participant response data. This may include
-sensitive personal information, especially in the domain of healthcare. The apps also
-store meta data, including the date that the session was conducted which may reveal particpant whereabouts.
+sensitive personal information, especially in the domain of healthcare. The applications also
+store metadata, including the date that the session was conducted which may reveal participant whereabouts.
 
 ### App configuration and metadata
 
@@ -58,7 +58,7 @@ In Windows this feature is called "Device encryption" (https://support.microsoft
 For macOS this feature is called "FileVault" (https://support.apple.com/en-gb/guide/mac-help/mh11785/11.0/mac/11.0).
 In android this feature is called "Full-Disk Encryption".
 iOS encrypts the device by default.
-For linux it will depend on the distribution, but Ubuntu comes with out the box disk encryption using LUKS with LVM.
+For Linux, it will depend on the distribution; Ubuntu comes with out-the-box disk encryption using LUKS with LVM.
 
 #### Secure passwords
 
@@ -72,7 +72,7 @@ Data transferred between Server and Interviewer is encrypted using TLS.
 - Protocols: when using the "Import from Server" feature in Interviewer
 - Session data: when using the "Export to Server" feature in Interviewer
 
-Additionally metadata is transferred between Server and Interview when pairing devices. This is done using
+Additionally, metadata is transferred between Server and Interview when pairing devices. This is done using
 Secretbox from libsodium (https://doc.libsodium.org/), using the pairing code as an "out of band" key exchange.
 
 #### VPN
@@ -81,4 +81,5 @@ It is strongly advised that a VPN is used when using Server in tandem with Inter
 if you use a device managed by an IT department. Using a VPN will provide more comprehensive security for
 the transmission of data, as although every effort has been made to ensure security between the apps, this 
 is much more likely to include bugs that the tried and battle tested VPN tools that already exist.
+
 
