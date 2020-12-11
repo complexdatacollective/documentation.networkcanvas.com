@@ -28,4 +28,4 @@ The Per Alter Edge Form is an Interface that collects attribute data on the edge
 
 {: .bad-practices}
 - Avoid overloading this Interface with too many fields and/or text-heavy prompts. 
-- Do not use this Interface in place of a dyad census as participants will only be asked to provide data on existing edges between alters rather than all possible alter combinations. If your study requires a [Dyad Census](add link) you can add and configure that Interface in Architect. 
+- Do not use this Interface in place of a dyad census as participants will only be asked to provide data on existing edges between alters rather than all possible alter combinations. If your study requires a [Dyad Census](./dyad-census.md) you can add and configure that Interface in Architect. 
