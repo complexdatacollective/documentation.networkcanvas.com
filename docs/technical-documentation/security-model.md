@@ -43,7 +43,7 @@ In Architect:
 
 ### Data at rest
 
-The main application data stores are unencrypted at rest.
+The main application data stores are unencrypted at rest, this applies to:
 - Protocols
 - Session data
 - Application configuration.
