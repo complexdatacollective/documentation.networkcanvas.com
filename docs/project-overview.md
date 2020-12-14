@@ -2,12 +2,14 @@
 layout: default
 title: Project Overview
 nav_order: 1
-last_modified_at: 2019-06-14
+last_modified_at: 2020-12-14
 ---
 
+This should introduce the concept of the protocol file
+ 
 ## Overview
 
-The Network Canvas Software Suite is different from many existing survey tools, most of which have been optimized for capturing individual rather than network data. Our tool captures data about both the individual and their social network through intuitive and engaging touch-optimized interfaces. By visually representing people, places, and concepts as nodes alongside relationships between the nodes and attributes of nodes and relationships, Network Canvas can make seemingly complex data more manageable and intuitive in an interview setting. 
+The Network Canvas Software Suite is different from many existing survey tools, most of which have been optimized for capturing individual rather than network data. Our tool captures data about both the individual and their social network through intuitive and engaging touch-optimized interfaces. By visually representing people, places, and concepts as nodes alongside relationships between the nodes and attributes of nodes and relationships, Network Canvas can make seemingly complex data more manageable and intuitive in an interview setting.
 
 To provide an overview of the project, including background information about our team, our aims and objectives, and the functionality of the software, we have created the following promotional video.
 
@@ -23,6 +25,8 @@ These three applications work together to provide a seamless end-to-end workflow
 
 ![image](/assets/img/introduction-images/workflow@2x.png)
 
+### Which applications do I need?
+
 ## Design Principles
 
 Before we go into any further specifics, we will next describe a few of the core design principles that underlie the Software.
@@ -31,7 +35,7 @@ Before we go into any further specifics, we will next describe a few of the core
 
 Social networks are not a singular methodology, but a broad approach to research which straddles multiple disciplines and research ontologies. Therefore, we have focused on creating a flexible suite of tools which have few constraints on the type of study that can be developed.  
 
-Researchers construct their own protocols - customized to their own needs. And protocols are built within Architect, by selecting from a number of Interfaces which we’ve designed to be optimized for the collection of specific types of data. Each Interface is also able to be customized.  
+Researchers construct their own protocols - customized to their own needs. And protocols are built within Architect, by selecting from a number of Interfaces which we've designed to be optimized for the collection of specific types of data. Each Interface is also able to be customized.  
 
 Furthermore, both nodes and edges are able to be generated in multiple ways. For researchers utilizing rosters, interviewees are able to select their alters from pre-loaded lists, or type into text fields which search and filter. For researchers not utilizing rosters, researchers have two options: an ultra quick name generation interface for when only a name is required to be captured, or a Name Generator which uses per-alter forms to capture detailed attributes.
 
@@ -55,7 +59,7 @@ Network Canvas prioritizes good visual design and intuitive touch interactions. 
 
 ### End-to-end Workflow
 
-We’ve created an end-to-end workflow with the aim of lowering costs (both material and technical) for network researchers. We also believe this will increase the potential for reproducibility across network studies.
+We've created an end-to-end workflow with the aim of lowering costs (both material and technical) for network researchers. We also believe this will increase the potential for reproducibility across network studies.
 
 ### Open-Source Development
 
@@ -74,7 +78,7 @@ These freedoms are protected by some requirements built into the GPL license:
 * Any modifications must be made available under the GPL license
 * You must include a copy of the original source code with any versions you distribute, making it possible for others to modify
 
-We have guidelines on managing contributions and collaborations to the project that we will be happy to discuss later if that interests you. We believe the fact that this is an open source software that is “owned” by a not for profit entity means that it should be possible to make extending it compatible with the policies of grant awarding bodies.
+We have guidelines on managing contributions and collaborations to the project that we will be happy to discuss later if that interests you. We believe the fact that this is an open source software that is "owned" by a not for profit entity means that it should be possible to make extending it compatible with the policies of grant awarding bodies.
 
 {% include nc-image src="/assets/img/introduction-images/codaco.png" caption="The Complex Data Collective GitHub page, where our sourcecode is available" %}
 

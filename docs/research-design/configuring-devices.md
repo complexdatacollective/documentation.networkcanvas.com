@@ -11,12 +11,12 @@ This article is work in progress, and will be developed in the coming days and w
 
 1. Open the Google Play Store app. ![Google Play Icon](https://lh5.googleusercontent.com/d1ZWPd463c8vkeeV7lqaqqYfeS_2m3uez3NrbvW93EaLUfGwaS1fldWGazGy_wWF1hSQbFrO02QZvFs_p5ZN9CGM5M0Lv7Ty_izGsTA26WIkzV4qzBvBC7AePduUZwxVDlksTw4j)
 2. On the upper left side of the screen, tap the menu icon. ![Menu icon - three horizontal lines](https://lh6.googleusercontent.com/EYgOy6QHl3cgWprxZCgWfTKaSKVXM4xZcWz3KGNA3-WstxwUPdiMCqlpMGbWNGcp87lkRdpZyIso06I3Gb6y50jEqIvtU7DJJiVlity3PqMitw47718DJq7ABqSdlPL0Yknyc651)
-4. Tap “Settings”.
-5.  Tap “Auto-update apps”.
+4. Tap "Settings".
+5.  Tap "Auto-update apps".
     
-6.  Tap “Don’t auto-update apps”.
+6.  Tap "Don't auto-update apps".
     
-7.  Tap “Done”.
+7.  Tap "Done".
 
 ## How to disable auto-updates on iOS devices
 

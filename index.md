@@ -9,16 +9,12 @@ Welcome to our documentation portal, and thank you for your interest in the Netw
 
 We hope that over the coming weeks and months this website will develop into a one-stop resource for any and all information relating to using this software. Producing documentation is a top priority for our team, but it will take us some time to cover everything. If you spot a gap in our documentation, or have a question, please feel free to contact us. In the meantime, thank you for your patience!
 
-Some initial pages that might be useful are:
+To begin we suggest the following articles and sections:
 
-- Our FAQ (coming soon)
 - [The installation guide for the software](./docs/installation-guide.md)
 - [The project overview](./docs/project-overview.md)
+- [Tutorials](./docs/tutorials/index.md)
 - [Citing the software](./docs/citing-the-software.md)
-
-## Search function
-
-We encourage you to use the search function to find articles on any given topic. Our pages are heavily interlinked, and information is necessarily spread around.
 
 ## Structure of this site
 
@@ -34,3 +30,7 @@ Away from these sections, we have also created a section to help with the practi
 - Choosing hardware for conducting a Network Canvas study (coming soon)
 - [Configuring your devices prior to starting data collection](./docs/research-design/configuring-devices)
 - Best practices for security and IRB submission
+
+## Search function
+
+We encourage you to use the search function to find articles on any given topic. Our pages are heavily interlinked, and information is necessarily spread around.

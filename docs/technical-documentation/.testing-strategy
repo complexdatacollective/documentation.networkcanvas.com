@@ -19,7 +19,7 @@ Appium was trialed for similar integration testing for mobile, but the approach 
 
 Large software outfits such Google promote a unit testing focused approach, with only a minor role played by E2E (end to end) testing. Reasons given include:
 
-*   Overarching issues, such as a ‘login’, can cause the entire suite to fail, when this isn’t fixed immediately, many smaller bugs can be hidden,
+*   Overarching issues, such as a 'login', can cause the entire suite to fail, when this isn't fixed immediately, many smaller bugs can be hidden,
 *   E2E testing is slow, in the case of larger software suits, developers may have to wait until the next day to see results.
 
 
@@ -51,7 +51,7 @@ Because of these needs (acceptance testing) it may be that end to end testing sh
 
 Current end to end tests are scarce, and non-spotted regressions can easily make it into releases. Whilst this is mitigated somewhat with manual tests, it would be preferable to automate longer term.
 
-There are enzyme snapshot tests for the UI, but aren’t providing any value. When they fail, it isn’t indicative of an actual issue and only a reflection of changes to the UI. They should be removed/discontinued, and replaced with E2E tests that simulate actual usage.
+There are enzyme snapshot tests for the UI, but aren't providing any value. When they fail, it isn't indicative of an actual issue and only a reflection of changes to the UI. They should be removed/discontinued, and replaced with E2E tests that simulate actual usage.
 
 The unit and integration tests are somewhat useful, especially when related to functional oriented code, such as format conversion. Some integration tests can be brittle when functionality is revised, but as the software matures, that will be less of an issue.
 
@@ -79,7 +79,7 @@ The unit and integration tests are somewhat useful, especially when related to f
     *   Network Canvas: When a user enters some text, the network should be modified as expected.
     *   Architect: When a user clicks a button, the protocol should be modified as expected.
     *   Server: When a user does X in the interface, then Y should happen to the network/protocol object.
-    *   Build a list of “core outcomes” (such as the above) that can be implemented immediately. Base this off of the manual checklist.
+    *   Build a list of "core outcomes" (such as the above) that can be implemented immediately. Base this off of the manual checklist.
 *   Write unit tests to document underlying infrastructure. These will be used to find bugs and ensure that utility functions work as expected. Core functionality such as saving and loading files is a good example requiring unit tests.
     *   When `saveProtocol()` is called, the protocol should write to the disk (or call APIs that do).
     *   When a network is converted to XML, the generated data is as expected.
@@ -126,11 +126,11 @@ Whilst ideally this should cover the same steps as a bug fix, it may be that som
 
 ### Backfilling missing tests when developing new features/fixes
 
-If you are implementing a bug fix or feature for a part of the app with no coverage, follow the principle of “leave it better than you found it”, e.g., if you add functionality to the sociogram interface, create a test harness for the whole interface, and stub (and/or implement) any tests that need to be implemented yet for that interface.
+If you are implementing a bug fix or feature for a part of the app with no coverage, follow the principle of "leave it better than you found it", e.g., if you add functionality to the sociogram interface, create a test harness for the whole interface, and stub (and/or implement) any tests that need to be implemented yet for that interface.
 
 ## Metrics
 
-Jest provides a code coverage feature which covers execution of branches, functions, lines and statements. Whilst useful for directing missing test coverage, it doesn’t exactly match what should be considered ‘good’ coverage. The aim should be for this report to get better over time, and if that isn’t the case review why figures are declining.
+Jest provides a code coverage feature which covers execution of branches, functions, lines and statements. Whilst useful for directing missing test coverage, it doesn't exactly match what should be considered 'good' coverage. The aim should be for this report to get better over time, and if that isn't the case review why figures are declining.
 
 For Spectron tests, aim for every part of UI to be tested (e.g., every clickable, draggable thing). Coverage is difficult to measure automatically so will need to be part of code review.
 

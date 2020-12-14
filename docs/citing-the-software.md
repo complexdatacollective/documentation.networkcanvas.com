@@ -40,7 +40,7 @@ You may wish to cite an evaluation of the software when discussing it in your re
 >Hogan, B., Melville, J., Phillips II, G., Janulis, P., Contractor, N., Mustanski, B., &
 Birkett, M. (2016). Evaluating the Paper-to-Screen Translation of Participant-Aided     
 Sociograms with High-Risk Participants. In _Proceedings of the 2016 Conference on 
-Human Factors in Computing_ (CHI ’16). San Jose, CA. 
+Human Factors in Computing_ (CHI '16). San Jose, CA. 
 [http://dx.doi.org/10.1145/2858036.2858368](http://doi.org/http:/dx.doi.org/10.1145/2858036.2858368)
 A BibTeX entry for LaTex users is:
 
