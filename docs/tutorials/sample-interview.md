@@ -98,7 +98,7 @@ Clicking next will take us to a name generator stage using a large roster. Withi
 
 While Interviewer is optimized to report information about other individuals, we also provide the ability for researchers to capture data about the participant (ego). As you will learn when constructing a protocol, it is not required that a Network Canvas protocol ask the participant about themselves, but it is a common approach within many network studies.
 
-{% include nc-image src="/assets/img/sample-protocol/ego-form.png" caption="A Large Roster Name Generator” %}{: .macos-screenshot }
+{% include nc-image src="/assets/img/sample-protocol/ego-form.png" caption="A Large Roster Name Generator" %}{: .macos-screenshot }
 
 The Ego Form asks the participant to provide information about themselves. In this particular stage, we ask for a variety of individual level data using numerous input control types. The form includes validation, which requires you to enter the first and last name before proceeding onto the next screen. Such validations can be useful in preventing missing data.
 
