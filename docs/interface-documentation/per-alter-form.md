@@ -13,9 +13,15 @@ The Per Alter Form is a name interpreter Interface that captures attribute data 
 
 ## Configuring Per Alter Form
 
+A single edge type is selectable per screen. This screen supports filtering for nodes that match the specified type.
+
 {% include nc-image src="/assets/img/interface-documentation/per-alter-form/architect_1.png" %}
 
+The title screen is configurable with a title and introduction text.
+
 {% include nc-image src="/assets/img/interface-documentation/per-alter-form/architect_2.png" %}
+
+Each node will be assigned variables using the form configured here.
 
 {% include nc-image src="/assets/img/interface-documentation/per-alter-form/architect_3.png" %}
 
