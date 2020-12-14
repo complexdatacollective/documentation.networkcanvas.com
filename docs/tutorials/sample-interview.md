@@ -3,7 +3,7 @@ layout: default
 parent: Tutorials
 title: A Sample Network Canvas Protocol in Interviewer
 nav_order: 1
-last_modified_at: 2020-12-10
+last_modified_at: 2020-12-14
 ---
 
 ## Introduction to a Sample Network Canvas Protocol in Interviewer
@@ -157,6 +157,20 @@ We ask, “Which of these options best describes how you know this person?” Dr
 If ‘Other’ is designated as a category on this Interface, a dialog with a text field will appear asking you to specify.
 
 {% include nc-image src="/assets/img/sample-protocol/cat-bin-other.png" caption="Specifying the Context for “Other”" %}{: .macos-screenshot }
+
+## Skip Logic and Network Filtering on a Categorical Bin Stage
+
+On the next screen we encounter another Categorical Bin stage, but this one has skip logic and network filtering implemented. 
+
+The [skip logic](..key-concepts/skip-logic.md) configured uses a rule which directs the stage to be shown only if a participant has named any alters (type "Person") with whom they discuss social network research. Recall the **quick add** name generator on stage at the beginning of the interview that asked participants to list any people with whom they have discussed social networks research? On that stage is where those data would have been captured. If no alters were generated on that screen, the current categorical bin will be skipped. 
+
+The [network filtering](..key-concepts/filtering.md) is configured using a rule which filters out all alters on this stage except those with whom the participant has discussed social networks research. 
+
+The prompt on the stage asks, "You indicated that you've discussed social networks research with these people. Which category best describes your relationship with each person?" Drag each node into the color circles provided to indicate which category best describes your relationship to each alter. You may wish to navigate back and forth between the quick add name generator and this stage to see the skip logic and network filtering in action.
+
+{% include nc-image src="/assets/img/sample-protocol/cat-bin-rules.png" caption="Categorical Bin Using Skip Logic and Network Filtering" %}{: .macos-screenshot }
+
+{% include tip-caution.md content="At any time throughout the interview, may view a menu of all protocol stages by tapping on the three horizontal lines in the top left corner of the app. To navigate to any stage in the menu, merely click the card. Each stage contains the name given to it within the Architect." markdown=true %}
 
 ## The Narrative Interface
 
