@@ -2,6 +2,10 @@
   "name": "documentation-site",
   "license": "GPL",
   "private": true,
+  "engines": {
+    "node": "12.14.1",
+    "npm": "6.13.4"
+},
   "devDependencies": {
     "markdown-spellcheck": "^1.3.1"
   },

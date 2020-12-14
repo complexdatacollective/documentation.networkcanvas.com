@@ -3,7 +3,7 @@ layout: default
 parent: Tutorials
 title: Building a protocol using Architect
 nav_order: 2
-last_modified_at: 2020-12-10
+last_modified_at: 2020-12-14
 ---
 
 ## Introduction to Building a Network Canvas Protocol using Architect
@@ -152,7 +152,7 @@ Next, we need to choose a data source for this side panel. We have two options: 
 
 You can optionally preview the interface at this point, checking that the prompts and the form look and function as you expected. When you are satisfied, click continue to add your stage.
 
-{% include tip-info.md content="At any point during this tutorial, free free to click the 'Save Changes' button in the bottom bar when on the timeline view, or select 'File -> Save As' from the menu." %}
+{% include tip-info.md content="At any point during this tutorial, free free to click the &quot;Save Changes&quot; button in the bottom bar when on the timeline view, or select &quot;File -> Save As&quot; from the menu." %}
 
 ## Name Generator using Forms
 
@@ -465,7 +465,7 @@ As before, we will "Save and Close" and "Save and Return" to complete and save o
 
 Next we will implement another Categorical Bin Interface. This time, we will create the stage as before, set the stage name to "Relationship Type" and select node type as "Person."
 
-Now we will configure both the network filtering on the stage as well as the skip logic for the stage. First, toggle the "Enable network filtering for this stage" to "on" and press the "Add Alter Rule" button. Next we will configure the rule according to the following: node type "Person", rule type "Attribute", variable query "discuss_netework_research", operator "exactly", and attribute value of "True."
+Now we will configure both the network filtering on the stage as well as the skip logic for the stage. First, toggle the "Enable network filtering for this stage" to "on" and press the "Add Alter Rule" button. Next we will configure the rule according to the following: node type "Person", rule type "Attribute", variable query "discuss_network_research", operator "exactly", and attribute value of "True."
 
 Click the "Finish and Close" button. 
 
@@ -477,7 +477,7 @@ We finish defining the rules by selecting "All Rules" under the Must Match secti
 
 {% include nc-image src="assets/img/architect-guide/filter-skip.png" %}
 
-As a final step on this stage, we will create a prompt with the text, "You indicated that you've discussed social networks research with these people. Which category best describes your relationship with each person?" We will assign a categorical variable of "social_networks_research_relationship" with the following labels: Work Colleague, Classmate, Family Member, Friend. Type the corresponding values of "Work_Colleague", "Classmate", "Family_Member", and "Friends."
+As a final step on this stage, we will create a prompt with the text, "You indicated that you've discussed social networks research with these people. Which category best describes your relationship with each person?" We will assign a categorical variable of "social_networks_research_relationship" with the following labels: Work Colleague, Classmate, Co-author, Supervisor. Type the corresponding values of "Work_Colleague", "Classmate", "Co-author", and "Supervisor."
 
 {% include nc-image src="assets/img/architect-guide/catbin-prompt.png" %}
 
