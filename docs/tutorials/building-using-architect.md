@@ -3,10 +3,10 @@ layout: default
 parent: Tutorials
 title: Building a protocol using Architect
 nav_order: 2
-last_modified_at: 2020-12-09
+last_modified_at: 2020-12-10
 ---
 
-## Introducing Architect
+## Introduction to Building a Network Canvas Protocol using Architect
 
 This article introduces you to creating a Network Canvas protocol using Architect, by trying to rebuild the protocol we previewed in the previous session.
 
@@ -25,7 +25,7 @@ This is the start screen in Architect. Like the start screen in Interviewer, you
 | Network Canvas protocols are stored in a file with the extension .netcanvas<br/><br/>They are just like any other files on your computer. You can move them around, rename them (more about this later), and you can (and should!) back them up.<br/><br/>The `.netcanvas` file contains all of the data in your protocol. So if you use roster data, images, or video, these will be embedded within the file. | 
 {: .key-concept }
 
-We are going to start by creating a blank protocol, so click the “Create New Protocol” button within the tasks panel. Save the file with a name and location that you will be able to find later.
+We are going to start by creating a blank protocol, so click the "Create New Protocol" button within the tasks panel. Save the file with a name and location that you will be able to find later.
 
 And this takes us to the main protocol overview screen for our new protocol.
 
@@ -48,7 +48,7 @@ Click the add new stage button. You will see a screen that provides a menu of al
 
 {% include nc-image src="assets/img/architect-guide/interface-menu.png" %}
 
-Each stage is designed for a specific task within a network interview. For now, scroll down and select the “Information” interface from the “Utilities” section.
+Each stage is designed for a specific task within a network interview. For now, scroll down and select the "Information" interface from the "Utilities" section.
 
 {% include nc-image src="assets/img/architect-guide/information-interface.png" %}
 
@@ -56,11 +56,11 @@ This is the Information Interface edit screen, and it allows us to customize our
 
 ### Setting the Stage Name
 
-All stages have a name, which is shown next to the stage icon in the timeline and lets you quickly differentiate between stages of the same type. We will call our stage “Welcome”, so enter this text under “Stage Name”.  When creating your own protocols, we encourage you to use a system for naming your stages.
+All stages have a name, which is shown next to the stage icon in the timeline and lets you quickly differentiate between stages of the same type. We will call our stage "Welcome", so enter this text under "Stage Name".  When creating your own protocols, we encourage you to use a system for naming your stages.
 
 ### Page Heading
 
-The page heading allows you to customize a large title element that will show at the top of your Information Interface. Here we will give the heading, “Welcome to the Sample Protocol.” Next, we will add the information we want displayed on the screen. 
+The page heading allows you to customize a large title element that will show at the top of your Information Interface. Here we will give the heading, "Welcome to the Sample Protocol." Next, we will add the information we want displayed on the screen. 
 
 ### Edit Items
 
@@ -72,38 +72,38 @@ To add a resource to this screen, click the ‘add new item’ button at the bot
 
 As in the previous Interviewer session, we will not go through the configuration of each Information Interface included in the sample protocol here. As a reminder, Information Interfaces can be used as frequently as you like throughout your protocol to help describe an upcoming task, orient a participant to a series of prompts, or present participants with a resource to consider.
 
-Once we have added all resources that we want to include on this stage, we click the “Save and Return” button in the bottom right. This action saves our stage and returns us to the timeline view where our newly configured stage is now visible.
+Once we have added all resources that we want to include on this stage, we click the "Save and Return" button in the bottom right. This action saves our stage and returns us to the timeline view where our newly configured stage is now visible.
 
 {% include nc-image src="assets/img/architect-guide/completed-stagecomplete.png" %}
 
 ## Creating Name Generators
 
-We will now create three separate name generator stages, which appear as stages 4, 6, and 8 in the sample protocol. The first one uses a “quick add” name generator, followed by one that utilizes a “side panel”, and finally a name generator that uses forms.  
+We will now create three separate name generator stages, which appear as stages 4, 6, and 8 in the sample protocol. The first one uses a "quick add" name generator, followed by one that utilizes a "side panel", and finally a name generator that uses forms.  
 
 ## Name Generator using Quick Add
 
-First, within the timeline view, we click the add a stage button. From the interface menu, we select the “Name Generator (using quick add).” When the new stage opens, we define a stage name as we did for the previous stage.
+First, within the timeline view, we click the add a stage button. From the interface menu, we select the "Name Generator (using quick add)." When the new stage opens, we define a stage name as we did for the previous stage.
 
 ### Creating a New Node Type
 
-Before we can continue, we must tell Architect which type of node this interface will create. Since this is our first name generator, we have no node types defined yet. Click the “Create New Node Type” button to begin the process of creating one.
+Before we can continue, we must tell Architect which type of node this interface will create. Since this is our first name generator, we have no node types defined yet. Click the "Create New Node Type" button to begin the process of creating one.
 
 | Key Concept: Node and Edge "Types"                          |
 | :----------------------------------------------------------- |
 | Part of the ontological flexibility of the Network Canvas suite is the ability to model unlimited numbers of node and edge types.<br/><br/>The most frequently used example from personal networks research would be a social network made up of "people" node types, and edge types based on relationships of some kind or another (typically "friendship"). We would therefore create a node of type "Person", and an edge of type "Friendship" within Architect. |
 {: .key-concept }
 
-Our name generator will ask about people, so we will name our node type “People”. We can select a color to differentiate this node type from others, though in this case we will leave the default coral color selected.
+Our name generator will ask about people, so we will name our node type "People". We can select a color to differentiate this node type from others, though in this case we will leave the default coral color selected.
 
 Finally we will select the person icon to use for this node type. This icon is shown in Interviewer wherever the participant has the opportunity to create a new node of this type. 
 
 {% include nc-image src="assets/img/architect-guide/node-type.png" %}
 
-Click “Save and Return” to create the node type, and return to the name generator edit screen.
+Click "Save and Return" to create the node type, and return to the name generator edit screen.
 
 ### Creating a Quick Add Variable
 
-Next, we need to create a quick add variable that will be used to store data enter for each alter nominated by the participant. Unless you have a good reason, this variable should be called “name”. Interviewer will use this variable as the label for every node created on this stage. To create a new variable, select the dropdown menu and click “create new” and type the name of your variable (e.g., “name”). Click the “Create” button and you will see the new variable name selected as the quick add variable.
+Next, we need to create a quick add variable that will be used to store data enter for each alter nominated by the participant. Unless you have a good reason, this variable should be called "name". Interviewer will use this variable as the label for every node created on this stage. To create a new variable, select the dropdown menu and click "create new" and type the name of your variable (e.g., "name"). Click the "Create" button and you will see the new variable name selected as the quick add variable.
 
 ### Creating Prompts
 
@@ -114,15 +114,15 @@ Next we must provide some questions to prompt the participant into adding alters
 | Most stages use the concept of "prompts" to allow you to define questions to put to the participant during the interview. You are free to explain the task to the participant in ways that are meaningful to your study.<br/><br/>You can have multiple prompts on a single stage, or a single prompt per stage - the choice is yours. You may wish to think about grouping prompts by theme, and then having one stage for each theme. For example, "Name Generator (family)" could contain prompts about family alters, and "Name Generator (colleagues)" could contain prompts about professional alters.<br/><br/>Prompts can contain formatting such as bold or italicized text to create emphasis and rhythm. To create this formatting, use markdown syntax. |
 {: .key-concept }
 
-Click the “Create New” button in the prompt section, to open the new prompt edit form.
+Click the "Create New" button in the prompt section, to open the new prompt edit form.
 
 {% include nc-image src="assets/img/architect-guide/edit-prompt.png" %}
 
-Our first prompt will ask the participant to name the people with whom they have felt close to or discussed important matters. Enter the text “Within the **past 6 months,** who have you felt **close to**, or discussed **important personal matters** with?”, and click “Save and Close”. Notice that we are using markdown syntax to add emphasis to guide understanding.
+Our first prompt will ask the participant to name the people with whom they have felt close to or discussed important matters. Enter the text "Within the **past 6 months,** who have you felt **close to**, or discussed **important personal matters** with?", and click "Save and Close". Notice that we are using markdown syntax to add emphasis to guide understanding.
 
 ### Preview Mode
 
-We can now take the opportunity to see what our stage will look like in our finished interview by using the “Preview” feature.
+We can now take the opportunity to see what our stage will look like in our finished interview by using the "Preview" feature.
 
 Clicking it will open a window with the current stage loaded, and show the interface functioning as it will in Interviewer on a study device.
 
@@ -131,19 +131,20 @@ Clicking it will open a window with the current stage loaded, and show the inter
 | You can choose between different device presets, to mimic the look of a specific piece of hardware. For example you can emulate the screen size of an iPad, or a widescreen laptop.<br/><br/>You can scale the preview window so that you can fit it best with your workspace.<br/><br/>You can enter data in preview mode - for example creating nodes - but the data does not persist after you close the window. More on this later. |
 {: .key-concept }
 
-Click the pink “Preview” button in the bottom left hand corner of the stage editor, and the preview window will open.
+Click the pink "Preview" button in the bottom left hand corner of the stage editor, and the preview window will open.
 
 {% include nc-image src="assets/img/architect-guide/preview-mode.png" %}
 
-We can then click “Save and Return” on the stage editor to return to our timeline view, but now with our new stage visible.
+We can then click "Save and Return" on the stage editor to return to our timeline view, but now with our new stage visible.
 
 ## Quick Add with a Side Panel
 
+
 Next, we are going to configure another Name Generator (using quick add) interface, only this time we will include a side panel.
 
-First, we will create a stage name, select the person node type (which we previously created), assign the quick add variable of “name”, and create a new prompt. The prompt for this stage will be, “Within the **past 6 months,** who have you discussed **social networks research** with?” .
+First, we will create a stage name, select the person node type (which we previously created), assign the quick add variable of "name", and create a new prompt. The prompt for this stage will be, "Within the **past 6 months,** who have you discussed **social networks research** with?" .
 
-Now, we will add the side panel. Click the “Add New Panel” and give the panel the title “People you have previously mentioned.” This title will appear across the top of the side panel and will contextualize the nodes that appear to the participant. 
+Now, we will add the side panel. Click the "Add New Panel" and give the panel the title "People you have previously mentioned." This title will appear across the top of the side panel and will contextualize the nodes that appear to the participant. 
 
 Next, we need to choose a data source for this side panel. We have two options: either we use the network constructed during the interview or we bring in an external data file (e.g., a roster) that will populate within the side panel. In this example, we will choose to use the network from the in-progress interview.
 
@@ -151,14 +152,11 @@ Next, we need to choose a data source for this side panel. We have two options: 
 
 You can optionally preview the interface at this point, checking that the prompts and the form look and function as you expected. When you are satisfied, click continue to add your stage.
 
-{% include tip-info.md content="At any point during this tutorial, free free to click the “Save Changes” button in the bottom bar when on the timeline view, or select “File -> Save As” from the menu." %}
-
-
-
+{% include tip-info.md content="At any point during this tutorial, free free to click the "Save Changes" button in the bottom bar when on the timeline view, or select "File -> Save As" from the menu." %}
 
 ## Name Generator using Forms
 
-We will now create a new name generator stage that uses a form to capture data on alters named. As before, we add a new stage (selecting the Name Generator (using forms) from the interface menu) and add a stage name. Next we will create a new node type for “Clinic” on this stage as we will be asking a prompt about clinics rather than people. Once we create the node type for Clinic, we move on to edit the form. 
+We will now create a new name generator stage that uses a form to capture data on alters named. As before, we add a new stage (selecting the Name Generator (using forms) from the interface menu) and add a stage name. Next we will create a new node type for "Clinic" on this stage as we will be asking a prompt about clinics rather than people. Once we create the node type for Clinic, we move on to edit the form. 
 
 ### Form
 
@@ -166,17 +164,17 @@ This section is where we will define the fields that will be shown on the form w
 
 Fields capture data about alters or ego, and are where specific variables are defined.  
 
-First, let’s start with creating a title for the form to orient the participant to the information we want to collect. Enter the title “Add a Clinic or Health Care Provider.” 
+First, let’s start with creating a title for the form to orient the participant to the information we want to collect. Enter the title "Add a Clinic or Health Care Provider." 
 
-Next, we will define the fields of the form. By clicking “Create New” in the fields panel, a new screen opens which asks us to define a variable for the field, the question prompt, an input control, and to select any validation we may want to include. 
+Next, we will define the fields of the form. By clicking "Create New" in the fields panel, a new screen opens which asks us to define a variable for the field, the question prompt, an input control, and to select any validation we may want to include. 
 
-For the first field, we want to know the name of the clinic the participant is nominating so we use the variable “name” that we previously created by selecting it from the drop down menu. Next, we will enter the text for this field label and in our example we will use a question prompt, “What is the name of this clinic?”
+For the first field, we want to know the name of the clinic the participant is nominating so we use the variable "name" that we previously created by selecting it from the drop down menu. Next, we will enter the text for this field label and in our example we will use a question prompt, "What is the name of this clinic?"
 
 {% include nc-image src="assets/img/architect-guide/form-fields.png" %}
 
 | Key Concept: Creating vs selecting variables                          |
 | :----------------------------------------------------------- |
-| Many screens in Architect allow you to either create a new variable, or select an existing variable. If this is the case, the text next to the input will usually tell you.<br/><br/>When you want to create a new variable, click the box and select “Create New” from the drop down menu.<br/><br/>Otherwise, click an existing variable from the list in the drop down menu. |
+| Many screens in Architect allow you to either create a new variable, or select an existing variable. If this is the case, the text next to the input will usually tell you.<br/><br/>When you want to create a new variable, click the box and select "Create New" from the drop down menu.<br/><br/>Otherwise, click an existing variable from the list in the drop down menu. |
 {: .key-concept }
 
 Finally, we choose the input control that will be shown to collect this variable. 
@@ -191,16 +189,16 @@ Finally, we can define our validation requirements -- if any -- for this field. 
 
 {% include nc-image src="assets/img/architect-guide/validation.png" %}
 
-Click “Save and Close”, and we have created our first form field.
+Click "Save and Close", and we have created our first form field.
 
 Now, using the process we learned above, we will create the two additional fields for this form. 
 
 Create the following fields, with appropriate input controls, question prompts and validation rules:
 
-* last_visit variable, DatePicker input control, “When was your visit?” prompt, and validation start range 2020/January/1
-* visit_purpose variable, Text Area input control, ”In your own words, what was the purpose of your visit?” prompt, and no validation
+* last_visit variable, DatePicker input control, "When was your visit?" prompt, and validation start range 2020/January/1
+* visit_purpose variable, Text Area input control, "In your own words, what was the purpose of your visit?" prompt, and no validation
 
-After completing the form, we will configure the prompt for the stage. We click “Create New” and enter the text, “Within **the past 12 months,** which **clinics** or **healthcare providers** have you visited?”
+After completing the form, we will configure the prompt for the stage. We click "Create New" and enter the text, "Within **the past 12 months,** which **clinics** or **healthcare providers** have you visited?"
 
 {% include nc-image src="assets/img/architect-guide/fields-inputs-prompts.png" %}
 
@@ -208,40 +206,40 @@ After completing the form, we will configure the prompt for the stage. We click 
 
 Next we develop a name generator that uses a small roster brought in as an external data file. Small rosters, by our definition, are datasets containing up to 100 nodes.
 
-As we did in prior name generators above, we will first select the interface we want to configure (Small Roster Name Generator), add a stage name, and create a new node type for “Classmate”.
+As we did in prior name generators above, we will first select the interface we want to configure (Small Roster Name Generator), add a stage name, and create a new node type for "Classmate".
 
 Next we will select the external data source to bring into the protocol that will populate the nodes on the roster. For this example, we have used a fictitious classroom roster. Please use any roster you have on hand, or create your own CSV. Your data file will need to at least include a column for first name and last name since we will use those attributes as display properties on the cards which represent the nodes.
 
 Just as you added resources to the Information Interface above, you will also browse for your external data source from the protocol resource library if you saved it there or else from another location on your device.
 
-We will then define what display properties are used to identify the nodes in the roster as they appear to the participant. First we select the variable that is defined in the external data file - in this case “first_name.” Next, we define how we want that variable to appear to the participant on the roster - in this example we enter “First Name.” We repeat the same process for the last_name variable. 
+We will then define what display properties are used to identify the nodes in the roster as they appear to the participant. First we select the variable that is defined in the external data file - in this case "first_name." Next, we define how we want that variable to appear to the participant on the roster - in this example we enter "First Name." We repeat the same process for the last_name variable. 
 
  {% include nc-image src="assets/img/architect-guide/adding-roster.png" %}
 
-We can optionally choose to include sorting controls. Sorting controls are especially useful when a roster is large enough to make discoverability difficult at first glance. In this example, we choose to implement an initial sort order that uses the “first_name” variable to order the roster cards in an ascending order.
+We can optionally choose to include sorting controls. Sorting controls are especially useful when a roster is large enough to make discoverability difficult at first glance. In this example, we choose to implement an initial sort order that uses the "first_name" variable to order the roster cards in an ascending order.
 
 {% include tip-info.md content="Refer to our Interface Documentation for more in depth instruction, including useful Do’s and Don’ts of working with [roster data](..interface-documentation/roster-name-generators.md" %}
 
-Last, we implement a prompt for the stage, following the same process we did in the previous stages. We enter the prompt that includes instructions for how to nominate a node from the roster, “Please select any members of your degree class that you spend time with **other than when studying**. Tap a card to select, and press the **down arrow** when you are finished.”
+Last, we implement a prompt for the stage, following the same process we did in the previous stages. We enter the prompt that includes instructions for how to nominate a node from the roster, "Please select any members of your degree class that you spend time with **other than when studying**. Tap a card to select, and press the **down arrow** when you are finished."
 {% include nc-image src="assets/img/architect-guide/roster-sort.png" %}
 
 ## Large Roster Name Generator
 
 By our definition, large rosters are datasets with more than 100 nodes. 
 
-Following the example from the prior stage, we will first select the interface we want to configure (Large Roster Name Generator), add a stage name, and create a new node type, this time for “University”. Again, we will pull in a data source we plan to use to populate our roster. In our example, we use a large CSV that includes universities around the world.
+Following the example from the prior stage, we will first select the interface we want to configure (Large Roster Name Generator), add a stage name, and create a new node type, this time for "University". Again, we will pull in a data source we plan to use to populate our roster. In our example, we use a large CSV that includes universities around the world.
 
-By default, the roster cards will use the “name” attribute from your external data file as the main card title. In this example, we choose to also include “website” as an attribute to display. 
+By default, the roster cards will use the "name" attribute from your external data file as the main card title. In this example, we choose to also include "website" as an attribute to display. 
 
 Next, we will configure how the roster file is searchable to the participant. The functionality available for this interface includes the ability for participants to search the database for specific attributes in order to locate the alters they want to select. 
 
-The search options listed will depend on the variables outlined in your datafile. Here, we have the option to select “country”, “name”, and “website”, and we choose to include all three. 
+The search options listed will depend on the variables outlined in your datafile. Here, we have the option to select "country", "name", and "website", and we choose to include all three. 
 
 {% include nc-image src="assets/img/architect-guide/roster-search.png" %}
 
-We can also narrow down the options that appear to a participant when they search on the stage by selecting “Exact” or “High Accuracy.” In this case, we select “High Accuracy.”
+We can also narrow down the options that appear to a participant when they search on the stage by selecting "Exact" or "High Accuracy." In this case, we select "High Accuracy."
 
-Finally, we add a prompt to this stage, “Which universities have you either **visited** or **studied at**?” Then, we click “Save and Return” to save the stage and navigate back to the timeline view. 
+Finally, we add a prompt to this stage, "Which universities have you either **visited** or **studied at**?" Then, we click "Save and Return" to save the stage and navigate back to the timeline view. 
 
 ## Creating an Ego Form
 
@@ -257,38 +255,38 @@ Now, let’s create a series of fields for our ego form just as we did while con
 
 Next, we will create the following fields with associated variables, question prompts, input controls, validations (if used):
 
-* first_name, “What is your first name?”, Text Area, Required validation
-* last_name, “What is your last name?”, Text Area, Required validation
-* dob, “What is your date of birth?”, DatePicker with end range 2002/January/1
-* languages_spoken, “Which of the following languages do you speak fluently?”, Toggle Button Group with options English, Mandarin Chinese, Hindi, Spanish, French, Arabic, Bengali, and Russian
-* existing_software, “Overall, how satisfied are you with existing social network analysis software?”, Radio Group with options Very Satisfied, Somewhat Satisfied, Neither Satisfied nor Dissatisfied, Somewhat Dissatisfied, and Very Dissatisfied 
-* research_support, “How satisfied are you with the level of support you receive?”, Likert Scale with Very Satisfied, Somewhat Satisfied, Neither Satisfied nor Dissatisfied, Somewhat Dissatisfied, and Very Dissatisfied 
-* operation_pain, “Thinking back to your last medical procedure, how much pain do you feel you experienced?”, Visual Analog Scale with min and max labels as No Pain and Unbearable Pain
-* prefered_contact_method, “How would you prefer to be contacted about your next interview?”, Checkbox Group with options Email, Post, SMS, and Phone Call
-* other_info, “Is there any other information you would like to provide at this time?”, Text Area
+* first_name, "What is your first name?", Text Area, Required validation
+* last_name, "What is your last name?", Text Area, Required validation
+* dob, "What is your date of birth?", DatePicker with end range 2002/January/1
+* languages_spoken, "Which of the following languages do you speak fluently?", Toggle Button Group with options English, Mandarin Chinese, Hindi, Spanish, French, Arabic, Bengali, and Russian
+* existing_software, "Overall, how satisfied are you with existing social network analysis software?", Radio Group with options Very Satisfied, Somewhat Satisfied, Neither Satisfied nor Dissatisfied, Somewhat Dissatisfied, and Very Dissatisfied 
+* research_support, "How satisfied are you with the level of support you receive?", Likert Scale with Very Satisfied, Somewhat Satisfied, Neither Satisfied nor Dissatisfied, Somewhat Dissatisfied, and Very Dissatisfied 
+* operation_pain, "Thinking back to your last medical procedure, how much pain do you feel you experienced?", Visual Analog Scale with min and max labels as No Pain and Unbearable Pain
+* prefered_contact_method, "How would you prefer to be contacted about your next interview?", Checkbox Group with options Email, Post, SMS, and Phone Call
+* other_info, "Is there any other information you would like to provide at this time?", Text Area
 
 {% include nc-image src="assets/img/architect-guide/ego-form-fields.png" %}
 
 To demonstrate the range of input control options, we implemented far more fields than are likely to be best practice for a form within an interview. You can [learn more about input controls here](../key-concepts/input-controls.md)
 
-We click “Save and Return” and go back to the timeline view to implement the next stage.
+We click "Save and Return" and go back to the timeline view to implement the next stage.
 
 ## Creating a Per Alter Form
 
-Let’s next repeat that process, but this time creating a form that will capture data from alters on the Per Alter Form Interface. Create a new stage using the Per Alter Form Interface and set the stage name. Next, select the node type “University” and scroll down to configure the Information Panel.
+Let’s next repeat that process, but this time creating a form that will capture data from alters on the Per Alter Form Interface. Create a new stage using the Per Alter Form Interface and set the stage name. Next, select the node type "University" and scroll down to configure the Information Panel.
 
 {% include nc-image src="assets/img/architect-guide/per-alter-form.png" %}
 
 We will now add just two fields to this form. Here are the details you need, following the same process as above:
 
-* visit_or_study, “Did you visit this university, or study there?”, Radio Group with options Visited and Studied, Required validation
-* overall_review, “Overall, how would you describe your experience at this university?”, Likert Scale with options Excellent, Above Average, Average, Below Average, Poor
+* visit_or_study, "Did you visit this university, or study there?", Radio Group with options Visited and Studied, Required validation
+* overall_review, "Overall, how would you describe your experience at this university?", Likert Scale with options Excellent, Above Average, Average, Below Average, Poor
 
 As usual, save and return to the timeline view of your protocol.
 
 ## Creating Sociograms
 
-For the next stage, we use the Sociogram Interface. Create the stage, set a stage name, and select the “Person” node type. 
+For the next stage, we use the Sociogram Interface. Create the stage, set a stage name, and select the "Person" node type. 
 
 ### Node Positioning
 
@@ -296,15 +294,15 @@ Next we need to choose a background image for the Sociogram. We can decide betwe
 
 {% include nc-image src="assets/img/architect-guide/sociogram-background.png" %}
 
-We will add a prompt for the stage that reads, “Please position the people you have named amongst the concentric circles. Place people who know each other together, and put people you are closer to towards the center of the circles.” 
+We will add a prompt for the stage that reads, "Please position the people you have named amongst the concentric circles. Place people who know each other together, and put people you are closer to towards the center of the circles." 
 
 You will see that when creating a prompt on the Sociogram, you have the option of defining a layout variable.
 
-The layout variable will be used to store the X/Y coordinates of the nodes when the participant positions them on the screen. If you have multiple prompts on your Sociogram, you may wish to use the same variable layout for each (which will keep the nodes positioned as they originally are by the participant) or you may wish to create a new layout variable for each prompt (which would require the participant to reposition the nodes each time). In this example, we will create a “sociogram_layout” variable for this stage.
+The layout variable will be used to store the X/Y coordinates of the nodes when the participant positions them on the screen. If you have multiple prompts on your Sociogram, you may wish to use the same variable layout for each (which will keep the nodes positioned as they originally are by the participant) or you may wish to create a new layout variable for each prompt (which would require the participant to reposition the nodes each time). In this example, we will create a "sociogram_layout" variable for this stage.
 
 {% include nc-image src="assets/img/architect-guide/sociogram-layout.png" %}
 
-We finish by clicking “Save and Close” to close the prompt editor, then “Save and Return” to save the stage.
+We finish by clicking "Save and Close" to close the prompt editor, then "Save and Return" to save the stage.
 
 ## Background Images
 
@@ -312,7 +310,7 @@ Now we’ll configure another Sociogram, but this time we’ll bring in an image
 
 {% include tip-info.md content="You should think carefully about how the choices you make regarding the background will impact the way your participants position their nodes." %}
 
-As before, we will enter a prompt and not assign a task for the stage. The prompt text is, “Please position the people you have named in the boxes according to which group you feel they most belong to.” We save the stage and move on to the next.
+As before, we will enter a prompt and not assign a task for the stage. The prompt text is, "Please position the people you have named in the boxes according to which group you feel they most belong to." We save the stage and move on to the next.
 
 | Key Concept: Features of the Sociogram                          |
 | :----------------------------------------------------------- |
@@ -321,21 +319,21 @@ As before, we will enter a prompt and not assign a task for the stage. The promp
 
 ## Edge Creation
 
-We will create another Sociogram stage to experiment with creating edges. For this stage we’ll use node type “Person” and the concentric circles background with 3 circles skewed. 
+We will create another Sociogram stage to experiment with creating edges. For this stage we’ll use node type "Person" and the concentric circles background with 3 circles skewed. 
 
-We create our first prompt, “Please connect any two people who might spend time together without you being there” and we use the sociogram_layout variable we already created. 
+We create our first prompt, "Please connect any two people who might spend time together without you being there" and we use the sociogram_layout variable we already created. 
 
-Now we will enable edge creation on a Sociogram prompt, by toggling the switch “create edges by tapping on a node” option, in the “Edge Display and Creation” section. 
+Now we will enable edge creation on a Sociogram prompt, by toggling the switch "create edges by tapping on a node" option, in the "Edge Display and Creation" section. 
 
-In the next box, we will either create a new edge type or select an existing one. Since we have not yet created any edge types, we will define one as “know” to correspond with the prompt.
+In the next box, we will either create a new edge type or select an existing one. Since we have not yet created any edge types, we will define one as "know" to correspond with the prompt.
 
-We click “Save and Close” to return to the Sociogram editor.
+We click "Save and Close" to return to the Sociogram editor.
 
 {% include nc-image src="assets/img/architect-guide/edge-creation.png" %}
 
-Next, we add another prompt, “Please connect any two people who have conflict, or who don't get on well with each other” and use the same sociogram_layout variable. 
+Next, we add another prompt, "Please connect any two people who have conflict, or who don't get on well with each other" and use the same sociogram_layout variable. 
 
-We also choose edge creation as the task for the stage, but create a new edge type of “conflict” as we will now be capturing alter-alter ties that are conflictual.
+We also choose edge creation as the task for the stage, but create a new edge type of "conflict" as we will now be capturing alter-alter ties that are conflictual.
 
 | Key Concept: Creating and displaying edges                          |
 | :----------------------------------------------------------- |
@@ -346,39 +344,39 @@ We also choose edge creation as the task for the stage, but create a new edge ty
 
 By now you should have a feel for the process of configuring a stage within Architect. We will continue by adding a Dyad Census Interface stage to our interview, which builds on many of the concepts we have already covered.
 
-From the timeline overview, click the “Add New Stage” button, and select the Dyad Census interface. Again, we name the stage and this time we select node type “Classmates.” 
+From the timeline overview, click the "Add New Stage" button, and select the Dyad Census interface. Again, we name the stage and this time we select node type "Classmates." 
 
-We will next implement skip logic so that the stage will only show for participants who nominate at least two classmates on the small roster name generator implemented previously. We do this by toggling the switch to enable skip logic for the stage, selecting “Skip this stage if”, and, then, defining an alter rule by clicking the “Add Alter Rule” button to define the equation. 
+We will next implement skip logic so that the stage will only show for participants who nominate at least two classmates on the small roster name generator implemented previously. We do this by toggling the switch to enable skip logic for the stage, selecting "Skip this stage if", and, then, defining an alter rule by clicking the "Add Alter Rule" button to define the equation. 
 
-We define the rule by selecting the alter node type of “Classmate”, then selecting rule type of “Presence”, and, finally, selecting “Does not Exist.”
+We define the rule by selecting the alter node type of "Classmate", then selecting rule type of "Presence", and, finally, selecting "Does not Exist."
 
 {% include nc-image src="assets/img/architect-guide/dyad-skip.png" %}
 
-As on other name interpreter interfaces, we will also configure the Introduction Panel and define a prompt. For this stage, we enter the prompt, “To the best of your knowledge, do these two people spend time together outside of class?”
-We previously created two edge types on the sociogram which appear available for our use on this prompt. We will select the “know” edge type since we are asking the participant whether any two classmates know one another. 
+As on other name interpreter interfaces, we will also configure the Introduction Panel and define a prompt. For this stage, we enter the prompt, "To the best of your knowledge, do these two people spend time together outside of class?"
+We previously created two edge types on the sociogram which appear available for our use on this prompt. We will select the "know" edge type since we are asking the participant whether any two classmates know one another. 
 
 {% include nc-image src="assets/img/architect-guide/dyad-prompt.png" %}
 
 ### Toggling a Variable
 
-In our final Sociogram stage in this protocol, we will implement variable toggling - or the action that allows a participant to toggle a boolean variable to “true” or “false” by tapping a note.
+In our final Sociogram stage in this protocol, we will implement variable toggling - or the action that allows a participant to toggle a boolean variable to "true" or "false" by tapping a note.
 
-Once again, we create the stage, set the stage name, select the “Person” node type, and use the concentric circle background with 3 circles skewed. 
+Once again, we create the stage, set the stage name, select the "Person" node type, and use the concentric circle background with 3 circles skewed. 
 
-Next, we create a new prompt, with the text, “Please select anyone who you have asked for advice within the previous 6 months”. Re-use the layout variable (“sociogram_layout”) we created previously.
+Next, we create a new prompt, with the text, "Please select anyone who you have asked for advice within the previous 6 months". Re-use the layout variable ("sociogram_layout") we created previously.
 
 We do not want to enable edge creation on this prompt, as it would disable the variable toggling function (the two modes are mutually exclusive). However, we can still display edges in order to help the participant locate nodes.
 
-To do this, select “Know” and “Conflict” under “Display edges of the following type(s)”.
+To do this, select "Know" and "Conflict" under "Display edges of the following type(s)".
 
 {% include nc-image src="assets/img/architect-guide/variable-toggling.png" %}
 
 Configuring the sociogram prompt to enable variable toggling involves two steps: (1) toggle
-“Enable variable toggling by tapping a node” to the “on” position, and (2) create (or select) a boolean variable to be assigned in the box that appears below.
+"Enable variable toggling by tapping a node" to the "on" position, and (2) create (or select) a boolean variable to be assigned in the box that appears below.
 
-In this case of this prompt, using the techniques we have already covered, create a variable called “provides_advice” and press “Save and Close”. 
+In this case of this prompt, using the techniques we have already covered, create a variable called "provides_advice" and press "Save and Close". 
 
-We will now complete the exact same steps for the second prompt, which reads, “Please select anyone who has supported you financially within the previous 6 months.” This time, we will create a boolean variable of “provides_material_support.”
+We will now complete the exact same steps for the second prompt, which reads, "Please select anyone who has supported you financially within the previous 6 months." This time, we will create a boolean variable of "provides_material_support."
 
 We have now finished configuring this sociogram stage.
 
@@ -391,13 +389,13 @@ We have now finished configuring this sociogram stage.
 
 We now wish to create an Ordinal Bin interface so that we can quickly and efficiently ask our participant about the frequency of contact they have with each alter. From the timeline overview, add a new stage using the Ordinal Bin interface.
 
-As with previous interfaces, begin with naming the stage (“Contact Frequency”), and selecting our node type (“Person”).
+As with previous interfaces, begin with naming the stage ("Contact Frequency"), and selecting our node type ("Person").
 
-Most of the configuration for this interface happens within the prompt. Create a new prompt, and enter the text, “When was the last time that you communicated with each of the people you named?”.
+Most of the configuration for this interface happens within the prompt. Create a new prompt, and enter the text, "When was the last time that you communicated with each of the people you named?".
 
-Next, we need to create an ordinal variable. This is fundamentally the same process as we carried out when we configuring the language variable in our ego form (revisit the “Creating an Ordinal Variable” section if you need to re-familiarize yourself with this).
+Next, we need to create an ordinal variable. This is fundamentally the same process that we carried out when configuring the language variable in our ego form. Every time we create an ordinal or categorical variable within Architect, we will enter a label and a value. The value is what will be stored in our dataset. Both text and numerical values are allowed. Complete the labels and values as in the screenshot below.
 
-Create a variable named “communication_freq” with the following possible options:
+Create a variable named "communication_freq" with the following possible options:
 
 <table>
   <tr>
@@ -445,17 +443,92 @@ Create a variable named “communication_freq” with the following possible opt
 | By convention, the Network Canvas software uses two terms for the containers that nodes are dragged between on the Ordinal Bin, Categorical Bin, and Sociogram interfaces.<br/><br/>Buckets are where nodes are found initially, before they have been placed, or dragged.<br/><br/>Bins are where nodes are placed are dragged to. This is where nodes end up.<br/><br/>Both bins and buckets can have the sort order of the nodes within them defined. You can use this to (for example) make the bucket show nodes with a certain attribute, such as closeness, first. This may help with a task such as positioning nodes on a sociogram. |
 {: .key-concept }
 
-In the case of our prompt, we will use the default node bin and bucket sort options. Click “Save and Close” to finish editing this prompt, and then click “Save and Return” to return to the timeline view.
+In the case of our prompt, we will use the default node bin and bucket sort options. Click "Save and Close" to finish editing this prompt, and then click "Save and Return" to return to the timeline view.
 
 ## Creating a Categorical Bin
 
 You should now be able to create a categorical bin interface using everything that you have learned so far. Add a new stage using the Categorical Bin interface, with the following characteristics:
 
-* Named “Categorical Group Membership”, and operating on the “People” node type.
-* Using a categorical variable called “group” with the following options:
+* Named "Categorical Group Membership", and operating on the "People" node type.
+* Using a categorical variable called "group" with the following options:
   * Family Member
   * Friends
   * Work Colleague
   * School
-* With the prompt text, “Which of these options best describes how you know this person?”
-* Toggle “on” the Follow-up “Other” option with bin label “other”, question prompt “Which context best describes how you know this person?”, and variable “group_other” 
+* With the prompt text, "Which of these options best describes how you know this person?"
+* Toggle "on" the Follow-up "Other" option with bin label "other", question prompt "Which context best describes how you know this person?", and variable "group_other" 
+
+{% include nc-image src="assets/img/architect-guide/catbin-variables.png" %}
+As before, we will "Save and Close" and "Save and Return" to complete and save our edits on the stage. 
+
+## Skip Logic & Network Filtering on the Categorical Bin
+
+Next we will implement another Categorical Bin Interface. This time, we will create the stage as before, set the stage name to "Relationship Type" and select node type as "Person."
+
+Now we will configure both the network filtering on the stage as well as the skip logic for the stage. First, toggle the "Enable network filtering for this stage" to "on" and press the "Add Alter Rule" button. Next we will configure the rule according to the following: node type "Person", rule type "Attribute", variable query "discuss_netework_research", operator "exactly", and attribute value of "True."
+
+Click the "Finish and Close" button. 
+
+{% include nc-image src="assets/img/architect-guide/skip-logic.png" %}
+
+To enable skip logic, we toggle the "Enable skip logic for this stage" switch to "on." Then we click the "Add Alter Rule" again. First, we configure the skip logic rule according to the following: node type "Person", rule type "Presence", and operator "Exists." Next, we configure a second skip logic rule as follows: node type "Person", rule type "Attribute", variable query "discuss_network_research", operator "is exactly", and attribute value of "True."
+
+We finish defining the rules by selecting "All Rules" under the Must Match section.
+
+{% include nc-image src="assets/img/architect-guide/filter-skip.png" %}
+
+As a final step on this stage, we will create a prompt with the text, "You indicated that you've discussed social networks research with these people. Which category best describes your relationship with each person?" We will assign a categorical variable of "social_networks_research_relationship" with the following labels: Work Colleague, Classmate, Family Member, Friend. Type the corresponding values of "Work_Colleague", "Classmate", "Family_Member", and "Friends."
+
+{% include nc-image src="assets/img/architect-guide/catbin-prompt.png" %}
+
+We will also include a "Follow-up "Other" Option" for this prompt. Toggle the switch in the section to "on", type the label for bin of "Other", type question prompt for dialog as "What is your relationship with this person?" and create a new variable to capture this attribute of "social_network_research_relationship_other." 
+
+{% include nc-image src="assets/img/architect-guide/other-variable.png" %}
+
+We’re finished configuring this stage. Press "Save and Close" on the bottom right of the prompt editor, and "Return and Close" on the Categorical Bin Interface editor. 
+
+## Creating the Narrative Interface
+
+The last stage configured in this sample protocol is the Narrative Interface. As you have already learned, we will create a new stage (Narrative Interface), set a stage name ("Narrative Interface"), and select a node type ("Person"). Next we will choose to use the concentric circles background, but this time elect to use just 1 circle. 
+
+{% include nc-image src="assets/img/architect-guide/narrative.png" %}
+
+The Narrative Interface is a data visualization variation of the Sociogram, designed expressly to elicit qualitative information from a participant about their network. No data is captured within the app on this screen, but researchers may choose to use screen capture software or other methods to record participant interaction on this screen.
+
+### Configuring Presets
+
+Narrative presets allow you to emphasize specific elements of a participant’s network visually, such as nodes grouped by attribute characteristic or alter-alter relationships (edges). Once the presets are configured on this screen, they appear as a menu where each option can be toggled "on" or "off." 
+
+Now, let’s configure presets for our sample interview protocol. Go to the section in the Narrative stage editor titled "Narrative Presets" and press the "Create New" button. We will give the preset a label of "Sample Preset." This label will appear at the top of the menu visible to the participant on this stage. 
+
+Next, we will click the "Layout Variable" box. We can choose to either create a new layout variable for this screen or use an existing one. In this case, we’ll use the "sociogram_layout" variable we created before. 
+
+If we have collected data on a categorical variable and the participant has assigned that attribute to at least two nodes, we can visualize this grouping on the Narrative Interface. The drop down menu under "Group variable" will show all available categorical variables in our protocol. In this example, we choose the variable "group."
+
+{% include nc-image src="assets/img/architect-guide/edit-preset.png" %}
+
+Under "Edge types to display", we will see all edge types defined within our protocol. We will select the checkbox next to the edges we want to display ("know" and "conflict").
+
+The last step in the preset editor is to select any boolean variables we want to highlight on the participant’s network. Again, all available boolean variables will appear in this section and we can choose which of these we want included in the preset. We will select the checkboxes next to both "provides_advice" and "provides_material_support." To save our work, we click "Save and Close."
+
+Back on our Narrative Interface edit screen, we can see the sample preset we just created. We will move below to the "Narrative Behaviors" section, and toggle both "Free-draw" and "Allow repositioning" to "on." (The latter should already be toggled on by default). 
+
+{% include nc-image src="assets/img/architect-guide/narrative-behaviors.png" %}
+
+Free-draw is a function on this interface that allows a participant to annotate on the screen by using their mouse. They can draw lines, symbols, or words that help them describe aspects of their network. 
+
+Repositioning on the Narrative Interface enables a participant to drag their alters to new positions, keeping the displayed edges intact. 
+
+{% include nc-image src="assets/img/architect-guide/9.png" %}
+
+We will click "Save and Return" and are now able to view the configured Narrative stage on our timeline. 
+
+## Finishing Off Your Protocol 
+
+Now with each of these stages in the protocol, make sure to save your file. The file name of the protocol set in Architect will be the same name used in both the Network Canvas Interviewer app and Network Canvas Server. There are numerous ways to transition from building the protocol within the Architect to deployment.
+
+- Within the Interviewer app, import the protocol file directly from a file location on your local computer.
+- Host the protocol file on a web server and then within the Interviewer app, import the protocol file from a web URL.
+- Use Server to manage the workflow. Once the protocol is loaded into Server it can be deployed to numerous field devices and then receive data from these devices for collation and export.
+
+In the next section [Server and Interviewer Workflows](./server-workflows.md) we will show you how to use Server to load a protocol file onto multiple devices and then receive the data from those devices.
