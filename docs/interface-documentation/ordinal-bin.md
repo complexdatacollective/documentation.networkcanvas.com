@@ -11,9 +11,15 @@ The Ordinal Bin is a name interpreter Interface that captures ordinal data on th
 
 {% include nc-image src="/assets/img/interface-documentation/ordinal-bin/2.png" %}{: .macos-screenshot }
 
-{% include nc-image src="/assets/img/interface-documentation/ordinal-bin/3.png" %}{: .macos-screenshot }
+## Configuring Ordinal Bin
 
-{% include nc-image src="/assets/img/interface-documentation/ordinal-bin/4.png" %}{: .macos-screenshot }
+A single node type is selectable per screen. This screen supports filtering those nodes by their attributes.
+
+{% include nc-image src="/assets/img/interface-documentation/ordinal-bin/architect_1.png" %}{: .macos-screenshot }
+
+An ordinal bin screen can include multiple prompts, each of which relates to a single ordinal variable.
+
+{% include nc-image src="/assets/img/interface-documentation/ordinal-bin/architect_2.png" %}{: .macos-screenshot }
 
 {: .no_toc}
 #### Do
