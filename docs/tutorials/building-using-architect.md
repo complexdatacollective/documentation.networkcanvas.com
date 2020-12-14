@@ -152,7 +152,7 @@ Next, we need to choose a data source for this side panel. We have two options: 
 
 You can optionally preview the interface at this point, checking that the prompts and the form look and function as you expected. When you are satisfied, click continue to add your stage.
 
-{% include tip-info.md content="At any point during this tutorial, free free to click the "Save Changes" button in the bottom bar when on the timeline view, or select "File -> Save As" from the menu." %}
+{% include tip-info.md content="At any point during this tutorial, free free to click the &quot;Save Changes&quot; button in the bottom bar when on the timeline view, or select &quot;File -> Save As&quot; from the menu." %}
 
 ## Name Generator using Forms
 
