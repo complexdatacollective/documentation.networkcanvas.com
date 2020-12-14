@@ -11,9 +11,13 @@ The Per Alter Form is a name interpreter Interface that captures attribute data 
 
 {% include nc-image src="/assets/img/interface-documentation/per-alter-form/2.png" %}
 
-{% include nc-image src="/assets/img/interface-documentation/per-alter-form/3.png" %}
+## Configuring Per Alter Form
 
-{% include nc-image src="/assets/img/interface-documentation/per-alter-form/4.png" %}
+{% include nc-image src="/assets/img/interface-documentation/per-alter-form/architect_1.png" %}
+
+{% include nc-image src="/assets/img/interface-documentation/per-alter-form/architect_2.png" %}
+
+{% include nc-image src="/assets/img/interface-documentation/per-alter-form/architect_3.png" %}
 
 {: .no_toc}
 #### Do
