@@ -4,8 +4,6 @@ title: Project Overview
 nav_order: 1
 last_modified_at: 2020-12-14
 ---
-
-This should introduce the concept of the protocol file
  
 ## Overview
 
