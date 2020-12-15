@@ -70,7 +70,7 @@ To remove a protocol file from your device, drag its card into the bin that appe
 
 Starting an interview involves tapping or clicking the protocol card of the protocol that you wish to use. By default, the last protocol you installed (or started an interview with) is displayed prominently in the start a new interview section, and can be tapped to immediately begin an interview.
 
-With the Sample Protocol card visible, we click the card to start a new interview session.
+With the Sample Protocol card visible, click the card to start a new interview session.
 
 ### Using a different protocol
 
@@ -82,17 +82,17 @@ A dialog will open with a list of protocols currently stored in the app. Scroll,
 
 ### Entering a case ID
 
-In Network Canvas, interview sessions can be identified by a number of means. Interviewer and Server both keep track of interviews using a "universal unique identifier" (UUID), which as the name suggests uniquely identifies every interview on every device you are using, without needing to communicate with other devices. However, it is often more convinient to provide a label that identifies an interview session that is meaningful to the researcher. For this purpose, we developed the concept of the "case ID".
+In Network Canvas, interview sessions can be identified by a number of means. Interviewer and Server both keep track of interviews using a "universal unique identifier" (UUID), which as the name suggests uniquely identifies every interview on every device you are using, without needing to communicate with other devices. However, it is often more convenient to provide a label that identifies an interview session that is meaningful to the researcher. For this purpose, we developed the concept of the "case ID".
 
-A case ID is entered at the start of every interview, and is entirely decided upon by the researcher. Its only purpose is to identify the interview session in a way that is meaningful to them. There is no requirement that a case ID be unique, since this would not be possible to ensure across multiple devices. Nevertheless, you should strongly consider a consistent system for naming cases that allows you to uniquely identify them. For example, you might consider:
+A case ID is entered at the start of every interview, and is entirely decided upon by the researcher. It can contain any combination of numbers and letters (including spaces) up to 30 characters. Its only purpose is to identify the interview session in a way that is meaningful to you. There is no requirement that a case ID be unique, since this would not be possible to ensure across multiple devices. Nevertheless, you should strongly consider a consistent system for naming cases that allows you to uniquely identify them. For example, you might consider:
 
-- `INTERVIEWER_INITIALS-PARTICIPANT_ID-DATE` (e.g `JRM-12345-2020121`)
+- `INTERVIEWER_INITIALS PARTICIPANT_ID DATE` (e.g `JRM 12345 December 5th`)
 - `STUDY_ID-PARTICIPANT_NAME-VISIT_NUMBER` (e.g `NetCanvas-Joshua-4`)
 - or simply `PARTICIPANT_NAME` (e.g `James Montgomery Williams`)
 
 {% include nc-image src="/assets/img/sample-protocol/case-id.png" caption="The case ID modal" %}{: .macos-screenshot }
 
-The case ID is shown in the "resume last interview" section, the "export and manage interview data" section, the session list in Server, and also appears in the default filename of exported data.
+The case ID is shown in the "resume last interview" section, the "export and manage interview data" section, the case management view in Server, and also appears in the default filename of exported data.
 
 Enter a case ID, and click "start interview" to begin.
 
@@ -100,7 +100,7 @@ Enter a case ID, and click "start interview" to begin.
 
 ## Interviewer user-interface
 
-Interviewer's user interface is designed to be simple, unobtrusive, and intuitive for participants. This has two main consequences: (1) much of the functionality researchers may wish to access is somewhat less discoverable than you might be used to, and (2) very little space is devoted to user interface elements that provide explanations about how to complete a task. This is because we assume that the researcher will be able to guide the participant through the interview process, as appropriate.
+Interviewer's user interface is designed to be simple, unobtrusive, and intuitive for participants. This has two main consequences: (1) much of the functionality _researchers_ may wish to access is somewhat less discoverable than you might be used to, and (2) very little space is devoted to user interface elements that provide explanations about how to complete a task. This is because we assume that the researcher will be able to guide the participant through the interview process, as appropriate.
 
 In terms of the user interface elements that are always visible when within the interview, there are several features of note.
 
@@ -115,63 +115,73 @@ The **menu button** at the very top of the screen opens the primary app menu, wh
 
 The large vertical bar is the interview **timeline**, which is a visual indicator of progress through the interview. As the participant progresses forwards the bar will fill up, and eventually turn green when the interview is finished. Tapping the timeline will reveal the "stages menu", which allows the researcher to quickly see precisely where they are within the interview, as well as to move to another location. The stages menu can also be opened from the main app menu.
 
-Moving forwards and backwards through the interview is accomplished using the **next** (down arrow) and **previous** (up arrow) buttons are visible at the top and bottom of the timeline, which can be used by the participant or by the researcher to advance the interview. The next button at the bottom left of the screen is particularly important to explain to the participant.
+Moving forwards and backwards through the interview is accomplished using the **next** (down arrow) and **previous** (up arrow) buttons visible at the top and bottom of the timeline, which can be used by the participant or by the researcher to advance the interview. The next button at the bottom left of the screen is particularly important to explain to the participant.
 
-## Interview walkthrough
+## Sample interview walkthrough
+
+We will now continue through the sample interview protocol. If you are following along on your own device, make sure you have started a new interview, entered a case ID, and are looking at the first screen. To go forwards or backwards, use the next and previous buttons we discussed above.
 
 ### Stages and interfaces
 
-Each interview is made up of a series of tasks that we call "stages". Think of stages as screens that your participant will see in sequence, where a task will be completed.
+With Network Canvas, each interview is made up of a series of screens that we call "stages", where a specific task is to be completed. You can have as many stages in your interview as you feel you need, and as you will see in other tutorials, there are many ways to structure your interview using different combinations of screens and different front or back loadings of tasks.
 
-You can have as many stages in your interview as you feel you need, and as you will see in other articles, there are many ways to structure your interview.
+Each stage is an _instance_ of a category of task-based screen that we call an ["Interface"](../key-concepts/interfaces.md). That is to say that an Interface is the broad "type" of task, and a stage is the specifically configured version of that task embedded in your interview.
 
-Each stage is an instance of what we call an "interface". Interfaces are designed for a specific data collection task, such as generating names, collecting ordinal data, or showing a form. 
-
-The "Name Generator" is an interface which collects the names and other information about the people or places (alters) with whom the participant is connected. The Name Generator is able to capture various types of data.  
+For example, Network Canvas has several "name generator" **Interfaces**, but the specific screen at the start of your interview may be called the "person name generator **stage**". Each Interface is designed for a specific data collection task, such as generating names, collecting ordinal data, or showing a form. Each Interface has [dedicated documentation](../interface-documentation/index.md) that tells you about its features, and gives hints about when and where you should use it.
 
 ### The information interface
 
 {% include nc-image src="/assets/img/sample-protocol/welcome-info.png" caption="The Information Interface" %}{: .macos-screenshot }
 
-The first thing we see after starting the interview is a welcome screen, which is configured using the Information Interface. The Information Interface is a display screen that is used to communicate information to a participant, such as a study description or instructions for completing a task on a subsequent screen. On this stage, we have added introductory text about the sample protocol and a logo image file for the project. We have used numerous Information Interfaces throughout this sample protocol to clarify the primary tasks performed in Interviewer, but we will not describe them in this article to avoid redundancy.
+The first thing we see after starting the interview is the welcome stage, which is configured using the [information interface](../interface-documentation/information.md). The information interface can be used to communicate information to a participant, such as a study description or instructions for completing a task on a subsequent screen. It can also contain media, such as audio, images or video. We have used numerous Information Interfaces throughout this sample protocol to clarify the primary tasks performed in Interviewer, but we will not describe them in this article to avoid redundancy.
 
-### Name Generators 
+### Name Generators
+
+After clicking through the information screens, we encounter the first name generator stage of our interview, which is where the participant will name alters. Name generation is clearly a fundamental task in all network interviewing, and so Network Canvas offers [configurable and customizable](../interface-documentation/name-generator.md) behaviours to suit different research designs.
 
 #### Quick add
 
-Clicking the next button, we encounter the first name generator stage of our interview, which is where the participant will name some alters. Here, we use the "quick add" Name Generator, which shows a single text field for name required in order to create an alter. We have two prompts which ask, "Within the past 6 months, who have you felt close to, or discussed important personal matters with", followed by, "Within the past 6 months, who have you discussed social networks research with?" Note that you can reorder them by dragging the handle.
-
-We add individuals (alters) by clicking the button on the bottom right, typing the name of the person, and clicking enter. When you are finished, either click the button again, or click away, to close the input.
+Here, we use the ["quick add"](../interface-documentation/name-generator.md#using-quick-add) name generator interface, which is designed to be ultra-low response burden, and only require that a participant provide a name or label to create a node. We add nodes by clicking the button on the bottom right, typing a name, and pressing enter (or clicking the node icon). When you are finished, either click the button again, or click away, to close the input.
 
 {% include nc-image src="/assets/img/sample-protocol/quick-add.png" caption="The Name Generator (using quick add)" %}{: .macos-screenshot }
 
+We have configured a single [prompt](../key-concepts/prompts.md) for this stage ("Within the past 6 months, who have you felt close to, or discussed important personal matters with"). Prompts are defined by the researcher for a given stage, and frame the data collection task. Many Interfaces support the use of multiple prompts on a stage. If a stage is configured with multiple prompts, the "next" and "previous" buttons will move between them automatically.
+
 #### Side panels
 
-On the second prompt, we see a side panel appear that contains all of the nodes named on the first prompt. We can drag and drop nodes from the side panel into the node list area or we can create new nodes by clicking on the button in the bottom right right corner. 
+Clicking forwards into the next name generator stage, we see a side panel appear that contains all of the nodes named on the first stage. We can drag and drop nodes from the side panel into the node list area or we can create new nodes by clicking on the button in the bottom right right corner.
 
 {% include nc-image src="/assets/img/sample-protocol/side-panel.png" caption="Side Panel on the Name Generator (using quick add)" %}{: .macos-screenshot }
 
-This is the first data collection "stage" of our interview, and it uses an interface that we call the "Name Generator (using quick add)".
+The side panel functionality is available in both of our non-roster specific name generator Interfaces. It is designed for two specific scenarios:
+
+1. To allow participants to nominate alters they have already mentioned _again_ in response to later prompts. For example, if a first prompt asks "Who are you close to?", and second prompt asks "Who are your family members?", the participant may wish to nominate existing close alters as also being family members. This is especially powerful when used in combination with the [assign additional variables](../key-concepts/additional-variables.md) feature.
+
+2. As a container for displaying small amounts of roster data, where you still need to retain the ability for the participant to add network members not listed in the roster.
+
+You can display up to two panels, with different content in each. More information about can panels can be [found here](../interface-documentation/name-generator.md#side-panels)
 
 #### Forms
 
-Clicking the next button, we encounter the second name generator stage of our interview, which uses forms to collect alter information. Instead of the node type person captured on the prior stage, this stage is collecting alter data on node type "Clinic". 
+Clicking the next button until we arrive at the next name generator, we find a prompt asking about clinics or healthcare providers we have visited. This stage demonstrates two important concepts.
 
-{% include nc-image src="/assets/img/sample-protocol/node-type-place.png" caption="A name generator for place" %}{: .macos-screenshot }
+The first is that the name generators in Network Canvas can be configured to collect more in-depth node information at the time of elicitation. In this example, clicking the "add" button in the bottom right shows a form with three fields (name, visit date, and treatment summary). This is the ["form"](../interface-documentation/name-generator.md#using-forms) version of the name generator interface.
 
-We have one prompt asking, "Within the past 12 months, which clinic or healthcare providers have you visited?" We add clinics by clicking the button on the bottom right, which shows a form we need to complete about each clinic or healthcare provider that is named.
+The second important concept illustrated on this stage is that Network Canvas interviews can collect data on as many node types as the researcher desires. In this case, our name generator will create "clinic" nodes, which are displayed in blue. This is an element of the ontological flexibility discussed in our [project overview](../project-overview.md#ontological-flexibility), and allows for powerful research designs that model networks in sophisticated ways.
 
 {% include nc-image src="/assets/img/sample-protocol/using-forms.png" caption="A name generator form" %}{: .macos-screenshot }
 
 #### Using roster data
 
-Clicking the next button, we arrive at another name generator stage which allows a participant to nominate alters from a predetermined list (i.e., a roster). We have one prompt asking "please select any members of your degree class that you spend time with other than studying". Class members are added by selecting the appropriate "display card" on the scrollable roster. Multiple class members (alters) can be added at one time. Learn more about working with [roster data](../interface-documentation/roster-name-generators.md).
-
 {% include nc-image src="/assets/img/sample-protocol/small-roster.png" caption="A small roster name generator" %}{: .macos-screenshot }
 
-Clicking next will take us to a name generator stage using a large roster. Within this stage, we ask, "Which universities have you either visited or studied at?" To add a university, click the bottom right button and a search bar will display. Type the name of the university you want to add and select the card when it appears. Just as in the name generator using a small roster, you can nominate multiple alters at one time. Once you have selected all the universities you wish to add, click the plus button on the right side of the displayed roster.
+Continuing to the next stage, we arrive at another name generator - but one that behaves differently to the others. This stage allows a participant to nominate alters from a predetermined list (i.e., a roster). In this case, "classmate" nodes are added by selecting the appropriate "display card" on the scrollable roster. Multiple class members (alters) can be added at one time.
 
 {% include nc-image src="/assets/img/sample-protocol/large-roster.png" caption="A large roster name generator" %}{: .macos-screenshot }
+
+Clicking next again will take us to yet another roster based name generator interface, but this time one that is designed to work for extremely large rosters. Within this stage, we ask, "Which universities have you either visited or studied at?" To add a university, click the bottom right button and a search bar will display. Type the name of the university you want to add and select the card when it appears. Just as in the name generator using a small roster, you can nominate multiple alters at one time. Once you have selected all the universities you wish to add, click the plus button on the right side of the displayed roster.
+
+What differentiates these Interfaces is the size of the roster data that they are designed to accommodate, and the user interface affordances offered to the participant to help them to locate the roster member they are looking for. Learn more about working with [roster data](../interface-documentation/roster-name-generators.md).
 
 ### Form Interfaces
 
