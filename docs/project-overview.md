@@ -19,13 +19,21 @@ To provide an overview of the project, including background information about ou
 
 The Suite consists of three applications:
 
-![image](/assets/img/introduction-images/three-apps.png)
+- **Architect** - A tool for building Network Canvas interview protocols
+- **Interviewer** - An tool that loads and administers interview protocols to study participants
+- **Server** - A tool for researchers to manage their data and coordinate the survey deployment process
 
-These three applications work together to provide a seamless end-to-end workflow up to the point of analysis. While study participants only interact with the Network Canvas Application, researchers will utilize all three - first Architect in order to build a protocol, then Server to deploy the protocol, and then the Network Canvas App to administer the surveys to study participants.
+These three applications work together to provide a seamless end-to-end workflow up to the point of analysis.
 
 ![image](/assets/img/introduction-images/workflow@2x.png)
 
 ### Which applications do I need?
+
+Although the Network Canvas software is designed to provide a complete end-to-end workflow when used together, you do not need to use all elements of the suite in all circumstances.
+
+In particular, smaller studies may find that they do not need to use the Server application, since it mostly benefits scenarios where large numbers of field devices running Interviewer must be managed, and data received into a central location. If this is not a requirement for your study, you can choose instead to export data directly from Interviewer.
+
+If you choose not to use Server you will also need to consider the logistics of loading your interview protocol onto your field device. This is discussed in our tutorial article on using Interviewer.
 
 ## Design Principles
 
