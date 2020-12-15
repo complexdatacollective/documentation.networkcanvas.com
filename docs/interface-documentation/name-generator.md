@@ -10,7 +10,7 @@ Name Generators are one of the fundamental components of a network interview. Th
 
 There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/5.png" caption="Available Name Generator Interfaces in Architect" %}{: .macos-screenshot }
+{% include nc-image src="/assets/img/interface-documentation/name-generators/add-screen.png" caption="Available Name Generator Interfaces in Architect" %}{: .macos-screenshot }
 
 Each of these Interfaces is designed for a specific type of alter elicitation, with several associated advantages and disadvantages. Although they have some configuration options that are [shared with all other Network Canvas Interfaces](./shared.md), this article will focus on options specific to the main name generator interface, and a variant of it that uses a 'quick add' mode.
 

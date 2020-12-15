@@ -5,15 +5,17 @@ parent: Interface Documentation
 ---
 ## Overview
   
-{% include nc-image src="assets/img/interface-documentation/categorical-bin/1.png" %}
+{% include nc-image src="assets/img/interface-documentation/categorical-bin/catbin-example.png" %}
 
 The Categorical Bin is a name interpreter Interface that collects nominal data on the alters in a participant's network. When using the Categorical Bin, participants drag and drop alters one-by-one into colorful circles which each represent a category of the categorical variable. Once placed, participants can tap on any category and move alters within that category to any other. 
 
-{% include nc-image src="assets/img/interface-documentation/categorical-bin/2.png" %}
+## Configuring Categorical Bin
 
-{% include nc-image src="assets/img/interface-documentation/categorical-bin/3.png" %}
+An Categorical Bin screen can include multiple [prompts](../key-concepts/prompts.md), each of which relates to a single [categorical variable](key-concepts/variable-types/#categorical).
 
-{% include nc-image src="assets/img/interface-documentation/categorical-bin/4.png" %}
+Additionally an _other_ variable can be specified for custom responses that don't fit into the pre-configured categories.
+
+{% include nc-image src="assets/img/interface-documentation/categorical-bin/architect-other.png" caption="Configuring &quot;other&quot; variable for a categorical bin prompt" %}
 
 {: .no_toc}
 #### Do
