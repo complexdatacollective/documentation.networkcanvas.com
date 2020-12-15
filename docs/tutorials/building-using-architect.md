@@ -6,41 +6,48 @@ nav_order: 2
 last_modified_at: 2020-12-14
 ---
 
-## Introduction to Building a Network Canvas Protocol using Architect
+## Prerequisites
 
-This article introduces you to creating a Network Canvas protocol using Architect, by trying to rebuild the protocol we previewed in the previous session.
+This tutorial assumes you are familiar with the general concepts of the Network Canvas software, have read the [project overview](../project-overview.md), and have read the tutorial on [using Interviewer](../sample-interview.md).
 
-Architect is a desktop application which runs on Windows, macOS, and Linux operating systems. You don't need to run Architect on the computer that you use to run Interviewer or Server.
+We recommend following along using your own computer, so you should also [download and install Architect](https://networkcanvas.com/download.html).
+## Overview
 
-{% include nc-image src="assets/img/architect-guide/start-screen.png" %}
+This tutorial will guide you through the process of creating a Network Canvas protocol using Architect. We will be rebuilding the sample protocol that is available to install within Interviewer, which was discussed extensively in the tutorial on [using Interviewer](../sample-interview.md). If you would like to download and open the finished protocol, you can do so [from here](../../protocols/Sample Protocol v1.netcanvas).
 
-This is the start screen in Architect. Like the start screen in Interviewer, you have a welcome panel that contains links to the project overview video and the documentation website, which can be toggled to hide. The Architect start screen presents you with three task options:
+## Opening Architect
 
-* Create a blank new protocol
-* Open an existing one from the file browser
-* Open a recently opened protocol. If you are launching the app for the first time, this panel will be empty (as shown above).
+Architect is a desktop application which runs on Windows, macOS, and Linux operating systems. You don't need to run Architect on the computer that you use to run Interviewer or Server, but you can if you wish. The purpose of Architect is to provide a simple means for reseachers to build Network Canvas interview protocols, without needing extensive technical knowledge. It aims to provide a visual and intuitive user interface, so that you can focus on the content of your interviews.
+
+{% include nc-image src="assets/img/architect-guide/start-screen.png" content="The Architect start screen" %}
+
+When opening Architect, you are greeted by the **start screen**. Like the start screen in Interviewer, there is a welcome panel that contains links to the project overview video and the documentation website, with other sections becoming available as needed.
+
+When opened for the first time, the Architect start screen presents three task options:
+
+1. Create a blank new protocol
+2. Open an existing one from the file browser
+
+We are going to start by creating a blank protocol, so click the "Create New Protocol" button within the tasks panel. Save the file with a name and location that you will be able to find later.
 
 | Key Concept: Network Canvas protocol files                          |
 | :----------------------------------------------------------- |
 | Network Canvas protocols are stored in a file with the extension .netcanvas<br/><br/>They are just like any other files on your computer. You can move them around, rename them (more about this later), and you can (and should!) back them up.<br/><br/>The `.netcanvas` file contains all of the data in your protocol. So if you use roster data, images, or video, these will be embedded within the file. | 
 {: .key-concept }
 
-We are going to start by creating a blank protocol, so click the "Create New Protocol" button within the tasks panel. Save the file with a name and location that you will be able to find later.
+## The protocol overview screen
 
-And this takes us to the main protocol overview screen for our new protocol.
+Once you have created or opened a protocol, you will be taken to the **protocol overview screen**. This screen is designed to use the timeline metaphor also used by Interviewer, to visually represent the stages of your interview in the sequence that your participants will see them.
 
 {% include nc-image src="assets/img/architect-guide/overview-screen.png" %}
 
-| Key Concept: The protocol editing screen                          |
-| :----------------------------------------------------------- |
-| The white and blue panel is called the "overview panel", and it shows the protocol name and description, and has two buttons for accessing the protocol's resource library and managing the codebook.<br/><br/>In the bottom left, you can see the Return to Start Screen button. Clicking this button will take you out of the current protocol, and back to the start screen.<br/><br/>Extending out of the bottom of the overview panel is a red line which represents the "timeline". This is a key metaphor that runs between Architect and Interviewer. The timeline represents the sequence of stages that the participant passes through during the interview. As we add stages to our interview, they will appear on this line, from top to bottom. |
-{: .key-concept }
+The panel at the top is the protocol card that you will see when you import this protocol into Server or Interviewer. It shows the protocol name and description, and has two buttons for accessing the protocol's resource library and managing the codebook (these areas are discussed later). The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.
 
-The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.
+In the bottom left, you can see the Return to Start Screen button. Clicking this button will take you out of the current protocol, and back to the start screen.
 
-For now, we have a single button at the bottom of the screen, which enables us to add a new stage.
+Since we have just created a new protocol, we have a single button at the bottom of the screen, which enables us to add our first stage.
 
-## Configuring the Information Interface
+## Adding a stage
 
 We are going to start by configuring an Information Interface as the first stage like we saw in the sample protocol we demoed in Interviewer.
 
