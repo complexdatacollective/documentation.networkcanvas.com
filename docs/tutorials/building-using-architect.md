@@ -13,20 +13,17 @@ This tutorial assumes you are familiar with the general concepts of the Network 
 We recommend following along using your own computer, so you should also [download and install Architect](https://networkcanvas.com/download.html).
 ## Overview
 
+Architect is a desktop application which runs on Windows, macOS, and Linux operating systems. The purpose of Architect is to provide a simple means for researchers to build Network Canvas interview protocols, without needing extensive technical knowledge. It aims to provide a visual and intuitive user interface, so that you can focus on the content of your interviews. You don't need to run Architect on the computer that you use to run Interviewer or Server, but you can if you wish.
+
 This tutorial will guide you through the process of creating a Network Canvas protocol using Architect. We will be rebuilding the sample protocol that is available to install within Interviewer, which was discussed extensively in the tutorial on [using Interviewer](../sample-interview.md). If you would like to download and open the finished protocol, you can do so [from here](../../protocols/Sample Protocol v1.netcanvas).
 
 ## Opening Architect
 
-Architect is a desktop application which runs on Windows, macOS, and Linux operating systems. You don't need to run Architect on the computer that you use to run Interviewer or Server, but you can if you wish. The purpose of Architect is to provide a simple means for reseachers to build Network Canvas interview protocols, without needing extensive technical knowledge. It aims to provide a visual and intuitive user interface, so that you can focus on the content of your interviews.
-
 {% include nc-image src="assets/img/architect-guide/start-screen.png" content="The Architect start screen" %}
 
-When opening Architect, you are greeted by the **start screen**. Like the start screen in Interviewer, there is a welcome panel that contains links to the project overview video and the documentation website, with other sections becoming available as needed. When opened for the first time, the Architect start screen presents two task options:
+Upon opening Architect, you are greeted by the **start screen**. Like the start screen in Interviewer, you will see a welcome panel that contains links to the project overview video and the documentation website, with other sections becoming available as needed. When opened for the first time, the Architect start screen presents two task options: (1) create a blank new protocol, or (2) open an existing protocol from your computer.
 
-1. Create a blank new protocol
-2. Open an existing one from the file browser
-
-We are going to start by creating a blank protocol, so click the "Create New Protocol" button within the tasks panel. Save the file with a name and location that you will be able to find later.
+In this tutorial we will be building a protocol from scratch, so we are going to start by creating a blank protocol. Click the "Create New Protocol" button within the tasks panel. Save the file with a name and location that you will be able to find later.
 
 | Key Concept: Network Canvas protocol files                          |
 | :----------------------------------------------------------- |
@@ -41,23 +38,23 @@ Once you have created or opened a protocol, you will be taken to the **protocol 
 
 The panel at the top is the protocol card that you will see when you import this protocol into Server or Interviewer. It shows the protocol name and description, and has two buttons for accessing the protocol's resource library and managing the codebook (these areas are discussed later). The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.
 
-In the bottom left, you can see the Return to Start Screen button. Clicking this button will take you out of the current protocol, and back to the start screen.
+In the bottom left, you can see the "Return to Start Screen" button. Clicking this button will take you out of the current protocol, and back to the start screen.
 
 Since we have just created a new protocol, we have a single button at the bottom of the screen, which enables us to add our first stage.
 
 ## Adding a stage
 
-We are going to start by configuring an Information Interface as the first stage like we saw in the sample protocol we demoed in Interviewer.
+We are going to begin by configuring an Information Interface.
 
-Click the add new stage button. You will see a screen that provides a menu of all available interfaces within the app. Interfaces are grouped together by type, with the example below showing all available name generators.
+Click the add new stage button. You will see a screen that provides a menu of all available Interfaces within the app. Interfaces are grouped together by type, with the example below showing all available name generators.
 
-{% include nc-image src="assets/img/architect-guide/interface-menu.png" %}
+{% include nc-image src="assets/img/architect-guide/add-a-stage.png" %}
 
-Each stage is designed for a specific task within a network interview. For now, scroll down and select the "Information" interface from the "Utilities" section.
+Each Interface is designed for a specific task within a network interview. For now, scroll down and select the "Information" Interface from the "Utilities" section.
 
 {% include nc-image src="assets/img/architect-guide/information-interface.png" %}
 
-This is the Information Interface edit screen, and it allows us to customize our new stage.
+Selecting an Interface will open the stage editor, which is where the configuration of the Interface takes place.
 
 ### Setting the Stage Name
 
@@ -183,9 +180,10 @@ For the first field, we want to know the name of the clinic the participant is n
 {: .key-concept }
 
 Finally, we choose the input control that will be shown to collect this variable. 
+
 | Key Concept: Input controls                          |
 | :----------------------------------------------------------- |
-| Architect and Interviewer implement many different types of input control [text, number, checkbox group, toggle, radio button group, toggle button group, date picker, likert scale, visual analog scale].<br/><br/>This is because the most appropriate interface for assigning a variable depends very much on the specific nature of the variable, and not just on its data type.<br/><br/>For example, when collecting an ordinal variable that represents a likert scale, you might prefer a range slider OR a group of radio buttons. When collecting a numeric variable, you might want to provide plus and minus buttons that can easily be tapped, rather than having the participant type a value. |
+| Architect and Interviewer implement many different types of input control [text, number, checkbox group, toggle, radio button group, toggle button group, date picker, likert scale, visual analog scale].<br/><br/>This is because the most appropriate interface for assigning a variable depends very much on the specific nature of the variable, and not just on its data type. For example, when collecting an ordinal variable that represents a likert scale, you might prefer a range slider OR a group of radio buttons. |
 {: .key-concept }
 
 Because we are asking for the name of the clinic - a simple text variable - a text input is the most appropriate option.
@@ -196,24 +194,24 @@ Finally, we can define our validation requirements -- if any -- for this field. 
 
 Click "Save and Close", and we have created our first form field.
 
-Now, using the process we learned above, we will create the two additional fields for this form. 
+Now, using the process we learned above, we will create the two additional fields for this form.
 
-Create the following fields, with appropriate input controls, question prompts and validation rules:
+Create the following fields, with appropriate input controls, question prompts and options:
 
-* last_visit variable, DatePicker input control, "When was your visit?" prompt, and validation start range 2020/January/1
-* visit_purpose variable, Text Area input control, "In your own words, what was the purpose of your visit?" prompt, and no validation
+* A `last_visit` variable, using the DatePicker input control, prompt of "When was your visit?", and an appropriate start range
+* A `visit_purpose` variable, using the Text Area input control, and a prompt of "In your own words, what was the purpose of your visit?"
 
-After completing the form, we will configure the prompt for the stage. We click "Create New" and enter the text, "Within **the past 12 months,** which **clinics** or **healthcare providers** have you visited?"
+After completing the form, we will configure the prompt for the stage. Click "Create New" in the prompts section, and enter the text, "Within **the past 12 months,** which **clinics** or **healthcare providers** have you visited?"
 
 {% include nc-image src="assets/img/architect-guide/fields-inputs-prompts.png" %}
 
 ## Small Roster Name Generator
 
-Next we develop a name generator that uses a small roster brought in as an external data file. Small rosters, by our definition, are datasets containing up to 100 nodes.
+Next we will develop a name generator that uses a small roster brought in as an external data file. Small rosters, by our definition, are datasets containing up to 100 nodes.
 
 As we did in prior name generators above, we will first select the interface we want to configure (Small Roster Name Generator), add a stage name, and create a new node type for "Classmate".
 
-Next we will select the external data source to bring into the protocol that will populate the nodes on the roster. For this example, we have used a fictitious classroom roster. Please use any roster you have on hand, or create your own CSV. Your data file will need to at least include a column for first name and last name since we will use those attributes as display properties on the cards which represent the nodes.
+Next we will select the external data source to bring into the protocol that will populate the nodes on the roster. For this example, we have used a fictitious classroom roster. To use the same roster as the sample protocol, please [click here](../class-roster.csv) to download our CSV file. Alternatively, use any other roster you have on hand.
 
 Just as you added resources to the Information Interface above, you will also browse for your external data source from the protocol resource library if you saved it there or else from another location on your device.
 
@@ -232,13 +230,13 @@ Last, we implement a prompt for the stage, following the same process we did in 
 
 By our definition, large rosters are datasets with more than 100 nodes. 
 
-Following the example from the prior stage, we will first select the interface we want to configure (Large Roster Name Generator), add a stage name, and create a new node type, this time for "University". Again, we will pull in a data source we plan to use to populate our roster. In our example, we use a large CSV that includes universities around the world.
+Following the example from the prior stage, we will first select the interface we want to configure (Large Roster Name Generator), add a stage name, and create a new node type, this time for "University". Again, we will pull in a data source we plan to use to populate our roster. In our example, we use a large CSV that includes universities around the world. [Click here](../class-roster.csv) to download it.
 
 By default, the roster cards will use the "name" attribute from your external data file as the main card title. In this example, we choose to also include "website" as an attribute to display. 
 
 Next, we will configure how the roster file is searchable to the participant. The functionality available for this interface includes the ability for participants to search the database for specific attributes in order to locate the alters they want to select. 
 
-The search options listed will depend on the variables outlined in your datafile. Here, we have the option to select "country", "name", and "website", and we choose to include all three. 
+The search options listed will depend on the variables outlined in your datafile. Here, we have the option to select "country", "name", and "website", and we choose to include all three.
 
 {% include nc-image src="assets/img/architect-guide/roster-search.png" %}
 
@@ -284,14 +282,14 @@ Let's next repeat that process, but this time creating a form that will capture 
 
 We will now add just two fields to this form. Here are the details you need, following the same process as above:
 
-* visit_or_study, "Did you visit this university, or study there?", Radio Group with options Visited and Studied, Required validation
-* overall_review, "Overall, how would you describe your experience at this university?", Likert Scale with options Excellent, Above Average, Average, Below Average, Poor
+* Variable called `visit_or_study`, prompt of "Did you visit this university, or study there?", input control of "Radio Group" with options "Visited" and "Studied", "Required" validation
+* Variable called `overall_review`, prompt of "Overall, how would you describe your experience at this university?", input control of "Likert Scale" with options "Excellent", "Above Average", "Average", "Below Average", "Poor"
 
-As usual, save and return to the timeline view of your protocol.
+As before, save when you are finished, and return to the overview screen of your protocol.
 
 ## Creating Sociograms
 
-For the next stage, we use the Sociogram Interface. Create the stage, set a stage name, and select the "Person" node type. 
+For the next stage, we use the Sociogram Interface. Create the stage, set a stage name, and select the "Person" node type.
 
 ### Node Positioning
 
@@ -472,39 +470,37 @@ Next we will implement another Categorical Bin Interface. This time, we will cre
 
 Now we will configure both the network filtering on the stage as well as the skip logic for the stage. First, toggle the "Enable network filtering for this stage" to "on" and press the "Add Alter Rule" button. Next we will configure the rule according to the following: node type "Person", rule type "Attribute", variable query "discuss_network_research", operator "exactly", and attribute value of "True."
 
-Click the "Finish and Close" button. 
-
-{% include nc-image src="assets/img/architect-guide/skip-logic.png" %}
-
-To enable skip logic, we toggle the "Enable skip logic for this stage" switch to "on." Then we click the "Add Alter Rule" again. First, we configure the skip logic rule according to the following: node type "Person", rule type "Presence", and operator "Exists." Next, we configure a second skip logic rule as follows: node type "Person", rule type "Attribute", variable query "discuss_network_research", operator "is exactly", and attribute value of "True."
-
-We finish defining the rules by selecting "All Rules" under the Must Match section.
-
 {% include nc-image src="assets/img/architect-guide/filter-skip.png" %}
+
+Click the "Finish and Close" button.
+
+To enable skip logic, we toggle the "Enable skip logic for this stage" switch to "on." Then we click the "Add Alter Rule" again. First, we configure the skip logic rule according to the following: node type "Person", rule type "Presence", and operator "Exists." Next, we configure a second skip logic rule as follows: node type "Person", rule type "Attribute", variable query "discuss_network_research", operator "is exactly", and attribute value of "True.".
+
+{% include nc-image src="assets/img/architect-guide/skip.png" %}
+
+Once configured, ensure the "must match" setting is "all rules", as above.
 
 As a final step on this stage, we will create a prompt with the text, "You indicated that you've discussed social networks research with these people. Which category best describes your relationship with each person?" We will assign a categorical variable of "social_networks_research_relationship" with the following labels: Work Colleague, Classmate, Co-author, Supervisor. Type the corresponding values of "Work_Colleague", "Classmate", "Co-author", and "Supervisor."
 
 {% include nc-image src="assets/img/architect-guide/catbin-prompt.png" %}
 
-We will also include a "Follow-up "Other" Option" for this prompt. Toggle the switch in the section to "on", type the label for bin of "Other", type question prompt for dialog as "What is your relationship with this person?" and create a new variable to capture this attribute of "social_network_research_relationship_other." 
+We will also include a "Follow-up "Other" Option" for this prompt. Toggle the switch in the section to "on", type the label for bin of "Other", type question prompt for dialog as "What is your relationship with this person?" and create a new variable to capture this attribute of "social_network_research_relationship_other."
 
-{% include nc-image src="assets/img/architect-guide/other-variable.png" %}
+{% include nc-image src="assets/img/architect-guide/followup.png" %}
 
-We're finished configuring this stage. Press "Save and Close" on the bottom right of the prompt editor, and "Return and Close" on the Categorical Bin Interface editor. 
+We have now finished configuring this stage. Press "Save and Close" on the bottom right of the prompt editor, and "Return and Close" on the Categorical Bin Interface editor.
 
 ## Creating the Narrative Interface
 
-The last stage configured in this sample protocol is the Narrative Interface. As you have already learned, we will create a new stage (Narrative Interface), set a stage name ("Narrative Interface"), and select a node type ("Person"). Next we will choose to use the concentric circles background, but this time elect to use just 1 circle. 
+The last stage configured in this sample protocol is the Narrative Interface. As you have already learned, we will create a new stage (Narrative Interface), set a stage name ("Narrative Interface"), and select a node type ("Person"). Next we will choose to use the concentric circles background, but this time elect to use just 1 circle.
 
 {% include nc-image src="assets/img/architect-guide/narrative.png" %}
 
-The Narrative Interface is a data visualization variation of the Sociogram, designed expressly to elicit qualitative information from a participant about their network. No data is captured within the app on this screen, but researchers may choose to use screen capture software or other methods to record participant interaction on this screen.
-
 ### Configuring Presets
 
-Narrative presets allow you to emphasize specific elements of a participant's network visually, such as nodes grouped by attribute characteristic or alter-alter relationships (edges). Once the presets are configured on this screen, they appear as a menu where each option can be toggled "on" or "off." 
+Narrative presets allow you to emphasize specific elements of a participant's network visually, such as nodes grouped by attribute characteristic or alter-alter relationships (edges). Once the presets are configured on this screen, they appear as a menu where each option can be toggled "on" or "off."
 
-Now, let's configure presets for our sample interview protocol. Go to the section in the Narrative stage editor titled "Narrative Presets" and press the "Create New" button. We will give the preset a label of "Sample Preset." This label will appear at the top of the menu visible to the participant on this stage. 
+Now, let's configure presets for our sample interview protocol. Go to the section in the Narrative stage editor titled "Narrative Presets" and press the "Create New" button. We will give the preset a label of "Sample Preset." This label will appear at the top of the menu visible to the participant on this stage.
 
 Next, we will click the "Layout Variable" box. We can choose to either create a new layout variable for this screen or use an existing one. In this case, we'll use the "sociogram_layout" variable we created before. 
 
@@ -524,16 +520,16 @@ Free-draw is a function on this interface that allows a participant to annotate 
 
 Repositioning on the Narrative Interface enables a participant to drag their alters to new positions, keeping the displayed edges intact. 
 
-{% include nc-image src="assets/img/architect-guide/9.png" %}
+Click "Save and Return" and are now able to view the configured Narrative stage on our timeline.
 
-We will click "Save and Return" and are now able to view the configured Narrative stage on our timeline. 
+## Finishing Off Your Protocol
 
-## Finishing Off Your Protocol 
+Make sure to save your file. The file name of the protocol will uniquely identify it in both the Network Canvas Interviewer app and Network Canvas Server.
 
-Now with each of these stages in the protocol, make sure to save your file. The file name of the protocol set in Architect will be the same name used in both the Network Canvas Interviewer app and Network Canvas Server. There are numerous ways to transition from building the protocol within the Architect to deployment.
+There are numerous ways to transition from building the protocol within the Architect to deployment.
 
-- Within the Interviewer app, import the protocol file directly from a file location on your local computer.
-- Host the protocol file on a web server and then within the Interviewer app, import the protocol file from a web URL.
-- Use Server to manage the workflow. Once the protocol is loaded into Server it can be deployed to numerous field devices and then receive data from these devices for collation and export.
+* Within the Interviewer app, import the protocol file directly from a file location on your local computer.
+* Host the protocol file on a web server and then within the Interviewer app, import the protocol file from a web URL.
+* Use Server to manage the workflow. Once the protocol is loaded into Server it can be deployed to multiple field devices and then receive data from these devices for collation and export.
 
-In the next section [Server and Interviewer Workflows](./server-workflows.md) we will show you how to use Server to load a protocol file onto multiple devices and then receive the data from those devices.
+In the next tutorial, [Server and Interviewer Workflows](./server-workflows.md), we will show you how to use Server to load a protocol file onto multiple devices and then receive the data from those devices.
