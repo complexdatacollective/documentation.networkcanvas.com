@@ -11,7 +11,7 @@ The Per Alter Edge Form is an Interface that collects attribute data on the edge
 
 ## Configuring Per Alter Edge Form
 
-A single edge type is selectable per screen. This screen supports filtering for edges that match the
+A single edge type is selectable per screen. This screen supports [filtering](../key-concepts/filtering.md) for edges that match the
 specified type.
 
 {% include nc-image src="/assets/img/interface-documentation/per-edge-form/architect_1.png" %}
@@ -20,7 +20,7 @@ The title screen is configurable with a title and introduction text.
 
 {% include nc-image src="/assets/img/interface-documentation/per-edge-form/architect_2.png" %}
 
-Each edge will be assigned variables using the form configured here.
+Each edge will be assigned [variables](../key-concepts/variable-types.md) using the [form](../key-concepts/forms.md) configured here.
 
 {% include nc-image src="/assets/img/interface-documentation/per-edge-form/architect_3.png" %}
 
