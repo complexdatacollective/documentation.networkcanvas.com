@@ -21,9 +21,7 @@ Architect is a desktop application which runs on Windows, macOS, and Linux opera
 
 {% include nc-image src="assets/img/architect-guide/start-screen.png" content="The Architect start screen" %}
 
-When opening Architect, you are greeted by the **start screen**. Like the start screen in Interviewer, there is a welcome panel that contains links to the project overview video and the documentation website, with other sections becoming available as needed.
-
-When opened for the first time, the Architect start screen presents three task options:
+When opening Architect, you are greeted by the **start screen**. Like the start screen in Interviewer, there is a welcome panel that contains links to the project overview video and the documentation website, with other sections becoming available as needed. When opened for the first time, the Architect start screen presents two task options:
 
 1. Create a blank new protocol
 2. Open an existing one from the file browser
@@ -32,12 +30,12 @@ We are going to start by creating a blank protocol, so click the "Create New Pro
 
 | Key Concept: Network Canvas protocol files                          |
 | :----------------------------------------------------------- |
-| Network Canvas protocols are stored in a file with the extension .netcanvas<br/><br/>They are just like any other files on your computer. You can move them around, rename them (more about this later), and you can (and should!) back them up.<br/><br/>The `.netcanvas` file contains all of the data in your protocol. So if you use roster data, images, or video, these will be embedded within the file. | 
+| Network Canvas protocols are stored in a file with the extension `.netcanvas`.<br/><br/>They are just like any other files on your computer, meaning you can move them around, rename them (more about this later), and you can (and should!) back them up.<br/><br/>The `.netcanvas` file contains all of the data in your protocol. So if you use roster data, images, or video, these will be embedded within the file. | 
 {: .key-concept }
 
 ## The protocol overview screen
 
-Once you have created or opened a protocol, you will be taken to the **protocol overview screen**. This screen is designed to use the timeline metaphor also used by Interviewer, to visually represent the stages of your interview in the sequence that your participants will see them.
+Once you have created or opened a protocol, you will be taken to the **protocol overview screen**. This screen is designed around the vertical "timeline" metaphor also used by Interviewer. It visually represents the stages of your interview in the sequence that your participants will see them.
 
 {% include nc-image src="assets/img/architect-guide/overview-screen.png" %}
 
@@ -67,13 +65,13 @@ All stages have a name, which is shown next to the stage icon in the timeline an
 
 ### Page Heading
 
-The page heading allows you to customize a large title element that will show at the top of your Information Interface. Here we will give the heading, "Welcome to the Sample Protocol." Next, we will add the information we want displayed on the screen. 
+The page heading allows you to customize a large title element that will show at the top of your Information Interface. Here we will give the heading, "Welcome to the Sample Protocol." Next, we will add the information we want displayed on the screen.
 
 ### Edit Items
 
-The Edit Items panel allows you to add various types of media you would like included on the screen. You have the option to add image, video, audio, or text content. Each resource used will be displayed in vertical blocks according to the order you add them. Content blocks can also be reordered by dragging. 
+The Edit Items panel allows you to add various types of media you would like included on the screen. You have the option to add image, video, audio, or text content. Each resource used will be displayed in vertical blocks according to the order you add them. Content blocks can also be reordered by dragging.
 
-To add a resource to this screen, click the 'add new item' button at the bottom of the panel. A new screen will open where you can choose between the media types available. Text content can be added directly in markdown. Image, audio, and video files can be added by selecting the type and browsing for the file to add, either from a location on your device or from the resource library (if you have added content there). 
+To add a resource to this screen, click the 'add new item' button at the bottom of the panel. A new screen will open where you can choose between the media types available. Text content can be added directly in markdown. Image, audio, and video files can be added by selecting the type and browsing for the file to add, either from a location on your device or from the resource library (if you have added content there).
 
 {% include nc-image src="assets/img/architect-guide/edit-item.png" %}
 
@@ -81,7 +79,7 @@ As in the previous Interviewer session, we will not go through the configuration
 
 Once we have added all resources that we want to include on this stage, we click the "Save and Return" button in the bottom right. This action saves our stage and returns us to the timeline view where our newly configured stage is now visible.
 
-{% include nc-image src="assets/img/architect-guide/completed-stagecomplete.png" %}
+{% include nc-image src="assets/img/architect-guide/completed-stage.png" %}
 
 ## Creating Name Generators
 
@@ -97,12 +95,12 @@ Before we can continue, we must tell Architect which type of node this interface
 
 | Key Concept: Node and Edge "Types"                          |
 | :----------------------------------------------------------- |
-| Part of the ontological flexibility of the Network Canvas suite is the ability to model unlimited numbers of node and edge types.<br/><br/>The most frequently used example from personal networks research would be a social network made up of "people" node types, and edge types based on relationships of some kind or another (typically "friendship"). We would therefore create a node of type "Person", and an edge of type "Friendship" within Architect. |
+| Part of the ontological flexibility of the Network Canvas suite is the ability to model unlimited numbers of node and edge types. These types are top level categories that differentiate nodes and edges from one-another. Common node types might include "person", "place", or "organization", but these categories are entirely up to you to decide upon. |
 {: .key-concept }
 
-Our name generator will ask about people, so we will name our node type "People". We can select a color to differentiate this node type from others, though in this case we will leave the default coral color selected.
+Our name generator will ask about people, so we will name our node type "Person". We can select a color to differentiate this node type from others, though in this case we will leave the default coral color selected.
 
-Finally we will select the person icon to use for this node type. This icon is shown in Interviewer wherever the participant has the opportunity to create a new node of this type. 
+Finally we will select the person icon to use for this node type. This icon is shown in Interviewer wherever the participant has the opportunity to create a new node of this type.
 
 {% include nc-image src="assets/img/architect-guide/node-type.png" %}
 
@@ -110,7 +108,7 @@ Click "Save and Return" to create the node type, and return to the name generato
 
 ### Creating a Quick Add Variable
 
-Next, we need to create a quick add variable that will be used to store data enter for each alter nominated by the participant. Unless you have a good reason, this variable should be called "name". Interviewer will use this variable as the label for every node created on this stage. To create a new variable, select the dropdown menu and click "create new" and type the name of your variable (e.g., "name"). Click the "Create" button and you will see the new variable name selected as the quick add variable.
+Next, we need to create a quick add variable that will be used to store data enter for each alter nominated by the participant. Unless you have a good reason not to, this variable should be called "name". Interviewer will use this variable as the label for every node created on this stage. To create a new variable, select the dropdown menu and click "create new" and type the name of your variable (e.g., "name"). Click the "Create" button and you will see the new variable name selected as the quick add variable.
 
 ### Creating Prompts
 
@@ -118,14 +116,14 @@ Next we must provide some questions to prompt the participant into adding alters
 
 | Key Concept: Prompts                          |
 | :----------------------------------------------------------- |
-| Most stages use the concept of "prompts" to allow you to define questions to put to the participant during the interview. You are free to explain the task to the participant in ways that are meaningful to your study.<br/><br/>You can have multiple prompts on a single stage, or a single prompt per stage - the choice is yours. You may wish to think about grouping prompts by theme, and then having one stage for each theme. For example, "Name Generator (family)" could contain prompts about family alters, and "Name Generator (colleagues)" could contain prompts about professional alters.<br/><br/>Prompts can contain formatting such as bold or italicized text to create emphasis and rhythm. To create this formatting, use markdown syntax. |
+| Most stages use the concept of "prompts" to allow you to define questions to put to the participant during the interview. You are free to explain the task to the participant in ways that are meaningful to your study.<br/><br/>You can have multiple prompts on a single stage, or a single prompt per stage - the choice is yours. You may wish to think about grouping prompts by theme, and then having one stage for each theme. For example, a "Name Generator (family)" stage could contain prompts about family alters, and "Name Generator (colleagues)" could contain prompts about professional alters.<br/><br/>Prompts can contain formatting such as bold or italicized text to create emphasis and rhythm. To create this formatting, use markdown syntax. |
 {: .key-concept }
 
 Click the "Create New" button in the prompt section, to open the new prompt edit form.
 
 {% include nc-image src="assets/img/architect-guide/edit-prompt.png" %}
 
-Our first prompt will ask the participant to name the people with whom they have felt close to or discussed important matters. Enter the text "Within the **past 6 months,** who have you felt **close to**, or discussed **important personal matters** with?", and click "Save and Close". Notice that we are using markdown syntax to add emphasis to guide understanding.
+Our first prompt will ask the participant to name the people with whom they have felt close to or discussed important matters. Enter the text "Within the past 6 months, who have you felt close to, or discussed important personal matters with?", and click "Save and Close".
 
 ### Preview Mode
 
@@ -135,7 +133,7 @@ Clicking it will open a window with the current stage loaded, and show the inter
 
 | Key Concept: Preview Mode                          |
 | :----------------------------------------------------------- |
-| You can choose between different device presets, to mimic the look of a specific piece of hardware. For example you can emulate the screen size of an iPad, or a widescreen laptop.<br/><br/>You can scale the preview window so that you can fit it best with your workspace.<br/><br/>You can enter data in preview mode - for example creating nodes - but the data does not persist after you close the window. More on this later. |
+| Preview mode is designed to let you understand how your stage will be presented to your participants, taking into account the device that you will be using. You can choose between different device presets, to mimic the look of a specific piece of hardware (for example you can emulate the screen size of an iPad, or a widescreen laptop).<br/><br/>If the window becomes too large, you can scale it so that you can fit it within your workspace.<br/><br/><strong>It is important to note</strong> that you can enter data in preview mode - for example creating nodes - but the data does not persist after you close the window! |
 {: .key-concept }
 
 Click the pink "Preview" button in the bottom left hand corner of the stage editor, and the preview window will open.
@@ -159,7 +157,7 @@ Next, we need to choose a data source for this side panel. We have two options: 
 
 You can optionally preview the interface at this point, checking that the prompts and the form look and function as you expected. When you are satisfied, click continue to add your stage.
 
-{% include tip-info.md content="At any point during this tutorial, free free to click the &quot;Save Changes&quot; button in the bottom bar when on the timeline view, or select &quot;File -> Save As&quot; from the menu." %}
+{% include tip-info.md content="At any point during this tutorial, free free to click the &quot;Save Changes&quot; button in the bottom bar when on the timeline view, or select &quot;File -> Save&quot; from the menu." %}
 
 ## Name Generator using Forms
 
