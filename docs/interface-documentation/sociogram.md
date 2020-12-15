@@ -9,7 +9,7 @@ Sociograms are the visual mapping component of a network interview. On the Socio
 
 There are two sociogram Interfaces in Network Canvas - one for data collection and one for data display - that can be added to your study and configured in Architect.
 
-{% include nc-image src="/assets/img/interface-documentation/sociogram/1.png" %}{: .macos-screenshot }
+{% include nc-image src="/assets/img/interface-documentation/sociogram/add-screen.png" %}{: .macos-screenshot }
 
 ## Sociogram
 

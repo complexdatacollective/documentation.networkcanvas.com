@@ -10,8 +10,6 @@ Sociograms are the visual mapping component of a network interview. On the Socio
 
 There are two sociogram Interfaces in Network Canvas - one for data collection and one for data display - that can be added to your study and configured in Architect.
 
-{% include nc-image src="/assets/img/interface-documentation/sociogram/1.png" %}{: .macos-screenshot }
-
 ## The Narrative Interface
 
 On the "Narrative" Interface, alter edges, group and individual attribute variables can be displayed to elicit qualitative data from the participant about their network. Configured presets can be toggled on and off to reveal colored convex hulls representing group variables, highlighted nodes representing attribute data, and different edge types in the network. No data is collected on this Interface. 
