@@ -26,7 +26,7 @@ The start screen is a 'back-stage' area of Interviewer, designed to enable the p
 
 ![image](/assets/img/sample-protocol/welcome-section.png)
 
-The **welcome section** which contains links to install the sample protocol, visit the documentation website, or watch an overview video. The welcome section can be hidden when no longer needed, using the toggle in the top right hand corner.
+The **welcome section** which contains links to install the sample protocol, visit the documentation website, or watch an overview video. The welcome section can be hidden when no longer needed, using the toggle in the top right hand corner. The welcome section also contains a button (the cog icon) that opens the main device settings screen. We encourage you to open the settings screen and explore the various options.
 
 ![image](/assets/img/sample-protocol/protocols-section.png)
 
@@ -291,7 +291,7 @@ Managing and exporting interview data takes place in a dedicated **export and ma
 
 ![image](/assets/img/sample-protocol/export-section.png)
 
-Data export operations are covered in greater detail in the [Server and Interviewer Workflows](./server-workflows.md) tutorial, but the process consists of selecting one or more sessions from this section, and clicking the "export selected to file" or "export selected to Server" button, as applicable.
+Data export operations are covered in greater detail in the [Server and Interviewer Workflows](./server-workflows.md) tutorial, but the process consists of selecting one or more sessions from this section, and clicking the "export selected to file" or "export selected to Server" button, as applicable. Settings for exported data can be found in the device settings in the welcome section.
 
 ## Next Steps
 
