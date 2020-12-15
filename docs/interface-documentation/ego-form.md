@@ -5,15 +5,15 @@ parent: Interface Documentation
 ---
 ## Overview
 
-{% include nc-image src="/assets/img/interface-documentation/ego-form/1.png" %}
+{% include nc-image src="/assets/img/interface-documentation/ego-form/egoform-example.png" %}
 
 The Ego Form is an interface that collects data on your participant (ego). When using the Ego Form, participants complete a [form](../key-concepts/forms.md) about themselves that consists of one or more fields. This Interface also contains an embedded introductory panel where the purpose of the form can be described to a participant. 
 
-{% include nc-image src="/assets/img/interface-documentation/ego-form/2.png" %}
+## Configuring Ego Form
 
-{% include nc-image src="/assets/img/interface-documentation/ego-form/3.png" %}
+The configurable [form](../key-concepts/forms.md) determines which [variables](../key-concepts/variable-types.md) will be assigned to the participant.
 
-{% include nc-image src="/assets/img/interface-documentation/ego-form/4.png" %}
+{% include nc-image src="/assets/img/interface-documentation/ego-form/architect-ego-form.png" %}
 
 {: .no_toc}
 #### Do
