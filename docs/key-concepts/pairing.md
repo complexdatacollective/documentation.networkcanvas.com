@@ -21,7 +21,7 @@ Pairing can be accomplished manually or via the automatic discovery feature, whi
 
 Using this technology, Interviewer clients are able to "see" instances of Network Canvas Server that are running on the same local area network (LAN).
 
-{% include nc-image src="assets/img/key-concepts/pairing/nc-found-server.png" caption="The automatic server discovery dialog" %}
+{% include nc-image src="assets/img/key-concepts/pairing/nc-found-server.png" caption="The automatic server discovery section" %}
 
 Interviewer will automatically attempt to locate instances of Server running on the same network, and any that are available to pair with will be visible by scrolling to the bottom of the Interviewer's start screen, in the "Server Status" section. Ensure that the instance of Server you wish to pair with is open and connected to the same network as the Interviewer client so they can "see" each other.
 
@@ -35,7 +35,9 @@ If you cannot utilize automatic discovery (either because it fails or is unavail
 
 In the manual connection dialog, you may enter in the IP address and port number of the Server with which you wish to pair. The Server IP address and port number can be found by clicking on the Network Status icon on the top right of the main interface in Server.
 
-{% include nc-image src="assets/img/key-concepts/pairing/server-manual-details.png" caption="A Server protocol workspace, showing connection information at the top of the screen." %}
+{% include nc-image src="assets/img/key-concepts/pairing/server-network-status-button.png" caption="A Server protocol workspace, showing network status at the top right of the screen." %}
+
+{% include nc-image src="assets/img/key-concepts/pairing/server-manual-details.png" caption="Network status detail dialog in Server." %}
 
 ## The Pairing Process
 
@@ -49,7 +51,11 @@ A dialog will then appear in Interviewer on the client device where you will ent
 
 {% include nc-image src="assets/img/key-concepts/pairing/nc-pairing-code.png" caption="Enter the code displayed in Server into the dialog within Interviewer." %}
 
-Once Interviewer and Server are securely paired, any protocols that have been uploaded to Server will be visible to the client. Selecting one of these protocols from the list will install it.
+Once Interviewer and Server are securely paired, protocols can not be imported from the Server, and Interviewer will enable the "Import from Server" button in the Protocols section.
+
+{% include nc-image src="assets/img/key-concepts/pairing/nc-import-from-server.png" caption="Protocol import options, including the option to import from Server." %}
+
+Clicking on "Import From Server" will display any protocols that have been uploaded to Server in the Interviewer client. Selecting one of these protocols from the list will install it.
 
 {% include nc-image src="assets/img/key-concepts/pairing/protocol-list.png" caption="A list of available protocols to install is displayed. Clicking the protocol begins the transfer." %}
 

@@ -59,4 +59,4 @@ You also have the ability to filter the content of Name Generator [side panels](
 
 This feature can be particularly useful if you wish to filter elements of a roster. For example, your roster may contain an attribute that represents graduation year that you could use to filter the side panel content for a question about classmates known from a certain year group.
 
-{% include nc-image src="./assets/img/key-concepts/network-filtering/side-panel.png" caption="Network filtering in a name generator side panel, using external data" %}
+{% include nc-image src="./assets/img/key-concepts/network-filtering/side-panel.png" caption="Network filtering in a name generator side panel" %}
