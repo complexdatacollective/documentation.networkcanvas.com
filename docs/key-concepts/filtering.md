@@ -13,7 +13,7 @@ This is particularly useful in cases where the content of the stage does not app
 
 ## Configuring Network Filtering on a Stage
 
-To configure network filtering within a stage, open the stage from the timeline view, and expand the section called "Network Filtering". From here, you have the ability to create one or more **rules** (of type alter or edge), as well as to set the **join operator** by determining if "all rules", or "any rule" must match.
+To configure network filtering within a stage, open the stage from the timeline view, and toggle the switch to enable "Network Filtering". From here, you have the ability to create one or more **rules** (of type alter or edge), as well as to set the **join operator** by determining if "all rules", or "any rule" must match.
 
 {% include nc-image src="./assets/img/key-concepts/network-filtering/filtering-panel.png" caption="The network filtering section of an ordinal bin stage" %}
 
@@ -23,8 +23,8 @@ To configure network filtering within a stage, open the stage from the timeline 
 
 Similar to skip logic rules, filtering rules have two types that can be targeted at either nodes or edges:
 
-- **"Type" Rules**: These rules allow you to query if a given entity of a specified type exists in the network, using either the `exists` or `not exists` operator. This rule type is not generally useful for most typical filtering operations, but can be used when roster data contains nodes or edges of multiple types.
-- **"Variable" Rules**: These rules allow you to query the value of a variable on a given entity type. For example, you may query the value of a variable called `age` on an alter type called 'Person'. You can evaluate the result using one of several logical operators, that vary depending on the variable type. For example, number variables will let you query using operators such as 'greater than' and 'less than'.
+- **"Presence" Rules**: These rules allow you to query if a given entity of a specified type exists in the network, using either the `exists` or `not exists` operator. This rule type is not generally useful for most typical filtering operations, but can be used when roster data contains nodes or edges of multiple types.
+- **"Attribute" Rules**: These rules allow you to query the value of a variable on a given entity type. For example, you may query the value of a variable called `age` on an alter type called 'Person'. You can evaluate the result using one of several logical operators, that vary depending on the variable type. For example, number variables will let you query using operators such as 'greater than' and 'less than'.
 
 Unlike skip logic rules (which are aggregated into an overall boolean `true` or `false` value), filter rules are applied to each node and edge in the network, and are not aggregated. Instead, the nodes that remain are those that satisfy the rule constraints.
 
@@ -51,7 +51,7 @@ To achieve this using network filtering, we implemented the following edge and n
 
 Applying these rules within this stage determines that only HIV+ nodes who have a sex relationship will be shown. All nodes that do not have a sex relationship will be filtered out - even if they have attribute `HIV_pos = true`.
 
-{% include tip-caution.md content="If your filter query (the sum of all defined rules within the stage) includes an edge rule, you will also filter alters. For example, if your rule is set to filter the existence of an edge type, such as 'sex', any nodes that would become isolates as a result of this query are removed from the network." %}
+{% include tip-caution.md content="If your filter query (the sum of all defined rules within the stage) includes an edge rule, you will also filter alters. For example, if your rule is set to filter the existence of an edge type, such as 'sex', any nodes that would become isolates as a result of this query are removed from the filtered network." %}
 
 ## Network Filtering in a Side Panel
 

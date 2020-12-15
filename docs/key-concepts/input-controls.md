@@ -36,7 +36,7 @@ Options are displayed vertically, to allow for longer labels and to create a mor
 
 {: .bad-practices}
 - Do not use more than 8 options, unless absolutely necessary. Long checkbox groups can be hard to see on a screen without scrolling.
-- Avoid using this control when the data is hierarchical, or when the participant should only select a single option. Use the RadioGroup of the Likert scale instead.
+- Avoid using this control when the data is hierarchical, or when the participant should only select a single option. Use the RadioGroup or the Likert scale instead.
 
 </div>
 
@@ -89,7 +89,7 @@ When first loaded, this control is in an "untouched" state, with a semi-transpar
 {: .good-practices}
 - Consider whether you want to provide a middle choice or not and mark it as neutral/ambivalent (e.g., "neither agree nor disagree", rather than unsure).
 - Consider whether you need more than five categories. Much research suggests there's limited power in using seven or more categories rather than just 5 (or even 3).
-- Note the special way this control handles the 'required' validation - no value will be recorded in the variable until the participant has interacted with the control. Once interacted with, the value of the control cannot be reset.
+- Note the special way this control handles the 'required' validation - no value will be recorded in the variable until the participant has interacted with the control. Once interacted with, the value of the control cannot be unset.
 
 {: .no_toc}
 ### Things to avoid

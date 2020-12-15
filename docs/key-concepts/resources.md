@@ -15,7 +15,7 @@ Once added to your protocol in Architect, resources are stored within the `.netc
 
 Many stages allow you to add resources directly while configuring them. This is designed to provide a more seamless flow when creating your interview protocol. Examples of this include background images on the Sociogram interface, roster files in either of the roster Name Generators, and media files on the Information interface.
 
-If the stage you are supporting uses an resource it will provide an interface for you to add it directly, and will give instructions about which type of resource is required.
+If the stage you are supporting uses a resource it will provide an interface for you to add it directly, and will give instructions about which type of resource is required.
 
 {% include nc-image src="/assets/img/key-concepts/assets/bg-asset.png" caption="Adding a background image to a Sociogram" %}
 
@@ -29,22 +29,22 @@ Under the resource library screen, you can browse, filter, and delete any existi
 
 {% include nc-image src="/assets/img/key-concepts/assets/asset-library.png" caption="The resource library screen" %}
 
-You will notice that existing resources that are unused show a red "unused" pill. This indicates that they are able to be deleted. Attempting to delete an resource that is in use within your interview will be prevented. You must first update or remove all uses of an resource before you can delete it.
+You will notice that existing resources that are unused show a red "unused" pill. This indicates that they are able to be deleted. Attempting to delete an resource that is in use within your interview will be prevented. You must first update or remove all uses of a resource before you can delete it.
 
 ## Supported File Types
 
 ### Image
 
-Network Canvas supports JPEG, GIF, and PNG image file formats.
+Interviewer supports JPEG, GIF, and PNG image file formats.
 
 ### Audio
 
-Network Canvas supports MP3, AIFF, M4A, and MP4 audio file formats.
+Interviewer supports MP3, AIFF, M4A, and MP4 audio file formats.
 
 ### Video
 
-Network Canvas supports MP4 and MOV video file formats. Take special care when using video to make your files as small as possible.
+Interviewer supports MP4 and MOV video file formats. Take special care when using video to make your files as small as possible.
 
 ### Network
 
-Network Canvas supports network data in CSV format. the heading row will be used to set variable names for any nodes brought in to the interview. Ensure that you have a row called "name" to take advantage of automatic [node labelling](./node-labelling.md). Download a simple example CSV file from [here](../../../assets/previousInterview.csv).
+Interviewer supports network data in CSV format. The heading row will be used to set variable names for any nodes brought in to the interview. Ensure that you have a column called "name" to take advantage of automatic [node labelling](./node-labelling.md). Download a simple example CSV file from [here](../../../assets/previousInterview.csv).
