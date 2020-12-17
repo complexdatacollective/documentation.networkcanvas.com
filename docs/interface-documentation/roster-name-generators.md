@@ -6,11 +6,11 @@ nav_exclude: true
 ---
 ## Overview
 
+{% include nc-image src="/assets/img/interface-documentation/name-generators/small-roster.png" caption="The Small Roster Name Generator in use" %}{: .macos-screenshot }
+
 Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in your study's networks.
 
 There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
-
-{% include nc-image src="/assets/img/interface-documentation/name-generators/5.png" caption="Available Name Generator Interfaces in Architect" %}{: .macos-screenshot }
 
 Each of these Interfaces is designed for a specific type of alter elicitation, with several associated advantages and disadvantages. Although they have some configuration options that are [shared with all other Network Canvas Interfaces](./shared.md), this article will focus on options specific to roster based name generators.
 
@@ -32,11 +32,9 @@ Both of these interfaces require you to have a datafile that represents your ros
 
 When using the "Small Roster Name Generator" Interface, cards representing node data from a predetermined roster will be displayed to a participant. This Interface is intended to accommodate roster data files containing up to 100 nodes, with the idea that the list view allows for simple and fast scanning of the roster by a participant, supported by sorting and filtering where necessary.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/small-roster.png" caption="The Small Roster Name Generator in use" %}{: .macos-screenshot }
-
 By default, cards will display the `name` attribute from the roster data as a card title, and will sort the cards in the order the nodes are defined in the data file. These options can be configured from within architect. Note that you are able to define both the default sorting options, and allow the user to sort themselves by multiple properties.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/6.png" caption="Configuring card display options" %}{: .macos-screenshot }
+{% include nc-image src="/assets/img/interface-documentation/name-generators/architect-card.png" caption="Configuring card display options" %}{: .macos-screenshot }
 
 {: .no_toc}
 ### Do
@@ -71,7 +69,7 @@ The search function is also heavily configurable, allowing you to choose which a
 
 As a general rule of thumb search accuracy should increase as roster size increases, and only attributes containing terms participants are likely to search by should be included as indexed attributes. 
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/search-options.png" caption="Configuring search options within Architect" %}{: .macos-screenshot }
+{% include nc-image src="/assets/img/interface-documentation/name-generators/architect-search.png" caption="Configuring search options within Architect" %}{: .macos-screenshot }
 
 {: .no_toc}
 ### Do
