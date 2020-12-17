@@ -5,7 +5,7 @@ parent: Key Concepts
 ---
 ## Overview
 
-Skip logic is a feature within Network Canvas that allows you to conditionally skip or show stages within the interview, based on the current information in the interview network. By skipping or showing certain stages, you are able to direct the path a participant takes through your protocol.
+Skip logic is a feature within Interviewer that allows you to conditionally skip or show stages within the interview, based on the current information in the interview network. By skipping or showing certain stages, you are able to direct the path a participant takes through your protocol.
 
 For example, if a participant indicates on an ego form stage that they have never used drugs, you may configure your protocol using skip logic to not show them subsequent name interpreter stages that ask about drug use with alters.
 
@@ -31,10 +31,10 @@ You can see which stages have skip logic enabled by looking for the skip logic i
 
 ## Skip Logic Rules
 
-Constructing rules is the most fundamental part of creating skip logic. There are various types of rule, depending on the network entity that is being targeted:
+Constructing rules is the most fundamental part of creating skip logic. There are various types of rules, depending on the network entity that is being targeted:
 
-- **"Type" Rules**: These rules allow you to query if a given entity of a specified type exists in the network, using either the `exists` or `not exists` operator. This rule type is available for alter and edge rules.
-- **"Variable" Rules**: These rules allow you to query the value of a variable on a given entity type. For example, you may query the value of a variable called `age` on an alter type called 'Person'. You can evaluate the result using one of several logical operators, that vary depending on the variable type. For example, number variables will let you query using operators such as 'greater than' and 'less than'. This rule type applies to alter and ego rules only.
+- **"Presence" Rules**: These rules allow you to query if a given entity of a specified type exists in the network, using either the `exists` or `not exists` operator. This rule type is available for alter and edge rules.
+- **"Attribute" Rules**: These rules allow you to query the value of a variable on a given entity type. For example, you may query the value of a variable called `age` on an alter type called 'Person'. You can evaluate the result using one of several logical operators, that vary depending on the variable type. For example, number variables will let you query using operators such as 'greater than' and 'less than'. This rule type applies to alter and ego rules only.
 
 ## The Join Operator
 
