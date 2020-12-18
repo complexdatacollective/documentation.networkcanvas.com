@@ -1,17 +1,21 @@
 # config.yml
 
 backend:
-backend:
   name: git-gateway
 local_backend: true
   # name: github
   # repo: complexdatacollective/Documentation # Path to your GitHub repository
   # branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
+publish_mode: editorial_workflow
+site_url: https://documentation.networkcanvas.com
+display_url: https://documentation.networkcanvas.com
 collections:
   - name: "docs"
     label: "Docs"
     folder: "docs"
+    editor:
+      preview: false
     path: "{{parent}}/{{title}}"
     create: true
     sortable_fields: ["title", "parent"]
@@ -19,14 +23,18 @@ collections:
       - label: 'Section'
         field: parent
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
       - { name: title, label: Title }
       - name: parent
+        label: Section
         widget: "relation"
         collection: "docs"
         search_fields: ["parent"]
         value_field: "parent"
         display_fields: ["parent"]
+        hint: "If this article belongs to a subsection, please select that here"
         required: false
+      - { name: body, label: body, widget: markdown }
       - { name: has_children, widget: "boolean", required: false }
       - { name: has_toc, widget: "boolean", required: false }
       - { name: nav_order, widget: "number", required: false }
