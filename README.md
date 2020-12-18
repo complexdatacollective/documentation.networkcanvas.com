@@ -18,6 +18,20 @@ Default `JEKYLL_ENV` is `JEKYLL_ENV=development`. Not currently using this featu
 {% endif %}
 ```
 
+## Admin
+
+For local testing use the following configuration in `admin/config.yml`:
+
+```
+backend:
+  name: git-gateway
+local_backend: true
+```
+
+Otherwise the site is configured to publish directly to github.
+
+You will need a github login to login to the admin section at `https://documentaiton.networkcanvas.com/admin`
+
 ## Production
 
 Assumes http://documentation.networkcanvas.com/ as site URL (set in `_config-production.yml`)

@@ -1,6 +1,7 @@
 # config.yml
 
 backend:
+backend:
   name: git-gateway
 local_backend: true
   # name: github
@@ -11,17 +12,21 @@ collections:
   - name: "docs"
     label: "Docs"
     folder: "docs"
-    path: "{{parent}}/{title}"
-    summary: "{{parent}}/{{title}}"
+    path: "{{parent}}/{{title}}"
     create: true
     sortable_fields: ["title", "parent"]
-    view_filters:
-      - label: 'Interface Documentation'
+    view_groups:
+      - label: 'Section'
         field: parent
-        pattern: 'Interface Documentation'
     fields:
       - { name: title, label: Title }
-      - { name: parent, label: Section, required: false }
+      - name: parent
+        widget: "relation"
+        collection: "docs"
+        search_fields: ["parent"]
+        value_field: "parent"
+        display_fields: ["parent"]
+        required: false
       - { name: has_children, widget: "boolean", required: false }
       - { name: has_toc, widget: "boolean", required: false }
       - { name: nav_order, widget: "number", required: false }
