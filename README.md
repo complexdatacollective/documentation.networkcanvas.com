@@ -20,6 +20,12 @@ Default `JEKYLL_ENV` is `JEKYLL_ENV=development`. Not currently using this featu
 
 ## Admin
 
+The site is configured to publish directly to github.
+
+You will need a github login to login to the admin section at `https://documentaiton.networkcanvas.com/admin`
+
+### Development
+
 For local testing use the following configuration in `admin/config.yml`:
 
 ```
@@ -28,9 +34,7 @@ backend:
 local_backend: true
 ```
 
-Otherwise the site is configured to publish directly to github.
-
-You will need a github login to login to the admin section at `https://documentaiton.networkcanvas.com/admin`
+You'll also need to run: `npx netlify-cms-proxy-server`
 
 ## Production
 
