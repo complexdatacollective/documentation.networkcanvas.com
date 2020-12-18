@@ -1,22 +1,22 @@
 # config.yml
 
 backend:
-  name: git-gateway
-local_backend: true
-  # name: github
-  # repo: complexdatacollective/Documentation # Path to your GitHub repository
-  # branch: master # Branch to update (optional; defaults to master)
-media_folder: 'assets/uploads'
+  name: github
+  repo: complexdatacollective/Documentation # Path to your GitHub repository
+  branch: master # Branch to update (optional; defaults to master)
+  site_domain: documentation.networkcanvas.com
+media_folder: '/assets/uploads'
 publish_mode: editorial_workflow
 site_url: https://documentation.networkcanvas.com
 display_url: https://documentation.networkcanvas.com
 collections:
   - name: "docs"
     label: "Docs"
-    folder: "docs"
+    folder: "/docs"
     editor:
       preview: false
-    path: "{{parent}}/{{title}}"
+    media_folder: '/assets/uploads'
+    path: "/{{parent}}/{{title}}"
     create: true
     sortable_fields: ["title", "parent"]
     view_groups:
