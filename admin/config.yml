@@ -1,0 +1,28 @@
+# config.yml
+
+backend:
+  name: git-gateway
+local_backend: true
+  # name: github
+  # repo: complexdatacollective/Documentation # Path to your GitHub repository
+  # branch: master # Branch to update (optional; defaults to master)
+media_folder: 'assets/uploads'
+collections:
+  - name: "docs"
+    label: "Docs"
+    folder: "docs"
+    path: "{{parent}}/{title}"
+    summary: "{{parent}}/{{title}}"
+    create: true
+    sortable_fields: ["title", "parent"]
+    view_filters:
+      - label: 'Interface Documentation'
+        field: parent
+        pattern: 'Interface Documentation'
+    fields:
+      - { name: title, label: Title }
+      - { name: parent, label: Section, required: false }
+      - { name: has_children, widget: "boolean", required: false }
+      - { name: has_toc, widget: "boolean", required: false }
+      - { name: nav_order, widget: "number", required: false }
+      - { name: nav_exclude, widget: "boolean", required: false }
