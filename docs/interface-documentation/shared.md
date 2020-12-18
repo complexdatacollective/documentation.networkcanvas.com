@@ -4,7 +4,6 @@ title: Shared Interface Options
 parent: Interface Documentation
 nav_exclude: true
 ---
-
 ## Overview
 
 Some configuration options are available to all or most interface screens, dependent on the sub-category of interface (e.g. name generators).
@@ -21,11 +20,11 @@ All stages have a configurable name. This is shown in the navigation when conduc
 
 All stage types must select a single entity type, which defines the primary entity type for data collection. The one exception is the information screen, which does not collect any data.
 
-Depending on the specific interface this will refer to either a _node_ type, or an _edge_ type.
+Depending on the specific interface this will refer to either a *node* type, or an *edge* type.
 
 ### Filtering
 
-This feature is available to _Sociograms_ and _Name Interpreters_ stage type categories. It allows further refinement of the selected entity type.
+This feature is available to *Sociogram* and *Name Interpreter* stage type categories. It allows further refinement of the selected entity type.
 
 For example, a Sociogram may have a "Person" node type selected as the entity type. You may then use this option to narrow down to only those "Person" nodes which also have a specific attribute.
 
