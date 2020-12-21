@@ -5,6 +5,7 @@ backend:
   repo: complexdatacollective/Documentation # Path to your GitHub repository
   branch: master # Branch to update (optional; defaults to master)
   site_domain: documentation.networkcanvas.com
+  base_url: https://api.netlify.com
 media_folder: '/assets/uploads'
 publish_mode: editorial_workflow
 site_url: https://documentation.networkcanvas.com
