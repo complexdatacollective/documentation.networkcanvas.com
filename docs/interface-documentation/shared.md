@@ -6,7 +6,7 @@ nav_exclude: true
 ---
 ## Overview
 
-Some configuration options are available to all or most interface screens, dependent on the sub-category of interface (e.g. name generators).
+Some configuration options are available to all or most interface screens (dependent on the sub-category of interface, e.g. name generators).
 
 {% include nc-image src="/assets/img/interface-documentation/shared/navigation.png" caption="The stage name as visible in the interview navigation" %}{: .macos-screenshot }
 
