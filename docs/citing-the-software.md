@@ -2,6 +2,7 @@
 layout: default
 title: Citing the Software
 nav_order: 8
+has_parent: false
 ---
 
 Please cite Network Canvas in publications or presentations that are created from any research, clinical, educational, or other applicable use of the Network Canvas Suite or any of its components. Through your citation of the software, we are able to measure its impact and track the ways in which it is being used.

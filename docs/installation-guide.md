@@ -3,6 +3,7 @@ layout: default
 title: Installation Guide
 nav_order: 2
 last_modified_at: 2019-06-14
+has_parent: false
 ---
 
 ## Which application do I need?

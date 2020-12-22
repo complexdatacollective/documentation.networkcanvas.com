@@ -6,37 +6,88 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
   site_domain: documentation.networkcanvas.com
   base_url: https://api.netlify.com
+# backend:
+#   name: git-gateway
+local_backend: true
 media_folder: '/assets/uploads'
 publish_mode: editorial_workflow
 site_url: https://documentation.networkcanvas.com
 display_url: https://documentation.networkcanvas.com
 collections:
-  - name: "docs"
-    label: "Docs"
+  - name: "Page"
+    label: "Page"
     folder: "/docs"
-    editor:
-      preview: false
     media_folder: '/assets/uploads'
-    path: "/{{parent}}/{{title}}"
     create: true
-    sortable_fields: ["title", "parent"]
-    view_groups:
-      - label: 'Section'
-        field: parent
+    sortable_fields: ["title"]
+    filter: { field: "has_parent", value: false }
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Has parent", name: "has_parent", widget: "hidden", default: false }
       - { name: title, label: Title }
-      - name: parent
-        label: Section
-        widget: "relation"
-        collection: "docs"
-        search_fields: ["parent"]
-        value_field: "parent"
-        display_fields: ["parent"]
-        hint: "If this article belongs to a subsection, please select that here"
-        required: false
       - { name: body, label: body, widget: markdown }
       - { name: has_children, widget: "boolean", required: false }
       - { name: has_toc, widget: "boolean", required: false }
       - { name: nav_order, widget: "number", required: false }
       - { name: nav_exclude, widget: "boolean", required: false }
+  - name: "Interface Documentation"
+    label: "Interface Documentation"
+    folder: "/docs/interface-documentation"
+    media_folder: '/assets/uploads'
+    create: true
+    sortable_fields: ["title"]
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
+      - { label: "Parent", name: "parent", widget: "hidden", default: "Interface Documentation" }
+      - { name: title, label: Title }
+      - { name: body, label: body, widget: markdown }
+  - name: "Key Concepts"
+    label: "Key Concepts"
+    folder: "/docs/key-concepts"
+    media_folder: '/assets/uploads'
+    create: true
+    sortable_fields: ["title"]
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
+      - { label: "Parent", name: "parent", widget: "hidden", default: "Key Concepts" }
+      - { name: title, label: Title }
+      - { name: body, label: body, widget: markdown }
+  - name: "Research Design"
+    label: "Research Design"
+    folder: "/docs/research-design"
+    media_folder: '/assets/uploads'
+    create: true
+    sortable_fields: ["title"]
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
+      - { label: "Parent", name: "parent", widget: "hidden", default: "Research Design" }
+      - { name: title, label: Title }
+      - { name: body, label: body, widget: markdown }
+  - name: "Technical Documentation"
+    label: "Technical Documentation"
+    folder: "/docs/technical-documentation"
+    media_folder: '/assets/uploads'
+    create: true
+    sortable_fields: ["title"]
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
+      - { label: "Parent", name: "parent", widget: "hidden", default: "Technical Documentation" }
+      - { name: title, label: Title }
+      - { name: body, label: body, widget: markdown }
+  - name: "Tutorials"
+    label: "Tutorials"
+    folder: "/docs/tutorials"
+    media_folder: '/assets/uploads'
+    path: "/{{parent}}/{{title}}"
+    create: true
+    sortable_fields: ["title"]
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
+      - { label: "Parent", name: "parent", widget: "hidden", default: "Tutorials" }
+      - { name: title, label: Title }
+      - { name: body, label: body, widget: markdown }
