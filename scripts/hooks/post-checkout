@@ -6,8 +6,6 @@ set -o errexit
 DIR="/opt/documentation.networkcanvas.com"
 DEPLOY_SOURCE_DIR="_site/"
 DEPLOY_DEST_DIR="/var/www/documentation.networkcanvas.com"
-# DEPLOY_SERVER="networkcanvas.com"
-# DEPLOY_ACCOUNT=`whoami`
 
 NFLAG=""
 
