@@ -25,6 +25,8 @@ done
 
 [ -f "$DIR/.env" ] && source "$DIR/.env"
 
+git -C $DIR submodule update --init --recursive
+
 echo "Building production Jekyll site"
 JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config-production.yml,_config-pdf.yml
 
