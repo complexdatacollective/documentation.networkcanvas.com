@@ -39,6 +39,5 @@ exclude:
   - "package-lock.json"
   - "vendor"
   - "README.md"
-  - "deploy.sh"
   - "ai files"
   - "scripts"
