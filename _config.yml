@@ -31,4 +31,14 @@ navigation:
     url: /
   - title: Feedback
     url: //networkcanvas.com/feedback.html
-exclude: ["Gemfile", "Gemfile.lock", "node_modules", "package.json", "package-lock.json", "vendor", "README.md", "deploy.sh", "ai files"]
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "package.json"
+  - "package-lock.json"
+  - "vendor"
+  - "README.md"
+  - "deploy.sh"
+  - "ai files"
+  - "scripts"
