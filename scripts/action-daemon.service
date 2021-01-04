@@ -1,0 +1,15 @@
+[Unit]
+Description=Action Daemon
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=web
+EnvironmentFile=/opt/documentation.networkcanvas.com/.env
+ExecStart=node /opt/documentation.networkcanvas.com/scripts/action-daemon/main.js
+
+[Install]
+WantedBy=multi-user.target

@@ -7,6 +7,8 @@ DIR="/opt/documentation.networkcanvas.com"
 DEPLOY_SOURCE_DIR="_site/"
 DEPLOY_DEST_DIR="/var/www/documentation.networkcanvas.com"
 
+echo $DIR
+
 NFLAG=""
 
 while getopts ":n" opt; do
@@ -23,6 +25,9 @@ done
 
 [ -f "$DIR/.env" ] && source "$DIR/.env"
 
+git -C $DIR fetch origin
+git -C $DIR clean -fd
+git -C $DIR git reset --hard origin/master
 git -C $DIR submodule update --init --recursive
 
 echo "Building production Jekyll site"
