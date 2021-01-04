@@ -31,7 +31,7 @@ git -C $DIR git reset --hard origin/master
 git -C $DIR submodule update --init --recursive
 
 echo "Building production Jekyll site"
-JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config-production.yml,_config-pdf.yml
+JEKYLL_ENV=production BUNDLE_GEMFILE=$DIR/Gemfile bundle exec jekyll build --config $DIR/_config.yml,$DIR/_config-production.yml,$DIR/_config-pdf.yml
 
 echo "Deploying ${DIR}/${DEPLOY_SOURCE_DIR} to ${DEPLOY_DEST_DIR}"
 rsync $NFLAG -rvz --delete --rsync-path="sudo rsync" "${DIR}/${DEPLOY_SOURCE_DIR}" "${DEPLOY_DEST_DIR}"
