@@ -5,11 +5,15 @@
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "restify": "^8.5.1"
+  },
+  "devDependencies": {
+    "supertest": "^6.0.1",
+    "tap": "^14.11.0"
   }
 }
