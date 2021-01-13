@@ -10,8 +10,6 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 3.8.5"
 
-gem "therubyracer"
-
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
 
@@ -41,3 +39,5 @@ gem 'jekyll-watch'
 gem 'jekyll-relative-links'
 
 gem 'jekyll-autoprefixer'
+
+gem "therubyracer"
