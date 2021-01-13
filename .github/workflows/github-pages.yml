@@ -1,4 +1,5 @@
 name: Build documentation site
+environment: jekyll
 
 on:
   push
