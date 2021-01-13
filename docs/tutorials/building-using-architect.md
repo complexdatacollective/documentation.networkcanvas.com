@@ -8,14 +8,14 @@ last_modified_at: 2020-12-14
 
 ## Prerequisites
 
-This tutorial assumes you are familiar with the general concepts of the Network Canvas software, have read the [project overview](../project-overview.md), and have read the tutorial on [using Interviewer](../sample-interview.md).
+This tutorial assumes you are familiar with the general concepts of the Network Canvas software, have read the [project overview](../project-overview.md), and have read the tutorial on [using Interviewer](./sample-interview.md).
 
 We recommend following along using your own computer, so you should also [download and install Architect](https://networkcanvas.com/download.html).
 ## Overview
 
 Architect is a desktop application which runs on Windows, macOS, and Linux operating systems. The purpose of Architect is to provide a simple means for researchers to build Network Canvas interview protocols, without needing extensive technical knowledge. It aims to provide a visual and intuitive user interface, so that you can focus on the content of your interviews. You don't need to run Architect on the computer that you use to run Interviewer or Server, but you can if you wish.
 
-This tutorial will guide you through the process of creating a Network Canvas protocol using Architect. We will be rebuilding the sample protocol that is available to install within Interviewer, which was discussed extensively in the tutorial on [using Interviewer](../sample-interview.md). If you would like to download and open the finished protocol, you can do so [from here](../../protocols/Sample Protocol v1.netcanvas).
+This tutorial will guide you through the process of creating a Network Canvas protocol using Architect. We will be rebuilding the sample protocol that is available to install within Interviewer, which was discussed extensively in the tutorial on [using Interviewer](./sample-interview.md). If you would like to download and open the finished protocol, you can do so [from here](../../protocols/Sample Protocol v1.netcanvas).
 
 ## Opening Architect
 
@@ -221,7 +221,7 @@ We will then define what display properties are used to identify the nodes in th
 
 We can optionally choose to include sorting controls. Sorting controls are especially useful when a roster is large enough to make discoverability difficult at first glance. In this example, we choose to implement an initial sort order that uses the "first_name" variable to order the roster cards in an ascending order.
 
-{% include tip-info.md content="Refer to our Interface Documentation for more in depth instruction, including useful Do's and Don'ts of working with [roster data](/docs/interface-documentation/roster-name-generators/)" %}
+{% include tip-info.md content="Refer to our Interface Documentation for more in depth instruction, including useful Do's and Don'ts of working with [roster data](/docs/interface-documentation/roster-name-generators/)" %}.
 
 Last, we implement a prompt for the stage, following the same process we did in the previous stages. We enter the prompt that includes instructions for how to nominate a node from the roster, "Please select any members of your degree class that you spend time with **other than when studying**. Tap a card to select, and press the **down arrow** when you are finished."
 {% include nc-image src="assets/img/architect-guide/roster-sort.png" %}

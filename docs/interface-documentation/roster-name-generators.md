@@ -21,7 +21,7 @@ Roster name generators are useful when you have a known set of network members t
 
 ## Defining a Roster
 
-Both of these interfaces require you to have a datafile that represents your roster. See our article on [network assets](../../key-concepts/assets) for more information about how to create such a file. Have this file, or a suitable mock file, ready before you attempt to configure either of these interfaces.
+Both of these interfaces require you to have a datafile that represents your roster. See our article on [network assets](../key-concepts/resources.md) for more information about how to create such a file. Have this file, or a suitable mock file, ready before you attempt to configure either of these interfaces.
 
 | Roster size constraints                          |
 | :----------------------------------------------------------- |

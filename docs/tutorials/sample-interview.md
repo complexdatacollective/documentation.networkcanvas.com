@@ -127,7 +127,7 @@ With Network Canvas, each interview is made up of a series of screens that we ca
 
 Each stage is an _instance_ of a category of task-based screen that we call an ["Interface"](../key-concepts/interfaces.md). That is to say that an Interface is the broad "type" of task, and a stage is the specifically configured version of that task embedded in your interview.
 
-For example, Network Canvas has several "name generator" **Interfaces**, but the specific screen at the start of your interview may be called the "person name generator **stage**". Each Interface is designed for a specific data collection task, such as generating names, collecting ordinal data, or showing a form. Each Interface has [dedicated documentation](../interface-documentation/index.md) that tells you about its features, and gives hints about when and where you should use it.
+For example, Network Canvas has several "name generator" **Interfaces**, but the specific screen at the start of your interview may be called the "person name generator **stage**". Each Interface is designed for a specific data collection task, such as generating names, collecting ordinal data, or showing a form. Each Interface has [dedicated documentation](../interface-documentation.md) that tells you about its features, and gives hints about when and where you should use it.
 
 ### The information interface
 
@@ -159,7 +159,7 @@ The side panel functionality is available in both of our non-roster specific nam
 
 2. As a container for displaying small amounts of roster data, where you still need to retain the ability for the participant to add network members not listed in the roster.
 
-You can display up to two panels, with different content in each. More information about can panels can be [found here](../interface-documentation/name-generator.md#side-panels)
+You can display up to two panels, with different content in each. More information about can panels can be [found here](../interface-documentation/name-generator.md#side-panels).
 
 #### Forms
 
@@ -203,7 +203,7 @@ The ego form Interface (stage 12 within the sample protocol), allows the researc
 
 For other situations where general purpose data collection is required, we provided form-based interfaces targeted at both nodes and edges. By clicking next, we come to a stage using the per-alter form Interface. This Interface can be used to ask name interpreter questions about alters the participant has nominated. The researcher is able to choose which alter type is used, as well as to define the form itself. Any data in these forms is stored directly on the alter as an attribute.
 
-In this particular Per Alter Form, we ask whether you visited or studied at the university you nominated and to indicate your level of satisfaction with the experience. The Per Alter Form stage will cycle through all alters of a given type in the interview network, unless [skip logic](..key-concepts/skip-logic.md) or [network filtering](..key-concepts/filtering.md) have been implemented causing the stage to be skipped altogether or filtering only a subset of the alters on the stage, respectively. As with all [forms](../key-concepts/forms.md) used by Interviewer, the Per Alter Form allows you to capture different types of data in a series of fields utilizing a variety of input controls.
+In this particular Per Alter Form, we ask whether you visited or studied at the university you nominated and to indicate your level of satisfaction with the experience. The Per Alter Form stage will cycle through all alters of a given type in the interview network, unless [skip logic](../key-concepts/skip-logic.md) or [network filtering](../key-concepts/filtering.md) have been implemented causing the stage to be skipped altogether or filtering only a subset of the alters on the stage, respectively. As with all [forms](../key-concepts/forms.md) used by Interviewer, the Per Alter Form allows you to capture different types of data in a series of fields utilizing a variety of input controls.
 
 {% include nc-image src="/assets/img/sample-protocol/per-alter-form.png" caption="A Per Alter Form" %}{: .macos-screenshot }
 
@@ -249,7 +249,7 @@ The next stage uses the categorical bin Interface, which allows you to drag node
 
 ### Managing interview flow with skip logic and network filtering
 
-One of the simplest ways to reduce response burden in an interview is to avoid showing the participant tasks that are not applicable or redundant based on earlier answers. In conventional survey software sections of an interview can be skipped based on responses, but Network Canvas extends this concept and allows the researcher to construct powerful queries built on the structure of the interview network itself. These queries can be applied to both [skip logic](..key-concepts/skip-logic.md) and stage level [network filtering](..key-concepts/filtering.md).
+One of the simplest ways to reduce response burden in an interview is to avoid showing the participant tasks that are not applicable or redundant based on earlier answers. In conventional survey software sections of an interview can be skipped based on responses, but Network Canvas extends this concept and allows the researcher to construct powerful queries built on the structure of the interview network itself. These queries can be applied to both [skip logic](../key-concepts/skip-logic.md) and stage level [network filtering](../key-concepts/filtering.md).
 
 {% include nc-image src="/assets/img/sample-protocol/catbin-other-rules.png" caption="Categorical Bin Using Skip Logic and Network Filtering" %}{: .macos-screenshot }
 
