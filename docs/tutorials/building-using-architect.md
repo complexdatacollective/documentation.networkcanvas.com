@@ -36,7 +36,7 @@ Once you have created or opened a protocol, you will be taken to the **protocol 
 
 {% include nc-image src="assets/img/architect-guide/overview-screen.png" %}
 
-The panel at the top is the protocol card that you will see when you import this protocol into Server or Interviewer. It shows the protocol name and description, and has two buttons for accessing the protocol's resource library and managing the codebook (these areas are discussed later). The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.
+The panel at the top is the protocol card that you will see when you import this protocol into Server or Interviewer. It shows the protocol name and description, and has two buttons for accessing the protocol's [resource library](../key-concepts/resources.md) and managing the [codebook](../key-concepts/codebook.md) (these areas are discussed later). The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.
 
 In the bottom left, you can see the "Return to Start Screen" button. Clicking this button will take you out of the current protocol, and back to the start screen.
 
@@ -221,7 +221,7 @@ We will then define what display properties are used to identify the nodes in th
 
 We can optionally choose to include sorting controls. Sorting controls are especially useful when a roster is large enough to make discoverability difficult at first glance. In this example, we choose to implement an initial sort order that uses the "first_name" variable to order the roster cards in an ascending order.
 
-{% include tip-info.md content="Refer to our Interface Documentation for more in depth instruction, including useful Do's and Don'ts of working with [roster data](..interface-documentation/roster-name-generators.md" %}
+{% include tip-info.md content="Refer to our Interface Documentation for more in depth instruction, including useful Do's and Don'ts of working with [roster data](/docs/interface-documentation/roster-name-generators/)" %}
 
 Last, we implement a prompt for the stage, following the same process we did in the previous stages. We enter the prompt that includes instructions for how to nominate a node from the roster, "Please select any members of your degree class that you spend time with **other than when studying**. Tap a card to select, and press the **down arrow** when you are finished."
 {% include nc-image src="assets/img/architect-guide/roster-sort.png" %}

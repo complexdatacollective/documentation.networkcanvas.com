@@ -32,7 +32,7 @@ Both of these name generators can use Side Panels. Side panels are a powerful fe
 
 For example, when multiple prompts within a name generator have potential overlap in a participant's social network, it may be useful to bring nodes previously nominated onto a subsequent screen so that a participant can easily list them again.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/4.png" caption="Configuring a side panel" %}{: .macos-screenshot }
+{% include nc-image src="/assets/img/interface-documentation/name-generators/side-panel.png" caption="Configuring a side panel" %}{: .macos-screenshot }
 
 A side panel can also be created using a network data file (e.g. a roster) to allow a participant to select and nominate alters from a predetermined list. It is important to note that the exact same list will appear on subsequent side panels within the name generator unless a rule(s) is created to filter the data to be shown on the panel (see [network filtering](../key-concepts/filtering.md)).
 
@@ -64,7 +64,7 @@ When using the "Name Generator (using quick add)" Interface, the primary action 
 
 {% include nc-image src="/assets/img/interface-documentation/name-generators/ng-quick.png" caption="A quick add Name Generator" %}{: .macos-screenshot }
 
-One or multiple additional variables can be added to alters nominated on this Interface. Capturing additional variables may be useful either to help track where a node was elicited or to reflect a name interpreter element of the prompt (e.g. adding a variable called "close_friend" to a prompt asking about closeness).  
+One or multiple [additional variables](../key-concepts/additional-variables.md) can be added to alters nominated on this Interface. Capturing additional variables may be useful either to help track where a node was elicited or to reflect a name interpreter element of the prompt (e.g. adding a variable called "close_friend" to a prompt asking about closeness).  
 
 {: .no_toc}
 ### Do

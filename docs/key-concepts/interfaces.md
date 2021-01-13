@@ -6,7 +6,7 @@ parent: Key Concepts
 
 ## Overview
 
-Interviews are built by combining different [Interfaces](../interface-documentation) together in meaningful ways by "staging" the different ways to present or collect information. There are a variety of Interfaces available to use as stages in Architect to construct interviews.
+Interviews are built by combining different [Interfaces](../interface-documentation.md/) together in meaningful ways by "staging" the different ways to present or collect information. There are a variety of Interfaces available to use as stages in Architect to construct interviews.
 
 ## Types of Interfaces
 
