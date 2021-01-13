@@ -38,6 +38,6 @@ gem 'jekyll-watch'
 # Allow nicer internal links
 gem 'jekyll-relative-links'
 
-gem 'jekyll-autoprefixer'
+# gem 'jekyll-autoprefixer'
 
-gem "therubyracer"
+gem 'therubyracer'
