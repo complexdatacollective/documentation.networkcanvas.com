@@ -1,6 +1,8 @@
 ---
 title: Network Canvas
 timezone: UTC
+url: 'https://documentation.networkcanvas.com'
+create_pdf: true
 collections:
   posts:
     title: Posts
@@ -17,7 +19,7 @@ theme: just-the-docs
 plugins:
   - jekyll-feed
   - jekyll-relative-links
-  - jekyll-autoprefixer
+  # - jekyll-autoprefixer
 search_enabled: true
 aux_links:
   Network Canvas Home:
