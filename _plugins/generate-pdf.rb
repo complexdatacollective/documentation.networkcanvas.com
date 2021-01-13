@@ -43,7 +43,7 @@ def save_pdf(site_path, content, destination, pdf_name)
   end
   html = Kramdown::Document.new(content).to_html
   kit = PDFKit.new(html)
-  kit.stylesheets << "#{site_path}/assets/css/just-the-docs.css"
+  kit.stylesheets << "#{site_path}/assets/css/just-the-docs-default.css"
   kit.to_file(File.join(destination, pdf_name))
 end
 

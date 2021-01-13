@@ -1,8 +1,6 @@
 ---
 title: Network Canvas
 timezone: UTC
-url: 'https://documentation.networkcanvas.com'
-create_pdf: true
 collections:
   posts:
     title: Posts
