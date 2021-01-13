@@ -1,8 +1,5 @@
 Missing:
 
-- Key concepts
-  - [] Prompts
-  - [] Codebook
-  - [] Interfaces
-  - [] the Protocol File
+- Research Design
+  - [] Choosing Hardware for a Network Canvas Study
   
