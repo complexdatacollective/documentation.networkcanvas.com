@@ -11,7 +11,7 @@ The Categorical Bin is a name interpreter Interface that collects nominal data o
 
 ## Configuring Categorical Bin
 
-An Categorical Bin screen can include multiple [prompts](../key-concepts/prompts.md), each of which relates to a single [categorical variable](key-concepts/variable-types/#categorical).
+An Categorical Bin screen can include multiple [prompts](../key-concepts/prompts.md), each of which relates to a single [categorical variable](../key-concepts/variable-types.md/#categorical).
 
 Additionally an _other_ variable can be specified for custom responses that don't fit into the pre-configured categories.
 
@@ -21,11 +21,11 @@ Additionally an _other_ variable can be specified for custom responses that don'
 #### Do
 
 {: .good-practices}
-- Use this Interface to collect nominal data on alters. Although a Toggle Button Group can be added as an [input control](../key-concepts/input-control.md) on other interfaces, the drag and drop functionality on the Categorical Bin provides a tactile method to capturing these data that is engaging for participants. 
+- Use this Interface to collect nominal data on alters. Although a Toggle Button Group can be added as an [input control](../key-concepts/input-controls.md) on other interfaces, the drag and drop functionality on the Categorical Bin provides a tactile method to capturing these data that is engaging for participants. 
 
 {: .no_toc}
 #### Don't
 
 {: .bad-practices}
 - Avoid using more than eight categories on this Interface. More categories cause the category labels to be difficult to read and the other visual compromises on the Interface become compromised. 
-- Avoid using the Categorical Bin to capture dichotomous variables. Dichotomous variables are best captured using the Toggle [input control](../key-concepts/input-control.md) (on a [Name Generator](./name-generator.md) or [Per Alter Form](./per-alter-form.md)) or using the variable toggling feature on the [Sociogram](./sociogram.md).
+- Avoid using the Categorical Bin to capture dichotomous variables. Dichotomous variables are best captured using the Toggle [input control](../key-concepts/input-controls.md) (on a [Name Generator](./name-generator.md) or [Per Alter Form](./per-alter-form.md)) or using the variable toggling feature on the [Sociogram](./sociogram.md).

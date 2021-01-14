@@ -26,7 +26,7 @@ These variables represent nominal categories or characteristics that have no int
 **Compatible Input Controls:**
 
 - [Toggle Button Group](../input-controls#Toggle-Button-Group)
-- [Checkbox Group](../input-controls#Checkbox-Group)
+- [Checkbox Group](../input-controls#checkbox-group)
 
 **Validation Options:** MinSelected, MaxSelected, Required
 </div>

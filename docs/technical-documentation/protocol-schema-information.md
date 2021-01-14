@@ -7,11 +7,11 @@ nav_exclude: true
 
 ## Summary
 
-Network Canvas and Architect (from version 4.2.0 onward) implement a feature that tracks the version of the protocol file format, or "schema", associated with any protocol files that you author or work with.
+Interviewer and Architect (from version 4.2.0 onward) implement a feature that tracks the version of the protocol file format, or "schema", associated with any protocol files that you author or work with.
 
 You may notice messaging within the app that informs you of "out of date", or "obsolete" schema versions associated with your protocol. This article will explain these concepts in greater detail.
 
-**The key takeaway is that as long as your schema is not marked "obsolete", you can continue to use Network Canvas to collect and export data, exactly as before.**
+**The key takeaway is that as long as your schema is not marked "obsolete", you can continue to use Interviewer to collect and export data, exactly as before.**
 
 During the beta period, we _strongly_ encourage you to update your protocol files wherever possible, so that you are able to evaluate the newest Network Canvas features.
 
@@ -21,7 +21,7 @@ During the beta period, we _strongly_ encourage you to update your protocol file
 
 | Key Concept: Protocol Schema                           |
 | :----------------------------------------------------------- |
-| A protocol "schema" is a document that defines how to determine the validity of a protocol file. It takes the form of a series of constraints and logical rules that define property names, data types, and structure. When a protocol is used within Architect or Network Canvas, it is validated against a schema. Unexpected values, properties, or structures will trigger various types of warning or error message. <br/><br/> We adopted schemas in an effort to ensure stability and consistency within the functioning of the software. If a protocol is valid according to its schema, it should function without issues. |
+| A protocol "schema" is a document that defines how to determine the validity of a protocol file. It takes the form of a series of constraints and logical rules that define property names, data types, and structure. When a protocol is used within Architect or Interviewer, it is validated against a schema. Unexpected values, properties, or structures will trigger various types of warning or error message. <br/><br/> We adopted schemas in an effort to ensure stability and consistency within the functioning of the software. If a protocol is valid according to its schema, it should function without issues. |
 {: .key-concept }
 
 We need to "version" Network Canvas protocol schemas so that we can add or change features as we develop them. This could mean implementing a new interface, or changing the way that an existing function, such as skip logic, works. Simply changing an existing schema would make previously authored protocols invalid, or would lead to functionality not being available.
@@ -30,19 +30,19 @@ Our priority when implementing schema versioning has been to not burden the end 
 
 ## What it means for you
 
-When you update Network Canvas or Architect, you may encounter messages when using protocols that were authored in prior versions of the apps.
+When you update Interviewer or Architect, you may encounter messages when using protocols that were authored in prior versions of the apps.
 
-### In Network Canvas
+### In Interviewer
 
-In Network Canvas, you may see a blue light bulb icon, or a red robot icon, on your protocol card when viewing it on the start screen (see below).
+In Interviewer, you may see a blue light bulb icon, or a red robot icon, on your protocol card when viewing it on the start screen (see below).
 
 {% include nc-image src="/assets/img/protocol-schema/nc-ood.png" caption="A protocol card showing that a protocol can be updated." %}{: .macos-screenshot }
 
-Where a new schema is backward-compatible with a prior version you will see a blue light bulb, and Network Canvas will continue to support installing and running protocols of that version without any issues. This means that if you are happy with your protocol file **you do not need to take any action**. Your protocol will continue to function as before, albeit without access to new functionality implemented with the new schema version (see the [compatibility table](#compatibility-table) below for details on this).
+Where a new schema is backward-compatible with a prior version you will see a blue light bulb, and Interviewer will continue to support installing and running protocols of that version without any issues. This means that if you are happy with your protocol file **you do not need to take any action**. Your protocol will continue to function as before, albeit without access to new functionality implemented with the new schema version (see the [compatibility table](#compatibility-table) below for details on this).
 
 If you wish to update their protocol file to the new schema version, follow the instructions provided below under [migrating a protocol](#migrating-a-protocol).
 
-If your protocol is no longer compatible with the version of Network Canvas that you have installed, you will see a red robot icon, and will no longer be able to start an interview. Please see the section below on [handling obsolete protocols](#handling-obsolete-protocols) for further assistance.
+If your protocol is no longer compatible with the version of Interviewer that you have installed, you will see a red robot icon, and will no longer be able to start an interview. Please see the section below on [handling obsolete protocols](#handling-obsolete-protocols) for further assistance.
 
 ### In Architect
 
@@ -52,11 +52,11 @@ In Architect, you may see a prompt that a protocol must be migrated to a newer v
   
 If you wish to update their protocol file to the new schema version, follow the instructions provided below under [migrating a protocol](#migrating-a-protocol).
 
-If you would like to continue editing this protocol without migrating it to the latest version, you will need to downgrade your version of Architect. See the [GitHub releases page](https://github.com/codaco/Architect/releases) for an archive of old versions, and consult for the [compatibility table](#compatibility-table) for information about which version you need.
+If you would like to continue editing this protocol without migrating it to the latest version, you will need to downgrade your version of Architect. See the [GitHub releases page](https://github.com/complexdatacollective/Architect/releases) for an archive of old versions, and consult for the [compatibility table](#compatibility-table) for information about which version you need.
 
 ## Handling obsolete protocols
 
-Although there are no plans to implement schema changes that are not backward-compatible, we must nonetheless reserve this possibility in the event it becomes necessary. If a new schema version is implemented that is not backward-compatible, the user interface in Network Canvas will mark the protocol as "obsolete" and will no longer allow new interview sessions to be started. Although this is obviously undesirable, **all existing session data will continue to be exportable from a protocol in this state**.
+Although there are no plans to implement schema changes that are not backward-compatible, we must nonetheless reserve this possibility in the event it becomes necessary. If a new schema version is implemented that is not backward-compatible, the user interface in Interviewer will mark the protocol as "obsolete" and will no longer allow new interview sessions to be started. Although this is obviously undesirable, **all existing session data will continue to be exportable from a protocol in this state**.
 
 Obsolete protocols will still be able to be migrated to the latest schema version by Architect, although in some cases there may be unavoidable data loss. For example, if we add required properties to the protocol that cannot be derived from existing properties, or if we change the data model. Contact us if you have encountered an issue, or have specific concerns about this.
 
@@ -64,8 +64,8 @@ Obsolete protocols will still be able to be migrated to the latest schema versio
 
 If your protocol is marked as obsolete, and you wish to continue collecting data using it, you have two options:
 
-1. Migrate the protocol to a later version, which is compatible with your version of Network Canvas. See [migrating a protocol](#migrating-a-protocol) below for this.
-2. Downgrade your version of Network Canvas, by uninstalling your current version, and downloading the version you require from our [GitHub releases page](https://github.com/codaco/Network-Canvas/releases). As per the warning at the start of this article, downgrading is not possible on iOS or Android platforms. If you have mistakenly upgraded your Network Canvas version on these platforms causing your protocol to become obsolete, your only choice is to migrate your protocol to the latest schema version and to redeploy it.
+1. Migrate the protocol to a later version, which is compatible with your version of Interviewer. See [migrating a protocol](#migrating-a-protocol) below for this.
+2. Downgrade your version of Interviewer, by uninstalling your current version, and downloading the version you require from our [GitHub releases page](https://github.com/complexdatacollective/Interviewer/releases). As per the warning at the start of this article, downgrading is not possible on iOS or Android platforms. If you have mistakenly upgraded your Interviewer version on these platforms causing your protocol to become obsolete, your only choice is to migrate your protocol to the latest schema version and to redeploy it.
 
 ## Migrating a protocol
 
@@ -74,13 +74,13 @@ Migrating a protocol happens within Architect, and is automatic. The process wor
  1. Ensure you are on the latest version of the Architect app. When opening the app with an active internet connection, the app will check for updates automatically, and notify you if any are found. Alternatively, you can manually update the app, by visiting our download page and installing the latest version for your platform.
  2. Once you are running the latest version, open the protocol file that you wish to migrate.
  3. Architect will inform you that the protocol file can be upgraded, which happens by creating a copy (so that your original file is preserved). If you choose to continue, you will be prompted for a location to save your upgraded protocol.
- 4. Architect will automatically append "(schema version X)" to the filename, which may help you to keep track of the different versions of your protocol, and to differentiate them within Server and Network Canvas.
+ 4. Architect will automatically append "(schema version X)" to the filename, which may help you to keep track of the different versions of your protocol, and to differentiate them within Server and Interviewer.
 
 {% include tip-caution.md content="Schema changes may represent changes to the underlying network data model and, therefore, protocols migrated from one schema version to another must be treated as different workspaces within Server (shown below). Users that do migrate their protocols to a new schema compatible version will need to create a merging script to handle combining the two data sources from the two workspaces once exported. Although this process introduces an extra step in a user workflow, it promotes better quality data and greater user control." %}
 
 ## Compatibility Table
 
-See the table below for detailed compatibility information. To use this chart, look up the version of Architect that your protocol file was authored in to find which versions of Network Canvas can be used with it.
+See the table below for detailed compatibility information. To use this chart, look up the version of Architect that your protocol file was authored in to find which versions of Interviewer can be used with it.
 
 |                               | Architect Alpha Versions | Architect 4.0.0-4.1.2 | Architect 4.2.0 |
 |-------------------------------|-----------------|----------------|-----------------|
