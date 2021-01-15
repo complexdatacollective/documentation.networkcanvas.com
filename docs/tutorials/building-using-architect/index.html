@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<!-- Provided by just the docs -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Building a protocol using Architect - Network Canvas</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100029443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-100029443-1');
+    </script>
+
+  
+
+  
+    <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Building a protocol using Architect | Network Canvas</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Building a protocol using Architect" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research." />
+<meta property="og:description" content="Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research." />
+<link rel="canonical" href="https://documentation.networkcanvas.com/docs/tutorials/building-using-architect/" />
+<meta property="og:url" content="https://documentation.networkcanvas.com/docs/tutorials/building-using-architect/" />
+<meta property="og:site_name" content="Network Canvas" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Building a protocol using Architect" />
+<script type="application/ld+json">
+{"description":"Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research.","headline":"Building a protocol using Architect","dateModified":"2020-12-14T00:00:00+00:00","@type":"WebPage","url":"https://documentation.networkcanvas.com/docs/tutorials/building-using-architect/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<meta name="theme-color" content="#2d2955">
+<body>
+
+<div class="page-wrap">
+
+    <div class="main-content-wrap js-main-content" tabindex="0">
+        <header class="header">
+            <div class="header__container">
+
+                <a href="https://networkcanvas.com"><div class="header__logo"></div></a>
+
+                <div class="header__menu-trigger" aria-label="Opens nav menu" aria-expanded="false" aria-controls="nav" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="header__nav">
+                    <nav>
+                        <ul class="js-aux-nav">
+                            
+    <!-- /docs/tutorials/building-using-architect/  //networkcanvas.com/about.html-->
+    
+        <li><a href="//networkcanvas.com/about.html">About the Project</a></li>
+    
+    
+
+    <!-- /docs/tutorials/building-using-architect/  /-->
+    
+        <li><a href="/">Documentation</a></li>
+    
+    
+
+    <!-- /docs/tutorials/building-using-architect/  //networkcanvas.com/feedback.html-->
+    
+        <li><a href="//networkcanvas.com/feedback.html">Feedback</a></li>
+    
+    
+
+<li><a class="btn btn--md btn--color-d download-button" href="https://networkcanvas.com/download.html">Download</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <div class="side-bar">
+            <span class="js-main-nav-trigger"></span>
+            <div class="custom-main-nav js-main-nav">
+                <nav role="navigation" aria-label="Main navigation">
+
+    
+    <div class="search js-search">
+        <div class="search-input-wrap">
+            <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search documentation" aria-label="Search documentation" autocomplete="off">
+            <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+        </div>
+        <div class="js-search-results search-results-wrap"></div>
+    </div>
+    
+
+
+    <ul class="navigation-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/project-overview/" class="navigation-list-link">Project Overview</a></h3>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/installation-guide/" class="navigation-list-link">Installation Guide</a></h3>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item active">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/tutorials/" class="navigation-list-link">Tutorials</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/tutorials/sample-interview/" class="navigation-list-link">Using Interviewer</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item  active">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/tutorials/building-using-architect/" class="navigation-list-link active">Building a protocol using Architect</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/tutorials/server-workflows/" class="navigation-list-link">Server and Network Canvas Workflows</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/key-concepts/" class="navigation-list-link">Key Concepts</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/additional-variables/" class="navigation-list-link">Additional Variables</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/codebook/" class="navigation-list-link">Codebook</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/filtering/" class="navigation-list-link">Network Filtering</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/forms/" class="navigation-list-link">Forms</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/input-controls/" class="navigation-list-link">Input Controls</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/interfaces/" class="navigation-list-link">Interfaces</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/node-labelling/" class="navigation-list-link">Node Labelling</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/pairing/" class="navigation-list-link">Pairing</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/preview-mode/" class="navigation-list-link">Preview Mode</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/prompts/" class="navigation-list-link">Prompts</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/resources/" class="navigation-list-link">Resources</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/skip-logic/" class="navigation-list-link">Skip Logic</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/the-protocol-file/" class="navigation-list-link">The Protocol File</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/validation/" class="navigation-list-link">Field Validation</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/variable-types/" class="navigation-list-link">Variable Types</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/interface-documentation/" class="navigation-list-link">Interface Documentation</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/categorical-bin/" class="navigation-list-link">Categorical Bin</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/dyad-census/" class="navigation-list-link">Dyad Census</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/ego-form/" class="navigation-list-link">Ego Form</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/information/" class="navigation-list-link">Information</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/name-generator/" class="navigation-list-link">Name Generators</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/narrative/" class="navigation-list-link">Narrative</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/ordinal-bin/" class="navigation-list-link">Ordinal Bin</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/per-alter-edge-form/" class="navigation-list-link">Per Alter Edge Form</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/per-alter-form/" class="navigation-list-link">Per Alter Form</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/roster-name-generators/" class="navigation-list-link">Small and Large Roster</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/shared/" class="navigation-list-link">Shared Interface Options</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/sociogram/" class="navigation-list-link">Sociogram</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/technical-documentation/" class="navigation-list-link">Technical Documentation</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/technical-documentation/protocol-schema-information/" class="navigation-list-link">Protocol Schema Information</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/technical-documentation/security-model/" class="navigation-list-link">Overview of Security Model</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/technical-documentation/updating-from-beta/" class="navigation-list-link">Updating from Beta to the Stable Release</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/research-design/" class="navigation-list-link">Research Design</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/research-design/choosing-hardware/" class="navigation-list-link">Choosing Hardware for a Network Canvas Study</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/research-design/configuring-devices/" class="navigation-list-link">Configuring Devices Prior To Starting Data Collection</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/research-design/irb-best-practices/" class="navigation-list-link">IRB and Security Best Practices</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/citing-the-software/" class="navigation-list-link">Citing the Software</a></h3>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</nav>
+
+            </div>
+        </div>
+        <div class="main-content">
+            
+            
+            <nav class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="https://documentation.networkcanvas.com/docs/tutorials/">Tutorials</a></li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Building a protocol using Architect</span></li>
+                </ol>
+            </nav>
+            
+            
+            <div id="main-content" class="page-content" role="main">
+                <div class="title-area">
+                    <h1 class="no_toc">Building a protocol using Architect</h1>
+                    
+                    <div class="last-updated">Last Updated: December 14, 2020</div>
+                    
+                </div>
+                
+                <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+                <ol class="inline_toc">
+  <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#opening-architect">Opening Architect</a></li>
+  <li><a href="#the-protocol-overview-screen">The protocol overview screen</a></li>
+  <li><a href="#adding-a-stage">Adding a stage</a>
+    <ol>
+      <li><a href="#setting-the-stage-name">Setting the Stage Name</a></li>
+      <li><a href="#page-heading">Page Heading</a></li>
+      <li><a href="#edit-items">Edit Items</a></li>
+    </ol>
+  </li>
+  <li><a href="#creating-name-generators">Creating Name Generators</a></li>
+  <li><a href="#name-generator-using-quick-add">Name Generator using Quick Add</a>
+    <ol>
+      <li><a href="#creating-a-new-node-type">Creating a New Node Type</a></li>
+      <li><a href="#creating-a-quick-add-variable">Creating a Quick Add Variable</a></li>
+      <li><a href="#creating-prompts">Creating Prompts</a></li>
+      <li><a href="#preview-mode">Preview Mode</a></li>
+    </ol>
+  </li>
+  <li><a href="#quick-add-with-a-side-panel">Quick Add with a Side Panel</a></li>
+  <li><a href="#name-generator-using-forms">Name Generator using Forms</a>
+    <ol>
+      <li><a href="#form">Form</a></li>
+    </ol>
+  </li>
+  <li><a href="#small-roster-name-generator">Small Roster Name Generator</a></li>
+  <li><a href="#large-roster-name-generator">Large Roster Name Generator</a></li>
+  <li><a href="#creating-an-ego-form">Creating an Ego Form</a>
+    <ol>
+      <li><a href="#introduction-panel">Introduction Panel</a></li>
+    </ol>
+  </li>
+  <li><a href="#creating-a-per-alter-form">Creating a Per Alter Form</a></li>
+  <li><a href="#creating-sociograms">Creating Sociograms</a>
+    <ol>
+      <li><a href="#node-positioning">Node Positioning</a></li>
+    </ol>
+  </li>
+  <li><a href="#background-images">Background Images</a></li>
+  <li><a href="#edge-creation">Edge Creation</a></li>
+  <li><a href="#implementing-the-dyad-census">Implementing the Dyad Census</a>
+    <ol>
+      <li><a href="#toggling-a-variable">Toggling a Variable</a></li>
+    </ol>
+  </li>
+  <li><a href="#creating-an-ordinal-bin">Creating an Ordinal Bin</a></li>
+  <li><a href="#creating-a-categorical-bin">Creating a Categorical Bin</a></li>
+  <li><a href="#skip-logic--network-filtering-on-the-categorical-bin">Skip Logic &amp; Network Filtering on the Categorical Bin</a></li>
+  <li><a href="#creating-the-narrative-interface">Creating the Narrative Interface</a>
+    <ol>
+      <li><a href="#configuring-presets">Configuring Presets</a></li>
+    </ol>
+  </li>
+  <li><a href="#finishing-off-your-protocol">Finishing Off Your Protocol</a></li>
+</ol>
+                
+                <h2 id="prerequisites">Prerequisites</h2>
+
+<p>This tutorial assumes you are familiar with the general concepts of the Network Canvas software, have read the <a href="/docs/project-overview/">project overview</a>, and have read the tutorial on <a href="../sample-interview.md">using Interviewer</a>.</p>
+
+<p>We recommend following along using your own computer, so you should also <a href="https://networkcanvas.com/download.html">download and install Architect</a>.</p>
+<h2 id="overview">Overview</h2>
+
+<p>Architect is a desktop application which runs on Windows, macOS, and Linux operating systems. The purpose of Architect is to provide a simple means for researchers to build Network Canvas interview protocols, without needing extensive technical knowledge. It aims to provide a visual and intuitive user interface, so that you can focus on the content of your interviews. You don’t need to run Architect on the computer that you use to run Interviewer or Server, but you can if you wish.</p>
+
+<p>This tutorial will guide you through the process of creating a Network Canvas protocol using Architect. We will be rebuilding the sample protocol that is available to install within Interviewer, which was discussed extensively in the tutorial on <a href="../sample-interview.md">using Interviewer</a>. If you would like to download and open the finished protocol, you can do so <a href="/protocols/Sample%20Protocol%20v1.netcanvas">from here</a>.</p>
+
+<h2 id="opening-architect">Opening Architect</h2>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/start-screen.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Upon opening Architect, you are greeted by the <strong>start screen</strong>. Like the start screen in Interviewer, you will see a welcome panel that contains links to the project overview video and the documentation website, with other sections becoming available as needed. When opened for the first time, the Architect start screen presents two task options: (1) create a blank new protocol, or (2) open an existing protocol from your computer.</p>
+
+<p>In this tutorial we will be building a protocol from scratch, so we are going to start by creating a blank protocol. Click the “Create New Protocol” button within the tasks panel. Save the file with a name and location that you will be able to find later.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Network Canvas protocol files</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Network Canvas protocols are stored in a file with the extension <code class="language-plaintext highlighter-rouge">.netcanvas</code>.<br /><br />They are just like any other files on your computer, meaning you can move them around, rename them (more about this later), and you can (and should!) back them up.<br /><br />The <code class="language-plaintext highlighter-rouge">.netcanvas</code> file contains all of the data in your protocol. So if you use roster data, images, or video, these will be embedded within the file.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="the-protocol-overview-screen">The protocol overview screen</h2>
+
+<p>Once you have created or opened a protocol, you will be taken to the <strong>protocol overview screen</strong>. This screen is designed around the vertical “timeline” metaphor also used by Interviewer. It visually represents the stages of your interview in the sequence that your participants will see them.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/overview-screen.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>The panel at the top is the protocol card that you will see when you import this protocol into Server or Interviewer. It shows the protocol name and description, and has two buttons for accessing the protocol’s resource library and managing the codebook (these areas are discussed later). The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.</p>
+
+<p>In the bottom left, you can see the “Return to Start Screen” button. Clicking this button will take you out of the current protocol, and back to the start screen.</p>
+
+<p>Since we have just created a new protocol, we have a single button at the bottom of the screen, which enables us to add our first stage.</p>
+
+<h2 id="adding-a-stage">Adding a stage</h2>
+
+<p>We are going to begin by configuring an Information Interface.</p>
+
+<p>Click the add new stage button. You will see a screen that provides a menu of all available Interfaces within the app. Interfaces are grouped together by type, with the example below showing all available name generators.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/add-a-stage.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Each Interface is designed for a specific task within a network interview. For now, scroll down and select the “Information” Interface from the “Utilities” section.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/information-interface.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Selecting an Interface will open the stage editor, which is where the configuration of the Interface takes place.</p>
+
+<h3 id="setting-the-stage-name">Setting the Stage Name</h3>
+
+<p>All stages have a name, which is shown next to the stage icon in the timeline and lets you quickly differentiate between stages of the same type. We will call our stage “Welcome”, so enter this text under “Stage Name”.  When creating your own protocols, we encourage you to use a system for naming your stages.</p>
+
+<h3 id="page-heading">Page Heading</h3>
+
+<p>The page heading allows you to customize a large title element that will show at the top of your Information Interface. Here we will give the heading, “Welcome to the Sample Protocol.” Next, we will add the information we want displayed on the screen.</p>
+
+<h3 id="edit-items">Edit Items</h3>
+
+<p>The Edit Items panel allows you to add various types of media you would like included on the screen. You have the option to add image, video, audio, or text content. Each resource used will be displayed in vertical blocks according to the order you add them. Content blocks can also be reordered by dragging.</p>
+
+<p>To add a resource to this screen, click the ‘add new item’ button at the bottom of the panel. A new screen will open where you can choose between the media types available. Text content can be added directly in markdown. Image, audio, and video files can be added by selecting the type and browsing for the file to add, either from a location on your device or from the resource library (if you have added content there).</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/edit-item.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>As in the previous Interviewer session, we will not go through the configuration of each Information Interface included in the sample protocol here. As a reminder, Information Interfaces can be used as frequently as you like throughout your protocol to help describe an upcoming task, orient a participant to a series of prompts, or present participants with a resource to consider.</p>
+
+<p>Once we have added all resources that we want to include on this stage, we click the “Save and Return” button in the bottom right. This action saves our stage and returns us to the timeline view where our newly configured stage is now visible.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/completed-stage.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<h2 id="creating-name-generators">Creating Name Generators</h2>
+
+<p>We will now create three separate name generator stages, which appear as stages 4, 6, and 8 in the sample protocol. The first one uses a “quick add” name generator, followed by one that utilizes a “side panel”, and finally a name generator that uses forms.</p>
+
+<h2 id="name-generator-using-quick-add">Name Generator using Quick Add</h2>
+
+<p>First, within the timeline view, we click the add a stage button. From the interface menu, we select the “Name Generator (using quick add).” When the new stage opens, we define a stage name as we did for the previous stage.</p>
+
+<h3 id="creating-a-new-node-type">Creating a New Node Type</h3>
+
+<p>Before we can continue, we must tell Architect which type of node this interface will create. Since this is our first name generator, we have no node types defined yet. Click the “Create New Node Type” button to begin the process of creating one.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Node and Edge “Types”</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Part of the ontological flexibility of the Network Canvas suite is the ability to model unlimited numbers of node and edge types. These types are top level categories that differentiate nodes and edges from one-another. Common node types might include “person”, “place”, or “organization”, but these categories are entirely up to you to decide upon.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Our name generator will ask about people, so we will name our node type “Person”. We can select a color to differentiate this node type from others, though in this case we will leave the default coral color selected.</p>
+
+<p>Finally we will select the person icon to use for this node type. This icon is shown in Interviewer wherever the participant has the opportunity to create a new node of this type.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/node-type.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Click “Save and Return” to create the node type, and return to the name generator edit screen.</p>
+
+<h3 id="creating-a-quick-add-variable">Creating a Quick Add Variable</h3>
+
+<p>Next, we need to create a quick add variable that will be used to store data enter for each alter nominated by the participant. Unless you have a good reason not to, this variable should be called “name”. Interviewer will use this variable as the label for every node created on this stage. To create a new variable, select the dropdown menu and click “create new” and type the name of your variable (e.g., “name”). Click the “Create” button and you will see the new variable name selected as the quick add variable.</p>
+
+<h3 id="creating-prompts">Creating Prompts</h3>
+
+<p>Next we must provide some questions to prompt the participant into adding alters within the interview.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Prompts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Most stages use the concept of “prompts” to allow you to define questions to put to the participant during the interview. You are free to explain the task to the participant in ways that are meaningful to your study.<br /><br />You can have multiple prompts on a single stage, or a single prompt per stage - the choice is yours. You may wish to think about grouping prompts by theme, and then having one stage for each theme. For example, a “Name Generator (family)” stage could contain prompts about family alters, and “Name Generator (colleagues)” could contain prompts about professional alters.<br /><br />Prompts can contain formatting such as bold or italicized text to create emphasis and rhythm. To create this formatting, use markdown syntax.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Click the “Create New” button in the prompt section, to open the new prompt edit form.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/edit-prompt.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Our first prompt will ask the participant to name the people with whom they have felt close to or discussed important matters. Enter the text “Within the past 6 months, who have you felt close to, or discussed important personal matters with?”, and click “Save and Close”.</p>
+
+<h3 id="preview-mode">Preview Mode</h3>
+
+<p>We can now take the opportunity to see what our stage will look like in our finished interview by using the “Preview” feature.</p>
+
+<p>Clicking it will open a window with the current stage loaded, and show the interface functioning as it will in Interviewer on a study device.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Preview Mode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Preview mode is designed to let you understand how your stage will be presented to your participants, taking into account the device that you will be using. You can choose between different device presets, to mimic the look of a specific piece of hardware (for example you can emulate the screen size of an iPad, or a widescreen laptop).<br /><br />If the window becomes too large, you can scale it so that you can fit it within your workspace.<br /><br /><strong>It is important to note</strong> that you can enter data in preview mode - for example creating nodes - but the data does not persist after you close the window!</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Click the pink “Preview” button in the bottom left hand corner of the stage editor, and the preview window will open.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/preview-mode.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>We can then click “Save and Return” on the stage editor to return to our timeline view, but now with our new stage visible.</p>
+
+<h2 id="quick-add-with-a-side-panel">Quick Add with a Side Panel</h2>
+
+<p>Next, we are going to configure another Name Generator (using quick add) interface, only this time we will include a side panel.</p>
+
+<p>First, we will create a stage name, select the person node type (which we previously created), assign the quick add variable of “name”, and create a new prompt. The prompt for this stage will be, “Within the <strong>past 6 months,</strong> who have you discussed <strong>social networks research</strong> with?” .</p>
+
+<p>Now, we will add the side panel. Click the “Add New Panel” and give the panel the title “People you have previously mentioned.” This title will appear across the top of the side panel and will contextualize the nodes that appear to the participant.</p>
+
+<p>Next, we need to choose a data source for this side panel. We have two options: either we use the network constructed during the interview or we bring in an external data file (e.g., a roster) that will populate within the side panel. In this example, we will choose to use the network from the in-progress interview.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/side-panel.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>You can optionally preview the interface at this point, checking that the prompts and the form look and function as you expected. When you are satisfied, click continue to add your stage.</p>
+
+<div class="tip-box tip-info">
+  <div class="tip-img-wrapper">
+<img src="https://documentation.networkcanvas.com/assets/img/tip-info.svg" alt="Info" />
+</div>
+  <div class="tip-content-wrapper">
+    <p class="tip-title">INFO:</p>
+    <p class="tip-content">At any point during this tutorial, free free to click the "Save Changes" button in the bottom bar when on the timeline view, or select "File -&gt; Save" from the menu.</p>
+  </div>
+</div>
+
+<h2 id="name-generator-using-forms">Name Generator using Forms</h2>
+
+<p>We will now create a new name generator stage that uses a form to capture data on alters named. As before, we add a new stage (selecting the Name Generator (using forms) from the interface menu) and add a stage name. Next we will create a new node type for “Clinic” on this stage as we will be asking a prompt about clinics rather than people. Once we create the node type for Clinic, we move on to edit the form.</p>
+
+<h3 id="form">Form</h3>
+
+<p>This section is where we will define the fields that will be shown on the form when the participant creates a node on this name generator.</p>
+
+<p>Fields capture data about alters or ego, and are where specific variables are defined.</p>
+
+<p>First, let’s start with creating a title for the form to orient the participant to the information we want to collect. Enter the title “Add a Clinic or Health Care Provider.”</p>
+
+<p>Next, we will define the fields of the form. By clicking “Create New” in the fields panel, a new screen opens which asks us to define a variable for the field, the question prompt, an input control, and to select any validation we may want to include.</p>
+
+<p>For the first field, we want to know the name of the clinic the participant is nominating so we use the variable “name” that we previously created by selecting it from the drop down menu. Next, we will enter the text for this field label and in our example we will use a question prompt, “What is the name of this clinic?”</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/form-fields.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Creating vs selecting variables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Many screens in Architect allow you to either create a new variable, or select an existing variable. If this is the case, the text next to the input will usually tell you.<br /><br />When you want to create a new variable, click the box and select “Create New” from the drop down menu.<br /><br />Otherwise, click an existing variable from the list in the drop down menu.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Finally, we choose the input control that will be shown to collect this variable.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Input controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Architect and Interviewer implement many different types of input control [text, number, checkbox group, toggle, radio button group, toggle button group, date picker, likert scale, visual analog scale].<br /><br />This is because the most appropriate interface for assigning a variable depends very much on the specific nature of the variable, and not just on its data type. For example, when collecting an ordinal variable that represents a likert scale, you might prefer a range slider OR a group of radio buttons.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Because we are asking for the name of the clinic - a simple text variable - a text input is the most appropriate option.</p>
+
+<p>Finally, we can define our validation requirements – if any – for this field. We will indicate that this text field is required. The validation options available vary depending on the type of variable. By adding a validation of required, the participant will necessarily include information in this field before they can proceed.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/validation.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Click “Save and Close”, and we have created our first form field.</p>
+
+<p>Now, using the process we learned above, we will create the two additional fields for this form.</p>
+
+<p>Create the following fields, with appropriate input controls, question prompts and options:</p>
+
+<ul>
+  <li>A <code class="language-plaintext highlighter-rouge">last_visit</code> variable, using the DatePicker input control, prompt of “When was your visit?”, and an appropriate start range</li>
+  <li>A <code class="language-plaintext highlighter-rouge">visit_purpose</code> variable, using the Text Area input control, and a prompt of “In your own words, what was the purpose of your visit?”</li>
+</ul>
+
+<p>After completing the form, we will configure the prompt for the stage. Click “Create New” in the prompts section, and enter the text, “Within <strong>the past 12 months,</strong> which <strong>clinics</strong> or <strong>healthcare providers</strong> have you visited?”</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/fields-inputs-prompts.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<h2 id="small-roster-name-generator">Small Roster Name Generator</h2>
+
+<p>Next we will develop a name generator that uses a small roster brought in as an external data file. Small rosters, by our definition, are datasets containing up to 100 nodes.</p>
+
+<p>As we did in prior name generators above, we will first select the interface we want to configure (Small Roster Name Generator), add a stage name, and create a new node type for “Classmate”.</p>
+
+<p>Next we will select the external data source to bring into the protocol that will populate the nodes on the roster. For this example, we have used a fictitious classroom roster. To use the same roster as the sample protocol, please <a href="../class-roster.csv">click here</a> to download our CSV file. Alternatively, use any other roster you have on hand.</p>
+
+<p>Just as you added resources to the Information Interface above, you will also browse for your external data source from the protocol resource library if you saved it there or else from another location on your device.</p>
+
+<p>We will then define what display properties are used to identify the nodes in the roster as they appear to the participant. First we select the variable that is defined in the external data file - in this case “first_name.” Next, we define how we want that variable to appear to the participant on the roster - in this example we enter “First Name.” We repeat the same process for the last_name variable.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/adding-roster.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>We can optionally choose to include sorting controls. Sorting controls are especially useful when a roster is large enough to make discoverability difficult at first glance. In this example, we choose to implement an initial sort order that uses the “first_name” variable to order the roster cards in an ascending order.</p>
+
+<div class="tip-box tip-info">
+  <div class="tip-img-wrapper">
+<img src="https://documentation.networkcanvas.com/assets/img/tip-info.svg" alt="Info" />
+</div>
+  <div class="tip-content-wrapper">
+    <p class="tip-title">INFO:</p>
+    <p class="tip-content">Refer to our Interface Documentation for more in depth instruction, including useful Do’s and Don’ts of working with [roster data](..interface-documentation/roster-name-generators.md</p>
+  </div>
+</div>
+
+<p>Last, we implement a prompt for the stage, following the same process we did in the previous stages. We enter the prompt that includes instructions for how to nominate a node from the roster, “Please select any members of your degree class that you spend time with <strong>other than when studying</strong>. Tap a card to select, and press the <strong>down arrow</strong> when you are finished.”</p>
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/roster-sort.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<h2 id="large-roster-name-generator">Large Roster Name Generator</h2>
+
+<p>By our definition, large rosters are datasets with more than 100 nodes.</p>
+
+<p>Following the example from the prior stage, we will first select the interface we want to configure (Large Roster Name Generator), add a stage name, and create a new node type, this time for “University”. Again, we will pull in a data source we plan to use to populate our roster. In our example, we use a large CSV that includes universities around the world. <a href="../class-roster.csv">Click here</a> to download it.</p>
+
+<p>By default, the roster cards will use the “name” attribute from your external data file as the main card title. In this example, we choose to also include “website” as an attribute to display.</p>
+
+<p>Next, we will configure how the roster file is searchable to the participant. The functionality available for this interface includes the ability for participants to search the database for specific attributes in order to locate the alters they want to select.</p>
+
+<p>The search options listed will depend on the variables outlined in your datafile. Here, we have the option to select “country”, “name”, and “website”, and we choose to include all three.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/roster-search.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>We can also narrow down the options that appear to a participant when they search on the stage by selecting “Exact” or “High Accuracy.” In this case, we select “High Accuracy.”</p>
+
+<p>Finally, we add a prompt to this stage, “Which universities have you either <strong>visited</strong> or <strong>studied at</strong>?” Then, we click “Save and Return” to save the stage and navigate back to the timeline view.</p>
+
+<h2 id="creating-an-ego-form">Creating an Ego Form</h2>
+
+<p>The next stage in this sample protocol uses the Ego Form Interface. We create the Ego Form and set a stage name as we have previous interfaces.</p>
+
+<h3 id="introduction-panel">Introduction Panel</h3>
+
+<p>The introduction panel is a feature of the Ego Form Interface that lets you introduce the form to the participant. You might use it to explain which data you are asking for, and why. In our case, we explain the intended use of the Ego Form Interface.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/ego-form.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Now, let’s create a series of fields for our ego form just as we did while configuring the Name Generator using forms. If you don’t remember how we did this, please review above.</p>
+
+<p>Next, we will create the following fields with associated variables, question prompts, input controls, validations (if used):</p>
+
+<ul>
+  <li>first_name, “What is your first name?”, Text Area, Required validation</li>
+  <li>last_name, “What is your last name?”, Text Area, Required validation</li>
+  <li>dob, “What is your date of birth?”, DatePicker with end range 2002/January/1</li>
+  <li>languages_spoken, “Which of the following languages do you speak fluently?”, Toggle Button Group with options English, Mandarin Chinese, Hindi, Spanish, French, Arabic, Bengali, and Russian</li>
+  <li>existing_software, “Overall, how satisfied are you with existing social network analysis software?”, Radio Group with options Very Satisfied, Somewhat Satisfied, Neither Satisfied nor Dissatisfied, Somewhat Dissatisfied, and Very Dissatisfied</li>
+  <li>research_support, “How satisfied are you with the level of support you receive?”, Likert Scale with Very Satisfied, Somewhat Satisfied, Neither Satisfied nor Dissatisfied, Somewhat Dissatisfied, and Very Dissatisfied</li>
+  <li>operation_pain, “Thinking back to your last medical procedure, how much pain do you feel you experienced?”, Visual Analog Scale with min and max labels as No Pain and Unbearable Pain</li>
+  <li>prefered_contact_method, “How would you prefer to be contacted about your next interview?”, Checkbox Group with options Email, Post, SMS, and Phone Call</li>
+  <li>other_info, “Is there any other information you would like to provide at this time?”, Text Area</li>
+</ul>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/ego-form-fields.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>To demonstrate the range of input control options, we implemented far more fields than are likely to be best practice for a form within an interview. You can <a href="/docs/key-concepts/input-controls/">learn more about input controls here</a></p>
+
+<p>We click “Save and Return” and go back to the timeline view to implement the next stage.</p>
+
+<h2 id="creating-a-per-alter-form">Creating a Per Alter Form</h2>
+
+<p>Let’s next repeat that process, but this time creating a form that will capture data from alters on the Per Alter Form Interface. Create a new stage using the Per Alter Form Interface and set the stage name. Next, select the node type “University” and scroll down to configure the Information Panel.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/per-alter-form.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>We will now add just two fields to this form. Here are the details you need, following the same process as above:</p>
+
+<ul>
+  <li>Variable called <code class="language-plaintext highlighter-rouge">visit_or_study</code>, prompt of “Did you visit this university, or study there?”, input control of “Radio Group” with options “Visited” and “Studied”, “Required” validation</li>
+  <li>Variable called <code class="language-plaintext highlighter-rouge">overall_review</code>, prompt of “Overall, how would you describe your experience at this university?”, input control of “Likert Scale” with options “Excellent”, “Above Average”, “Average”, “Below Average”, “Poor”</li>
+</ul>
+
+<p>As before, save when you are finished, and return to the overview screen of your protocol.</p>
+
+<h2 id="creating-sociograms">Creating Sociograms</h2>
+
+<p>For the next stage, we use the Sociogram Interface. Create the stage, set a stage name, and select the “Person” node type.</p>
+
+<h3 id="node-positioning">Node Positioning</h3>
+
+<p>Next we need to choose a background image for the Sociogram. We can decide between using a default concentric circles background or adding our own image file from the resource library or from another location on our device. For this first example, we will choose the default option and specify that we want 3 circles skewed so that the middle is proportionally larger.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/sociogram-background.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>We will add a prompt for the stage that reads, “Please position the people you have named amongst the concentric circles. Place people who know each other together, and put people you are closer to towards the center of the circles.”</p>
+
+<p>You will see that when creating a prompt on the Sociogram, you have the option of defining a layout variable.</p>
+
+<p>The layout variable will be used to store the X/Y coordinates of the nodes when the participant positions them on the screen. If you have multiple prompts on your Sociogram, you may wish to use the same variable layout for each (which will keep the nodes positioned as they originally are by the participant) or you may wish to create a new layout variable for each prompt (which would require the participant to reposition the nodes each time). In this example, we will create a “sociogram_layout” variable for this stage.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/sociogram-layout.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>We finish by clicking “Save and Close” to close the prompt editor, then “Save and Return” to save the stage.</p>
+
+<h2 id="background-images">Background Images</h2>
+
+<p>Now we’ll configure another Sociogram, but this time we’ll bring in an image asset to serve as the background. Follow all the previous steps, but now choose an image as the background type instead of using the concentric circles. If you have an image file saved to your resource library you can browse for it, otherwise you can add an image file saved elsewhere on your device. In this case, we designed a quadrant image where we will ask the participant to drag their alters based on the context of the relationship.</p>
+
+<div class="tip-box tip-info">
+  <div class="tip-img-wrapper">
+<img src="https://documentation.networkcanvas.com/assets/img/tip-info.svg" alt="Info" />
+</div>
+  <div class="tip-content-wrapper">
+    <p class="tip-title">INFO:</p>
+    <p class="tip-content">You should think carefully about how the choices you make regarding the background will impact the way your participants position their nodes.</p>
+  </div>
+</div>
+
+<p>As before, we will enter a prompt and not assign a task for the stage. The prompt text is, “Please position the people you have named in the boxes according to which group you feel they most belong to.” We save the stage and move on to the next.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Features of the Sociogram</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">The Sociogram is an interface designed to allow participants to interact with the alters produced within Name Generator stages in three principle ways.<br /><br />(1) Layout, where the participant spatially arranges the nodes; (2) Edge creation, where the participant can create alter-alter ties; (3) Variable toggling, where the participant can nominate alters has having a given boolean attribute.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="edge-creation">Edge Creation</h2>
+
+<p>We will create another Sociogram stage to experiment with creating edges. For this stage we’ll use node type “Person” and the concentric circles background with 3 circles skewed.</p>
+
+<p>We create our first prompt, “Please connect any two people who might spend time together without you being there” and we use the sociogram_layout variable we already created.</p>
+
+<p>Now we will enable edge creation on a Sociogram prompt, by toggling the switch “create edges by tapping on a node” option, in the “Edge Display and Creation” section.</p>
+
+<p>In the next box, we will either create a new edge type or select an existing one. Since we have not yet created any edge types, we will define one as “know” to correspond with the prompt.</p>
+
+<p>We click “Save and Close” to return to the Sociogram editor.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/edge-creation.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Next, we add another prompt, “Please connect any two people who have conflict, or who don’t get on well with each other” and use the same sociogram_layout variable.</p>
+
+<p>We also choose edge creation as the task for the stage, but create a new edge type of “conflict” as we will now be capturing alter-alter ties that are conflictual.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Creating and displaying edges</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">The sociogram is the primary location within the interview where edges are created.<br /><br />A sociogram prompt can only create a single edge type at a time, but note that it can display several.<br /><br />In the scenario where multiple edge types are selected for display, creating a new edge that would cover an existing one works simply - the existing edge is visually replaced with the new edge type. Both edges are still stored in the interview network. Removing this new edge will revert the visual display to the previously visible edge type (only one edge type can be created or removed on a prompt).<br /><br />You may consider using this feature to progressively build up a network, by allowing the participant to use the visual “scaffolding” of existing edges to quickly identify where to create new ones.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="implementing-the-dyad-census">Implementing the Dyad Census</h2>
+
+<p>By now you should have a feel for the process of configuring a stage within Architect. We will continue by adding a Dyad Census Interface stage to our interview, which builds on many of the concepts we have already covered.</p>
+
+<p>From the timeline overview, click the “Add New Stage” button, and select the Dyad Census interface. Again, we name the stage and this time we select node type “Classmates.”</p>
+
+<p>We will next implement skip logic so that the stage will only show for participants who nominate at least two classmates on the small roster name generator implemented previously. We do this by toggling the switch to enable skip logic for the stage, selecting “Skip this stage if”, and, then, defining an alter rule by clicking the “Add Alter Rule” button to define the equation.</p>
+
+<p>We define the rule by selecting the alter node type of “Classmate”, then selecting rule type of “Presence”, and, finally, selecting “Does not Exist.”</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/dyad-skip.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>As on other name interpreter interfaces, we will also configure the Introduction Panel and define a prompt. For this stage, we enter the prompt, “To the best of your knowledge, do these two people spend time together outside of class?”
+We previously created two edge types on the sociogram which appear available for our use on this prompt. We will select the “know” edge type since we are asking the participant whether any two classmates know one another.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/dyad-prompt.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<h3 id="toggling-a-variable">Toggling a Variable</h3>
+
+<p>In our final Sociogram stage in this protocol, we will implement variable toggling - or the action that allows a participant to toggle a boolean variable to “true” or “false” by tapping a note.</p>
+
+<p>Once again, we create the stage, set the stage name, select the “Person” node type, and use the concentric circle background with 3 circles skewed.</p>
+
+<p>Next, we create a new prompt, with the text, “Please select anyone who you have asked for advice within the previous 6 months”. Re-use the layout variable (“sociogram_layout”) we created previously.</p>
+
+<p>We do not want to enable edge creation on this prompt, as it would disable the variable toggling function (the two modes are mutually exclusive). However, we can still display edges in order to help the participant locate nodes.</p>
+
+<p>To do this, select “Know” and “Conflict” under “Display edges of the following type(s)”.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/variable-toggling.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Configuring the sociogram prompt to enable variable toggling involves two steps: (1) toggle
+“Enable variable toggling by tapping a node” to the “on” position, and (2) create (or select) a boolean variable to be assigned in the box that appears below.</p>
+
+<p>In this case of this prompt, using the techniques we have already covered, create a variable called “provides_advice” and press “Save and Close”.</p>
+
+<p>We will now complete the exact same steps for the second prompt, which reads, “Please select anyone who has supported you financially within the previous 6 months.” This time, we will create a boolean variable of “provides_material_support.”</p>
+
+<p>We have now finished configuring this sociogram stage.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Preview mode for sociogram</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">When previewing a stage using an interface type that does not create nodes, you may notice that no nodes are available to test the stage’s functionality.<br /><br />To address this, the preview mode allows you to create nodes from any earlier stages in your interview that are capable of this (primarily name generators or roster interfaces).<br /><br />Simply navigate to a stage that creates nodes from within preview mode, create some nodes suitable for your sociogram stage, and then navigate to the sociogram stage - your nodes will appear, and you will be able to test edge creation, variable toggling, and positioning.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="creating-an-ordinal-bin">Creating an Ordinal Bin</h2>
+
+<p>We now wish to create an Ordinal Bin interface so that we can quickly and efficiently ask our participant about the frequency of contact they have with each alter. From the timeline overview, add a new stage using the Ordinal Bin interface.</p>
+
+<p>As with previous interfaces, begin with naming the stage (“Contact Frequency”), and selecting our node type (“Person”).</p>
+
+<p>Most of the configuration for this interface happens within the prompt. Create a new prompt, and enter the text, “When was the last time that you communicated with each of the people you named?”.</p>
+
+<p>Next, we need to create an ordinal variable. This is fundamentally the same process that we carried out when configuring the language variable in our ego form. Every time we create an ordinal or categorical variable within Architect, we will enter a label and a value. The value is what will be stored in our dataset. Both text and numerical values are allowed. Complete the labels and values as in the screenshot below.</p>
+
+<p>Create a variable named “communication_freq” with the following possible options:</p>
+
+<table>
+  <tr>
+   <td><strong>Label</strong>
+   </td>
+   <td><strong>Value</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Last 24 hours
+   </td>
+   <td>5
+   </td>
+  </tr>
+  <tr>
+   <td>Last week
+   </td>
+   <td>4
+   </td>
+  </tr>
+  <tr>
+   <td>Last six months
+   </td>
+   <td>3
+   </td>
+  </tr>
+  <tr>
+   <td>Last two years
+   </td>
+   <td>2
+   </td>
+  </tr>
+  <tr>
+<td>Over two years ago
+   </td>
+   <td>-1
+   </td>
+  </tr>
+</table>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/ordinal-bin.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: “Bins” and “Buckets”</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">By convention, the Network Canvas software uses two terms for the containers that nodes are dragged between on the Ordinal Bin, Categorical Bin, and Sociogram interfaces.<br /><br />Buckets are where nodes are found initially, before they have been placed, or dragged.<br /><br />Bins are where nodes are placed are dragged to. This is where nodes end up.<br /><br />Both bins and buckets can have the sort order of the nodes within them defined. You can use this to (for example) make the bucket show nodes with a certain attribute, such as closeness, first. This may help with a task such as positioning nodes on a sociogram.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In the case of our prompt, we will use the default node bin and bucket sort options. Click “Save and Close” to finish editing this prompt, and then click “Save and Return” to return to the timeline view.</p>
+
+<h2 id="creating-a-categorical-bin">Creating a Categorical Bin</h2>
+
+<p>You should now be able to create a categorical bin interface using everything that you have learned so far. Add a new stage using the Categorical Bin interface, with the following characteristics:</p>
+
+<ul>
+  <li>Named “Categorical Group Membership”, and operating on the “People” node type.</li>
+  <li>Using a categorical variable called “group” with the following options:
+    <ul>
+      <li>Family Member</li>
+      <li>Friends</li>
+      <li>Work Colleague</li>
+      <li>School</li>
+    </ul>
+  </li>
+  <li>With the prompt text, “Which of these options best describes how you know this person?”</li>
+  <li>Toggle “on” the Follow-up “Other” option with bin label “other”, question prompt “Which context best describes how you know this person?”, and variable “group_other”</li>
+</ul>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/catbin-variables.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>As before, we will “Save and Close” and “Save and Return” to complete and save our edits on the stage.</p>
+
+<h2 id="skip-logic--network-filtering-on-the-categorical-bin">Skip Logic &amp; Network Filtering on the Categorical Bin</h2>
+
+<p>Next we will implement another Categorical Bin Interface. This time, we will create the stage as before, set the stage name to “Relationship Type” and select node type as “Person.”</p>
+
+<p>Now we will configure both the network filtering on the stage as well as the skip logic for the stage. First, toggle the “Enable network filtering for this stage” to “on” and press the “Add Alter Rule” button. Next we will configure the rule according to the following: node type “Person”, rule type “Attribute”, variable query “discuss_network_research”, operator “exactly”, and attribute value of “True.”</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/filter-skip.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Click the “Finish and Close” button.</p>
+
+<p>To enable skip logic, we toggle the “Enable skip logic for this stage” switch to “on.” Then we click the “Add Alter Rule” again. First, we configure the skip logic rule according to the following: node type “Person”, rule type “Presence”, and operator “Exists.” Next, we configure a second skip logic rule as follows: node type “Person”, rule type “Attribute”, variable query “discuss_network_research”, operator “is exactly”, and attribute value of “True.”.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/skip.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Once configured, ensure the “must match” setting is “all rules”, as above.</p>
+
+<p>As a final step on this stage, we will create a prompt with the text, “You indicated that you’ve discussed social networks research with these people. Which category best describes your relationship with each person?” We will assign a categorical variable of “social_networks_research_relationship” with the following labels: Work Colleague, Classmate, Co-author, Supervisor. Type the corresponding values of “Work_Colleague”, “Classmate”, “Co-author”, and “Supervisor.”</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/catbin-prompt.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>We will also include a “Follow-up “Other” Option” for this prompt. Toggle the switch in the section to “on”, type the label for bin of “Other”, type question prompt for dialog as “What is your relationship with this person?” and create a new variable to capture this attribute of “social_network_research_relationship_other.”</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/followup.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>We have now finished configuring this stage. Press “Save and Close” on the bottom right of the prompt editor, and “Return and Close” on the Categorical Bin Interface editor.</p>
+
+<h2 id="creating-the-narrative-interface">Creating the Narrative Interface</h2>
+
+<p>The last stage configured in this sample protocol is the Narrative Interface. As you have already learned, we will create a new stage (Narrative Interface), set a stage name (“Narrative Interface”), and select a node type (“Person”). Next we will choose to use the concentric circles background, but this time elect to use just 1 circle.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/narrative.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<h3 id="configuring-presets">Configuring Presets</h3>
+
+<p>Narrative presets allow you to emphasize specific elements of a participant’s network visually, such as nodes grouped by attribute characteristic or alter-alter relationships (edges). Once the presets are configured on this screen, they appear as a menu where each option can be toggled “on” or “off.”</p>
+
+<p>Now, let’s configure presets for our sample interview protocol. Go to the section in the Narrative stage editor titled “Narrative Presets” and press the “Create New” button. We will give the preset a label of “Sample Preset.” This label will appear at the top of the menu visible to the participant on this stage.</p>
+
+<p>Next, we will click the “Layout Variable” box. We can choose to either create a new layout variable for this screen or use an existing one. In this case, we’ll use the “sociogram_layout” variable we created before.</p>
+
+<p>If we have collected data on a categorical variable and the participant has assigned that attribute to at least two nodes, we can visualize this grouping on the Narrative Interface. The drop down menu under “Group variable” will show all available categorical variables in our protocol. In this example, we choose the variable “group.”</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/edit-preset.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Under “Edge types to display”, we will see all edge types defined within our protocol. We will select the checkbox next to the edges we want to display (“know” and “conflict”).</p>
+
+<p>The last step in the preset editor is to select any boolean variables we want to highlight on the participant’s network. Again, all available boolean variables will appear in this section and we can choose which of these we want included in the preset. We will select the checkboxes next to both “provides_advice” and “provides_material_support.” To save our work, we click “Save and Close.”</p>
+
+<p>Back on our Narrative Interface edit screen, we can see the sample preset we just created. We will move below to the “Narrative Behaviors” section, and toggle both “Free-draw” and “Allow repositioning” to “on.” (The latter should already be toggled on by default).</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/architect-guide/narrative-behaviors.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Free-draw is a function on this interface that allows a participant to annotate on the screen by using their mouse. They can draw lines, symbols, or words that help them describe aspects of their network.</p>
+
+<p>Repositioning on the Narrative Interface enables a participant to drag their alters to new positions, keeping the displayed edges intact.</p>
+
+<p>Click “Save and Return” and are now able to view the configured Narrative stage on our timeline.</p>
+
+<h2 id="finishing-off-your-protocol">Finishing Off Your Protocol</h2>
+
+<p>Make sure to save your file. The file name of the protocol will uniquely identify it in both the Network Canvas Interviewer app and Network Canvas Server.</p>
+
+<p>There are numerous ways to transition from building the protocol within the Architect to deployment.</p>
+
+<ul>
+  <li>Within the Interviewer app, import the protocol file directly from a file location on your local computer.</li>
+  <li>Host the protocol file on a web server and then within the Interviewer app, import the protocol file from a web URL.</li>
+  <li>Use Server to manage the workflow. Once the protocol is loaded into Server it can be deployed to multiple field devices and then receive data from these devices for collation and export.</li>
+</ul>
+
+<p>In the next tutorial, <a href="/docs/tutorials/server-workflows/">Server and Interviewer Workflows</a>, we will show you how to use Server to load a protocol file onto multiple devices and then receive the data from those devices.</p>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/js/custom.js"></script>
+
+</body>
+</html>

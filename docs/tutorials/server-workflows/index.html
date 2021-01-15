@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<!-- Provided by just the docs -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Server and Network Canvas Workflows - Network Canvas</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100029443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-100029443-1');
+    </script>
+
+  
+
+  
+    <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Server and Network Canvas Workflows | Network Canvas</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Server and Network Canvas Workflows" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research." />
+<meta property="og:description" content="Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research." />
+<link rel="canonical" href="https://documentation.networkcanvas.com/docs/tutorials/server-workflows/" />
+<meta property="og:url" content="https://documentation.networkcanvas.com/docs/tutorials/server-workflows/" />
+<meta property="og:site_name" content="Network Canvas" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Server and Network Canvas Workflows" />
+<script type="application/ld+json">
+{"description":"Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research.","headline":"Server and Network Canvas Workflows","dateModified":"2020-12-11T00:00:00+00:00","@type":"WebPage","url":"https://documentation.networkcanvas.com/docs/tutorials/server-workflows/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<meta name="theme-color" content="#2d2955">
+<body>
+
+<div class="page-wrap">
+
+    <div class="main-content-wrap js-main-content" tabindex="0">
+        <header class="header">
+            <div class="header__container">
+
+                <a href="https://networkcanvas.com"><div class="header__logo"></div></a>
+
+                <div class="header__menu-trigger" aria-label="Opens nav menu" aria-expanded="false" aria-controls="nav" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="header__nav">
+                    <nav>
+                        <ul class="js-aux-nav">
+                            
+    <!-- /docs/tutorials/server-workflows/  //networkcanvas.com/about.html-->
+    
+        <li><a href="//networkcanvas.com/about.html">About the Project</a></li>
+    
+    
+
+    <!-- /docs/tutorials/server-workflows/  /-->
+    
+        <li><a href="/">Documentation</a></li>
+    
+    
+
+    <!-- /docs/tutorials/server-workflows/  //networkcanvas.com/feedback.html-->
+    
+        <li><a href="//networkcanvas.com/feedback.html">Feedback</a></li>
+    
+    
+
+<li><a class="btn btn--md btn--color-d download-button" href="https://networkcanvas.com/download.html">Download</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </header>
+        <div class="side-bar">
+            <span class="js-main-nav-trigger"></span>
+            <div class="custom-main-nav js-main-nav">
+                <nav role="navigation" aria-label="Main navigation">
+
+    
+    <div class="search js-search">
+        <div class="search-input-wrap">
+            <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search documentation" aria-label="Search documentation" autocomplete="off">
+            <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+        </div>
+        <div class="js-search-results search-results-wrap"></div>
+    </div>
+    
+
+
+    <ul class="navigation-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/project-overview/" class="navigation-list-link">Project Overview</a></h3>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/installation-guide/" class="navigation-list-link">Installation Guide</a></h3>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item active">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/tutorials/" class="navigation-list-link">Tutorials</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/tutorials/sample-interview/" class="navigation-list-link">Using Interviewer</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/tutorials/building-using-architect/" class="navigation-list-link">Building a protocol using Architect</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item  active">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/tutorials/server-workflows/" class="navigation-list-link active">Server and Network Canvas Workflows</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/key-concepts/" class="navigation-list-link">Key Concepts</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/additional-variables/" class="navigation-list-link">Additional Variables</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/codebook/" class="navigation-list-link">Codebook</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/filtering/" class="navigation-list-link">Network Filtering</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/forms/" class="navigation-list-link">Forms</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/input-controls/" class="navigation-list-link">Input Controls</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/interfaces/" class="navigation-list-link">Interfaces</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/node-labelling/" class="navigation-list-link">Node Labelling</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/pairing/" class="navigation-list-link">Pairing</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/preview-mode/" class="navigation-list-link">Preview Mode</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/prompts/" class="navigation-list-link">Prompts</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/resources/" class="navigation-list-link">Resources</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/skip-logic/" class="navigation-list-link">Skip Logic</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/the-protocol-file/" class="navigation-list-link">The Protocol File</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/validation/" class="navigation-list-link">Field Validation</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/key-concepts/variable-types/" class="navigation-list-link">Variable Types</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/interface-documentation/" class="navigation-list-link">Interface Documentation</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/categorical-bin/" class="navigation-list-link">Categorical Bin</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/dyad-census/" class="navigation-list-link">Dyad Census</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/ego-form/" class="navigation-list-link">Ego Form</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/information/" class="navigation-list-link">Information</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/name-generator/" class="navigation-list-link">Name Generators</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/narrative/" class="navigation-list-link">Narrative</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/ordinal-bin/" class="navigation-list-link">Ordinal Bin</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/per-alter-edge-form/" class="navigation-list-link">Per Alter Edge Form</a>
+                    
+                </li>
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/per-alter-form/" class="navigation-list-link">Per Alter Form</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/roster-name-generators/" class="navigation-list-link">Small and Large Roster</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/shared/" class="navigation-list-link">Shared Interface Options</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/interface-documentation/sociogram/" class="navigation-list-link">Sociogram</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/technical-documentation/" class="navigation-list-link">Technical Documentation</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/technical-documentation/protocol-schema-information/" class="navigation-list-link">Protocol Schema Information</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/technical-documentation/security-model/" class="navigation-list-link">Overview of Security Model</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/technical-documentation/updating-from-beta/" class="navigation-list-link">Updating from Beta to the Stable Release</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/research-design/" class="navigation-list-link">Research Design</a></h3>
+            
+            
+            <ul class="navigation-list-child-list ">
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/research-design/choosing-hardware/" class="navigation-list-link">Choosing Hardware for a Network Canvas Study</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/research-design/configuring-devices/" class="navigation-list-link">Configuring Devices Prior To Starting Data Collection</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <li class="navigation-list-item ">
+                    
+                    <a href="https://documentation.networkcanvas.com/docs/research-design/irb-best-practices/" class="navigation-list-link">IRB and Security Best Practices</a>
+                    
+                </li>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </ul>
+            
+        </li>
+        
+        
+        
+        
+        
+        <li class="navigation-list-item">
+            
+            <h3><a href="https://documentation.networkcanvas.com/docs/citing-the-software/" class="navigation-list-link">Citing the Software</a></h3>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</nav>
+
+            </div>
+        </div>
+        <div class="main-content">
+            
+            
+            <nav class="breadcrumb-nav">
+                <ol class="breadcrumb-nav-list">
+                    
+                    <li class="breadcrumb-nav-list-item"><a href="https://documentation.networkcanvas.com/docs/tutorials/">Tutorials</a></li>
+                    
+                    <li class="breadcrumb-nav-list-item"><span>Server and Network Canvas Workflows</span></li>
+                </ol>
+            </nav>
+            
+            
+            <div id="main-content" class="page-content" role="main">
+                <div class="title-area">
+                    <h1 class="no_toc">Server and Network Canvas Workflows</h1>
+                    
+                    <div class="last-updated">Last Updated: December 11, 2020</div>
+                    
+                </div>
+                
+                <h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+                <ol class="inline_toc">
+  <li><a href="#introducing-network-canvas-server">Introducing Network Canvas Server</a>
+    <ol>
+      <li><a href="#importing-a-protocol-to-server">Importing a Protocol to Server</a></li>
+    </ol>
+  </li>
+  <li><a href="#pairing-a-field-device-running-interviewer-with-server">Pairing a Field Device Running Interviewer with Server</a></li>
+  <li><a href="#some-guidance-on-pairing">Some Guidance on Pairing</a></li>
+  <li><a href="#importing-a-protocol-in-interviewer">Importing a Protocol in Interviewer</a></li>
+  <li><a href="#exporting-and-managing-data-in-interviewer">Exporting and Managing Data in Interviewer</a>
+    <ol>
+      <li><a href="#case-selection">Case Selection</a></li>
+    </ol>
+  </li>
+  <li><a href="#managing-and-exporting-data-in-server">Managing and Exporting Data in Server</a>
+    <ol>
+      <li><a href="#manage-cases">Manage Cases</a></li>
+      <li><a href="#export-data">Export Data</a></li>
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="#file-type">File Type</a></li>
+      <li><a href="#interview-networks">Interview Networks</a></li>
+    </ol>
+  </li>
+</ol>
+                
+                <h2 id="introducing-network-canvas-server">Introducing Network Canvas Server</h2>
+
+<p>Server is an optional companion program to Interviewer and Architect.</p>
+
+<p>Server is used to:</p>
+
+<ul>
+  <li>Ensure the same interview protocol is deployed on multiple devices,</li>
+  <li>Manage the data from multiple devices in a single location,</li>
+  <li>Securely store data on a lab computer,</li>
+  <li>Monitor the progress of the study in the field,</li>
+  <li>Display brief data summaries on key protocol variables, and</li>
+  <li>Export the data of multiple interview files in a format suitable for analysis.</li>
+</ul>
+
+<p>Server is not required to run a Network Canvas study. Protocols can be designed in Architect and opened directly in the Interviewer application, which may be sufficient for small studies using a single device. However, if your study entails working with many cases on multiple devices and maintaining your case files in a single location, Server will be a useful component to your project workflows.</p>
+
+<p>In Server, you can back up your case files while conducting research in the field. Through the secure pairing process (detailed below) Server allows you to securely transmit a copy of your data directly to your lab device. If a network connection is unavailable when you conclude an interview, you are also able to save a copy of your data on the field device and transmit the data immediately to Server once a connection can be restored.</p>
+
+<p>Server is particularly useful when you have multiple devices in the field that all need to transmit interview data to a single location. Each device can be connected to a single instance of Server, which allows you to view cases as they are uploaded and monitor the progress of your project in real time. From this same instance of Server, you are able to export all of your social network data in a format suitable for analysis in standard network and statistical software packages.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concepts: Encryption for Data Security</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Server is a desktop program run by the researcher on their own computer. Getting data from Interviewer into Server requires “pairing”. To pair, Server produces a unique encryption key that must be manually entered into the Interviewer application running on a field device. Once paired, Interviewer is able to securely transmit data collected in the field directly to Server. Utilizing Server allows you to avoid using third party servers, such as Dropbox or Google Drive, and instead transfer your data directly to a computer with full-disk encryption (such as FileVault on Mac or BitLocker on Windows). Transferring data to Server in this way is an example of peer-to-peer connection whereby only your field device and your copy of Server are able to access your data.</td>
+    </tr>
+  </tbody>
+</table>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/welcome.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>The start screen of Server provides instructions for how to create a workspace for your protocol and how to pair a device to facilitate secure encrypted data transmission. The icons in the top right corner of the screen also provide important details about the network connectivity of the computer running Server. These details can be used to manually pair Server to Interviewer field devices if necessary (details on manual pairing below).</p>
+
+<h3 id="importing-a-protocol-to-server">Importing a Protocol to Server</h3>
+<p>A .netcanvas protocol file can be imported into Server by 1) dragging the file directly into the sidebar of the Server, 2) using the + button to open a file dialog to manually select the file, or 3) selecting ‘Import Protocol’ from the file menu to browse and select your file.</p>
+
+<p>Once imported, Server will create a dedicated workspace with an “overview dashboard” for this protocol file. This process occurs for every protocol you import, allowing you to have multiple protocols / studies running in parallel in Server. Each unique overview dashboard is navigable by selecting the appropriate protocol initials on the side bar.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/imported-protocol-server.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>After a protocol is imported into Server, it is ready to be deployed to Interviewer on your field device(s) once secure pairing is completed. To preserve the quality of your data, it is not possible to change most of the details of a protocol once in use. If a protocol is in the field and the question names and ordering are changed it will make it difficult, if not impossible, to export all this data in a single table.</p>
+
+<p>Every time you export interview data to Server, these data will immediately update and display on the overview dashboard linked to the specific protocol.</p>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: The overview dashboard</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">The overview dashboard displays key details about your study and updates in real time as new interview data are uploaded. The dashboard will show details like the name of the protocol, the number of interviews completed and summary statistics from your study, such as the number of alters named per interview. This dashboard allows you to monitor the progress of your social network studies as well as help you identify potential issues in the data, such as an interviewee who nominates far more or fewer alters than the others. The ‘cards’ that display such information on the dashboard can be reordered by dragging, and toggled on and off in the “Settings” tab. The “Export Data” tab allows you to determine export file type and content, and the “Manage Cases” tab allows you to view a complete list of all cases exported to Server associated with a particular study protocol.</td>
+    </tr>
+  </tbody>
+</table>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/overview.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Once your interview protocol is imported, the next step is to securely pair Server with your field device(s). Pairing Server with your field device(s) establishes a secure connection that allows you to 1) deploy your protocol to the Interviewer application running on the field device(s), and 2) securely transmit data collected back to the Server for monitoring and export.</p>
+
+<p>Note: a ‘field device’ is any device that collects data using Interviewer. It could be a tablet or the very same computer running Server.</p>
+
+<h2 id="pairing-a-field-device-running-interviewer-with-server">Pairing a Field Device Running Interviewer with Server</h2>
+
+<p>To use Server with a field device, you will first have to pair the device with Server. Pairing requires exchanging encryption keys between Server and the field device. Once paired, you can download a protocol from Server to Interviewer and upload data collected in Interviewer back to Server.</p>
+
+<p>To begin, make sure you have both Interviewer and Server programs open and running on the same network. With Interviewer open on your field device, scroll down to the ‘Server Status’ panel at the bottom of the start screen. Interviewer will automatically search for any Servers available on its same network. This process is called ‘automatic discovery.’ If Interviewer detects an instance of Server, it will appear as a card on the panel displaying the name of the computer, IP address, and network on which the Server program is running.</p>
+
+<p>To trigger the pairing process, click the card. The Interviewer screen will then show a message that the pairing request has been initiated and must now be acknowledged within the Server app.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/pairing-message-interviewer.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Next, you will acknowledge the request to pair the devices by clicking the pink “Pair with Device” button in Server.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/pair-confirmation-server.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Once the request is acknowledged, Server will produce a unique 16 character encryption code that must be typed into the Interviewer app in order for the devices to pair successfully.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/pairing-code-server.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>The encryption code produced by Server must now be typed into the dialog appearing in Interviewer.</p>
+
+<p>Note: once the encryption code is provided by Server, you have 30 seconds to submit it to Interviewer before the pairing window will time out. If that window passes, you can reinitiate the pairing process or else pair manually.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/pairing-code-interviewer.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>After you submit the encryption code in Interviewer, you will see notifications on both apps that the pairing was completed. Once paired, Interviewer can fetch protocols from Server and upload data back to Server.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/pairing-successful.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<table class="key-concept">
+  <thead>
+    <tr>
+      <th style="text-align: left">Key Concept: Automatic Discovery &amp; Manual Pairing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Automatic discovery is a feature that allows Interviewer to find Server automatically so long as both devices in question are on the same network connection (i.e. the same WiFi or wired Ethernet connection). This feature is available on both Windows and Mac computers, but not Linux.<br /><br />If automatic discovery fails or is unavailable (which can occur if you are on a highly secured network), you can manually facilitate the pairing process between Server and the field device running Interviewer. To manually pair, select the white “provide manual connection details” button on the bottom right corner of the “Server Status” panel in Interviewer. You will be prompted to enter the Server IP address and Pairing Port number, both of which can be found by clicking on the network status icon in the top right corner Server. Once these details are provided, the field device will search for Server to pair.<br /><br />Problem solving: If you cannot reach Server using automatic discovery or the manual pairing steps, try the following: 1) make sure Server is open, 2) restart Server and Interviewer on their respective devices (note: restarting will not drop data), 3) contact your network administrator or refer to the details of the error message for further troubleshooting tips.<br /><br />Some details that might help your network administrator: Server uses the Bonjour protocol and requires multicast DNS packets to be able to pass through the network.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="some-guidance-on-pairing">Some Guidance on Pairing</h2>
+
+<ul>
+  <li>
+    <p>A field device can only pair with one Server at any given time, but a Server can deploy multiple protocols and be paired with multiple field devices simultaneously. If you want to pair with a new instance of Server, the connection to the formerly paired Server will be removed. Protocols that exist on the device will <em>not</em> removed, nor will any cases that have not been uploaded.</p>
+  </li>
+  <li>
+    <p>You can see what devices are paired with Server by clicking on the ‘devices’ icon in the upper right corner of the app. From there, you can check to see what devices are paired and remove any devices which should not be paired. Note: cleaning out old paired devices is not necessary nor will maintaining a list of old devices on Server affect performance.</p>
+  </li>
+  <li>
+    <p>If a field device is not paired with a Server before the interview, you can pair with it at a later time. This can be done from the start screen of Interviewer by going to the “Server Status” panel and initiating the pairing process through automatic discovery or pairing manually. Please note that the protocol must have already been uploaded to Server even if the device is not currently paired. You cannot “push” a protocol upstream to Server, only download a protocol that already exists and upload a new interview case.</p>
+  </li>
+  <li>
+    <p>Server will not enforce unique Case IDs. Instead, there is an internally generated UID which will be unique for all cases. Distinguishing cases based on Case ID is the interviewer’s responsibility.</p>
+  </li>
+</ul>
+
+<h2 id="importing-a-protocol-in-interviewer">Importing a Protocol in Interviewer</h2>
+
+<p>There are three ways to import a protocol in Interviewer: from a URL, from a file, and from Server.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/import-protocol-interviewer.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>To fetch a protocol from a URL, click the “Import from URL” button on the start screen of Interviewer under the “Protocols” panel. A dialog will appear where you can enter the URL where your protocol is hosted.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/from-URL.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>To import a protocol as a file, click the “Import from File” button. A new dialog will appear that allows you to browse for the file you want to import. When you locate the file, click “open” to import the protocol into Interviewer.</p>
+
+<p>Note: remember only .netcanvas files can be read by Network Canvas applications.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/from-file.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>To import a protocol from Server, click the “Import from Server” button. You will then see a dialog containing all protocols currently uploaded to the instance of Server to which you are paired. Each protocol will display as a card. Click the card of whichever protocol you wish to import.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/from-Server.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Once you have imported a protocol to Interviewer, you will be able to view it displayed as a card under the “Start a New Interview” panel on the start screen. Click on the protocol you wish to use to collect interview data.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/protocol-card.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<h2 id="exporting-and-managing-data-in-interviewer">Exporting and Managing Data in Interviewer</h2>
+
+<p>All interviews completed in Interviewer will appear as cards in the “Export &amp; Manage Interview Data” of the app start screen. Each card represents a unique interview session and contains:</p>
+
+<ul>
+  <li>the case ID,</li>
+  <li>the name of the protocol used to conduct the interview,</li>
+  <li>the date and time the interview was initiated,</li>
+  <li>the date and time the interview was completed,</li>
+  <li>the percentage complete, and</li>
+  <li>the export status of the interview data.</li>
+</ul>
+
+<p>In this panel, cases can be sorted by “last changed”, “case ID”, or “progress.” You can also filter cases by case ID.</p>
+
+<h3 id="case-selection">Case Selection</h3>
+
+<p>Cases can be selected individually by tapping on the card. You can also select all unexported cases or select all cases by toggling the corresponding switches in the bottom right of the panel to “on.”</p>
+
+<p>Once cases are selected, there are three actions you can complete from this panel: 1) delete selected cases, 2) export selected cases to Server, and 3) export selected cases to a file. Each action has a corresponding button at the bottom of the panel.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/export-manage.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<p>Deleting selected cases from Interviewer <strong>permanently deletes the data</strong>, so only complete this action if you are absolutely sure that your data have already been saved in a secure location or that you will not be requiring the data from these cases.</p>
+
+<p>When you export selected cases to Server, Interviewer will indicate whether the upload was successful. You can also cross check the data was successfully uploaded to Server by viewing the overview dashboard for the protocol workspace you are using, which will show the case IDs in real time.</p>
+
+<p>If you export selected cases to a file, a dialog will appear for you to save the zip to a location of your choice.</p>
+
+<div class="tip-box tip-info">
+  <div class="tip-img-wrapper">
+<img src="https://documentation.networkcanvas.com/assets/img/tip-info.svg" alt="Info" />
+</div>
+  <div class="tip-content-wrapper">
+    <p class="tip-title">INFO:</p>
+    <p class="tip-content">Before exporting interview data to a file from Interviewer, be sure the ‘Data Export Options’ are configured to meet your needs. By default, interview data from interviewer will export in GraphML unless you toggle the CSV export option. Configure data export options in the Settings menu by clicking the gears icon in the top left of the start screen.</p>
+  </div>
+</div>
+
+<h2 id="managing-and-exporting-data-in-server">Managing and Exporting Data in Server</h2>
+
+<p>Server’s overview dashboards allow you to monitor data quality and project progress for each of your studies. The overview dashboard of each protocol workspace tracks the total number of nodes (across all node types) as well as some average node statistics and the date the interview was uploaded. It will also give a list of the five most recent cases that have been uploaded.</p>
+
+<h3 id="manage-cases">Manage Cases</h3>
+
+<p>Under the “Manage Cases” tab you can find the complete list of uploaded cases for the study protocol. You can use this list to cross check the uploaded cases from your devices. Cases can also be deleted from Server by selecting the checkbox next to the case and clicking the green “Delete Selected Cases” button at the top of the case list.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/manage-cases.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<h3 id="export-data">Export Data</h3>
+
+<p>Every completed interview can be exported from Server under the “Export Data” tab. Under this tab you can: 1) select one or more preferred data export formats (CSV and GraphML), 2) choose export options, and 3) select CSV specific file export options.</p>
+
+<figure class="image">
+  <img src="https://documentation.networkcanvas.com/assets/img/server-guide/export-data.png" alt="" />
+  <figcaption></figcaption>
+</figure>
+
+<h3 id="settings">Settings</h3>
+
+<p>As noted above, the “Settings” tab is where you are able to toggle “on” or “off” the presence of specific study metrics on the overview dashboard of the protocol workspace. From this tab, you can also delete a workspace.</p>
+
+<p>Note: deleting a workspace will permanently remove a copy of the protocol file and any associated data that has been imported from Server.</p>
+
+<h3 id="file-type">File Type</h3>
+
+<p>A CSV file is a comma separated file of values. This is readable as a table (or series of tables) in Excel, LibreOffice, Keynote, and other tabular programs. The CSV version also complies with the <code class="language-plaintext highlighter-rouge">egor</code> package standard. This is a specification for egocentric data in R. A GraphML file is a file that is compliant with many social network analysis programs including UCINET, Gephi, NodeXL, Pajek, Visone, ORA and others. While the CSV files will have separate files for edges, egos and alters, the GraphML file contains data on ego, alters, and edges in the same file. This means it cannot be tabular (i.e. used in Excel) but it can still be effectively read by using the network analysis packages above.</p>
+
+<p>We recommend entering some test data in Interviewer and exporting it before going into the field. This is to confirm your data structure is as expected.</p>
+
+<h3 id="interview-networks">Interview Networks</h3>
+
+<p>Networks can either be seen as individual cases or as part of one large set of nodes and edges. The option to <strong>“Merge Sessions by Protocol”</strong> under the “Export Data” tab will produce a consolidated file for all the cases in the data on a per-protocol basis. If this option is not selected, the file export will produce a folder with a separate file for each of the interviews completed. This will include all the data for that case. The filename will be the name of the case followed by the unique system ID for that case.</p>
+
+<ul>
+  <li><em>Ego file</em>: This will have one row per ego, with ego-level variables and some summary statistics. The key will be caseID_uid</li>
+  <li><em>Alter file</em>: This will have one row per alter (i.e. per nominated node). Alters will have their own unique ID. The alters can be linked to their respective ego through the key caseID_uid</li>
+  <li><em>Edge file</em>: This will have one row per relationship. Each row will have a key to link to ego (caseID_uid), the ID of alter 1, the ID of alter 2, and any edge-level variables.</li>
+</ul>
+
+<p>While we try to make the export of data as painless as possible, complex data often requires considerable data wrangling nonetheless. For example, if you have two node types (e.g., “Person” and “Place”), then they will both exist in any exported data. If you only want networks between people, then you will have to manually remove the other place nodes. We cannot overstate how important it is to test the collection <em>and</em> export of these data before going into the field. Being unable, for example, to distinguish whether a node was nominated from one prompt or another is possible but might seriously impede analysis. Consider utilizing the data export features in Server to view your data before your study begins.</p>
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/js/custom.js"></script>
+
+</body>
+</html>

@@ -1,7 +1,0 @@
-_site
-.sass-cache
-.jekyll-metadata
-.jekyll-cache
-.env
-.DS_Store
-/node_modules
