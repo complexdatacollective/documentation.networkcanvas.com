@@ -11,7 +11,7 @@ collections:
     output: true
 email: info@networkcanvas.com
 description: Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research.
-baseurl: 'https://complexdatacollective.github.io/Documentation/'
+baseurl: '/Documentation'
 github_username: codaco
 markdown: kramdown
 theme: just-the-docs
