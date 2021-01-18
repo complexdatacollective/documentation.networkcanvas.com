@@ -11,7 +11,7 @@ toc:
   ordered_list: true
 defaults:
   - scope:
-      path: ""
+      path: "docs"
     values:
       toc: true
       layout: "post"

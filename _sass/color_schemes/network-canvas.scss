@@ -1,88 +1,97 @@
-//
-// Typography
-//
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap&subset=latin-ext');
 
-$body-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif !default;
+// Colors
+$color-primary: #00C9A2; // Green
+$color-neon-coral: #d1395d; // Red
+$color-mustard: #eab93f; // Yellow
+$color-cyber-grape: #3a3a75; // Purple
+$color-navy-taupe: #16152b; // Very Dark Blue
+$color-slate-blue: rgb(107, 114, 236);
+$color-slate-blue---rgb: 107, 114, 236;
+$color-slate-blue--dark: rgb(85, 91, 188);
+$color-sea-green: rgb(0, 201, 162);
+
+$color-sea-serpent: #0FB2E2;
+
+$color-platinum: #f2f6f7;
+$color-platinum-dark: #dae3e5;
+
+
+$text-color-main: #2d2955; // Dark Purple
+$text-color-light: #aaaaaa;
+$text-color-mid: #666666;
+
+// Grays
+$gray-light-1: #efefef;
+$gray-light-2: #b4c5cf;
+
+// Darks
+$shadow-color: rgba(0, 0, 0, 0.75);
+
+
+$body-font-family: 'Quicksand', sans-serif;
 $mono-font-family: "SFMono-Regular", Menlo, Consolas, Monospace !default;
-$root-font-size: 16px !default; // Base font-size for rems
+$root-font-size: 18px; // Base font-size for rems
 $body-line-height: 1.4 !default;
 $content-line-height: 1.6 !default;
 $body-heading-line-height: 1.25 !default;
 
-//
-// Font size
-// `-sm` suffix is the size at the small (and above) media query
-//
 
-$font-size-1: 9px !default;
-$font-size-1-sm: 10px !default;
-$font-size-2: 11px !default; //h4 - uppercased!, h6 not uppercased, text-small
-$font-size-3: 12px !default; //h5
-$font-size-4: 14px !default;
-$font-size-5: 16px !default; //h3
-$font-size-6: 18px !default; //h2
-$font-size-7: 24px !default;
-$font-size-8: 32px !default; //h1
-$font-size-9: 36px !default;
-$font-size-10: 42px !default;
-$font-size-10-sm: 48px !default;
+// //
+// // Colors
+// //
 
-//
-// Colors
-//
+// $white: #fff !default;
 
-$white: #fff !default;
+// $grey-dk-000: #959396 !default;
+// $grey-dk-100: #5c5962 !default;
+// $grey-dk-200: #44434d !default;
+// $grey-dk-250: #302d36 !default;
+// $grey-dk-300: #27262b !default;
 
-$grey-dk-000: #959396 !default;
-$grey-dk-100: #5c5962 !default;
-$grey-dk-200: #44434d !default;
-$grey-dk-250: #302d36 !default;
-$grey-dk-300: #27262b !default;
+// $grey-lt-000: #f5f6fa !default;
+// $grey-lt-100: #eeebee !default;
+// $grey-lt-200: #ecebed !default;
+// $grey-lt-300: #e6e1e8 !default;
 
-$grey-lt-000: #f5f6fa !default;
-$grey-lt-100: #eeebee !default;
-$grey-lt-200: #ecebed !default;
-$grey-lt-300: #e6e1e8 !default;
+// $purple-000: #7253ed !default;
+// $purple-100: #5e41d0 !default;
+// $purple-200: #4e26af !default;
+// $purple-300: #381885 !default;
 
-$purple-000: #7253ed !default;
-$purple-100: #5e41d0 !default;
-$purple-200: #4e26af !default;
-$purple-300: #381885 !default;
+// $blue-000: #2c84fa !default;
+// $blue-100: #2869e6 !default;
+// $blue-200: #264caf !default;
+// $blue-300: #183385 !default;
 
-$blue-000: #2c84fa !default;
-$blue-100: #2869e6 !default;
-$blue-200: #264caf !default;
-$blue-300: #183385 !default;
+// $green-000: #41d693 !default;
+// $green-100: #11b584 !default;
+// $green-200: #009c7b !default;
+// $green-300: #026e57 !default;
 
-$green-000: #41d693 !default;
-$green-100: #11b584 !default;
-$green-200: #009c7b !default;
-$green-300: #026e57 !default;
+// $yellow-000: #ffeb82 !default;
+// $yellow-100: #fadf50 !default;
+// $yellow-200: #f7d12e !default;
+// $yellow-300: #e7af06 !default;
 
-$yellow-000: #ffeb82 !default;
-$yellow-100: #fadf50 !default;
-$yellow-200: #f7d12e !default;
-$yellow-300: #e7af06 !default;
-
-$red-000: #f77e7e !default;
-$red-100: #f96e65 !default;
-$red-200: #e94c4c !default;
-$red-300: #dd2e2e !default;
+// $red-000: #f77e7e !default;
+// $red-100: #f96e65 !default;
+// $red-200: #e94c4c !default;
+// $red-300: #dd2e2e !default;
 
 $body-background-color: $white !default;
-$sidebar-color: $grey-lt-000 !default;
+$sidebar-color: #f2f3f7;
 $search-background-color: $white !default;
 $table-background-color: $white !default;
 $code-background-color: $grey-lt-000 !default;
 $feedback-color: darken($sidebar-color, 3%) !default;
 
-$body-text-color: $grey-dk-100 !default;
-$body-heading-color: $grey-dk-300 !default;
+$body-text-color: $text-color-main;
+$body-heading-color: $color-navy-taupe;
 $search-result-preview-color: $grey-dk-000 !default;
 $nav-child-link-color: $grey-dk-100 !default;
-$link-color: $purple-000 !default;
-$btn-primary-color: $purple-100 !default;
+$link-color: $color-slate-blue;
+$btn-primary-color: $color-sea-green;
 $base-button-color: #f7f7f7 !default;
 
 //
@@ -121,7 +130,7 @@ $sp-10: map-get($spacers, sp-10) !default; // 4  rem == 64px
 //
 
 $border: 1px solid !default;
-$border-radius: 4px !default;
+$border-radius: 15px !default;
 $border-color: $grey-lt-100 !default;
 
 //
@@ -130,14 +139,14 @@ $border-color: $grey-lt-100 !default;
 
 $gutter-spacing: $sp-6 !default;
 $gutter-spacing-sm: $sp-4 !default;
-$nav-width: 264px !default;
-$nav-width-md: 248px !default;
+$nav-width: 300px !default;
+$nav-width-md: 300px !default;
 $nav-list-item-height: $sp-6 !default;
 $nav-list-item-height-sm: $sp-8 !default;
 $nav-list-expander-right: true;
 $content-width: 800px !default;
 $header-height: 60px !default;
-$search-results-width: $content-width - $nav-width !default;
+$search-results-width: 600px;
 $transition-duration: 400ms;
 
 //
