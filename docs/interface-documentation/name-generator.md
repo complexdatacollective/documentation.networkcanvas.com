@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Name Generators
 parent: Interface Documentation
 nav_exclude: true

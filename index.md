@@ -1,8 +1,7 @@
 ---
 layout: default
-nav_exclude: true
-title: Network Canvas Documentation
-has_toc: false
+nav_order: 1
+title: Home
 ---
 
 Welcome to our documentation portal, and thank you for your interest in the Network Canvas project.

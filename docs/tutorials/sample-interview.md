@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 parent: Tutorials
 title: Using Interviewer
 nav_order: 1

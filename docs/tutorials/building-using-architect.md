@@ -1,5 +1,5 @@
 ---
-layout: default
+
 parent: Tutorials
 title: Building a protocol using Architect
 nav_order: 2

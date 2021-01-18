@@ -1,5 +1,5 @@
 ---
-layout: default
+
 parent: Tutorials
 title: Server and Network Canvas Workflows
 nav_order: 3

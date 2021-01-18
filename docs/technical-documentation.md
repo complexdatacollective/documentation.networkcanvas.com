@@ -1,8 +1,8 @@
 ---
-layout: default
+
 title: Technical Documentation
 has_children: true
-has_toc: false
+
 nav_order: 6
 has_parent: false
 ---

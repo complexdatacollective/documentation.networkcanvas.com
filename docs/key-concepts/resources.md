@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Resources
 parent: Key Concepts
 ---

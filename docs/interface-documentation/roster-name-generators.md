@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Small and Large Roster
 parent: Interface Documentation
 nav_exclude: true

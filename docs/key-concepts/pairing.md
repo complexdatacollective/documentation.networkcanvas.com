@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Pairing
 parent: Key Concepts
 ---

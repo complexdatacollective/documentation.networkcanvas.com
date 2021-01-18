@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Network Filtering
 parent: Key Concepts
 ---

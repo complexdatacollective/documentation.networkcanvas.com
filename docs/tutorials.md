@@ -1,8 +1,8 @@
 ---
-layout: default
+
 title: Tutorials
 has_children: true
-has_toc: false
+
 nav_order: 2
 has_parent: false
 ---

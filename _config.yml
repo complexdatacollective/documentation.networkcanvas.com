@@ -1,37 +1,32 @@
 ---
-title: Network Canvas
+title: Network Canvas Documentation
 timezone: UTC
-url: 'https://documentation.networkcanvas.com'
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 email: info@networkcanvas.com
 description: Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research.
-baseurl: ''
-github_username: codaco
+logo: "/assets/img/logo.svg"
+github_username: complexdatacollective
 markdown: kramdown
-theme: just-the-docs
+toc:
+  max_level: 3
+  ordered_list: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      toc: true
+      layout: "post"
+remote_theme: pmarsceill/just-the-docs
+color_scheme: network-canvas
 plugins:
   - jekyll-feed
   - jekyll-relative-links
-  - jekyll-autoprefixer
+  - jekyll-toc
 search_enabled: true
 aux_links:
   Network Canvas Home:
   - "//networkcanvas.com"
 permalink: pretty
 ga_tracking: "UA-100029443-1"
-navigation:
-  - title: About the Project
-    url: //networkcanvas.com/about.html
-  - title: Documentation
-    url: /
-  - title: Feedback
-    url: //networkcanvas.com/feedback.html
 exclude:
   - "Gemfile"
   - "Gemfile.lock"

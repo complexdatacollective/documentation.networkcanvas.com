@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: post
 title: Project Overview
-nav_order: 1
+nav_order: 2
 last_modified_at: 2020-12-14
 has_parent: false
 ---
