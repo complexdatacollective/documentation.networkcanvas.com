@@ -37,7 +37,7 @@ When you update Network Canvas or Architect, you may encounter messages when usi
 
 In Network Canvas, you may see a blue light bulb icon, or a red robot icon, on your protocol card when viewing it on the start screen (see below).
 
-[](/assets/img/protocol-schema/nc-ood.png)
+![](/assets/img/protocol-schema/nc-ood.png)
 
 Where a new schema is backward-compatible with a prior version you will see a blue light bulb, and Network Canvas will continue to support installing and running protocols of that version without any issues. This means that if you are happy with your protocol file **you do not need to take any action**. Your protocol will continue to function as before, albeit without access to new functionality implemented with the new schema version (see the [compatibility table](#compatibility-table) below for details on this).
 
@@ -49,7 +49,7 @@ If your protocol is no longer compatible with the version of Network Canvas that
 
 In Architect, you may see a prompt that a protocol must be migrated to a newer version before it can be opened (see below).
 
-[](/assets/img/protocol-schema/architect-migrate.png)
+![](/assets/img/protocol-schema/architect-migrate.png)
   
 If you wish to update their protocol file to the new schema version, follow the instructions provided below under [migrating a protocol](#migrating-a-protocol).
 

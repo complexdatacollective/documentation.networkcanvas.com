@@ -21,7 +21,7 @@ Using roster data in your study? Refer to our article on [roster name generators
 
 Both the "Name Generator (Using Forms)" and the "Name Generator (Quick Add)" Interfaces share some common visual elements.
 
-[](assets/img/interface-documentation/name-generators/preview.png)
+![](../../assets/img/interface-documentation/name-generators/preview.png)
 
 The **prompt** area, where the task is explained to the participant (see: [prompts](../key-concepts/prompts.md)), a **node list** area where alters that have been elicited are displayed, a **primary action button** that triggers the node elicitation process, and (optionally) one or more [Side Panels](#side-panels).
 

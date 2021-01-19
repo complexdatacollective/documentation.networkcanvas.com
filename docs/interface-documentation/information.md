@@ -8,7 +8,7 @@ nav_exclude: true
 
 The Information Interface is a general purpose screen that can be used to present information to participants using a variety of text and media resources. For example, this screen can be useful to introduce a study or to provide instructions or context for a particular stage in the survey.
 
-[](/assets/img/interface-documentation/information/example.png)
+![](/assets/img/interface-documentation/information/example.png)
 
 When using the Information Interface, you can incorporate one or multiple [resources](../key-concepts/resources.md) by either retrieving files from your resource library in Architect or locally from your device. No more than four items can be used at one time.
 

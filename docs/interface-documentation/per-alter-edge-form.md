@@ -5,7 +5,7 @@ parent: Interface Documentation
 ---
 ## Overview
 
-[](/assets/img/interface-documentation/per-edge-form/example.png)
+![](/assets/img/interface-documentation/per-edge-form/example.png)
 
 The Per Alter Edge Form is a _name interpreter_ interface that collects attribute data on the edges, or relationships, between nodes in a participant's network. When using the Per Alter Edge Form, participants review an introductory screen that describes the tasks on the stage and then complete a [form](../key-concepts/forms.md) for each edge they previously defined between pairs of alters within their network. These forms are customizable and can include one or multiple fields to collect specific edge attribute data.
 
@@ -14,11 +14,11 @@ The Per Alter Edge Form is a _name interpreter_ interface that collects attribut
 A single edge type is selectable per screen. This screen supports [filtering](../key-concepts/filtering.md) for edges that match the
 specified type.
 
-[](/assets/img/interface-documentation/per-edge-form/architect-edge-type.png)
+![](/assets/img/interface-documentation/per-edge-form/architect-edge-type.png)
 
 The introduction screen is shown before any matching edges and can be used to introduce the task.
 
-[](/assets/img/interface-documentation/per-edge-form/architect-intro.png)
+![](/assets/img/interface-documentation/per-edge-form/architect-intro.png)
 
 Each edge will be assigned [variables](../key-concepts/variable-types.md) using a configurable [form](../key-concepts/forms.md).
 
