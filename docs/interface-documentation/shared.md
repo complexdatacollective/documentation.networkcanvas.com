@@ -8,13 +8,13 @@ nav_exclude: true
 
 Some configuration options are available to all or most interface screens (dependent on the sub-category of interface, e.g. name generators).
 
-{% include nc-image src="/assets/img/interface-documentation/shared/navigation.png" caption="The stage name as visible in the interview navigation" %}{: .macos-screenshot }
+[](/assets/img/interface-documentation/shared/navigation.png)
 
 ## Shared Configuration
 
 All stages have a configurable name. This is shown in the navigation when conducting interviews, and in the timeline when constructing interviews. It can be used to set a memorable title or describe the purpose of a particular stage.
 
-{% include nc-image src="/assets/img/interface-documentation/shared/shared-configuration.png" %}
+[](/assets/img/interface-documentation/shared/shared-configuration.png" %}
 
 ### Entity Type
 

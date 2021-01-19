@@ -21,13 +21,13 @@ The following is a high level overview of the way that this feature works:
 
 To add skip logic to a stage, open it from the timeline view, and click "Use skip logic" to expand the section.
 
-{% include nc-image src="./assets/img/key-concepts/skip-logic/skip-logic-section.png" caption="The skip logic section in a stage editor" %}
+[](./assets/img/key-concepts/skip-logic/skip-logic-section.png)
 
 To disable skip logic for a stage, click the toggle at the top of this section.
 
 You can see which stages have skip logic enabled by looking for the skip logic icon next to the stage on the timeline.
 
-{% include nc-image src="./assets/img/key-concepts/skip-logic/skip-icon.png" caption="Stage showing the skip logic icon in the timeline view" %}
+[](./assets/img/key-concepts/skip-logic/skip-icon.png)
 
 ## Skip Logic Rules
 
@@ -54,7 +54,8 @@ Before we know the final outcome of the skip logic rule, we have to consider one
 
 For example, if you wished to skip a stage based on if a categorical variable with many options is set to all but one possible value, you would typically have to write a rule for each value, and use the `OR` operator. However, if you were to set the skip logic to "show this stage if", you would only need to define a single rule, that included the value that is specifically permissible.
 
-{% include tip-info.md content="Take extra care to think through the logical repercussions of your join operator when changing this property, as it can be somewhat counter-intuitive. It is very easy to make your rule too specific using the `AND` operator!" markdown=true %}
+Take extra care to think through the logical repercussions of your join operator when changing this property, as it can be somewhat counter-intuitive. It is very easy to make your rule too specific using the `AND` operator!
+{: .tip-box}
 
 ## Extended Example
 
@@ -62,13 +63,13 @@ Since skip logic can be confusing to new users, we have provided an extended exa
 
 Consider an interview where you are using a [Categorical Bin Interface](../../interface-documentation/categorical-bin) to classify the participant's relationship with alters. You define options including 'friend', 'spouse/partner', 'coworker', 'parent', 'sibling', 'child', 'uncle/aunt', or 'grandparent' with corresponding values of 1, 2, 3, 4, 5, 6, 7, and 8.
 
-{% include nc-image src="./assets/img/key-concepts/skip-logic/categorical-variable.png" caption="Categorical variable for storing relationship type" %}
+[](./assets/img/key-concepts/skip-logic/categorical-variable.png)
 
 In the following stage you want to use another Categorical Bin, but this time to capture type of relatedness of alters to ego (e.g. 'biological', 'step', 'adoptive', 'through marriage', etc.). Now let us imagine that a participant did not nominate any alters to whom they are related (i.e. they have only nominated friends, spouse/partners, and/or coworkers). In such an instance, the type of relatedness stage would be irrelevant and, therefore, implementing skip logic to skip this stage entirely for such a participant would both increase efficiency and minimize respondent burden.
 
 We implemented a simple skip logic rule to address this, as follows:
 
-{% include nc-image src="./assets/img/key-concepts/skip-logic/example.png" caption="Example skip logic rules that skip this stage if no alters of these relationship types exist" %}
+[](./assets/img/key-concepts/skip-logic/example.png)
 
 In the above example, you could also configure your skip logic to achieve the same outcome by implementing the inverse rule (i.e. skip screen if alter of a type Person with Relationship excludes 4, 5, 6, 7, or 8).
 

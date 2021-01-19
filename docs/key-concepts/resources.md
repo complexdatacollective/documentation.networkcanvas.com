@@ -9,7 +9,8 @@ In Architect, 'resources' are any external files that you use within your interv
 
 Once added to your protocol in Architect, resources are stored within the `.netcanvas` file itself. Because of this, you will need to handle updating or removing resources from within Architect.
 
-{% include tip-caution.md content="Using large numbers of resources, or resources that are poorly optimized, in your protocol can **heavily** impact performance. This means that protocols take longer to install on devices, and some stages may take much longer to load. Special care must be taken to appropriately resize and compress your resources before importing them, and you must ensure that you have tested your protocol on your intended field devices to ascertain performance levels.<br><br>As a general guide, you should aim to have your total protocol file size be less than 10mb." markdown= true %}
+Using large numbers of resources, or resources that are poorly optimized, in your protocol can **heavily** impact performance. This means that protocols take longer to install on devices, and some stages may take much longer to load. Special care must be taken to appropriately resize and compress your resources before importing them, and you must ensure that you have tested your protocol on your intended field devices to ascertain performance levels.<br><br>As a general guide, you should aim to have your total protocol file size be less than 10mb.
+{: .tip-box .caution}
 
 ## Adding Resources to a Stage
 
@@ -17,7 +18,7 @@ Many stages allow you to add resources directly while configuring them. This is 
 
 If the stage you are supporting uses a resource it will provide an interface for you to add it directly, and will give instructions about which type of resource is required.
 
-{% include nc-image src="/assets/img/key-concepts/assets/bg-asset.png" caption="Adding a background image to a Sociogram" %}
+[](/assets/img/key-concepts/assets/bg-asset.png)
 
 ## Adding and Removing Resources from the Resource Library
 
@@ -27,7 +28,7 @@ For a more broad overview of all resources within your current protocol, click t
 
 Under the resource library screen, you can browse, filter, and delete any existing resources, as well as add new ones. To add a new resource to the resource library, simply drag and drop a file into the designated area, or browse for the file you wish to import.
 
-{% include nc-image src="/assets/img/key-concepts/assets/asset-library.png" caption="The resource library screen" %}
+[](/assets/img/key-concepts/assets/asset-library.png)
 
 You will notice that existing resources that are unused show a red "unused" pill. This indicates that they are able to be deleted. Attempting to delete an resource that is in use within your interview will be prevented. You must first update or remove all uses of a resource before you can delete it.
 

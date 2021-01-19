@@ -7,15 +7,13 @@ nav_exclude: true
 
 ## Overview
 
-{% include nc-image src="/assets/img/interface-documentation/dyad-census/dyad-example.png" %}{: .macos-screenshot }
+[Dyad Census Interface](/assets/img/interface-documentation/dyad-census/dyad-example.png){:standalone}
 
 The Dyad Census is a _name interpreter_ interface that collects edges for existing alters. On the Dyad Census screen participants are asked if an edge exists for each alter pair combination. This Interface also contains an embedded introductory panel where the purpose of the form can be described to a participant. 
 
 ## Configuring Dyad Census
 
 A Dyad Census can include multiple [prompts](../key-concepts/prompts.md), each of which relates to a single edge type. Each alter pair will be considered separately for each prompt.
-
-<br />
 
 {: .no_toc}
 #### Do
