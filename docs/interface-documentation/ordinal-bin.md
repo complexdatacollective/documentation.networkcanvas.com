@@ -15,7 +15,7 @@ A single node type is selectable per screen. This screen supports [filtering](..
 
 ![](/assets/img/interface-documentation/ordinal-bin/architect_1.png)
 
-An Ordinal Bin screen can include multiple [prompts](../key-concepts/prompts.md), each of which relates to a single [ordinal variable](key-concepts/variable-types/#ordinal).
+An Ordinal Bin screen can include multiple [prompts](../key-concepts/prompts.md), each of which relates to a single [ordinal variable](../key-concepts/variable-types.md/#ordinal).
 
 ![](/assets/img/interface-documentation/ordinal-bin/architect_2.png)
 
@@ -23,7 +23,7 @@ An Ordinal Bin screen can include multiple [prompts](../key-concepts/prompts.md)
 #### Do
 
 {: .good-practices}
-- Use this Interface to collect ordinal or interval scale data on alters. Although a Likert Scale can be added as an [input control](../key-concepts/input-control.md) on other interfaces, the drag and drop functionality on the Ordinal Bin provides a tactile method to capturing these data that is engaging for participants. 
+- Use this Interface to collect ordinal or interval scale data on alters. Although a Likert Scale can be added as an [input control](../key-concepts/input-controls.md) on other interfaces, the drag and drop functionality on the Ordinal Bin provides a tactile method to capturing these data that is engaging for participants. 
 
 {: .no_toc}
 #### Don't

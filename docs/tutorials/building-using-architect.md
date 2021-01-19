@@ -8,14 +8,14 @@ last_modified_at: 2020-12-14
 
 ## Prerequisites
 
-This tutorial assumes you are familiar with the general concepts of the Network Canvas software, have read the [project overview](../project-overview.md), and have read the tutorial on [using Interviewer](../sample-interview.md).
+This tutorial assumes you are familiar with the general concepts of the Network Canvas software, have read the [project overview](../project-overview.md), and have read the tutorial on [using Interviewer](./sample-interview.md).
 
 We recommend following along using your own computer, so you should also [download and install Architect](https://networkcanvas.com/download.html).
 ## Overview
 
 Architect is a desktop application which runs on Windows, macOS, and Linux operating systems. The purpose of Architect is to provide a simple means for researchers to build Network Canvas interview protocols, without needing extensive technical knowledge. It aims to provide a visual and intuitive user interface, so that you can focus on the content of your interviews. You don't need to run Architect on the computer that you use to run Interviewer or Server, but you can if you wish.
 
-This tutorial will guide you through the process of creating a Network Canvas protocol using Architect. We will be rebuilding the sample protocol that is available to install within Interviewer, which was discussed extensively in the tutorial on [using Interviewer](../sample-interview.md). If you would like to download and open the finished protocol, you can do so [from here](../../protocols/Sample Protocol v1.netcanvas).
+This tutorial will guide you through the process of creating a Network Canvas protocol using Architect. We will be rebuilding the sample protocol that is available to install within Interviewer, which was discussed extensively in the tutorial on [using Interviewer](./sample-interview.md). If you would like to download and open the finished protocol, you can do so [from here](../../protocols/Sample Protocol v1.netcanvas).
 
 ## Opening Architect
 
@@ -36,7 +36,7 @@ Once you have created or opened a protocol, you will be taken to the **protocol 
 
 ![](../../assets/img/architect-guide/overview-screen.png)
 
-The panel at the top is the protocol card that you will see when you import this protocol into Server or Interviewer. It shows the protocol name and description, and has two buttons for accessing the protocol's resource library and managing the codebook (these areas are discussed later). The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.
+The panel at the top is the protocol card that you will see when you import this protocol into Server or Interviewer. It shows the protocol name and description, and has two buttons for accessing the protocol's [resource library](../key-concepts/resources.md) and managing the [codebook](../key-concepts/codebook.md) (these areas are discussed later). The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.
 
 In the bottom left, you can see the "Return to Start Screen" button. Clicking this button will take you out of the current protocol, and back to the start screen.
 

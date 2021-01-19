@@ -65,7 +65,7 @@ When using the "Name Generator (using quick add)" Interface, the primary action 
 
 [A quick add name generator](/assets/img/interface-documentation/name-generators/ng-quick.png){:standalone}
 
-One or multiple additional variables can be added to alters nominated on this Interface. Capturing additional variables may be useful either to help track where a node was elicited or to reflect a name interpreter element of the prompt (e.g. adding a variable called "close_friend" to a prompt asking about closeness).  
+One or multiple [additional variables](../key-concepts/additional-variables.md) can be added to alters nominated on this Interface. Capturing additional variables may be useful either to help track where a node was elicited or to reflect a name interpreter element of the prompt (e.g. adding a variable called "close_friend" to a prompt asking about closeness).  
 
 {: .no_toc}
 ### Do
