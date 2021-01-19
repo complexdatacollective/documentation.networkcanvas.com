@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Network Filtering
 parent: Key Concepts
 ---
@@ -9,15 +9,17 @@ Network filtering is a configuration feature you will find in several areas of A
 
 This is particularly useful in cases where the content of the stage does not apply to all network entities. Consider the example of an interview protocol with two stages - a [Name Generator](../interface-documentation/name-generator.md), and an [Ordinal Bin](../interface-documentation/ordinal-bin.md). On the first stage, for each alter named the participant is asked if they play sports with the individual. The second stage asks "how often do you play sports with each of these people?". Filtering the network for this second stage to show only those alters with the "plays sports with" attribute will reduce the response burden of the task, and will make the interview protocol more efficient.
 
-{% include tip-info.md content="Network filtering is different from [skip logic](./skip-logic.md)! Although the two sound similar in principle, they achieve very different design goals. Whereas network filtering determines which nodes to show *within* a stage, skip logic determines if a stage should be shown at all. Consult the article on [skip logic](./skip-logic.md) to learn more." %}
+Network filtering is different from [skip logic](./skip-logic.md)! Although the two sound similar in principle, they achieve very different design goals. Whereas network filtering determines which nodes to show *within* a stage, skip logic determines if a stage should be shown at all. Consult the article on [skip logic](./skip-logic.md) to learn more.
+{: .tip-box}
 
 ## Configuring Network Filtering on a Stage
 
 To configure network filtering within a stage, open the stage from the timeline view, and toggle the switch to enable "Network Filtering". From here, you have the ability to create one or more **rules** (of type alter or edge), as well as to set the **join operator** by determining if "all rules", or "any rule" must match.
 
-{% include nc-image src="./assets/img/key-concepts/network-filtering/filtering-panel.png" caption="The network filtering section of an ordinal bin stage" %}
+![](../../assets/img/key-concepts/network-filtering/filtering-panel.png)
 
-{% include tip-info.md content="Network filtering is only available on *name interpreter* interfaces - interfaces that add attributes to nodes or edges. It is not available on specialist *name generator* interfaces." %}
+Network filtering is only available on *name interpreter* interfaces - interfaces that add attributes to nodes or edges. It is not available on specialist *name generator* interfaces.
+{: .tip-box}
 
 ### Filtering Rules
 
@@ -28,7 +30,8 @@ Similar to skip logic rules, filtering rules have two types that can be targeted
 
 Unlike skip logic rules (which are aggregated into an overall boolean `true` or `false` value), filter rules are applied to each node and edge in the network, and are not aggregated. Instead, the nodes that remain are those that satisfy the rule constraints.
 
-{% include tip-caution.md content="It is important to remember that filtering retains the validity of the network model: the returned network will not contain orphaned nodes when using an edge query, or partially disconnected edges, since these are not phenomenologically valid." %}
+It is important to remember that filtering retains the validity of the network model: the returned network will not contain orphaned nodes when using an edge query, or partially disconnected edges, since these are not phenomenologically valid.
+{: .tip-box .caution}
 
 ### The Join Operator
 
@@ -47,11 +50,12 @@ Consider an interview where you use the [Sociogram](../interface-documentation/s
 
 To achieve this using network filtering, we implemented the following edge and node rules on the Per Alter Form:
 
-{% include nc-image src="./assets/img/key-concepts/network-filtering/example.png" caption="Example rules showing of 'nodes with attribute HIV_pos = true who also have an edge of type sex'" %}
+![](../../assets/img/key-concepts/network-filtering/example.png)
 
 Applying these rules within this stage determines that only HIV+ nodes who have a sex relationship will be shown. All nodes that do not have a sex relationship will be filtered out - even if they have attribute `HIV_pos = true`.
 
-{% include tip-caution.md content="If your filter query (the sum of all defined rules within the stage) includes an edge rule, you will also filter alters. For example, if your rule is set to filter the existence of an edge type, such as 'sex', any nodes that would become isolates as a result of this query are removed from the filtered network." %}
+If your filter query (the sum of all defined rules within the stage) includes an edge rule, you will also filter alters. For example, if your rule is set to filter the existence of an edge type, such as 'sex', any nodes that would become isolates as a result of this query are removed from the filtered network.
+{: .tip-box .caution}
 
 ## Network Filtering in a Side Panel
 
@@ -59,4 +63,4 @@ You also have the ability to filter the content of Name Generator [side panels](
 
 This feature can be particularly useful if you wish to filter elements of a roster. For example, your roster may contain an attribute that represents graduation year that you could use to filter the side panel content for a question about classmates known from a certain year group.
 
-{% include nc-image src="./assets/img/key-concepts/network-filtering/side-panel.png" caption="Network filtering in a name generator side panel" %}
+![](../../assets/img/key-concepts/network-filtering/side-panel.png)

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Variable Types
 parent: Key Concepts
 ---

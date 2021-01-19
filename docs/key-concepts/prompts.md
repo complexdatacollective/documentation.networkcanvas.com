@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Prompts
 parent: Key Concepts
 ---
@@ -10,13 +10,13 @@ Most stages use the concept of “prompts” that define questions to put to the
 
 A single stage may contain multiple prompts, or a single prompt, depending on the needs of the interview. You may wish to think about grouping prompts by theme, and then having one stage for each theme. For example, a “Name Generator (family)” stage could contain prompts about family alters, and “Name Generator (colleagues)” could contain prompts about professional alters.
 
-{% include nc-image src="assets/img/key-concepts/prompts/multiple-prompts.png" caption="Multiple prompts on a name generator stage in Architect." %}
+![Multiple prompts on a name generator stage in Architect.](../../assets/img/key-concepts/prompts/multiple-prompts.png){:standalone}
 
 ## Creating prompts
 
 When creating prompts, text instructions must be specified. Prompts can contain formatting such as bold or italicized text to create emphasis and rhythm. To create this formatting, use markdown syntax.
 
-{% include nc-image src="assets/img/key-concepts/prompts/edit-prompt.png" caption="Editing a prompt in Architect" %}
+![Editing a prompt in Architect](../../assets/img/key-concepts/prompts/edit-prompt.png){:standalone}
 
 Prompts can also be created to automatically assign "true" or "false" values to [additional variables](./additional-variables.md) to track where in an interview an entity was included, or to add to an entity.
 
@@ -24,4 +24,4 @@ Prompts can also be created to automatically assign "true" or "false" values to 
 
 Most stages use "pips" to indicate progress through the prompts, and the progress bar moves forward incrementally as the interview steps through each prompt.
 
-{% include nc-image src="assets/img/key-concepts/prompts/nc-prompts.png" caption="Pips above the question on a prompt in Interviewer indicate progress on the stage" %}
+![Pips above the question on a prompt in Interviewer indicate progress on the stage](../../assets/img/key-concepts/prompts/nc-prompts.png){:standalone}

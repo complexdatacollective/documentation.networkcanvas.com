@@ -1,8 +1,8 @@
 ---
-layout: default
+
 title: Interface Documentation
 has_children: true
-has_toc: false
+
 nav_order: 5
 has_parent: false
 ---

@@ -1,12 +1,12 @@
 ---
-layout: default
+
 title: Small and Large Roster
 parent: Interface Documentation
 nav_exclude: true
 ---
 ## Overview
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/small-roster.png" caption="The Small Roster Name Generator in use" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/name-generators/small-roster.png)
 
 Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in your study's networks.
 
@@ -34,7 +34,7 @@ When using the "Small Roster Name Generator" Interface, cards representing node 
 
 By default, cards will display the `name` attribute from the roster data as a card title, and will sort the cards in the order the nodes are defined in the data file. These options can be configured from within architect. Note that you are able to define both the default sorting options, and allow the user to sort themselves by multiple properties.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/architect-card.png" caption="Configuring card display options" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/name-generators/architect-card.png)
 
 {: .no_toc}
 ### Do
@@ -61,15 +61,15 @@ Nominating an alter within this interfaces uses the following process:
 3. The participant may then tap (or click) one **or more** cards, to nominate them. As this happens, a node button with a plus icon will appear on the right edge of the search panel, and the number will increment as each card is selected.
 4. Any nominated nodes will not be added to the interview until the plus button is clicked. Multiple searches can be completed with the search panel still open, meaning the participant does not need to click the plus button after each search - merely when they feel they have finished the task.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/large-roster.png" caption="The Large Roster Name Generator in use" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/name-generators/large-roster.png)
 
 By default, the cards will display the **name** attribute from the roster data as the card title. As with the Small Roster Name Generator, the display options of these cards are completely configurable. You should display all attributes that a participant might need to disambiguate roster nodes with similar names.
 
 The search function is also heavily configurable, allowing you to choose which attributes from the roster are indexed, as well as the accuracy (or 'fuzziness') of the search matching. These options are powerful, and should be configured carefully. Each attribute added to the searchable properties list will decrease the performance of the search function, and may make matches less accurate. Similarly, using too stringent or too lax search accuracy will compromise the ability of participants to locate nodes in the roster.
 
-As a general rule of thumb search accuracy should increase as roster size increases, and only attributes containing terms participants are likely to search by should be included as indexed attributes. 
+As a general rule of thumb search accuracy should increase as roster size increases, and only attributes containing terms participants are likely to search by should be included as indexed attributes.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/architect-search.png" caption="Configuring search options within Architect" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/name-generators/architect-search.png)
 
 {: .no_toc}
 ### Do

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Additional Variables
 parent: Key Concepts
 ---
@@ -8,7 +8,7 @@ parent: Key Concepts
 
 "Additional variables" are defined on individual prompts in [Name Generator](../interface-documentation/name-generator.md) stages and automatically assigned to any entity that is active on that given prompt. These variables are optional, and can be used to keep track of where within an interview an entity was used, or to add to an element. Additional variables are boolean values, either "true" or "false". These variables can then be used in skip logic or filtering rules.
 
-{% include nc-image src="/assets/img/key-concepts/additional-variables/additional-variables.png" caption="Managing additional variables on a Name Generator prompt in Architect" %}
+![Managing additional variables on a Name Generator prompt in Architect](../../assets/img/key-concepts/additional-variables/additional-variables.png){:standalone}
 
 In Architect, on a Name Generator stage, you can add one or more additional variable to a prompt. You can create new variables or reuse other variables, and specify whether a prompt toggles the variable to "true" or "false".
 

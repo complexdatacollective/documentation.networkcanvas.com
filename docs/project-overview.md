@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: post
 title: Project Overview
-nav_order: 1
+nav_order: 2
 last_modified_at: 2020-12-14
 has_parent: false
 ---
@@ -56,13 +56,13 @@ Therefore, interviewers are expected to pre-install the Network Canvas App on st
 
 However, we have found that the level of engagement during the actual interview is able to vary quite a bit depending on the level of complexity of the protocol. 
 
-{% include nc-image src="/assets/img/introduction-images/interviewer-assisted.png" caption="An interviewer assisted interview" %}
+![An interviewer-assisted interview](/assets/img/introduction-images/interviewer-assisted.png){:standalone}
 
 ### Visualization
 
 Network Canvas prioritizes good visual design and intuitive touch interactions. Our focus on the design and feel of the tools sets us apart from other survey tools - and academic softwares, in general - we also believe our focus on quality design helps make abstract concepts more tangible to participants and researchers.
 
-{% include nc-image src="/assets/img/introduction-images/visual.png" caption="A Network Canvas interview running on an iPad pro" %}
+![An interview running on an iPad Pro](/assets/img/introduction-images/visual.png){:standalone}
 
 ### End-to-end Workflow
 
@@ -86,6 +86,3 @@ These freedoms are protected by some requirements built into the GPL license:
 * You must include a copy of the original source code with any versions you distribute, making it possible for others to modify
 
 We have guidelines on managing contributions and collaborations to the project that we will be happy to discuss later if that interests you. We believe the fact that this is an open source software that is "owned" by a not for profit entity means that it should be possible to make extending it compatible with the policies of grant awarding bodies.
-
-{% include nc-image src="/assets/img/introduction-images/codaco.png" caption="The Complex Data Collective GitHub page, where our sourcecode is available" %}
-

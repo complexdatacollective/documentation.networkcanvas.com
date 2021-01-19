@@ -1,11 +1,11 @@
 ---
-layout: default
+
 title: Ordinal Bin
 parent: Interface Documentation
 ---
 ## Overview
 
-{% include nc-image src="/assets/img/interface-documentation/ordinal-bin/example.png" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/ordinal-bin/example.png)
 
 The Ordinal Bin is a name interpreter Interface that captures ordinal data on the alters in a participant's network. When using the Ordinal Bin, participants drag and drop alters one-by-one into parallel bins denoting values on an ordinal scale. Once placed, participants can move alters from one bin to another.
 
@@ -13,11 +13,11 @@ The Ordinal Bin is a name interpreter Interface that captures ordinal data on th
 
 A single node type is selectable per screen. This screen supports [filtering](../key-concepts/filtering.md) those nodes by their attributes.
 
-{% include nc-image src="/assets/img/interface-documentation/ordinal-bin/architect_1.png" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/ordinal-bin/architect_1.png)
 
 An Ordinal Bin screen can include multiple [prompts](../key-concepts/prompts.md), each of which relates to a single [ordinal variable](../key-concepts/variable-types.md/#ordinal).
 
-{% include nc-image src="/assets/img/interface-documentation/ordinal-bin/architect_2.png" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/ordinal-bin/architect_2.png)
 
 {: .no_toc}
 #### Do

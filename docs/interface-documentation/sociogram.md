@@ -1,11 +1,11 @@
 ---
-layout: default
+
 title: Sociogram
 parent: Interface Documentation
 ---
 ## Overview
 
-{% include nc-image src="/assets/img/interface-documentation/sociogram/sociogram-edges.png" caption="Using Sociogram to draw ties" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/sociogram/sociogram-edges.png)
 
 Sociograms are the visual mapping component of a network interview. On the Sociogram, participants draw ties between alters to signify the relationships between individuals within their personal network.
 
@@ -15,7 +15,7 @@ There are two sociogram Interfaces in Network Canvas - one for data collection a
 
 When using the "Sociogram" Interface, participants position their alters and draw ties between them. The Interface can be used to create one or multiple edge types between alters in a participant's network, and to collect alter attribute data by highlighting alters where the variable value is true.
 
-{% include nc-image src="/assets/img/interface-documentation/sociogram/sociogram-highlight.png" caption="Using Sociogram to highlight attributes" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/sociogram/sociogram-highlight.png)
 
 {: .no_toc}
 #### Do
