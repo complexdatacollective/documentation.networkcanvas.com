@@ -56,13 +56,13 @@ Therefore, interviewers are expected to pre-install the Network Canvas App on st
 
 However, we have found that the level of engagement during the actual interview is able to vary quite a bit depending on the level of complexity of the protocol. 
 
-[An interviewer-assisted interview](/assets/img/introduction-images/interviewer-assisted.png){:standalone}
+![An interviewer-assisted interview](/assets/img/introduction-images/interviewer-assisted.png){:standalone}
 
 ### Visualization
 
 Network Canvas prioritizes good visual design and intuitive touch interactions. Our focus on the design and feel of the tools sets us apart from other survey tools - and academic softwares, in general - we also believe our focus on quality design helps make abstract concepts more tangible to participants and researchers.
 
-[An interview running on an iPad Pro](/assets/img/introduction-images/visual.png){:standalone}
+![An interview running on an iPad Pro](/assets/img/introduction-images/visual.png){:standalone}
 
 ### End-to-end Workflow
 

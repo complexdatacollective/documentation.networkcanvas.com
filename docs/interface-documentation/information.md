@@ -16,7 +16,7 @@ When using the Information Interface, you can incorporate one or multiple [resou
 
 An information screen is made up of a column of 4 spaces for content. These can be text, images, videos and audio. Items can be re-arranged by dragging. Items can be resized to take up 1, 2 or 4 of the available spaces by dragging from the bottom right corner of the item.
 
-[Configuring items for a stage based on the Information Interface in Architect](/assets/img/interface-documentation/information/architect-items.png){:standalone}
+![Configuring items for a stage based on the Information Interface in Architect](/assets/img/interface-documentation/information/architect-items.png){:standalone}
 
 {: .no_toc}
 #### Do

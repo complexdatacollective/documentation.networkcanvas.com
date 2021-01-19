@@ -22,7 +22,7 @@ The introduction screen is shown before any matching edges and can be used to in
 
 Each edge will be assigned [variables](../key-concepts/variable-types.md) using a configurable [form](../key-concepts/forms.md).
 
-[Form fields can be re-ordered by dragging, and deleted by clicking the right hand 'x'](/assets/img/interface-documentation/per-edge-form/architect-form.png){:standalone}
+![Form fields can be re-ordered by dragging, and deleted by clicking the right hand 'x'](/assets/img/interface-documentation/per-edge-form/architect-form.png){:standalone}
 
 {: .no_toc}
 #### Do
