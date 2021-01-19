@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Name Generators
 parent: Interface Documentation
 nav_exclude: true
@@ -10,17 +10,18 @@ Name Generators are one of the fundamental components of a network interview. Th
 
 There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/add-screen.png" caption="Available Name Generator Interfaces in Architect" %}{: .macos-screenshot }
+[Available Name Generator interfaces in Architect](/assets/img/interface-documentation/name-generators/add-screen.png){:standalone}
 
 Each of these Interfaces is designed for a specific type of alter elicitation, with several associated advantages and disadvantages. Although they have some configuration options that are [shared with all other Network Canvas Interfaces](./shared.md), this article will focus on options specific to the main name generator interface, and a variant of it that uses a 'quick add' mode.
 
-{% include tip-info.md content="Using roster data in your study? Refer to our article on [roster name generators](./roster-name-generators.md) for information about our dedicated roster interfaces." markdown=true %}
+Using roster data in your study? Refer to our article on [roster name generators](./roster-name-generators.md) for information about our dedicated roster interfaces.
+{: .tip-box}
 
 ## Shared Interface Elements
 
 Both the "Name Generator (Using Forms)" and the "Name Generator (Quick Add)" Interfaces share some common visual elements.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/preview.png" %}
+![](../../assets/img/interface-documentation/name-generators/preview.png)
 
 The **prompt** area, where the task is explained to the participant (see: [prompts](../key-concepts/prompts.md)), a **node list** area where alters that have been elicited are displayed, a **primary action button** that triggers the node elicitation process, and (optionally) one or more [Side Panels](#side-panels).
 
@@ -32,7 +33,7 @@ Both of these name generators can use Side Panels. Side panels are a powerful fe
 
 For example, when multiple prompts within a name generator have potential overlap in a participant's social network, it may be useful to bring nodes previously nominated onto a subsequent screen so that a participant can easily list them again.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/4.png" caption="Configuring a side panel" %}{: .macos-screenshot }
+[Configuring a side panel](/assets/img/interface-documentation/name-generators/4.png){:standalone}
 
 A side panel can also be created using a network data file (e.g. a roster) to allow a participant to select and nominate alters from a predetermined list. It is important to note that the exact same list will appear on subsequent side panels within the name generator unless a rule(s) is created to filter the data to be shown on the panel (see [network filtering](../key-concepts/filtering.md)).
 
@@ -42,7 +43,7 @@ Side panels can be expanded or contracted in the interview by clicking on the he
 
 When using the "Name Generator (using forms)" Interface, the primary action button will trigger a form that participants must complete to create an alter. This form can include one or more fields to capture specific attribute data on each node (see our [key concepts article on forms](../key-concepts/forms.md) for further information on creating a form). This interface therefore combines the process of generating alters with the ability to do some basic attribute collection, or name interpreting, tasks.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/ng-form.png" caption="An example form" %}{: .macos-screenshot }
+[An example form](/assets/img/interface-documentation/name-generators/ng-form.png){:standalone}
 
 {: .no_toc}
 ### Do
@@ -60,9 +61,9 @@ When using the "Name Generator (using forms)" Interface, the primary action butt
 
 ## Using "Quick Add"
 
-When using the "Name Generator (using quick add)" Interface, the primary action button will trigger a single field form that a participant must complete to create an alter. This Interface uses a single "quick add variable" to store the value of the form, which allows a participant to rapidly create alters. 
+When using the "Name Generator (using quick add)" Interface, the primary action button will trigger a single field form that a participant must complete to create an alter. This Interface uses a single "quick add variable" to store the value of the form, which allows a participant to rapidly create alters.
 
-{% include nc-image src="/assets/img/interface-documentation/name-generators/ng-quick.png" caption="A quick add Name Generator" %}{: .macos-screenshot }
+[A quick add name generator](/assets/img/interface-documentation/name-generators/ng-quick.png){:standalone}
 
 One or multiple additional variables can be added to alters nominated on this Interface. Capturing additional variables may be useful either to help track where a node was elicited or to reflect a name interpreter element of the prompt (e.g. adding a variable called "close_friend" to a prompt asking about closeness).  
 

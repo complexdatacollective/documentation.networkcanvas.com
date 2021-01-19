@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Input Controls
 parent: Key Concepts
 ---

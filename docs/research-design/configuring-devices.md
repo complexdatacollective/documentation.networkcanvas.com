@@ -1,8 +1,7 @@
 ---
-layout: default
+
 title: Configuring Devices Prior To Starting Data Collection
 parent: Research Design
-nav_exclude: true
 ---
 
 This article is work in progress, and will be developed in the coming days and weeks to contain more information. For the time-being, we are simply advise users to disable automatic updates on their devices prior to starting data collection. You should also follow typical best-practices regarding device security, such as enabling pass-codes and encryption. These topics will be discussed as this article is updated.

@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Updating from Beta to the Stable Release
 parent: Technical Documentation
 nav_exclude: true

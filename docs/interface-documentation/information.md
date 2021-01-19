@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Information
 parent: Interface Documentation
 nav_exclude: true
@@ -8,7 +8,7 @@ nav_exclude: true
 
 The Information Interface is a general purpose screen that can be used to present information to participants using a variety of text and media resources. For example, this screen can be useful to introduce a study or to provide instructions or context for a particular stage in the survey.
 
-{% include nc-image src="/assets/img/interface-documentation/information/example.png" %}{: .macos-screenshot }
+![](/assets/img/interface-documentation/information/example.png)
 
 When using the Information Interface, you can incorporate one or multiple [resources](../key-concepts/resources.md) by either retrieving files from your resource library in Architect or locally from your device. No more than four items can be used at one time.
 
@@ -16,7 +16,7 @@ When using the Information Interface, you can incorporate one or multiple [resou
 
 An information screen is made up of a column of 4 spaces for content. These can be text, images, videos and audio. Items can be re-arranged by dragging. Items can be resized to take up 1, 2 or 4 of the available spaces by dragging from the bottom right corner of the item.
 
-{% include nc-image src="/assets/img/interface-documentation/information/architect-items.png" caption="Configuring items for an information screen in architect" %}{: .macos-screenshot }
+![Configuring items for a stage based on the Information Interface in Architect](/assets/img/interface-documentation/information/architect-items.png){:standalone}
 
 {: .no_toc}
 #### Do

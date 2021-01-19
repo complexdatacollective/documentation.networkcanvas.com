@@ -1,4 +1,0 @@
-<figure class="image">
-  <img src="{{ include.src | absolute_url }}" alt="{{ include.caption }}">
-  <figcaption>{{ include.caption }}</figcaption>
-</figure>

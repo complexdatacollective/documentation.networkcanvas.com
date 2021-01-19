@@ -1,5 +1,5 @@
 ---
-layout: default
+
 title: Protocol Schema Information
 parent: Technical Documentation
 nav_exclude: true
@@ -15,7 +15,8 @@ You may notice messaging within the app that informs you of "out of date", or "o
 
 During the beta period, we _strongly_ encourage you to update your protocol files wherever possible, so that you are able to evaluate the newest Network Canvas features.
 
-{% include tip-caution.md content="Please note that since Android and iOS auto-update all applications by default, users must manually disable this process if they wish to continue using a particular version of an app to ensure it remains compatible with their existing protocols (rollback to prior versions is not possible on these platforms). We urge users to follow the advice set out in the [configuring devices prior to starting data collection](../research-design/configuring-devices.md) article to ensure they are not caught out." markdown=true %}
+Please note that since Android and iOS auto-update all applications by default, users must manually disable this process if they wish to continue using a particular version of an app to ensure it remains compatible with their existing protocols (rollback to prior versions is not possible on these platforms). We urge users to follow the advice set out in the [configuring devices prior to starting data collection](../research-design/configuring-devices.md) article to ensure they are not caught out.
+{: .tip-box .caution}
 
 ## Why it matters
 
@@ -36,7 +37,7 @@ When you update Network Canvas or Architect, you may encounter messages when usi
 
 In Network Canvas, you may see a blue light bulb icon, or a red robot icon, on your protocol card when viewing it on the start screen (see below).
 
-{% include nc-image src="/assets/img/protocol-schema/nc-ood.png" caption="A protocol card showing that a protocol can be updated." %}{: .macos-screenshot }
+![](/assets/img/protocol-schema/nc-ood.png)
 
 Where a new schema is backward-compatible with a prior version you will see a blue light bulb, and Network Canvas will continue to support installing and running protocols of that version without any issues. This means that if you are happy with your protocol file **you do not need to take any action**. Your protocol will continue to function as before, albeit without access to new functionality implemented with the new schema version (see the [compatibility table](#compatibility-table) below for details on this).
 
@@ -48,7 +49,7 @@ If your protocol is no longer compatible with the version of Network Canvas that
 
 In Architect, you may see a prompt that a protocol must be migrated to a newer version before it can be opened (see below).
 
-{% include nc-image src="/assets/img/protocol-schema/architect-migrate.png" caption="Architect may ask you to migrate a protocol before it can be opened." %}{: .macos-screenshot }
+![](/assets/img/protocol-schema/architect-migrate.png)
   
 If you wish to update their protocol file to the new schema version, follow the instructions provided below under [migrating a protocol](#migrating-a-protocol).
 
@@ -76,7 +77,8 @@ Migrating a protocol happens within Architect, and is automatic. The process wor
  3. Architect will inform you that the protocol file can be upgraded, which happens by creating a copy (so that your original file is preserved). If you choose to continue, you will be prompted for a location to save your upgraded protocol.
  4. Architect will automatically append "(schema version X)" to the filename, which may help you to keep track of the different versions of your protocol, and to differentiate them within Server and Network Canvas.
 
-{% include tip-caution.md content="Schema changes may represent changes to the underlying network data model and, therefore, protocols migrated from one schema version to another must be treated as different workspaces within Server (shown below). Users that do migrate their protocols to a new schema compatible version will need to create a merging script to handle combining the two data sources from the two workspaces once exported. Although this process introduces an extra step in a user workflow, it promotes better quality data and greater user control." %}
+Schema changes may represent changes to the underlying network data model and, therefore, protocols migrated from one schema version to another must be treated as different workspaces within Server (shown below). Users that do migrate their protocols to a new schema compatible version will need to create a merging script to handle combining the two data sources from the two workspaces once exported. Although this process introduces an extra step in a user workflow, it promotes better quality data and greater user control.
+{: .tip-box .caution}
 
 ## Compatibility Table
 
