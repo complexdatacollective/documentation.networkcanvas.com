@@ -1,6 +1,13 @@
 ---
-title: Categorical Bin
 parent: Interface Documentation
+image: /assets/uploads/wallpaper.png
+title: Categorical Bin
+good:
+  - this is my thing
+  - this is my other thing
+bad:
+  - my bad thing
+  - more bad things
 ---
 ## Overview
 
