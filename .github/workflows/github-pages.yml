@@ -1,7 +1,9 @@
 name: Build documentation site
 
 on:
-  push
+  push:
+      branches:
+       - master
 
 jobs:
   jekyll:
