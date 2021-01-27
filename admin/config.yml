@@ -4,17 +4,11 @@ backend:
   name: github
   repo: complexdatacollective/Documentation # Path to your GitHub repository
   branch: master # Branch to update (optional; defaults to master)
-  site_domain: documentation.networkcanvas.com
-  base_url: https://api.netlify.com
-# backend:
-#   name: git-gateway
 local_backend: true
 media_folder: '/assets/uploads'
 publish_mode: editorial_workflow
-site_url: https://documentation.networkcanvas.com
-display_url: https://documentation.networkcanvas.com
 collections:
-  - name: "Page"
+  - name: "page"
     label: "Page"
     folder: "/docs"
     media_folder: '/assets/uploads'
@@ -30,7 +24,7 @@ collections:
       - { name: has_toc, widget: "boolean", required: false }
       - { name: nav_order, widget: "number", required: false }
       - { name: nav_exclude, widget: "boolean", required: false }
-  - name: "Interface Documentation"
+  - name: "interface-documentation"
     label: "Interface Documentation"
     folder: "/docs/interface-documentation"
     media_folder: '/assets/uploads'
@@ -42,7 +36,7 @@ collections:
       - { label: "Parent", name: "parent", widget: "hidden", default: "Interface Documentation" }
       - { name: title, label: Title }
       - { name: body, label: body, widget: markdown }
-  - name: "Key Concepts"
+  - name: "key-concepts"
     label: "Key Concepts"
     folder: "/docs/key-concepts"
     media_folder: '/assets/uploads'
@@ -54,7 +48,7 @@ collections:
       - { label: "Parent", name: "parent", widget: "hidden", default: "Key Concepts" }
       - { name: title, label: Title }
       - { name: body, label: body, widget: markdown }
-  - name: "Research Design"
+  - name: "research-design"
     label: "Research Design"
     folder: "/docs/research-design"
     media_folder: '/assets/uploads'
@@ -66,7 +60,7 @@ collections:
       - { label: "Parent", name: "parent", widget: "hidden", default: "Research Design" }
       - { name: title, label: Title }
       - { name: body, label: body, widget: markdown }
-  - name: "Technical Documentation"
+  - name: "technical-documentation"
     label: "Technical Documentation"
     folder: "/docs/technical-documentation"
     media_folder: '/assets/uploads'
@@ -78,7 +72,7 @@ collections:
       - { label: "Parent", name: "parent", widget: "hidden", default: "Technical Documentation" }
       - { name: title, label: Title }
       - { name: body, label: body, widget: markdown }
-  - name: "Tutorials"
+  - name: "tutorials"
     label: "Tutorials"
     folder: "/docs/tutorials"
     media_folder: '/assets/uploads'
