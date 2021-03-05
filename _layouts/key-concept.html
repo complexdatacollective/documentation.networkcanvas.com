@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1>{{page.title}}</h1>
+
+<p class="concept-definition">{{page.definition}}</p>
+
+{% if page.wip == true %}
+    {% include wip.html %}
+{% endif %}
+
+<h2>Details</h2>
+
+{{ content }}

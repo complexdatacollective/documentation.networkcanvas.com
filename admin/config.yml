@@ -11,7 +11,6 @@ collections:
   - name: "page"
     label: "Page"
     folder: "/docs"
-    media_folder: '/assets/uploads'
     create: true
     sortable_fields: ["title"]
     filter: { field: "has_parent", value: false }
@@ -27,19 +26,30 @@ collections:
   - name: "interface-documentation"
     label: "Interface Documentation"
     folder: "/docs/interface-documentation"
-    media_folder: '/assets/uploads'
     create: true
     sortable_fields: ["title"]
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
-      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
       - { label: "Parent", name: "parent", widget: "hidden", default: "Interface Documentation" }
-      - { name: title, label: Title }
-      - { name: body, label: body, widget: markdown }
+      - { name: image, label: "Screenshot", widget: image }
+      - { name: title, label: "Interface Name" }
+      - { name: body, label: "Interface Summary", widget: markdown }
+      - 
+        name: good
+        label: "Best Practices"
+        widget: list
+        allow_add: true
+        summary: '{{fields.item}}'
+        field: {label: "Item Text", name: item, widget: markdown, minimal: true, buttons: [bold, italic, code, link]}
+      - 
+        name: bad
+        label: "Things to Avoid"
+        widget: list
+        allow_add: true
+        summary: '{{fields.item}}'
+        field: {label: "Item Text", name: item, widget: markdown, minimal: true, buttons: [bold, italic, code, link]}
   - name: "key-concepts"
     label: "Key Concepts"
     folder: "/docs/key-concepts"
-    media_folder: '/assets/uploads'
     create: true
     sortable_fields: ["title"]
     fields:
@@ -51,7 +61,6 @@ collections:
   - name: "research-design"
     label: "Research Design"
     folder: "/docs/research-design"
-    media_folder: '/assets/uploads'
     create: true
     sortable_fields: ["title"]
     fields:
@@ -63,7 +72,6 @@ collections:
   - name: "technical-documentation"
     label: "Technical Documentation"
     folder: "/docs/technical-documentation"
-    media_folder: '/assets/uploads'
     create: true
     sortable_fields: ["title"]
     fields:
@@ -72,11 +80,9 @@ collections:
       - { label: "Parent", name: "parent", widget: "hidden", default: "Technical Documentation" }
       - { name: title, label: Title }
       - { name: body, label: body, widget: markdown }
-  - name: "tutorials"
-    label: "Tutorials"
+  - name: "tutorial"
+    label: "Tutorial"
     folder: "/docs/tutorials"
-    media_folder: '/assets/uploads'
-    path: "/{{parent}}/{{title}}"
     create: true
     sortable_fields: ["title"]
     fields:
