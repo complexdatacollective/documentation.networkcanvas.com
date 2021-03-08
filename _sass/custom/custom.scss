@@ -76,11 +76,16 @@ h1 {
 
 // Summary
 .tutorial-summary {
-  margin: 1.75rem 0;
+  margin: $sp-5 0;
   background-color: #f5f6fa;
   border-radius: 4px;
-  padding: $sp-5;
+  display: flex;
+  font-size: 0.85rem;
+  padding: $sp-3 $sp-5;
+
   > * {
+    flex: 0 0 50%;
+    
     > * {
       &:last-child {
         margin-bottom: 0;
@@ -88,11 +93,20 @@ h1 {
     }
   }
 
+  &__summary {
+    padding-right: $sp-3;
+  }
+
+  &__prerequisites {
+    padding-left: $sp-3;
+  }
+
   &__duration {
-    display: flex;
-    font-size: 0.8rem;
-    align-items: center;
-    padding-bottom: $sp-3;
+    margin-top: 1.2rem;
+
+    svg {
+      vertical-align: sub;
+    }
   }
 }
 
@@ -103,15 +117,15 @@ h1 {
   background-color: #f5f6fa;
   border-radius: 4px;
   position: relative;
-  padding: 1.75rem;
+  padding: $sp-3 $sp-5;
   font-size: 0.85rem;
   margin: 2.2rem;
 
   &::before {
     content: '';
     position: absolute;
-    top: -1rem;
-    left: -1rem;
+    top: -1.5rem;
+    left: -1.5rem;
     height: 3rem;
     width: 3rem;
     background-image: url("/assets/img/tip-info.svg");
@@ -143,7 +157,7 @@ h1 {
   background-position: 1.25rem;
   background-repeat: no-repeat;
   background-size: 3rem;
-  padding: 0.75rem;
+  padding: $sp-3 $sp-5;
   padding-left: 5.5rem;  
   margin-top: 0;
   margin-bottom: 0.75rem;
@@ -152,10 +166,9 @@ h1 {
   border-radius: 4px;
   box-shadow: none;
 
-  
-
   p {
     margin-bottom: 0;
+    font-size: 0.85rem;
   }
 
 }
