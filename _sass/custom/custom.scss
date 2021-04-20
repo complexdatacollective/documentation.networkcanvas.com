@@ -1,7 +1,11 @@
 // Typography
 h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
-  clear: both;	
+  clear: both;
+}
+
+li, ol, ul {
+  margin: initial !important;
 }
 
 // Figures
@@ -70,6 +74,7 @@ h1 {
 
 .main-content ul, .main-content ol {
   padding-left: revert;
+  margin: revert !important;
 }
 
 // Tutorial
@@ -78,31 +83,12 @@ h1 {
 .tutorial-summary {
   margin: $sp-5 0;
   background-color: #f5f6fa;
-  border-radius: 4px;
+  border-radius: 14px;
   display: flex;
-  font-size: 0.85rem;
+  flex-direction: column;
   padding: $sp-3 $sp-5;
 
-  > * {
-    flex: 0 0 50%;
-    
-    > * {
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &__summary {
-    padding-right: $sp-3;
-  }
-
-  &__prerequisites {
-    padding-left: $sp-3;
-  }
-
   &__duration {
-    margin-top: 1.2rem;
 
     svg {
       vertical-align: sub;
