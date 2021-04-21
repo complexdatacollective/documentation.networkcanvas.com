@@ -24,7 +24,7 @@ group :jekyll_plugins do
 end
 gem "jekyll-watch"
 
-# Help us to find dead links
-gem 'html-proofer'
-gem 'rake'
+# # Help us to find dead links
+# gem 'html-proofer'
+# gem 'rake'
 

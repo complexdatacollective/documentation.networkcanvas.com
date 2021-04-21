@@ -10,9 +10,13 @@ markdown: kramdown
 toc:
   max_level: 3
   ordered_list: true
+#
+# Set layout template for pages based on their path. This avoids needing to specify a page template
+# in Netlify CMS
+#
 defaults:
   - scope:
-      path: "_*" # an empty string here breaks the theme because it applies to the JS asset. use this instead
+      path: "_*" # an empty string here breaks the theme because it applies to the JS asset. use this instead to provide a default
     values:
       layout: "page"
   - scope:
@@ -50,19 +54,6 @@ aux_links:
   Network Canvas Home:
   - "//networkcanvas.com"
 permalink: pretty
-# collections:
-#   docs: # explanation
-#     permalink: "/:path/"
-#     output: true
-#   tutorials: # tutorials
-#     permalink: "/:collection/:path/"
-#     output: true
-#   technical-reference: #reference 
-#     permalink: "/:collection/:path/"
-#     output: true
-#   how-to: #how-to
-#     permalink: "/:collection/:path/"
-#     output: true
 ga_tracking: "UA-100029443-1"
 exclude:
   - "Gemfile"
