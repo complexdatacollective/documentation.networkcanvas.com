@@ -11,7 +11,7 @@ The `.netcanvas` file contains all of the data in your protocol. So if you use a
 
 ## Authoring Protocol Files
 
-Architect will create your protocol file automatically when you [create a new protocol](../tutorials/building-using-architect.md) using it. As you add stages, edit content, or upload resources to your protocol, Architect will prompt you to save your changes. These changes will be stored within the protocol file.
+Architect will create your protocol file automatically when you create a new protocol. As you add stages, edit content, or upload resources to your protocol, Architect will prompt you to save your changes. These changes will be stored within the protocol file.
 
 Once you deploy your protocol to other applications, however, be aware that making changes effectively makes your protocol a new version. If you find that you need to make changes after deploying it, you have two options. It is recommended to save a copy of your protocol with a new name after making changes, and to import the new version to Interviewer and Server. The other option is to remove the existing protocol (and any interview data) from Server and Interviewer and upload the newer version. This is necessary to ensure compatibility across tools.
 
@@ -19,4 +19,4 @@ If you choose to create or edit a protocol file by hand, you will be responsible
 
 ## Using Protocol Files
 
-Once your protocol file is complete, you can then use this file in Server and Interviewer. Server and Interviewer both have [several options](../tutorials/server-workflows.md/#importing-a-protocol-to-server) for [importing a protocol](../tutorials/server-workflows.md/#importing-a-protocol-in-interviewer).
+Once your protocol file is complete, you can then use this file in Server and Interviewer. See [importing a protocol into Interviewer](../../how-to/import-a-protocol.md) or [creating and managing workspaces in Server](../../how-to/server-workspaces.md) for more.

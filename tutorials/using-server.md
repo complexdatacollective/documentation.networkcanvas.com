@@ -32,7 +32,7 @@ Server is particularly useful when you have multiple devices in the field that a
 | Server is a desktop program run by the researcher on their own computer. Getting data from Interviewer into Server requires "pairing". To pair, Server produces a unique encryption key that must be manually entered into the Interviewer application running on a field device. Once paired, Interviewer is able to securely transmit data collected in the field directly to Server. Utilizing Server allows you to avoid using third party servers, such as Dropbox or Google Drive, and instead transfer your data directly to a computer with full-disk encryption (such as FileVault on Mac or BitLocker on Windows). Transferring data to Server in this way is an example of peer-to-peer connection whereby only your field device and your copy of Server are able to access your data. |
 {: .key-concept }
 
-![](../../assets/img/server-guide/welcome.png)
+![Welcome](../../assets/img/server-guide/welcome.png)
 
 The start screen of Server provides instructions for how to create a workspace for your protocol and how to pair a device to facilitate secure encrypted data transmission. The icons in the top right corner of the screen also provide important details about the network connectivity of the computer running Server. These details can be used to manually pair Server to Interviewer field devices if necessary (details on manual pairing below).
 
@@ -41,7 +41,7 @@ A .netcanvas protocol file can be imported into Server by 1) dragging the file d
 
 Once imported, Server will create a dedicated workspace with an "overview dashboard" for this protocol file. This process occurs for every protocol you import, allowing you to have multiple protocols / studies running in parallel in Server. Each unique overview dashboard is navigable by selecting the appropriate protocol initials on the side bar. 
 
-![](../../assets/img/server-guide/imported-protocol-server.png)
+![Image](../../assets/img/server-guide/imported-protocol-server.png)
 
 After a protocol is imported into Server, it is ready to be deployed to Interviewer on your field device(s) once secure pairing is completed. To preserve the quality of your data, it is not possible to change most of the details of a protocol once in use. If a protocol is in the field and the question names and ordering are changed it will make it difficult, if not impossible, to export all this data in a single table.
 
@@ -52,7 +52,7 @@ Every time you export interview data to Server, these data will immediately upda
 | The overview dashboard displays key details about your study and updates in real time as new interview data are uploaded. The dashboard will show details like the name of the protocol, the number of interviews completed and summary statistics from your study, such as the number of alters named per interview. This dashboard allows you to monitor the progress of your social network studies as well as help you identify potential issues in the data, such as an interviewee who nominates far more or fewer alters than the others. The 'cards' that display such information on the dashboard can be reordered by dragging, and toggled on and off in the "Settings" tab. The "Export Data" tab allows you to determine export file type and content, and the "Manage Cases" tab allows you to view a complete list of all cases exported to Server associated with a particular study protocol.|
 {: .key-concept }
 
-![](../../assets/img/server-guide/overview.png)
+![Image](../../assets/img/server-guide/overview.png)
 
 Once your interview protocol is imported, the next step is to securely pair Server with your field device(s). Pairing Server with your field device(s) establishes a secure connection that allows you to 1) deploy your protocol to the Interviewer application running on the field device(s), and 2) securely transmit data collected back to the Server for monitoring and export. 
 
@@ -66,25 +66,25 @@ To begin, make sure you have both Interviewer and Server programs open and runni
 
 To trigger the pairing process, click the card. The Interviewer screen will then show a message that the pairing request has been initiated and must now be acknowledged within the Server app. 
 
-![](../../assets/img/server-guide/pairing-message-interviewer.png)
+![Image](../../assets/img/server-guide/pairing-message-interviewer.png)
 
 Next, you will acknowledge the request to pair the devices by clicking the pink "Pair with Device" button in Server. 
 
-![](../../assets/img/server-guide/pair-confirmation-server.png)
+![Image](../../assets/img/server-guide/pair-confirmation-server.png)
 
 Once the request is acknowledged, Server will produce a unique 16 character encryption code that must be typed into the Interviewer app in order for the devices to pair successfully. 
 
-![](../../assets/img/server-guide/pairing-code-server.png)
+![Image](../../assets/img/server-guide/pairing-code-server.png)
 
 The encryption code produced by Server must now be typed into the dialog appearing in Interviewer. 
 
 Note: once the encryption code is provided by Server, you have 30 seconds to submit it to Interviewer before the pairing window will time out. If that window passes, you can reinitiate the pairing process or else pair manually.
 
-![](../../assets/img/server-guide/pairing-code-interviewer.png)
+![Image](../../assets/img/server-guide/pairing-code-interviewer.png)
 
 After you submit the encryption code in Interviewer, you will see notifications on both apps that the pairing was completed. Once paired, Interviewer can fetch protocols from Server and upload data back to Server.
 
-![](../../assets/img/server-guide/pairing-successful.png)
+![Image](../../assets/img/server-guide/pairing-successful.png)
 
 | Key Concept: Automatic Discovery & Manual Pairing        |
 | :----------------------------------------------------------- |
@@ -105,25 +105,25 @@ After you submit the encryption code in Interviewer, you will see notifications 
 
 There are three ways to import a protocol in Interviewer: from a URL, from a file, and from Server. 
 
-![](../../assets/img/server-guide/import-protocol-interviewer.png)
+![Image](../../assets/img/server-guide/import-protocol-interviewer.png)
 
 To fetch a protocol from a URL, click the "Import from URL" button on the start screen of Interviewer under the "Protocols" panel. A dialog will appear where you can enter the URL where your protocol is hosted. 
 
-![](../../assets/img/server-guide/from-URL.png)
+![Image](../../assets/img/server-guide/from-URL.png)
 
 To import a protocol as a file, click the "Import from File" button. A new dialog will appear that allows you to browse for the file you want to import. When you locate the file, click "open" to import the protocol into Interviewer.
 
 Note: remember only .netcanvas files can be read by Network Canvas applications.
 
-![](../../assets/img/server-guide/from-file.png)
+![Image](../../assets/img/server-guide/from-file.png)
 
 To import a protocol from Server, click the "Import from Server" button. You will then see a dialog containing all protocols currently uploaded to the instance of Server to which you are paired. Each protocol will display as a card. Click the card of whichever protocol you wish to import.  
 
-![](../../assets/img/server-guide/from-Server.png)
+![Image](../../assets/img/server-guide/from-Server.png)
 
 Once you have imported a protocol to Interviewer, you will be able to view it displayed as a card under the "Start a New Interview" panel on the start screen. Click on the protocol you wish to use to collect interview data. 
 
-![](../../assets/img/server-guide/protocol-card.png)
+![Image](../../assets/img/server-guide/protocol-card.png)
 
 ## Exporting and Managing Data in Interviewer
 
@@ -144,7 +144,7 @@ Cases can be selected individually by tapping on the card. You can also select a
 
 Once cases are selected, there are three actions you can complete from this panel: 1) delete selected cases, 2) export selected cases to Server, and 3) export selected cases to a file. Each action has a corresponding button at the bottom of the panel. 
 
-![](../../assets/img/server-guide/export-manage.png)
+![Image](../../assets/img/server-guide/export-manage.png)
 
 Deleting selected cases from Interviewer **permanently deletes the data**, so only complete this action if you are absolutely sure that your data have already been saved in a secure location or that you will not be requiring the data from these cases. 
 
@@ -163,13 +163,13 @@ Server's overview dashboards allow you to monitor data quality and project progr
 
 Under the "Manage Cases" tab you can find the complete list of uploaded cases for the study protocol. You can use this list to cross check the uploaded cases from your devices. Cases can also be deleted from Server by selecting the checkbox next to the case and clicking the green "Delete Selected Cases" button at the top of the case list.
 
-![](../../assets/img/server-guide/manage-cases.png)
+![Image](../../assets/img/server-guide/manage-cases.png)
 
 ### Export Data
 
 Every completed interview can be exported from Server under the "Export Data" tab. Under this tab you can: 1) select one or more preferred data export formats (CSV and GraphML), 2) choose export options, and 3) select CSV specific file export options.  
 
-![](../../assets/img/server-guide/export-data.png)
+![Image](../../assets/img/server-guide/export-data.png)
 
 ### Settings
 

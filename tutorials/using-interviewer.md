@@ -6,10 +6,10 @@ completion_time: 30 minutes
 summary: This tutorial will introduce you to Interviewer by walking through an example based on our sample protocol. We will explore the participant-facing interview experience, as well as discuss some of the researcher-facing functionality of the app. The sample protocol we will be using demonstrates all the main data collection features of the tool, which we hope will encourage you to imagine the many types of study that can be created using Network Canvas.
 prerequisites: "To get the most from this tutorial, you should have first:
 
-- Read and understood the [project overview](../project-overview.md).\n
+- Read and understood the [project overview](../../project-overview).\n
 - To follow along using your own computer or device, you should have [downloaded and installed Interviewer](https://networkcanvas.com/download.html).\n
 
-Please note that we have created a separate tutorial article covering how to create a protocol, called [building a protocol using Architect](./building-using-architect.md). We suggest you continue with the current tutorial before learning the more advanced concepts involved in protocol creation, but you can read this articles in any order you wish."
+Please note that we have created a separate tutorial article covering how to create a protocol, called [building a protocol using Architect](../building-a-protocol). We suggest you continue with the current tutorial before learning the more advanced concepts involved in protocol creation, but you can read this articles in any order you wish."
 ---
 
 ## The start screen
@@ -80,7 +80,7 @@ A case ID is entered at the start of every interview, and is entirely decided up
 - `STUDY_ID-PARTICIPANT_NAME-VISIT_NUMBER` (e.g `NetCanvas-Joshua-4`)
 - or simply `PARTICIPANT_NAME` (e.g `James Montgomery Williams`)
 
-![](/assets/img/sample-protocol/case-id.png)
+![Image](/assets/img/sample-protocol/case-id.png)
 
 The case ID is shown in the "resume last interview" section, the "export and manage interview data" section, the case management view in Server, and also appears in the default filename of exported data.
 
@@ -116,23 +116,23 @@ With Network Canvas, each interview is made up of a series of screens that we ca
 
 Each stage is an _instance_ of a category of task-based screen that we call an ["Interface"](../reference/key-concepts/interfaces.md). That is to say that an Interface is the broad "type" of task, and a stage is the specifically configured version of that task embedded in your interview.
 
-For example, Network Canvas has several "name generator" **Interfaces**, but the specific screen at the start of your interview may be called the "person name generator **stage**". Each Interface is designed for a specific data collection task, such as generating names, collecting ordinal data, or showing a form. Each Interface has [dedicated documentation](../interface-documentation.md) that tells you about its features, and gives hints about when and where you should use it.
+For example, Network Canvas has several "name generator" **Interfaces**, but the specific screen at the start of your interview may be called the "person name generator **stage**". Each Interface is designed for a specific data collection task, such as generating names, collecting ordinal data, or showing a form. Each Interface has [dedicated documentation](../reference/interface-documentation/index.md) that tells you about its features, and gives hints about when and where you should use it.
 
 ### The information interface
 
-![](/assets/img/sample-protocol/welcome-info.png)
+![Image](/assets/img/sample-protocol/welcome-info.png)
 
-The first thing we see after starting the interview is the welcome stage, which is configured using the [information interface](../interface-documentation/information.md). The information interface can be used to communicate information to a participant, such as a study description or instructions for completing a task on a subsequent screen. It can also contain media, such as audio, images or video. We have used numerous Information Interfaces throughout this sample protocol to clarify the primary tasks performed in Interviewer, but we will not describe them in this article to avoid redundancy.
+The first thing we see after starting the interview is the welcome stage, which is configured using the [information interface](../reference/interface-documentation/information.md). The information interface can be used to communicate information to a participant, such as a study description or instructions for completing a task on a subsequent screen. It can also contain media, such as audio, images or video. We have used numerous Information Interfaces throughout this sample protocol to clarify the primary tasks performed in Interviewer, but we will not describe them in this article to avoid redundancy.
 
 ### Name Generators
 
-After clicking through the information screens, we encounter the first name generator stage of our interview, which is where the participant will name alters. Name generation is clearly a fundamental task in all network interviewing, and so Network Canvas offers [configurable and customizable](../interface-documentation/name-generator.md) behaviours to suit different research designs. We will now briefly discuss these in turn, in the context of the sample protocol.
+After clicking through the information screens, we encounter the first name generator stage of our interview, which is where the participant will name alters. Name generation is clearly a fundamental task in all network interviewing, and so Network Canvas offers configurable and customizable behaviours to suit different research designs. We will now briefly discuss these in turn, in the context of the sample protocol.
 
 #### Quick add
 
-Our first stage uses the ["quick add"](../interface-documentation/name-generator.md#using-quick-add) name generator Interface, which is designed to be ultra-low response burden, and only require that a participant provide a name or label to create a node. We add nodes by clicking the button on the bottom right, typing a name, and pressing enter (or clicking the node icon). When you are finished, either click the button again, or click away, to close the input.
+Our first stage uses the ["quick add"](../reference/interface-documentation/name-generator-using-quick-add.md) name generator Interface, which is designed to be ultra-low response burden, and only require that a participant provide a name or label to create a node. We add nodes by clicking the button on the bottom right, typing a name, and pressing enter (or clicking the node icon). When you are finished, either click the button again, or click away, to close the input.
 
-![](/assets/img/sample-protocol/quick-add.png)
+![Image](/assets/img/sample-protocol/quick-add.png)
 
 The stage is configured with a single [prompt](../reference/key-concepts/prompts.md) ("Within the past 6 months, who have you felt close to, or discussed important personal matters with"). Prompts are defined by the researcher for a given stage, and frame the data collection task. Many Interfaces support the use of multiple prompts on a stage. If a stage is configured with multiple prompts, the "next" and "previous" buttons will move between them automatically.
 
@@ -140,7 +140,7 @@ The stage is configured with a single [prompt](../reference/key-concepts/prompts
 
 Clicking forwards into the next name generator stage, we see a side panel appear that contains all of the nodes named on the first stage. We can drag and drop nodes from the side panel into the node list area or we can create new nodes by clicking on the button in the bottom right right corner.
 
-![](/assets/img/sample-protocol/side-panel.png)
+![Image](/assets/img/sample-protocol/side-panel.png)
 
 The side panel functionality is available in both of our non-roster specific name generator Interfaces. It is designed for two specific scenarios:
 
@@ -148,15 +148,15 @@ The side panel functionality is available in both of our non-roster specific nam
 
 2. As a container for displaying small amounts of roster data, where you still need to retain the ability for the participant to add network members not listed in the roster.
 
-You can display up to two panels, with different content in each. More information about can panels can be [found here](../interface-documentation/name-generator.md#side-panels).
+You can display up to two panels, with different content in each. More information about can panels can be [found here](../reference/interface-documentation/name-generator-using-forms.md#side-panels).
 
 #### Forms
 
 Moving forwards until you arrive at the next name generator, you will find a prompt asking about clinics or healthcare providers. This stage demonstrates two important concepts.
 
-The first is that the name generators in Network Canvas can be configured to collect more in-depth node information at the time of elicitation. In this example, clicking the "add" button in the bottom right shows a form with three fields (name, visit date, and treatment summary). This is the ["form"](../interface-documentation/name-generator.md#using-forms) version of the name generator interface.
+The first is that the name generators in Network Canvas can be configured to collect more in-depth node information at the time of elicitation. In this example, clicking the "add" button in the bottom right shows a form with three fields (name, visit date, and treatment summary). This is the ["form"](../reference/interface-documentation/name-generator-using-forms.md) version of the name generator interface.
 
-![](/assets/img/sample-protocol/using-forms.png)
+![Image](/assets/img/sample-protocol/using-forms.png)
 
 The form you design for your name generator can collect whichever variables you wish, and is one of the key ways that a researcher can vary the front-facing response burden of naming alters. Collecting many variables as the node is created can allow for fewer overall stages in your interview, but can also condition the participant against naming large numbers of alters.
 
@@ -166,7 +166,7 @@ The second important concept illustrated on this stage is that Network Canvas in
 
 Continuing forwards through the sample protocol, we arrive at another name generator - but one that behaves differently to the others. 
 
-![](/assets/img/sample-protocol/small-roster.png)
+![Image](/assets/img/sample-protocol/small-roster.png)
 
 This stage allows a participant to nominate alters from a predetermined list (i.e., a roster). In this case, "classmate" nodes are added by selecting the appropriate "display card" on the scrollable roster. Multiple class members (alters) can be added at one time. Note that you are able to filter and sort the list. The sortable properties, as well as the information to be displayed on the cards, are all fully customizable by the researcher.
 
@@ -174,17 +174,17 @@ Once a member of the roster has been nominated, Interviewer creates a node in th
 
 Clicking next again will take us to a second roster-based name generator Interface, but this time designed to work for extremely large rosters. Here, we ask about universities visited or studied at, and our CSV roster data file contains approximately 9,300 nodes.
 
-![](/assets/img/sample-protocol/large-roster.png)
+![Image](/assets/img/sample-protocol/large-roster.png)
 
 Since this roster is so large, this Interface does not display the roster in its entirety. Instead, it offers a search box, and customizable levels of fuzzy matching, in order to help the participant quickly locate the nodes they wish to nominate.
 
-What differentiates these Interfaces is the size of the roster data that they are designed to accommodate, and the user interface affordances offered to the participant to help them to locate the roster member they are looking for. Visit our dedicated page to [learn more about working with roster data](../interface-documentation/roster-name-generators.md).
+What differentiates these Interfaces is the size of the roster data that they are designed to accommodate, and the user interface affordances offered to the participant to help them to locate the roster member they are looking for. Visit our dedicated page to [learn more about working with roster data](../how-to/importing-roster-data.md).
 
 ### Ego data collection
 
 While Interviewer is optimized for collecting data about network members from an ego-centric perspective, we also provide the ability for researchers to capture data about the participant (ego). As you will learn when constructing a protocol, it is not required that a Network Canvas protocol ask the participant about themselves, but it is a common approach within many network studies.
 
-![](/assets/img/sample-protocol/ego-form.png)
+![Image](/assets/img/sample-protocol/ego-form.png)
 
 The ego form Interface (stage 12 within the sample protocol), allows the researcher to show an arbitrary form to the participant, where responses will be stored in a dedicated section of the interview session devoted to ego data. In this particular stage, we ask for a variety of individual level data using numerous input control types. The form includes validation, which requires you to enter the first and last name before proceeding onto the next screen. Such validations can be useful in preventing missing data.
 
@@ -192,15 +192,15 @@ The ego form Interface (stage 12 within the sample protocol), allows the researc
 
 For other situations where general purpose data collection is required, we provided form-based interfaces targeted at both nodes and edges. By clicking next, we come to a stage using the per-alter form Interface. This Interface can be used to ask name interpreter questions about alters the participant has nominated. The researcher is able to choose which alter type is used, as well as to define the form itself. Any data in these forms is stored directly on the alter as an attribute.
 
-In this particular Per Alter Form, we ask whether you visited or studied at the university you nominated and to indicate your level of satisfaction with the experience. The Per Alter Form stage will cycle through all alters of a given type in the interview network, unless [skip logic](../reference/key-concepts/skip-logic.md) or [network filtering](../reference/key-concepts/filtering.md) have been implemented causing the stage to be skipped altogether or filtering only a subset of the alters on the stage, respectively. As with all [forms](../reference/key-concepts/forms.md) used by Interviewer, the Per Alter Form allows you to capture different types of data in a series of fields utilizing a variety of input controls.
+In this particular Per Alter Form, we ask whether you visited or studied at the university you nominated and to indicate your level of satisfaction with the experience. The Per Alter Form stage will cycle through all alters of a given type in the interview network, unless [skip logic](../reference/key-concepts/skip-logic.md) or [network filtering](../reference/key-concepts/network-filtering.md) have been implemented causing the stage to be skipped altogether or filtering only a subset of the alters on the stage, respectively. As with all [forms](../reference/key-concepts/forms.md) used by Interviewer, the Per Alter Form allows you to capture different types of data in a series of fields utilizing a variety of input controls.
 
-![](/assets/img/sample-protocol/per-alter-form.png)
+![Image](/assets/img/sample-protocol/per-alter-form.png)
 
 There is also a per alter _edge_ version of this interface, which is identical except for dealing with edges between alters, rather than alters themselves. It can be used to ask edge interpreter questions about the quality of a given relation.
 
 ### The sociogram interface
 
-Next is the [sociogram Interface](../interface-documentation/sociogram.md). Network Canvas has been heavily inspired by the long tradition of using visual methods in social networks research, which often features the sociogram as a means of presenting the network in a way that is intuitive to participants.
+Next is the [sociogram Interface](../reference/interface-documentation/sociogram.md). Network Canvas has been heavily inspired by the long tradition of using visual methods in social networks research, which often features the sociogram as a means of presenting the network in a way that is intuitive to participants.
 
 The sociogram in Interviewer is capable of three main tasks:
 
@@ -210,7 +210,7 @@ The sociogram in Interviewer is capable of three main tasks:
 
 As with other Interfaces, every aspect of theses three behaviours is customized by the researcher. The layout information is stored in a variable defined by the researcher, who also defines the prompts, the background image, the edge types, and the attributes to nominate.
 
-![](/assets/img/sample-protocol/sociogram-positioning.png)
+![Image](/assets/img/sample-protocol/sociogram-positioning.png)
 
 ### Conducting a dyad census
 
@@ -218,7 +218,7 @@ Other research has preferred more systematic approaches to evaluating the presen
 
 On this stage, all previously named alters are presented under a researcher-defined prompt and a simple "yes"/"no" user interface. By clicking the 'yes' button, a tie between the alters is created. By clicking the 'no' button, no edge is created. All possible pairs within the network for a particular node type will appear, unless network filtering is implemented to only show alters with specific attributes (e.g., class members). The horizontal green bar along the bottom of the screen will fill from left to right indicating the overall progress of the task.
 
-![](/assets/img/sample-protocol/dyad-census.png)
+![Image](/assets/img/sample-protocol/dyad-census.png)
 
 The larger the network, the greater the response burden is for the Dyad Census. As demonstrated in the previous stages, the Sociogram Interface also allows for alter-alter edge creation but instead displays the whole network visually to allow a participant to confirm relationships where they exist rather than cycle through all possible connections.
 
@@ -226,7 +226,7 @@ The larger the network, the greater the response burden is for the Dyad Census. 
 
 Apart from general purpose form Interfaces, Interviewer also contains a variety of dedicated name-interpreter Interfaces that are designed to improve the experience of collecting a single variable on a per-alter basis. Stage 23 in the sample protocol is an example of the ordinal bin Interface, which as the name suggests deals specifically with ordinal variables.
 
-![](/assets/img/sample-protocol/ordinal-bin.png)
+![Image](/assets/img/sample-protocol/ordinal-bin.png)
 
 The Ordinal Bin Interface allows you to drag nodes into a "bin" representing an ordinal variable value, and thereby to assign that value to the alter. This interface greatly improves response burden of "matrix type" questions, where the same question is asked for each alter that has been nominated.
 
@@ -234,13 +234,13 @@ Here, we ask, "When was the last time that you communicated with each of the peo
 
 The next stage uses the categorical bin Interface, which allows you to drag nodes into colorful circles, each representing a categorical variable value. When a node is placed within a circle the variable value is assigned to that alter. You can view which nodes were placed in which circle by selecting the circle. This action allows you to move nodes from one circle to another, which may be necessary to correct an error.
 
-![](/assets/img/sample-protocol/cat-bin.png)
+![Image](/assets/img/sample-protocol/cat-bin.png)
 
 ### Managing interview flow with skip logic and network filtering
 
-One of the simplest ways to reduce response burden in an interview is to avoid showing the participant tasks that are not applicable or redundant based on earlier answers. In conventional survey software sections of an interview can be skipped based on responses, but Network Canvas extends this concept and allows the researcher to construct powerful queries built on the structure of the interview network itself. These queries can be applied to both [skip logic](../reference/key-concepts/skip-logic.md) and stage level [network filtering](../reference/key-concepts/filtering.md).
+One of the simplest ways to reduce response burden in an interview is to avoid showing the participant tasks that are not applicable or redundant based on earlier answers. In conventional survey software sections of an interview can be skipped based on responses, but Network Canvas extends this concept and allows the researcher to construct powerful queries built on the structure of the interview network itself. These queries can be applied to both [skip logic](../reference/key-concepts/skip-logic.md) and stage level [network filtering](../reference/key-concepts/network-filtering.md).
 
-![](/assets/img/sample-protocol/catbin-other-rules.png)
+![Image](/assets/img/sample-protocol/catbin-other-rules.png)
 
 On stage 26 we encounter another categorical bin task, but time time using these features to reduce response burden. Skip logic rules have been defined which direct that the stage should only be shown only if a participant has named any alters of type "Person" with whom they discuss social network research. Recall the **quick add** name generator on stage 6 that asked participants to list any people with whom they have discussed social networks research: nodes nominated on that stage were given an attribute which we have used to create this skip logic query. If no alters were generated on that screen, the current categorical bin will be skipped.
 
@@ -253,9 +253,9 @@ Remember that at any time during the interview, you can view a menu of all proto
 
 ### The Narrative Interface
 
-The final stage of the sample protocol demonstrates an Interface that is designed for qualitative personal network's research. The [narrative ](../interface-documentation/narrative.md) Interface does not collect any additional data, but rather can map data collected elsewhere in the interview to aspects of the visual representation of the network. It therefore aims to represent aspects of the participant's network back to them, with the intent to facilitate narrative interrogation of the data in an interview setting.
+The final stage of the sample protocol demonstrates an Interface that is designed for qualitative personal network's research. The [narrative ](../reference/interface-documentation/narrative.md) Interface does not collect any additional data, but rather can map data collected elsewhere in the interview to aspects of the visual representation of the network. It therefore aims to represent aspects of the participant's network back to them, with the intent to facilitate narrative interrogation of the data in an interview setting.
 
-![](/assets/img/sample-protocol/narrative.png)
+![Image](/assets/img/sample-protocol/narrative.png)
 
 The preset menu in the bottom right allows the researcher or the respondent to switch between different predefined visual styles. In this example, we can see the two edge types we created previously ("know" and "conflict") and the boolean attributes we assigned during our variable toggling task on the Sociogram Interface. We can also see the categorical groupings collected on the Categorical Bin Interface. Each preset can be toggled on or off by tapping on the attribute or edge in the menu.
 
@@ -265,7 +265,7 @@ The narrative Interface also supports free-form annotation using the mouse, a fi
 
 Each interview protocol has a "finish" screen automatically inserted by Interviewer. This screen presents a single button that will exit the interview and return to the start screen. Clicking this button will also set, or update, the "finished at" property of the interview session. This property is exported along with your interview data, and can be used to calculate interview duration.
 
-![](/assets/img/sample-protocol/finish.png)
+![Image](/assets/img/sample-protocol/finish.png)
 
 For now click "Finish" to return to the start screen.
 
@@ -281,8 +281,8 @@ Managing and exporting interview data takes place in a dedicated **export and ma
 
 ![image](/assets/img/sample-protocol/export-section.png)
 
-Data export operations are covered in greater detail in the [Server and Interviewer Workflows](./server-workflows.md) tutorial, but the process consists of selecting one or more sessions from this section, and clicking the "export selected to file" or "export selected to Server" button, as applicable. Settings for exported data can be found in the device settings in the welcome section.
+The data export process consists of selecting one or more sessions from this section, and clicking the "export selected to file" or "export selected to Server" button, as applicable. Settings for exported data can be found in the device settings in the welcome section.
 
 ## Next Steps
 
-Now that you have experienced the general flow of an interview in Network Canvas Interviewer from the participant perspective, you may wish to learn about how to begin to create your own protocol. For this, we suggest our article on [building a protocol using Architect](./building-using-architect.md).
+Now that you have experienced the general flow of an interview in Network Canvas Interviewer from the participant perspective, you may wish to learn about how to begin to create your own protocol. For this, we suggest our article on [building a protocol using Architect](./building-a-protocol.md).

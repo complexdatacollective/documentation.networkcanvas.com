@@ -7,7 +7,7 @@ definition: Forms provide a means to assign variables to ego, nodes, or edges, u
 
 Forms are one of the primary ways that that you will assign values to your variables in Interviewer. They work by associating each **variable** with an **input control**, a **question prompt** and **validation options**, to form a **field**. Each form can have as many fields as you wish, and in any order.
 
-![](../../assets/img/key-concepts/forms/preview.png)
+![Image](../../assets/img/key-concepts/forms/preview.png)
 
 When using Architect to design your study you will encounter several places where you are able to build a form - particularly when creating stages that use Interfaces such as the Name Generator, the Per-alter Form, and the Ego Form.
 
@@ -15,7 +15,7 @@ When using Architect to design your study you will encounter several places wher
 
 Forms are comprised of one or more 'fields', which can be re-ordered to appear in any sequence. The sequence they appear in Architect is the same sequence that they will be shown in Interviewer. To begin creating a form, locate the form section within the interface you are configuring.
 
-![](../../assets/img/key-concepts/forms/form.png)
+![Image](../../assets/img/key-concepts/forms/form.png)
 
 Set the form heading, and then create fields for each of the variables you wish to capture on this form, by clicking the "create new" button.
 
@@ -26,9 +26,9 @@ Next you must decide which [input control](../input-controls) to use, which for 
 Remember that once a variable type has been set, such as by choosing its input type when it is first used, it cannot be changed later. You may still adjust the specific input control on your form even once the type is set, as long as the input control is compatible with the variable type.
 {: .tip-box .caution}
 
-After setting the input control, set any [variable specific options](../variable-types) and configure the [validation options](../validation) you require.
+After setting the input control, set any [variable specific options](../variable-types.md) and configure the [validation options](./field-validation.md) you require.
 
-![](../../assets/img/key-concepts/forms/field.png)
+![Image](../../assets/img/key-concepts/forms/field.png)
 
 ## Considerations
 

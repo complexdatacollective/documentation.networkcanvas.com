@@ -11,14 +11,14 @@ bad:
   - Set all properties to be searchable. This will cause slow performance and less accurate search results. Ensure that you test your search feature thoroughly.
 
 good:
-  - Ensure that the roster data file used has `name` attribute to avoid seeing "No name variable!" on your cards. See our article on [node labelling](../../reference/key-concepts/node-labelling) for more information on this topic.
+  - Ensure that the roster data file used has `name` attribute to avoid seeing "No name variable!" on your cards. See our article on [node labelling](../../node-labelling) for more information on this topic.
   - Configure the display options of the cards to help improve a participant's ability to identify and disambiguate nodes within the roster.
   - Define and test appropriate searchable properties and search accuracy criteria to help participants locate nodes within the roster.
 ---
 
 Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in your study's networks.
 
-There are four name generator [Interfaces](../reference/key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
+There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
 
 Each of these Interfaces is designed for a specific type of alter elicitation, with several associated advantages and disadvantages. Although they have some configuration options that are [shared with all other Network Canvas Interfaces](./shared.md), this article will focus on options specific to roster based name generators.
 
@@ -51,4 +51,4 @@ The search function is also heavily configurable, allowing you to choose which a
 
 As a general rule of thumb search accuracy should increase as roster size increases, and only attributes containing terms participants are likely to search by should be included as indexed attributes.
 
-![](/assets/img/interface-documentation/name-generators/architect-search.png)
+![Image](/assets/img/interface-documentation/name-generators/architect-search.png)

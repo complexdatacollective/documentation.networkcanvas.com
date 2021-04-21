@@ -12,10 +12,10 @@ bad:
   - Avoid overloading the form with too many fields and/or text-heavy prompts which make the Interface burdensome to complete.
 ---
 
-The Ego Form is an interface that collects data on your participant (ego). When using the Ego Form, participants complete a [form](../reference/key-concepts/forms.md) about themselves that consists of one or more fields. This Interface also contains an embedded introductory panel where the purpose of the form can be described to a participant.
+The Ego Form is an interface that collects data on your participant (ego). When using the Ego Form, participants complete a [form](../key-concepts/forms.md) about themselves that consists of one or more fields. This Interface also contains an embedded introductory panel where the purpose of the form can be described to a participant.
 
 ## Configuring Ego Form
 
-The configurable [form](../reference/key-concepts/forms.md) determines which [variables](../reference/key-concepts/variable-types.md) will be assigned to the ego section of the network.
+The configurable [form](../key-concepts/forms.md) determines which [variables](../variable-types.md) will be assigned to the ego section of the network.
 
-![](/assets/img/interface-documentation/ego-form/architect-ego-form.png)
+![Image](/assets/img/interface-documentation/ego-form/architect-ego-form.png)

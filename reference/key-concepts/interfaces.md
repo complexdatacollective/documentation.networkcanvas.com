@@ -15,7 +15,7 @@ Interfaces can be broadly categorized as: name generators, edge generators, name
 
 ### Name Generator Interfaces
 
-Name Generators allow participants to create alters during the course of an interview, thereby describing one of the two main entities in your study’s networks. There are four possible Name Generators available to select from, each designed for specific scenarios: [Name Generator (using forms)](../interface-documentation/name-generator.md), [Name Generator (using quick add)](../interface-documentation/name-generator.md), [Small Roster Name Generator](../interface-documentation/roster-name-generators.md), or [Large Roster Name Generator](../interface-documentation/roster-name-generators.md).
+Name Generators allow participants to create alters during the course of an interview, thereby describing one of the two main entities in your study’s networks. There are four possible Name Generators available to select from, each designed for specific scenarios: [Name Generator (using forms)](../interface-documentation/name-generator-using-forms.md), [Name Generator (using quick add)](../interface-documentation/name-generator-using-quick-add.md), [Small Roster Name Generator](../interface-documentation/small-roster-name-generator.md), or [Large Roster Name Generator](../interface-documentation/large-roster-name-generator.md).
 
 ![Available Name Generator Interfaces in Architect](../../assets/img/key-concepts/interfaces/name-generators.png){:standalone}
 

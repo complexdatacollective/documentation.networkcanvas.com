@@ -9,7 +9,7 @@ Some configuration options are available to all or most interface screens (depen
 
 ## Shared Configuration
 
-![](/assets/img/interface-documentation/shared/shared-configuration.png)
+![Image](/assets/img/interface-documentation/shared/shared-configuration.png)
 
 ### Name
 
@@ -27,10 +27,10 @@ This feature is available to *Sociogram* and *Name Interpreter* stage type categ
 
 For example, a Sociogram may have a "Person" node type selected as the entity type. You may then use this option to narrow down to only those "Person" nodes which also have a specific attribute.
 
-[Find out more about filtering](../reference/key-concepts/filtering.md)
+[Find out more about filtering](../key-concepts/network-filtering.md)
 
 ### Skip Logic
 
 This feature is available to all stage types. The state of the participant network may be assessed in order to determine whether a stage should be shown or instead skipped.
 
-[Find out more about skip logic](../reference/key-concepts/skip-logic.md)
+[Find out more about skip logic](../key-concepts/skip-logic.md)

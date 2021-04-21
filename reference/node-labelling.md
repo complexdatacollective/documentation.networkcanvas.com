@@ -19,13 +19,13 @@ For advanced functionality, such as calculating a node label dynamically, see ["
 ## Labelling Nodes from Roster Data
 To control the labelling of nodes from network file assets, the following options are available: create an attribute for your nodes called "name" (regardless of case). You can implement this attribute as a column in your CSV file, or as a named attribute in a GraphML file.
 
-See also: [working with assets](./resources.md/#network).
+See also: [working with assets](./key-concepts/resources.md#network).
 
 ## Custom Node Labelling (Advanced)
 
 For more flexible labelling of nodes, you can implement a custom labelling function. To accomplish this, you would:
 
-- Add `nodeLabelWorker.js` to your protocol (see: [the protocol file format](../protocol-file-format.md) for details of how to do this)
+- Add `nodeLabelWorker.js` to your protocol (see: [the protocol file format](./protocol-file-format.md) for details of how to do this)
 - Within this file, define a function named `nodeLabelWorker`
 - Return a string from that function, which will be used as the label.
 

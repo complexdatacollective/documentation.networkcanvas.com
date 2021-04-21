@@ -81,7 +81,7 @@ If your interview context is better suited to keyboard text entry rather than th
 
 The Likert scale control allows participants to select from an ordered series of options. Likert scales are widely used in psychometric research. Typically they have five ordered categories, such as "Strongly disagree", "Disagree", "Neither agree nor disagree", "Agree", and "Strongly Agree". When used in Network Canvas, you can select the number and value of the response categories to suit your needs.
 
-When first loaded, this control is in an "untouched" state, with a semi-transparent draggable handle positioned on the left. Please note that in this state **no value will be assigned to the variable**. The participant must interact with the handle, even if it is to simply move it back into its initial position, in order for a value to be stored. To ensure that no values are missed, consider setting the `required` [validation option](../validation).
+When first loaded, this control is in an "untouched" state, with a semi-transparent draggable handle positioned on the left. Please note that in this state **no value will be assigned to the variable**. The participant must interact with the handle, even if it is to simply move it back into its initial position, in order for a value to be stored. To ensure that no values are missed, consider setting the `required` [validation option](./field-validation.md).
 
 {: .no_toc}
 ### Good practices
@@ -258,7 +258,7 @@ The toggle control provides participants a switch that can be toggled on or off,
 
 {: .good-practices}
 - Use a toggle to easily collect simple true/false variable values, and specifically to indicate the presence of an attribute.
-- Consider using multiple toggles to indicate attributes that can then be used as part of [network filtering](../filtering) or [skip logic](../skip-logic).
+- Consider using multiple toggles to indicate attributes that can then be used as part of [network filtering](../network-filtering) or [skip logic](../skip-logic).
 
 {: .no_toc}
 ### Things to avoid

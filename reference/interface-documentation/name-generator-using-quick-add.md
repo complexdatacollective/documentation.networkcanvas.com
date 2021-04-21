@@ -15,22 +15,22 @@ good:
 
 Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in your study's networks.
 
-There are four name generator [Interfaces](../reference/key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
+There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
 
 ![Available Name Generator interfaces in Architect](/assets/img/interface-documentation/name-generators/add-screen.png){:standalone}
 
 Each of these Interfaces is designed for a specific type of alter elicitation, with several associated advantages and disadvantages. Although they have some configuration options that are [shared with all other Network Canvas Interfaces](./shared.md), this article will focus on options specific to the main name generator interface, and a variant of it that uses a 'quick add' mode.
 
-Using roster data in your study? Refer to our documentation on the [small roster name generator](../small-roster-name-generator) or [large roster name generator](../large-roster-name-generator).
+Using roster data in your study? Refer to our documentation on the [small roster name generator](./small-roster-name-generator.md) or [large roster name generator](./large-roster-name-generator.md).
 {: .tip-box}
 
 ## Shared Interface Elements
 
 Both the "Name Generator (Using Forms)" and the "Name Generator (Quick Add)" Interfaces share some common visual elements.
 
-![](../../assets/img/interface-documentation/name-generators/preview.png)
+![Image](../../assets/img/interface-documentation/name-generators/preview.png)
 
-The **prompt** area, where the task is explained to the participant (see: [prompts](../reference/key-concepts/prompts.md)), a **node list** area where alters that have been elicited are displayed, a **primary action button** that triggers the node elicitation process, and (optionally) one or more [Side Panels](#side-panels).
+The **prompt** area, where the task is explained to the participant (see: [prompts](../key-concepts/prompts.md)), a **node list** area where alters that have been elicited are displayed, a **primary action button** that triggers the node elicitation process, and (optionally) one or more [Side Panels](#side-panels).
 
 Beyond this, you have a choice about how precisely alters should be created - either using a full featured form, or using a simple "quick add" method.
 
@@ -42,7 +42,7 @@ For example, when multiple prompts within a name generator have potential overla
 
 ![Configuring a side panel](/assets/img/interface-documentation/name-generators/side-panel.png){:standalone}
 
-A side panel can also be created using a network data file (e.g. a roster) to allow a participant to select and nominate alters from a predetermined list. It is important to note that the exact same list will appear on subsequent side panels within the name generator unless a rule(s) is created to filter the data to be shown on the panel (see [network filtering](../reference/key-concepts/filtering.md)).
+A side panel can also be created using a network data file (e.g. a roster) to allow a participant to select and nominate alters from a predetermined list. It is important to note that the exact same list will appear on subsequent side panels within the name generator unless a rule(s) is created to filter the data to be shown on the panel (see [network filtering](../key-concepts/network-filtering.md)).
 
 Side panels can be expanded or contracted in the interview by clicking on the heading.
 
@@ -52,4 +52,4 @@ When using the "Name Generator (using quick add)" Interface, the primary action 
 
 ![A quick add name generator](/assets/img/interface-documentation/name-generators/ng-quick.png){:standalone}
 
-One or multiple [additional variables](../reference/key-concepts/additional-variables.md) can be added to alters nominated on this Interface. Capturing additional variables may be useful either to help track where a node was elicited or to reflect a name interpreter element of the prompt (e.g. adding a variable called "close_friend" to a prompt asking about closeness).  
+One or multiple [additional variables](../key-concepts/additional-variables.md) can be added to alters nominated on this Interface. Capturing additional variables may be useful either to help track where a node was elicited or to reflect a name interpreter element of the prompt (e.g. adding a variable called "close_friend" to a prompt asking about closeness).  

@@ -29,6 +29,6 @@ Please explore the pages and headings to the left. Aside from some top-level pag
 
 Away from these sections, we have also created a section to help with the practical aspects of conducting a study using the Network Canvas software. The [how-to](./how-to) section covers:
 
-- [Choosing hardware for conducting a Network Canvas study](./how-to/choosing-hardware)
-- [Configuring your devices prior to starting data collection](./how-to/configuring-devices)
-- [Best practices for security and IRB submission](./how-to/irb-best-practices)
+- [Choosing hardware for conducting a Network Canvas study](./how-to/choosing-hardware.md)
+- [Configuring your devices prior to starting data collection](./how-to/configuring-devices.md)
+- [Best practices for security and IRB submission](./reference/irb-best-practices.md)

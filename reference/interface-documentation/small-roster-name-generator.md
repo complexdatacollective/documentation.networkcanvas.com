@@ -10,13 +10,13 @@ bad:
   - Add needless attributes to the sort options. This will confuse users and may potentially cause display issues on smaller screens. Aim for no more than 3 sortable properties.
 
 good:
-  - Ensure that the roster data file used has `name` attribute to avoid seeing "No name variable!" on your cards. See our article on [node labelling](../../reference/key-concepts/node-labelling) for more information on this topic.
+  - Ensure that the roster data file used has `name` attribute to avoid seeing "No name variable!" on your cards. See our article on [node labelling](../../node-labelling) for more information on this topic.
   - Configure the display and sorting options of the cards to help improve a participant's ability to locate nodes within the roster. 
 ---
 
 Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in your study's networks.
 
-There are four name generator [Interfaces](../reference/key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
+There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
 
 Each of these Interfaces is designed for a specific type of alter elicitation, with several associated advantages and disadvantages. Although they have some configuration options that are [shared with all other Network Canvas Interfaces](./shared.md), this article will focus on options specific to roster based name generators.
 
@@ -38,4 +38,4 @@ When using the "Small Roster Name Generator" Interface, cards representing node 
 
 By default, cards will display the `name` attribute from the roster data as a card title, and will sort the cards in the order the nodes are defined in the data file. These options can be configured from within architect. Note that you are able to define both the default sorting options, and allow the user to sort themselves by multiple properties.
 
-![](/assets/img/interface-documentation/name-generators/architect-card.png)
+![Image](/assets/img/interface-documentation/name-generators/architect-card.png)
