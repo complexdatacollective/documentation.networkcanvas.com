@@ -22,5 +22,9 @@ group :jekyll_plugins do
   gem "jekyll-relative-links"
   gem "jekyll-toc"
 end
-
 gem "jekyll-watch"
+
+# # Help us to find dead links
+# gem 'html-proofer'
+# gem 'rake'
+

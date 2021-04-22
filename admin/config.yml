@@ -10,15 +10,15 @@ publish_mode: editorial_workflow
 collections:
   - name: "page"
     label: "Page"
-    folder: "/docs"
-    media_folder: '/assets/uploads'
+    folder: "/"
     create: true
     sortable_fields: ["title"]
     filter: { field: "has_parent", value: false }
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Has parent", name: "has_parent", widget: "hidden", default: false }
       - { name: title, label: Title }
+      - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
       - { name: body, label: body, widget: markdown }
       - { name: has_children, widget: "boolean", required: false }
       - { name: has_toc, widget: "boolean", required: false }
@@ -26,62 +26,65 @@ collections:
       - { name: nav_exclude, widget: "boolean", required: false }
   - name: "interface-documentation"
     label: "Interface Documentation"
-    folder: "/docs/interface-documentation"
-    media_folder: '/assets/uploads'
+    folder: "/reference/interface-documentation"
     create: true
     sortable_fields: ["title"]
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
-      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "interface-documentation" }
+      - { label: "Grand Parent", name: "grand_parent", widget: "hidden", default: "Reference" }
       - { label: "Parent", name: "parent", widget: "hidden", default: "Interface Documentation" }
-      - { name: title, label: Title }
-      - { name: body, label: body, widget: markdown }
+      - { name: image, label: "Screenshot", widget: image }
+      - { name: title, label: "Interface Name" }
+      - { name: body, label: "Interface Summary", widget: markdown }
+      - label: "Interface Type"
+        name: "type"
+        widget: "text"
+      - label: "What does this interface create?"
+        name: "creates"
+        widget: "text"
+      - label: "Does the interface use prompts?"
+        name: "uses_prompts"
+        widget: "boolean"
+      - 
+        name: good
+        label: "Best Practices"
+        widget: list
+        allow_add: true
+        summary: '{{fields.item}}'
+        field: {label: "Item Text", name: item, widget: markdown, minimal: true, buttons: [bold, italic, code, link]}
+      - 
+        name: bad
+        label: "Things to Avoid"
+        widget: list
+        allow_add: true
+        summary: '{{fields.item}}'
+        field: {label: "Item Text", name: item, widget: markdown, minimal: true, buttons: [bold, italic, code, link]}
   - name: "key-concepts"
     label: "Key Concepts"
-    folder: "/docs/key-concepts"
-    media_folder: '/assets/uploads'
+    folder: "/reference/key-concepts"
     create: true
     sortable_fields: ["title"]
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "key-concept" }
       - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
+      - { label: "Grand Parent", name: "grand_parent", widget: "hidden", default: "Reference" }
       - { label: "Parent", name: "parent", widget: "hidden", default: "Key Concepts" }
-      - { name: title, label: Title }
+      - { name: title, label: "Title" }
+      - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
+      - { name: definition, label: "Short Definition", widget: text }
       - { name: body, label: body, widget: markdown }
-  - name: "research-design"
-    label: "Research Design"
-    folder: "/docs/research-design"
-    media_folder: '/assets/uploads'
+  - name: "tutorial"
+    label: "Tutorial"
+    folder: "/tutorials"
     create: true
     sortable_fields: ["title"]
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
-      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
-      - { label: "Parent", name: "parent", widget: "hidden", default: "Research Design" }
-      - { name: title, label: Title }
-      - { name: body, label: body, widget: markdown }
-  - name: "technical-documentation"
-    label: "Technical Documentation"
-    folder: "/docs/technical-documentation"
-    media_folder: '/assets/uploads'
-    create: true
-    sortable_fields: ["title"]
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
-      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
-      - { label: "Parent", name: "parent", widget: "hidden", default: "Technical Documentation" }
-      - { name: title, label: Title }
-      - { name: body, label: body, widget: markdown }
-  - name: "tutorials"
-    label: "Tutorials"
-    folder: "/docs/tutorials"
-    media_folder: '/assets/uploads'
-    path: "/{{parent}}/{{title}}"
-    create: true
-    sortable_fields: ["title"]
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "tutorial" }
       - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
       - { label: "Parent", name: "parent", widget: "hidden", default: "Tutorials" }
+      - { name: summary, label: "Summary", widget: markdown, minimal: true }
+      - { name: prerequisites, label: "Prerequisites", widget: markdown, minimal: true }
+      - { name: completion_time, label: "Duration", widget: text }
       - { name: title, label: Title }
+      - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
       - { name: body, label: body, widget: markdown }

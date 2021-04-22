@@ -1,7 +1,6 @@
 ---
 title: Network Canvas Documentation
 timezone: UTC
-url: 'https://documentation.networkcanvas.com'
 baseurl: ''
 email: info@networkcanvas.com
 description: Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research.
@@ -11,12 +10,33 @@ markdown: kramdown
 toc:
   max_level: 3
   ordered_list: true
+#
+# Set layout template for pages based on their path. This avoids needing to specify a page template
+# in Netlify CMS
+#
 defaults:
   - scope:
-      path: "docs"
+      path: "_*" # an empty string here breaks the theme because it applies to the JS asset. use this instead to provide a default
+    values:
+      layout: "page"
+  - scope:
+      path: "tutorials"
     values:
       toc: true
-      layout: "post"
+      layout: "tutorial"
+  - scope:
+      path: "how-to"
+    values:
+      toc: true
+      layout: "page"
+  - scope:
+      path: "reference/key-concepts"
+    values:
+      layout: "key-concept"
+  - scope:
+      path: "reference/interface-documentation"
+    values:
+      layout: "interface-documentation"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: network-canvas
 # Back to top link
@@ -24,10 +44,6 @@ back_to_top: true
 back_to_top_text: "Back to top"
 
 footer_content: "Copyright &copy; 2016-2021 Complex Data Collective."
-
-# Footer last edited timestamp
-last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
-last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
 plugins:
   - jekyll-feed

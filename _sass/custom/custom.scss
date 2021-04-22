@@ -1,6 +1,52 @@
 // Typography
 h1,h2,h3,h4,h5,h6 {
   font-weight: 700;
+  clear: both;
+}
+
+li, ol, ul {
+  margin: initial !important;
+}
+
+// Figures
+
+
+@media only screen and (min-width: #{map-get($media-queries, "md")}) {
+  figure {
+    text-align: center;
+    img {
+      max-width: 80%;
+    }
+  }
+
+  .img-float-right {
+    width: 50%;
+    margin: 1.2rem;
+    float: right;
+  }
+  
+  .img-float-left {
+    width: 50%;
+    margin: 1.2rem;
+    float: left;
+  }
+  
+}
+
+// Interface documentation
+.interface-doc-summary {
+  display: flex;
+  align-items: center;
+
+  &__summary {
+    flex: 1;
+  }
+
+  &__image {
+    flex: 0 0 50%;
+    margin-right: $sp-5;
+    padding-top: 1rem; // For macos screenshot asymmetry 
+  }
 }
 
 
@@ -26,22 +72,89 @@ h1 {
   font-weight: 700;
 }
 
+.main-content ul, .main-content ol {
+  padding-left: revert;
+  margin: revert !important;
+}
+
+// Tutorial
+
+// Summary
+.tutorial-summary {
+  margin: $sp-5 0;
+  background-color: #f5f6fa;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: $sp-3 $sp-5;
+
+  &__duration {
+
+    svg {
+      vertical-align: sub;
+    }
+  }
+}
 
 // Tip Box
 .tip-box {
-  background: #f2f3f7;
-  background-image: url('/assets/img/tip-info.svg');
-  background-position: 2rem;
-  background-repeat: no-repeat;
-  background-size: 3rem;
-  border-radius: 1rem;
-  padding: $sp-5;
-  padding-left: 6rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  background-color: #f5f6fa;
+  border-radius: 4px;
+  position: relative;
+  padding: $sp-3 $sp-5;
   font-size: 0.85rem;
-  line-height: 1.2;
+  margin: 2.2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+    height: 3rem;
+    width: 3rem;
+    background-image: url("/assets/img/tip-info.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    border-radius: 50%;
+    background-color: #0FB2E2;
+  }
 
   &.caution {
-    background-image: url('/assets/img/tip-caution.svg');
+    &::before {
+      background-color: #eab93f;
+      background-image: url('/assets/img/tip-caution.svg');
+      background-size: 1.8rem;
+    }
+    
+  }
+
+  &::after {
+    content: attr(data-name);
+  }
+
+}
+
+// Under construction
+.under-construction {
+  background-image: url('/assets/img/tip-caution.svg');
+  background-position: 1.25rem;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  padding: $sp-3 $sp-5;
+  padding-left: 5.5rem;  
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  overflow-x: auto;
+  background-color: #f5f6fa;
+  border-radius: 4px;
+  box-shadow: none;
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
   }
 
 }
@@ -54,4 +167,63 @@ figure {
     text-align: center;
     font-size: small;
   }
+}
+
+
+// Best practices / things to avoid
+
+ul.best-practices, ul.avoid {
+  list-style: none;
+}
+
+ul.best-practices li:before {
+  content: '✓';
+  color: #00C9A2;
+}
+
+ul.avoid li:before {
+  content: '✘';
+  color: #d1395d;
+}
+
+
+// Key concept 
+
+.key-concept {
+  background-color: #f5f6fa;
+  border-radius: 4px;
+  position: relative;
+  padding: 1.75rem;
+  padding-top: 1.75rem;
+  font-size: 0.85rem;
+  margin: 2.2rem;
+  padding-top: 3.5rem;
+
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 0;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+}
+
+// definition
+
+.concept-definition {
+  font-size: 1.25rem !important;
+  text-transform: unset;
+  letter-spacing: 1.25px !important;
+  line-height: 1.25;
 }

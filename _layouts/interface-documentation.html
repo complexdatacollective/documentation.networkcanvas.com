@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="interface-doc-summary">
+    <div class="interface-doc-summary__image">
+        <img src="{{page.image}}" class="interface-screenshot" alt="Preview image of interface"/>
+    </div>
+    <div class="interface-doc-summary__summary">
+        <h1>{{page.title}}</h1>
+        <h4>Type:</h4>
+        <p>{{page.type}}</p>
+        <h4>Creates:</h4>
+        <p>{{page.creates}}</p>
+        <h4>Uses Prompts:</h4>
+        <p>{{page.uses_prompts}}</p>
+    </div>
+</div>
+
+{{ content }}
+
+<h4>Best Practices</h4>
+<ul class="best-practices">
+{% for good_item in page.good %}
+  <li>{{good_item | markdownify}}</li>
+{% endfor %}
+</ul>   
+
+<h4>Try to Avoid</h4>
+<ul class="avoid">
+{% for bad_item in page.bad %}
+  <li>{{bad_item | markdownify}}</li>
+{% endfor %}
+</ul>   
