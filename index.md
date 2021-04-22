@@ -5,7 +5,6 @@ wip: false
 nav_order: 1
 ---
 # Project Documentation
-
 {: .fs-9 }
 
 A home for tutorials, guides, and project information about the Network Canvas project.
