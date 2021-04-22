@@ -2,11 +2,13 @@
 parent: Tutorials
 title: Working with Network Canvas data in R
 wip: true
-summary: "This tutorial will show you how to work with Network Canvas data in the R statistics environment."
-prerequisites: "In order to follow along with this tutorial you should:\n
+summary: "
+  This tutorial will show you how to work with Network Canvas data in the R statistics environment."
+prerequisites: "
+  In order to follow along with this tutorial you should:\n
   - Have an understanding of the R environment.\n
   - Have a working installation of R studio, or similar, in order to enter commands.\n
-"
+  "
 completion_time: 1 hour
 ---
 
