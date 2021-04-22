@@ -2,10 +2,13 @@
 parent: Tutorials
 title: Building a protocol using Architect
 wip: true
-summary: This tutorial will guide you through the process of creating a Network Canvas protocol using Architect. We will be rebuilding the sample protocol that is available to install within Interviewer, which was discussed extensively in the tutorial on [using Interviewer](../using-interviewer). If you would like to download and open the finished protocol, you can do so [from here](../../protocols/Sample Protocol v1.netcanvas).
-prerequisites: "This tutorial assumes you are familiar with the general concepts of the Network Canvas software, have read the [project overview](../../project-overview), and have read the tutorial on [using Interviewer](../using-interviewer).\n
+summary: "
+  This tutorial will guide you through the process of creating a Network Canvas protocol using Architect. We will be rebuilding the sample protocol that is available to install within Interviewer, which was discussed extensively in the tutorial on [using Interviewer](../using-interviewer). If you would like to download and open the finished protocol, you can do so [from here](../../protocols/Sample Protocol v1.netcanvas)."
+prerequisites: "
+  This tutorial assumes you are familiar with the general concepts of the Network Canvas software, have read the [project overview](../../project-overview), and have read the tutorial on [using Interviewer](../using-interviewer).\n
 
-We recommend following along using your own computer, so you should also [download and install Architect](https://networkcanvas.com/download.html)."
+  We recommend following along using your own computer, so you should also [download and install Architect](https://networkcanvas.com/download.html)
+  "
 completion_time: 2 hours
 ---
 

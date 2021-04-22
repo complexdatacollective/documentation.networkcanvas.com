@@ -5,10 +5,11 @@ completion_time: 30 minutes
 summary: "This tutorial will introduce you to Interviewer by walking through an example based on our sample protocol. We will explore the participant-facing interview experience, as well as discuss some of the researcher-facing functionality of the app. The sample protocol we will be using demonstrates all the main data collection features of the tool, which we hope will encourage you to imagine the many types of study that can be created using Network Canvas."
 prerequisites: "To get the most from this tutorial, you should have first:
 
-- Read and understood the [project overview](../../project-overview).\n
-- To follow along using your own computer or device, you should have [downloaded and installed Interviewer](https://networkcanvas.com/download.html).\n
+  - Read and understood the [project overview](../../project-overview).\n
+  - To follow along using your own computer or device, you should have [downloaded and installed Interviewer](https://networkcanvas.com/download.html).\n
 
-Please note that we have created a separate tutorial article covering how to create a protocol, called [building a protocol using Architect](../building-a-protocol). We suggest you continue with the current tutorial before learning the more advanced concepts involved in protocol creation, but you can read this articles in any order you wish."
+  Please note that we have created a separate tutorial article covering how to create a protocol, called [building a protocol using Architect](../building-a-protocol). We suggest you continue with the current tutorial before learning the more advanced concepts involved in protocol creation, but you can read this articles in any order you wish.
+"
 ---
 
 ## The start screen
