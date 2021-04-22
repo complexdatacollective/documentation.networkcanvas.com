@@ -1,5 +1,6 @@
 ---
 title: Shared Interface Options
+grand_parent: Reference
 parent: Interface Documentation
 layout: page
 ---

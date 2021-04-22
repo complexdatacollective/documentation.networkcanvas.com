@@ -1,5 +1,6 @@
 ---
 title: Information
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/information/example.png
 type: Utility

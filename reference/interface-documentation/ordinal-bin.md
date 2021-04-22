@@ -1,6 +1,7 @@
 ---
 
 title: Ordinal Bin
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/ordinal-bin/example.png
 type: Name Interpreter

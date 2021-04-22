@@ -1,8 +1,9 @@
 ---
 title: Ego Form
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/ego-form/egoform-example.png
-type: Ego interpreter
+type: Ego Interpreter
 creates: Ego attribute data
 uses_prompts: No
 good:

@@ -1,5 +1,6 @@
 ---
 title: Name Generators using Quick Add
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/name-generators/ng-quick.png
 type: Name Generator

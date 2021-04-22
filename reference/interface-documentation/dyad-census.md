@@ -1,8 +1,9 @@
 ---
 title: Dyad Census
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/dyad-census/dyad-example.png
-type: Edge generator
+type: Edge Generator
 creates: Edges of one or more types
 uses_prompts: Yes
 bad:

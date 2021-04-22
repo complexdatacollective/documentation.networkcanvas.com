@@ -1,5 +1,6 @@
 ---
 title: Large Roster Name Generator
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/name-generators/large-roster.png
 type: Name Generator

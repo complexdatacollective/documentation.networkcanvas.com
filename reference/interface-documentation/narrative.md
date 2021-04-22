@@ -1,6 +1,7 @@
 ---
 
 title: Narrative
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/narrative/narrative-example.png
 type: Visualisation

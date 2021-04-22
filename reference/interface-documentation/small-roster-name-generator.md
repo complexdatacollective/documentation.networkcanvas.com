@@ -1,6 +1,7 @@
 ---
 title: Small Roster Name Generator
 parent: Interface Documentation
+grand_parent: Reference
 image: /assets/img/interface-documentation/name-generators/small-roster.png
 type: Name Generator
 creates: Creates nodes of a single type

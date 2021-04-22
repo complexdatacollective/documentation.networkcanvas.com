@@ -25,10 +25,10 @@ defaults:
       toc: true
       layout: "tutorial"
   - scope:
-      path: "docs/how-to"
+      path: "how-to"
     values:
       toc: true
-      layout: "tutorial"
+      layout: "page"
   - scope:
       path: "reference/key-concepts"
     values:

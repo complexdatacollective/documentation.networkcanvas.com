@@ -1,5 +1,6 @@
 ---
 title: Name Generator using Forms
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/name-generators/ng-form.png
 type: Name Generator

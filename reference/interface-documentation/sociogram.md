@@ -1,5 +1,6 @@
 ---
 title: Sociogram
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/sociogram/sociogram-edges.png
 type: Name Interpreter and Edge Generator

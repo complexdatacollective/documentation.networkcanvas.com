@@ -1,5 +1,6 @@
 ---
 title: Categorical Bin
+grand_parent: Reference
 parent: Interface Documentation
 image: /assets/img/interface-documentation/categorical-bin/catbin-example.png
 type: Name interpreter
