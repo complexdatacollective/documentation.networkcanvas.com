@@ -1,5 +1,6 @@
 ---
 nav_order: 1
+has_parent: false
 title: Home
 ---
 

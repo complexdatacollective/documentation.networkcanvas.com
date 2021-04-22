@@ -24,6 +24,20 @@ collections:
       - { name: has_toc, widget: "boolean", required: false }
       - { name: nav_order, widget: "number", required: false }
       - { name: nav_exclude, widget: "boolean", required: false }
+  - name: "reference"
+    label: "Reference"
+    folder: "/reference"
+    create: true
+    sortable_fields: ["title"]
+    filter: { field: "has_parent", value: true }
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+      - { label: "Has parent", name: "has_parent", widget: "hidden", default: false }
+      - { name: title, label: Title }
+      - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
+      - { name: body, label: body, widget: markdown }
+      - { name: nav_order, widget: "number", required: false }
+      - { name: nav_exclude, widget: "boolean", required: false }
   - name: "interface-documentation"
     label: "Interface Documentation"
     folder: "/reference/interface-documentation"
