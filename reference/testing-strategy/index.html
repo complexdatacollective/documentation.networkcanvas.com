@@ -1,0 +1,502 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Project Testing Strategy - Network Canvas Documentation</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100029443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-100029443-1');
+    </script>
+
+  
+
+  
+    <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Project Testing Strategy | Network Canvas Documentation</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Project Testing Strategy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research." />
+<meta property="og:description" content="Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research." />
+<link rel="canonical" href="https://documentation.networkcanvas.com/reference/testing-strategy/" />
+<meta property="og:url" content="https://documentation.networkcanvas.com/reference/testing-strategy/" />
+<meta property="og:site_name" content="Network Canvas Documentation" />
+<script type="application/ld+json">
+{"description":"Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://documentation.networkcanvas.com/assets/img/logo.svg"}},"@type":"WebPage","url":"https://documentation.networkcanvas.com/reference/testing-strategy/","headline":"Project Testing Strategy","dateModified":"2019-10-02T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="svg-link" viewBox="0 0 24 24">
+      <title>Link</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+    </symbol>
+    <symbol id="svg-search" viewBox="0 0 24 24">
+      <title>Search</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-menu" viewBox="0 0 24 24">
+      <title>Menu</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+      <title>Expand</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </symbol>
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+      <title>Document</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+    </symbol>
+  </svg>
+
+  <div class="side-bar">
+    <div class="site-header">
+      <a href="https://documentation.networkcanvas.com/" class="site-title lh-tight">
+  <div class="site-logo"></div>
+
+</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      
+        <ul class="nav-list"><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/" class="nav-list-link">Home</a></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/tutorials/" class="nav-list-link">Tutorials</a><ul class="nav-list "><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/tutorials/using-interviewer/" class="nav-list-link">Using Interviewer</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/tutorials/building-a-protocol/" class="nav-list-link">Building a protocol using Architect</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/tutorials/offline-data-management-workflow/" class="nav-list-link">Offline Data Management Workflow</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/tutorials/using-server/" class="nav-list-link">Using Server to manage a study</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/tutorials/working-with-data/" class="nav-list-link">Working with Network Canvas data in R</a></li></ul></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/installation-guide/" class="nav-list-link">Installation Guide</a></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/project-overview/" class="nav-list-link">Project Overview</a></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/how-to/" class="nav-list-link">How-to Guides</a><ul class="nav-list "><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/choosing-hardware/" class="nav-list-link">Choosing Hardware for a Network Canvas Study</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/configuring-devices/" class="nav-list-link">Configuring Devices Prior To Starting Data Collection</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/server-workspaces/" class="nav-list-link">Creating and Managing Workspaces in Server</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/exporting-data-from-interviewer/" class="nav-list-link">Exporting Data from Interviewer</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/import-a-protocol/" class="nav-list-link">Import a Protocol into Interviewer</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/importing-roster-data/" class="nav-list-link">Importing Roster Data</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/pairing/" class="nav-list-link">Pairing Interviewer Devices with Server</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/updating-from-beta/" class="nav-list-link">Updating from Beta to the Stable Release</a></li></ul></li><li class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/reference/" class="nav-list-link">Reference</a><ul class="nav-list "><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/developer-contribution-guide/" class="nav-list-link">Developer Contribution Guide</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/irb-best-practices/" class="nav-list-link">IRB and Security Best Practices</a></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/reference/interface-documentation/" class="nav-list-link">Interface Documentation</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/categorical-bin/" class="nav-list-link">Categorical Bin</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/dyad-census/" class="nav-list-link">Dyad Census</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/ego-form/" class="nav-list-link">Ego Form</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/information/" class="nav-list-link">Information</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/large-roster-name-generator/" class="nav-list-link">Large Roster Name Generator</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/name-generator-using-forms/" class="nav-list-link">Name Generator using Forms</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/name-generator-using-quick-add/" class="nav-list-link">Name Generators using Quick Add</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/narrative/" class="nav-list-link">Narrative</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/ordinal-bin/" class="nav-list-link">Ordinal Bin</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/per-alter-edge-form/" class="nav-list-link">Per Alter Edge Form</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/per-alter-form/" class="nav-list-link">Per Alter Form</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/shared/" class="nav-list-link">Shared Interface Options</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/small-roster-name-generator/" class="nav-list-link">Small Roster Name Generator</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/sociogram/" class="nav-list-link">Sociogram</a>
+                  </li></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/reference/key-concepts/" class="nav-list-link">Key Concepts</a><ul class="nav-list"><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/additional-variables/" class="nav-list-link">Additional Variables</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/codebook/" class="nav-list-link">Codebook</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/field-validation/" class="nav-list-link">Field Validation</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/forms/" class="nav-list-link">Forms</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/interfaces/" class="nav-list-link">Interfaces</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/network-filtering/" class="nav-list-link">Network Filtering</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/pairing/" class="nav-list-link">Pairing</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/preview-mode/" class="nav-list-link">Preview Mode</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/prompts/" class="nav-list-link">Prompts</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/resources/" class="nav-list-link">Resources</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/skip-logic/" class="nav-list-link">Skip Logic</a>
+                  </li><li class="nav-list-item ">
+                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/the-protocol-file/" class="nav-list-link">The Protocol File</a>
+                  </li></ul></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/node-labelling/" class="nav-list-link">Node Labelling</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/security-model/" class="nav-list-link">Overview of Security Model</a></li><li class="nav-list-item  active"><a href="https://documentation.networkcanvas.com/reference/testing-strategy/" class="nav-list-link active">Project Testing Strategy</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/protocol-file-format/" class="nav-list-link">Protocol File Format</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/protocol-schema-information/" class="nav-list-link">Protocol Schema Information</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/variable-naming/" class="nav-list-link">Variable Naming</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/variable-types/" class="nav-list-link">Variable Types</a></li></ul></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/citing-the-software/" class="nav-list-link">Citing the Software</a></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/protocol-gallery/" class="nav-list-link">Protocol Gallery</a></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/faq/" class="nav-list-link">Frequently Asked Questions</a></li></ul>
+
+      
+    </nav>
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  </div>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Network Canvas Documentation" aria-label="Search Network Canvas Documentation" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      
+      
+      
+        <nav aria-label="Auxiliary" class="aux-nav">
+          <ul class="aux-nav-list">
+            
+              <li class="aux-nav-list-item">
+                <a href="//networkcanvas.com" class="site-button"
+                  
+                >
+                  Network Canvas Home
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+      
+        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb-nav-list">
+              
+                <li class="breadcrumb-nav-list-item"><a href="https://documentation.networkcanvas.com/reference/">Reference</a></li>
+              
+              <li class="breadcrumb-nav-list-item"><span>Project Testing Strategy</span></li>
+            </ol>
+          </nav>
+        
+      
+      <div id="main-content" class="main-content" role="main">
+        
+          <h1>
+        
+        
+          Project Testing Strategy
+        
+        
+      </h1>
+    <hr />
+
+
+
+<p>This document describes our approach to testing the software stack. It is intended for developers, or technically oriented users who wish to contribute code to the project.</p>
+      <h2 id="current-approach">
+        
+        
+          <a href="#current-approach" class="anchor-heading" aria-labelledby="current-approach"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Current Approach
+        
+        
+      </h2>
+    
+
+<p>Currently projects use a mixture of enzyme snapshot tests and unit/integration tests. There is an integration (or end to end) test suite. which ensures the apps (electron only) are compatible with one another: <a href="https://github.com/codaco/integration-tests">https://github.com/codaco/integration-tests</a>.</p>
+
+<p>A protocol validation schema allows testing of protocol files in the live apps, but itself is relevant to testing in that it can be used to ensure the apps can produce/consume valid interviews.</p>
+
+<p>Appium was trialed for similar integration testing for mobile, but the approach proved slow, brittle and prone to false positives.</p>
+      <h2 id="review">
+        
+        
+          <a href="#review" class="anchor-heading" aria-labelledby="review"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Review
+        
+        
+      </h2>
+    
+
+<p>Large software outfits such Google promote a unit testing focused approach, with only a minor role played by E2E (end to end) testing. Reasons given include:</p>
+
+<ul>
+  <li>Overarching issues, such as a ‘login’, can cause the entire suite to fail, when this isn’t fixed immediately, many smaller bugs can be hidden,</li>
+  <li>E2E testing is slow, in the case of larger software suits, developers may have to wait until the next day to see results.</li>
+</ul>
+      <h3 id="levels-of-testing">
+        
+        
+          <a href="#levels-of-testing" class="anchor-heading" aria-labelledby="levels-of-testing"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Levels of testing
+        
+        
+      </h3>
+    
+
+<p><strong>End to end</strong>
+Test the finished product (e.g., simulating running the application as a user)</p>
+
+<p><strong>Integration:</strong>
+Test composite components and/or the interaction of components, a middle ground between the two.</p>
+
+<p><strong>Unit:</strong>
+Test individual functions and classes</p>
+
+<p>Unit testing is favored because:</p>
+
+<ul>
+  <li>It can provide immediate feedback</li>
+  <li>It is specific (can aid finding bugs)</li>
+</ul>
+      <h3 id="rationale">
+        
+        
+          <a href="#rationale" class="anchor-heading" aria-labelledby="rationale"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Rationale
+        
+        
+      </h3>
+    
+
+<p>In the case of the Network Canvas project, there are two overarching needs for testing:</p>
+
+<ul>
+  <li>Acceptance testing: do the apps work as intended?</li>
+  <li>Documentation and ease of development: on boarding new contributors, bug fixing and documenting the intent of code.</li>
+</ul>
+
+<p>Because of these needs (acceptance testing) it may be that end to end testing should play a more central role in testing, despite the drawbacks.</p>
+
+<p>Current end to end tests are scarce, and non-spotted regressions can easily make it into releases. Whilst this is mitigated somewhat with manual tests, it would be preferable to automate longer term.</p>
+
+<p>There are enzyme snapshot tests for the UI, but aren’t providing any value. When they fail, it isn’t indicative of an actual issue and only a reflection of changes to the UI. They should be removed/discontinued, and replaced with E2E tests that simulate actual usage.</p>
+
+<p>The unit and integration tests are somewhat useful, especially when related to functional oriented code, such as format conversion. Some integration tests can be brittle when functionality is revised, but as the software matures, that will be less of an issue.</p>
+      <h2 id="summary-of-strategy">
+        
+        
+          <a href="#summary-of-strategy" class="anchor-heading" aria-labelledby="summary-of-strategy"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Summary of Strategy
+        
+        
+      </h2>
+    
+
+<ul>
+  <li>Test what is important to the user
+    <ul>
+      <li>E2E coverage should start 10,000ft and narrow down as needed</li>
+      <li>Test behavior, not implementation
+        <ul>
+          <li>Architect: UI changes -&gt; creates a protocol which is valid</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Tests should be as simple as possible to run
+    <ul>
+      <li>Automated</li>
+      <li>Cohabit with code</li>
+      <li>Provide fast feedback loop</li>
+      <li>Runnable on CI (ideal)</li>
+    </ul>
+  </li>
+  <li>Tests that aid future development
+    <ul>
+      <li>Document intended functionality within tests to make intended input and output clear.</li>
+      <li>Shared mock state where considered canonical</li>
+      <li>Help to find bugs</li>
+    </ul>
+  </li>
+</ul>
+      <h2 id="implementation-of-strategy">
+        
+        
+          <a href="#implementation-of-strategy" class="anchor-heading" aria-labelledby="implementation-of-strategy"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Implementation of Strategy
+        
+        
+      </h2>
+    
+
+<ul>
+  <li>Write end to end tests to document app usage. These will be used to validate that the application is fit for release. They should test UI interactions match expected outcomes, some examples:
+    <ul>
+      <li>Network Canvas: When a user enters some text, the network should be modified as expected.</li>
+      <li>Architect: When a user clicks a button, the protocol should be modified as expected.</li>
+      <li>Server: When a user does X in the interface, then Y should happen to the network/protocol object.</li>
+      <li>Build a list of “core outcomes” (such as the above) that can be implemented immediately. Base this off of the manual checklist.</li>
+    </ul>
+  </li>
+  <li>Write unit tests to document underlying infrastructure. These will be used to find bugs and ensure that utility functions work as expected. Core functionality such as saving and loading files is a good example requiring unit tests.
+    <ul>
+      <li>When <code class="language-plaintext highlighter-rouge">saveProtocol()</code> is called, the protocol should write to the disk (or call APIs that do).</li>
+      <li>When a network is converted to XML, the generated data is as expected.</li>
+    </ul>
+  </li>
+  <li>Write unit and/or end to end tests to validate bug fixes. If you find yourself writing lots of log statements, this might be a good place to add a test.</li>
+</ul>
+      <h2 id="general-guidance">
+        
+        
+          <a href="#general-guidance" class="anchor-heading" aria-labelledby="general-guidance"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> General guidance
+        
+        
+      </h2>
+    
+
+<ul>
+  <li>Test to an interface, for example on a React component you might check which prop functions (output) are called when a button is clicked (input).
+    <ul>
+      <li>Try to avoid testing implementation details. For example:
+        <ul>
+          <li>If you are testing a composite component and need to specify component names. Instead use</li>
+          <li>If you need access to class variable names or functions to run the tests</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>When underlying code changes, making tests outdated ensure old tests are replaced to maintain code coverage.</li>
+  <li>Create (modular) factory generators for canonical mocks. Suggest using <a href="https://github.com/rosiejs/rosie">Rosie</a>. Shared mock state should be used wherever possible, and established where it doesn’t currently exist.</li>
+  <li>The existing integration tests are still very relevant, but it would be good to be able to run them as part of each app. The integration-tests repo could them be adapted to run these suites together if desired. For example: Architect can be tested to produce a validated protocol, and network canvas can be tested to run a validated protocol as a separate step</li>
+</ul>
+      <h2 id="guidance-for-reviewers">
+        
+        
+          <a href="#guidance-for-reviewers" class="anchor-heading" aria-labelledby="guidance-for-reviewers"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Guidance for Reviewers
+        
+        
+      </h2>
+    
+
+<p>**TBC: **To enable the above strategy to be consistently implemented, we will develop a checklist for reviewers to help them when conducting a formal code review on a feature or bugfix PR. This will also help external collaborators, and could be included as part of a PR template.</p>
+      <h2 id="how-to-test">
+        
+        
+          <a href="#how-to-test" class="anchor-heading" aria-labelledby="how-to-test"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> How to test
+        
+        
+      </h2>
+    
+
+<p>Ideally tests should be written either before implementation or in parallel with implementation.</p>
+
+<p>Tests are written on top of Jest, which is part of the React project. Enzyme can be used to simulate small parts of UI, but this is not a reliable way to test UI, and should be treated as unit/integration type test. Spectron can be used to drive end to end tests.</p>
+      <h3 id="bug-fixes">
+        
+        
+          <a href="#bug-fixes" class="anchor-heading" aria-labelledby="bug-fixes"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Bug fixes
+        
+        
+      </h3>
+    
+
+<ol>
+  <li>Write a functional or unit test to match the issue described. At this point the test should fail.</li>
+  <li>Implement the fix by making necessary until the test passes.</li>
+  <li>If you find yourself writing lots of logging statements to debug the problem, consider writing unit tests to cover those steps if it seems prudent to do so.</li>
+</ol>
+      <h3 id="new-features">
+        
+        
+          <a href="#new-features" class="anchor-heading" aria-labelledby="new-features"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> New features
+        
+        
+      </h3>
+    
+
+<p>Whilst ideally this should cover the same steps as a bug fix, it may be that some experimentation is required until a fully testable implementation is made. In this case, it may still be possible to loosely write high level test stubs which can then be populated as the implementation materializes.</p>
+
+<ol>
+  <li>Write a high level functional/unit test stubs that describe the feature.</li>
+  <li>Implement the feature and the tests side by side, with precedence to the tests, where possible.</li>
+  <li>If you find yourself writing lots of logging statements to debug the problem, consider writing unit tests to cover those steps if it seems prudent to do so.</li>
+</ol>
+      <h3 id="backfilling-missing-tests-when-developing-new-featuresfixes">
+        
+        
+          <a href="#backfilling-missing-tests-when-developing-new-featuresfixes" class="anchor-heading" aria-labelledby="backfilling-missing-tests-when-developing-new-featuresfixes"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Backfilling missing tests when developing new features/fixes
+        
+        
+      </h3>
+    
+
+<p>If you are implementing a bug fix or feature for a part of the app with no coverage, follow the principle of “leave it better than you found it”, e.g., if you add functionality to the sociogram interface, create a test harness for the whole interface, and stub (and/or implement) any tests that need to be implemented yet for that interface.</p>
+      <h2 id="metrics">
+        
+        
+          <a href="#metrics" class="anchor-heading" aria-labelledby="metrics"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Metrics
+        
+        
+      </h2>
+    
+
+<p>Jest provides a code coverage feature which covers execution of branches, functions, lines and statements. Whilst useful for directing missing test coverage, it doesn’t exactly match what should be considered ‘good’ coverage. The aim should be for this report to get better over time, and if that isn’t the case review why figures are declining.</p>
+
+<p>For Spectron tests, aim for every part of UI to be tested (e.g., every clickable, draggable thing). Coverage is difficult to measure automatically so will need to be part of code review.</p>
+      <h2 id="feedback">
+        
+        
+          <a href="#feedback" class="anchor-heading" aria-labelledby="feedback"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Feedback
+        
+        
+      </h2>
+    
+
+<ul>
+  <li>screenshot / visual snapshot testing? Can jest do this already, how do we get feedback of diff</li>
+  <li>Track test coverage in CI. How?</li>
+  <li>Develop checklist for reviewers and for PRs</li>
+  <li>Can we simulate other environments too? Snapshots on third party tool?</li>
+  <li>metrics : contribution guide, or for reviewers.</li>
+  <li>React testing?</li>
+  <li>ensure unit tests for reducers cover all action types</li>
+</ul>
+
+        
+
+        
+
+        
+        
+          <hr>
+          <footer>
+            
+              <p><a href="#top" id="back-to-top">Back to top</a></p>
+            
+
+            <p class="text-small text-grey-dk-100 mb-0">Copyright &copy; 2016-2021 Complex Data Collective.</p>
+
+            
+          </footer>
+        
+
+      </div>
+    </div>
+
+    
+      
+
+      <div class="search-overlay"></div>
+    
+  </div>
+</body>
+</html>
+
