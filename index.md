@@ -1,9 +1,9 @@
 ---
-nav_order: 1
 has_parent: false
 title: Home
+wip: false
+nav_order: 1
 ---
-
 # Project Documentation
 {: .fs-9 }
 
@@ -24,12 +24,13 @@ We encourage you to use the search function at the top of each page to find arti
 
 Please explore the pages and headings to the left. Aside from some top-level pages (such as the Project Overview and the Installation Guide), the bulk of our documentation is under the following headings:
 
-- **[Tutorials](./tutorials)** - where you will find in-depth articles that take you through the most fundamental tasks you can accomplish with the software, such as building a protocol, running it in Interviewer, and exporting data.
-- **[Key Concepts](./reference/key-concepts)** - which has self-contained articles on all the fundamental concepts within the Network Canvas software.
-- **[Interface Documentation](./reference/interface-documentation)** - if you are looking for specific information about the configuration options of an interface, this section contains a page dedicated to each type.
+* **[Tutorials](./tutorials)** - where you will find in-depth articles that take you through the most fundamental tasks you can accomplish with the software, such as building a protocol, running it in Interviewer, and exporting data.
+* **[How-To Guides](./how-to)** - this section contains short guides on how to complete common tasks using all three apps.
+* **[Key Concepts](./reference/key-concepts)** - which has self-contained articles on all the fundamental concepts within the Network Canvas software.
+* **[Interface Documentation](./reference/interface-documentation)** - if you are looking for specific information about the configuration options of an interface, this section contains a page dedicated to each type
 
-Away from these sections, we have also created a section to help with the practical aspects of conducting a study using the Network Canvas software. The [how-to](./how-to) section covers:
+Specific other pages you may find useful include:
 
-- [Choosing hardware for conducting a Network Canvas study](./how-to/choosing-hardware.md)
-- [Configuring your devices prior to starting data collection](./how-to/configuring-devices.md)
-- [Best practices for security and IRB submission](./reference/irb-best-practices.md)
+* [Choosing hardware for conducting a Network Canvas study](./how-to/choosing-hardware.md)
+* [Configuring your devices prior to starting data collection](./how-to/configuring-devices.md)
+* [Best practices for security and IRB submission](./reference/irb-best-practices.md)
