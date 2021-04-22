@@ -82,8 +82,8 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "tutorial" }
       - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
       - { label: "Parent", name: "parent", widget: "hidden", default: "Tutorials" }
-      - { name: summary, label: "Summary", widget: markdown }
-      - { name: prerequisites, label: "Prerequisites", widget: markdown }
+      - { name: summary, label: "Summary", widget: markdown, minimal: true }
+      - { name: prerequisites, label: "Prerequisites", widget: markdown, minimal: true }
       - { name: completion_time, label: "Duration", widget: text }
       - { name: title, label: Title }
       - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
