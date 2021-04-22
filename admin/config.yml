@@ -13,10 +13,8 @@ collections:
     folder: "/"
     create: true
     sortable_fields: ["title"]
-    filter: { field: "has_parent", value: false }
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
-      - { label: "Has parent", name: "has_parent", widget: "hidden", default: false }
       - { name: title, label: Title }
       - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
       - { name: body, label: body, widget: markdown }
@@ -29,10 +27,8 @@ collections:
     folder: "/reference"
     create: true
     sortable_fields: ["title"]
-    filter: { field: "has_parent", value: true }
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
-      - { label: "Has parent", name: "has_parent", widget: "hidden", default: false }
       - { name: title, label: Title }
       - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
       - { name: body, label: body, widget: markdown }
@@ -80,7 +76,6 @@ collections:
     sortable_fields: ["title"]
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "key-concept" }
-      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
       - { label: "Grand Parent", name: "grand_parent", widget: "hidden", default: "Reference" }
       - { label: "Parent", name: "parent", widget: "hidden", default: "Key Concepts" }
       - { name: title, label: "Title" }
@@ -94,7 +89,6 @@ collections:
     sortable_fields: ["title"]
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "tutorial" }
-      - { label: "Has parent", name: "has_parent", widget: "hidden", default: true }
       - { label: "Parent", name: "parent", widget: "hidden", default: "Tutorials" }
       - { name: summary, label: "Summary", widget: markdown, minimal: true }
       - { name: prerequisites, label: "Prerequisites", widget: markdown, minimal: true }

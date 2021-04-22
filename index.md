@@ -1,5 +1,4 @@
 ---
-has_parent: false
 title: Home
 wip: false
 nav_order: 1

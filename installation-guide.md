@@ -2,7 +2,6 @@
 title: Installation Guide
 nav_order: 2
 last_modified_at: 2021-02-10
-has_parent: false
 toc: true
 ---
 
