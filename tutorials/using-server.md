@@ -1,10 +1,9 @@
 ---
-
 parent: Tutorials
 title: Using Server to manage a study
 wip: true
-summary:
-prerequisites: 
+summary: "Tutorial on using Server"
+prerequisites: "none."
 completion_time: 1 hour
 ---
 

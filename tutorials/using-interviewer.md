@@ -1,9 +1,8 @@
 ---
 parent: Tutorials
 title: Using Interviewer
-nav_order: 1
 completion_time: 30 minutes
-summary: This tutorial will introduce you to Interviewer by walking through an example based on our sample protocol. We will explore the participant-facing interview experience, as well as discuss some of the researcher-facing functionality of the app. The sample protocol we will be using demonstrates all the main data collection features of the tool, which we hope will encourage you to imagine the many types of study that can be created using Network Canvas.
+summary: "This tutorial will introduce you to Interviewer by walking through an example based on our sample protocol. We will explore the participant-facing interview experience, as well as discuss some of the researcher-facing functionality of the app. The sample protocol we will be using demonstrates all the main data collection features of the tool, which we hope will encourage you to imagine the many types of study that can be created using Network Canvas."
 prerequisites: "To get the most from this tutorial, you should have first:
 
 - Read and understood the [project overview](../../project-overview).\n
