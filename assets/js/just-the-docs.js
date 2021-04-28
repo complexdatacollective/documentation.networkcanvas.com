@@ -53,12 +53,12 @@ function initNav() {
 
 function initSearch() {
   var request = new XMLHttpRequest();
-  request.open('GET', 'https://documentation.networkcanvas.com/assets/js/search-data.json', true);
+  request.open('GET', '/assets/js/search-data.json', true);
 
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
       var docs = JSON.parse(request.responseText);
-      
+
       lunr.tokenizer.separator = /[\s\-/]+/
 
       var index = lunr(function(){
@@ -100,12 +100,14 @@ function searchLoaded(index, docs) {
   var currentInput;
   var currentSearchIndex = 0;
 
+  var body = document.querySelector('body');
+
   function showSearch() {
-    document.documentElement.classList.add('search-active');
+    body.classList.add('search-active');
   }
 
   function hideSearch() {
-    document.documentElement.classList.remove('search-active');
+    body.classList.remove('search-active');
   }
 
   function update() {
@@ -430,7 +432,7 @@ jtd.getTheme = function() {
 
 jtd.setTheme = function(theme) {
   var cssFile = document.querySelector('[rel="stylesheet"]');
-  cssFile.setAttribute('href', 'https://documentation.networkcanvas.com/assets/css/just-the-docs-' + theme + '.css');
+  cssFile.setAttribute('href', '/assets/css/just-the-docs-' + theme + '.css');
 }
 
 // Document ready

@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  
+    <title>Network Filtering - Network Canvas Documentation</title>
+
+    
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100029443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-100029443-1');
+    </script>
+
+  
+
+  
+    <script type="text/javascript" src="/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Network Filtering | Network Canvas Documentation</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Network Filtering" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Network filtering is a configuration feature you will find in several areas of Architect. Simply put, it allows you to define one or more rules that determine which nodes or edges should be shown on a given stage (or in a side panel - see below). It can be used to only show a subset of the network." />
+<meta property="og:description" content="Network filtering is a configuration feature you will find in several areas of Architect. Simply put, it allows you to define one or more rules that determine which nodes or edges should be shown on a given stage (or in a side panel - see below). It can be used to only show a subset of the network." />
+<link rel="canonical" href="https://documentation.networkcanvas.com/key-concepts/network-filtering/" />
+<meta property="og:url" content="https://documentation.networkcanvas.com/key-concepts/network-filtering/" />
+<meta property="og:site_name" content="Network Canvas Documentation" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-28T14:58:56+00:00" />
+<script type="application/ld+json">
+{"description":"Network filtering is a configuration feature you will find in several areas of Architect. Simply put, it allows you to define one or more rules that determine which nodes or edges should be shown on a given stage (or in a side panel - see below). It can be used to only show a subset of the network.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://documentation.networkcanvas.com/assets/img/logo.svg"}},"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://documentation.networkcanvas.com/key-concepts/network-filtering/"},"url":"https://documentation.networkcanvas.com/key-concepts/network-filtering/","headline":"Network Filtering","dateModified":"2021-04-28T14:58:56+00:00","datePublished":"2021-04-28T14:58:56+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="svg-link" viewBox="0 0 24 24">
+      <title>Link</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+      </svg>
+    </symbol>
+    <symbol id="svg-search" viewBox="0 0 24 24">
+      <title>Search</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-menu" viewBox="0 0 24 24">
+      <title>Menu</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+        <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </symbol>
+    <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+      <title>Expand</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </symbol>
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+      <title>Document</title>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+      </svg>
+    </symbol>
+  </svg>
+  
+  <script type="text/javascript" src="/assets/js/toggle_init.js"></script>
+
+  <div class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+  <div class="site-logo"></div>
+
+</a>
+      <a href="#" id="menu-button" class="site-button">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
+      </a>
+    </div>
+    
+    
+
+
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li>
+<li class="nav-list-item"><a href="/installation-guide/" class="nav-list-link">Installation Guide</a></li>
+<li class="nav-list-item"><a href="/project-overview/" class="nav-list-link">Project Overview</a></li>
+<li class="nav-list-item"><a href="/citing-the-software/" class="nav-list-link">Citing the Software</a></li>
+<li class="nav-list-item"><a href="/protocol-gallery/" class="nav-list-link">Protocol Gallery</a></li>
+<li class="nav-list-item"><a href="/faq/" class="nav-list-link">Frequently Asked Questions</a></li>
+</ul>
+
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">Tutorials</div><ul class="nav-list"><li class="nav-list-item"><a href="/tutorials/building-a-protocol/" class="nav-list-link">Building a protocol using Architect</a></li>
+<li class="nav-list-item"><a href="/tutorials/offline-data-management-workflow/" class="nav-list-link">Offline Data Management Workflow</a></li>
+<li class="nav-list-item"><a href="/tutorials/using-interviewer/" class="nav-list-link">Using Interviewer</a></li>
+<li class="nav-list-item"><a href="/tutorials/using-server/" class="nav-list-link">Using Server to manage a study</a></li>
+<li class="nav-list-item"><a href="/tutorials/working-with-data/" class="nav-list-link">Working with Network Canvas data in R</a></li>
+</ul>
+</li>
+          </ul>
+        
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">How-To Guides</div><ul class="nav-list"><li class="nav-list-item"><a href="/how-to/choosing-hardware/" class="nav-list-link">Choosing Hardware for a Network Canvas Study</a></li>
+<li class="nav-list-item"><a href="/how-to/configuring-devices/" class="nav-list-link">Configuring Devices Prior To Starting Data Collection</a></li>
+<li class="nav-list-item"><a href="/how-to/server-workspaces/" class="nav-list-link">Creating and Managing Workspaces in Server</a></li>
+<li class="nav-list-item"><a href="/how-to/exporting-data-from-interviewer/" class="nav-list-link">Exporting Data from Interviewer</a></li>
+<li class="nav-list-item"><a href="/how-to/import-a-protocol/" class="nav-list-link">Import a Protocol into Interviewer</a></li>
+<li class="nav-list-item"><a href="/how-to/importing-roster-data/" class="nav-list-link">Importing Roster Data</a></li>
+<li class="nav-list-item"><a href="/how-to/pairing/" class="nav-list-link">Pairing Interviewer Devices with Server</a></li>
+<li class="nav-list-item"><a href="/how-to/updating-from-beta/" class="nav-list-link">Updating from Beta to the Stable Release</a></li>
+</ul>
+</li>
+          </ul>
+        
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">Interface Documentation</div><ul class="nav-list"><li class="nav-list-item"><a href="/interface-documentation/categorical-bin/" class="nav-list-link">Categorical Bin</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/dyad-census/" class="nav-list-link">Dyad Census</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/ego-form/" class="nav-list-link">Ego Form</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/information/" class="nav-list-link">Information</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/large-roster-name-generator/" class="nav-list-link">Large Roster Name Generator</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/name-generator-using-forms/" class="nav-list-link">Name Generator using Forms</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/name-generator-using-quick-add/" class="nav-list-link">Name Generators using Quick Add</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/narrative/" class="nav-list-link">Narrative</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/ordinal-bin/" class="nav-list-link">Ordinal Bin</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/per-alter-edge-form/" class="nav-list-link">Per Alter Edge Form</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/per-alter-form/" class="nav-list-link">Per Alter Form</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/shared/" class="nav-list-link">Shared Interface Options</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/small-roster-name-generator/" class="nav-list-link">Small Roster Name Generator</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/sociogram/" class="nav-list-link">Sociogram</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/tie-strength-census/" class="nav-list-link">Tie-Strength Census</a></li>
+</ul>
+</li>
+          </ul>
+        
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">Key Concepts</div><ul class="nav-list"><li class="nav-list-item"><a href="/key-concepts/additional-variables/" class="nav-list-link">Additional Variables</a></li>
+<li class="nav-list-item"><a href="/key-concepts/codebook/" class="nav-list-link">Codebook</a></li>
+<li class="nav-list-item"><a href="/key-concepts/field-validation/" class="nav-list-link">Field Validation</a></li>
+<li class="nav-list-item"><a href="/key-concepts/forms/" class="nav-list-link">Forms</a></li>
+<li class="nav-list-item"><a href="/key-concepts/input-controls/" class="nav-list-link">Input Controls</a></li>
+<li class="nav-list-item"><a href="/key-concepts/interfaces/" class="nav-list-link">Interfaces</a></li>
+<li class="nav-list-item active"><a href="/key-concepts/network-filtering/" class="nav-list-link active">Network Filtering</a></li>
+<li class="nav-list-item"><a href="/key-concepts/pairing/" class="nav-list-link">Pairing</a></li>
+<li class="nav-list-item"><a href="/key-concepts/preview-mode/" class="nav-list-link">Preview Mode</a></li>
+<li class="nav-list-item"><a href="/key-concepts/prompts/" class="nav-list-link">Prompts</a></li>
+<li class="nav-list-item"><a href="/key-concepts/resources/" class="nav-list-link">Resources</a></li>
+<li class="nav-list-item"><a href="/key-concepts/skip-logic/" class="nav-list-link">Skip Logic</a></li>
+<li class="nav-list-item"><a href="/key-concepts/the-protocol-file/" class="nav-list-link">The Protocol File</a></li>
+</ul>
+</li>
+          </ul>
+        
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">Technical Reference</div><ul class="nav-list"><li class="nav-list-item"><a href="/reference/developer-contribution-guide/" class="nav-list-link">Developer Contribution Guide</a></li>
+<li class="nav-list-item"><a href="/reference/irb-best-practices/" class="nav-list-link">IRB and Security Best Practices</a></li>
+<li class="nav-list-item"><a href="/reference/node-labelling/" class="nav-list-link">Node Labelling</a></li>
+<li class="nav-list-item"><a href="/reference/security-model/" class="nav-list-link">Overview of Security Model</a></li>
+<li class="nav-list-item"><a href="/reference/testing-strategy/" class="nav-list-link">Project Testing Strategy</a></li>
+<li class="nav-list-item"><a href="/reference/protocol-file-format/" class="nav-list-link">Protocol File Format</a></li>
+<li class="nav-list-item"><a href="/reference/protocol-schema-information/" class="nav-list-link">Protocol Schema Information</a></li>
+<li class="nav-list-item"><a href="/reference/variable-naming/" class="nav-list-link">Variable Naming</a></li>
+<li class="nav-list-item"><a href="/reference/variable-types/" class="nav-list-link">Variable Types</a></li>
+</ul>
+</li>
+          </ul>
+        
+    </nav>
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  </div>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      
+        <div class="search">
+          <div class="search-input-wrap">
+            <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Network Canvas Documentation" aria-label="Search Network Canvas Documentation" autocomplete="off">
+            <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+      
+      
+      
+        <nav aria-label="Auxiliary" class="aux-nav">
+          <ul class="aux-nav-list">
+            
+              <li class="aux-nav-list-item">
+                <a href="//networkcanvas.com" class="site-button"
+                  
+                >
+                  Network Canvas Home
+                </a>
+              </li>
+            
+          </ul>
+        </nav>
+      
+    </div>
+    <div id="main-content-wrap" class="main-content-wrap">
+
+      
+
+<nav class="nav-rel">
+  
+    <a href="/key-concepts/interfaces/" class="nav-rel-link">&larr;</a>
+  
+  
+  
+    <a href="/key-concepts/pairing/" class="nav-rel-link">&rarr;</a>
+  
+</nav>
+
+
+
+
+
+
+      <div id="main-content" class="main-content" role="main">
+        
+          <h1>
+        
+        
+          Network Filtering
+        
+        
+      </h1>
+    
+
+<p class="concept-definition">
+    This feature allows you to only show a subset of nodes or edges on a given interview stage based on their attributes.
+
+</p>
+      <h2>
+        
+        
+          Details
+        
+        
+      </h2>
+    
+
+<p>Network filtering is a configuration feature you will find in several areas of Architect. Simply put, it allows you to define one or more rules that determine which nodes or edges should be shown on a given stage (or in a side panel - <a href="#network-filtering-in-a-side-panel">see below</a>). It can be used to only show a subset of the network.</p>
+
+<p>This is particularly useful in cases where the content of the stage does not apply to all network entities. Consider the example of an interview protocol with two stages - a <a href="/interface-documentation/name-generator-using-forms/">Name Generator</a>, and an <a href="/interface-documentation/ordinal-bin/">Ordinal Bin</a>. On the first stage, for each alter named the participant is asked if they play sports with the individual. The second stage asks “how often do you play sports with each of these people?”. Filtering the network for this second stage to show only those alters with the “plays sports with” attribute will reduce the response burden of the task, and will make the interview protocol more efficient.</p>
+
+<p class="tip-box">Network filtering is different from <a href="/key-concepts/skip-logic/">skip logic</a>! Although the two sound similar in principle, they achieve very different design goals. Whereas network filtering determines which nodes to show <em>within</em> a stage, skip logic determines if a stage should be shown at all. Consult the article on <a href="/key-concepts/skip-logic/">skip logic</a> to learn more.</p>
+      <h2 id="configuring-network-filtering-on-a-stage">
+        
+        
+          <a href="#configuring-network-filtering-on-a-stage" class="anchor-heading" aria-labelledby="configuring-network-filtering-on-a-stage"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Configuring Network Filtering on a Stage
+        
+        
+      </h2>
+    
+
+<p>To configure network filtering within a stage, open the stage from the timeline view, and toggle the switch to enable “Network Filtering”. From here, you have the ability to create one or more <strong>rules</strong> (of type alter or edge), as well as to set the <strong>join operator</strong> by determining if “all rules”, or “any rule” must match.</p>
+
+<p><img src="../../assets/img/key-concepts/network-filtering/filtering-panel.png" alt="Image" /></p>
+
+<p class="tip-box">Network filtering is only available on <em>name interpreter</em> interfaces - interfaces that add attributes to nodes or edges. It is not available on specialist <em>name generator</em> interfaces.</p>
+      <h3 id="filtering-rules">
+        
+        
+          <a href="#filtering-rules" class="anchor-heading" aria-labelledby="filtering-rules"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Filtering Rules
+        
+        
+      </h3>
+    
+
+<p>Similar to skip logic rules, filtering rules have two types that can be targeted at either nodes or edges:</p>
+
+<ul>
+  <li><strong>“Presence” Rules</strong>: These rules allow you to query if a given entity of a specified type exists in the network, using either the <code class="language-plaintext highlighter-rouge">exists</code> or <code class="language-plaintext highlighter-rouge">not exists</code> operator. This rule type is not generally useful for most typical filtering operations, but can be used when roster data contains nodes or edges of multiple types.</li>
+  <li><strong>“Attribute” Rules</strong>: These rules allow you to query the value of a variable on a given entity type. For example, you may query the value of a variable called <code class="language-plaintext highlighter-rouge">age</code> on an alter type called ‘Person’. You can evaluate the result using one of several logical operators, that vary depending on the variable type. For example, number variables will let you query using operators such as ‘greater than’ and ‘less than’.</li>
+</ul>
+
+<p>Unlike skip logic rules (which are aggregated into an overall boolean <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code> value), filter rules are applied to each node and edge in the network, and are not aggregated. Instead, the nodes that remain are those that satisfy the rule constraints.</p>
+
+<p class="tip-box caution">It is important to remember that filtering retains the validity of the network model: the returned network will not contain orphaned nodes when using an edge query, or partially disconnected edges, since these are not phenomenologically valid.</p>
+      <h3 id="the-join-operator">
+        
+        
+          <a href="#the-join-operator" class="anchor-heading" aria-labelledby="the-join-operator"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> The Join Operator
+        
+        
+      </h3>
+    
+
+<p>Rules are chained together (or ‘joined’) using either <code class="language-plaintext highlighter-rouge">AND</code> or <code class="language-plaintext highlighter-rouge">OR</code> logic, which is set in the network filter configuration section using the “Must match” options “all rules” and “any rules” respectively. These methods behave much as you might expect. In the context of a filter operation:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">OR</code> signifies that if a node or edge meets <em>any</em> individual rule criteria, it will be returned in the overall network.</li>
+  <li><code class="language-plaintext highlighter-rouge">AND</code> signifies that nodes and edges in the returned network should satisfy the criteria from <em>all</em> rules.</li>
+</ul>
+
+<p>This means that the choice of join operator can have an extremely significant impact on the way that your rules are collectively evaluated. You should be careful to only use the <code class="language-plaintext highlighter-rouge">AND</code> operator to chain together multiple required property values when all values are simultaneously required <strong>on a single node</strong>.</p>
+      <h3 id="extended-example">
+        
+        
+          <a href="#extended-example" class="anchor-heading" aria-labelledby="extended-example"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Extended Example
+        
+        
+      </h3>
+    
+
+<p>Since network filtering can be confusing to new users, here is an extended example to illustrate the feature that includes both node and edge rules.</p>
+
+<p>Consider an interview where you use the <a href="/interface-documentation/sociogram/">Sociogram</a> to generate sex ties between alters and to collect boolean attribute data on HIV status of alters. Let’s imagine that you then want to use a <a href="/interface-documentation/per-alter-form/">Per Alter Form</a> or another name interpreter to capture data on drug use behavior of alters, but only those who are HIV positive <em>and</em> who have a sex relationship with another alter in the network.</p>
+
+<p>To achieve this using network filtering, we implemented the following edge and node rules on the Per Alter Form:</p>
+
+<p><img src="../../assets/img/key-concepts/network-filtering/example.png" alt="Image" /></p>
+
+<p>Applying these rules within this stage determines that only HIV+ nodes who have a sex relationship will be shown. All nodes that do not have a sex relationship will be filtered out - even if they have attribute <code class="language-plaintext highlighter-rouge">HIV_pos = true</code>.</p>
+
+<p class="tip-box caution">If your filter query (the sum of all defined rules within the stage) includes an edge rule, you will also filter alters. For example, if your rule is set to filter the existence of an edge type, such as ‘sex’, any nodes that would become isolates as a result of this query are removed from the filtered network.</p>
+      <h2 id="network-filtering-in-a-side-panel">
+        
+        
+          <a href="#network-filtering-in-a-side-panel" class="anchor-heading" aria-labelledby="network-filtering-in-a-side-panel"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Network Filtering in a Side Panel
+        
+        
+      </h2>
+    
+
+<p>You also have the ability to filter the content of Name Generator <a href="/interface-documentation/name-generator-using-forms/#side-panels">side panels</a> (where they are used). This features works exactly the same way as stage level network filtering, except that the results are only applied to the specific side panel you are configuring. Any filtering you set will apply across all prompts for that stage.</p>
+
+<p>This feature can be particularly useful if you wish to filter elements of a roster. For example, your roster may contain an attribute that represents graduation year that you could use to filter the side panel content for a question about classmates known from a certain year group.</p>
+
+<p><img src="../../assets/img/key-concepts/network-filtering/side-panel.png" alt="Image" /></p>
+
+        
+
+        
+          <hr>
+
+  
+
+
+  <p class="nav-rel">
+    
+      <a href="/key-concepts/interfaces/" class="nav-rel-link">&larr;</a>
+    
+    
+    
+      <a href="/key-concepts/pairing/" class="nav-rel-link">&rarr;</a>
+    
+  </p>
+
+
+        
+
+        
+        
+          <hr>
+          <footer>
+            
+              <p><a href="#top" id="back-to-top">Back to top</a></p>
+            
+
+            <p class="text-small text-grey-dk-100 mb-0">Copyright &copy; 2016-2021 Complex Data Collective.</p>
+
+            
+          </footer>
+        
+
+      </div>
+    </div>
+
+    
+      
+
+      <div class="search-overlay"></div>
+    
+  </div>
+
+  <script type="text/javascript" src="/assets/js/toggle_mode.js"></script>
+
+</body>
+</html>
+

@@ -41,13 +41,15 @@
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Using Interviewer" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research." />
-<meta property="og:description" content="Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research." />
+<meta name="description" content="The start screen" />
+<meta property="og:description" content="The start screen" />
 <link rel="canonical" href="https://documentation.networkcanvas.com/tutorials/using-interviewer/" />
 <meta property="og:url" content="https://documentation.networkcanvas.com/tutorials/using-interviewer/" />
 <meta property="og:site_name" content="Network Canvas Documentation" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-28T14:58:56+00:00" />
 <script type="application/ld+json">
-{"description":"Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://documentation.networkcanvas.com/assets/img/logo.svg"}},"@type":"WebPage","url":"https://documentation.networkcanvas.com/tutorials/using-interviewer/","headline":"Using Interviewer","@context":"https://schema.org"}</script>
+{"description":"The start screen","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://documentation.networkcanvas.com/assets/img/logo.svg"}},"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://documentation.networkcanvas.com/tutorials/using-interviewer/"},"url":"https://documentation.networkcanvas.com/tutorials/using-interviewer/","headline":"Using Interviewer","dateModified":"2021-04-28T14:58:56+00:00","datePublished":"2021-04-28T14:58:56+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -88,10 +90,12 @@
       </svg>
     </symbol>
   </svg>
+  
+  <script type="text/javascript" src="/assets/js/toggle_init.js"></script>
 
   <div class="side-bar">
     <div class="site-header">
-      <a href="https://documentation.networkcanvas.com/" class="site-title lh-tight">
+      <a href="/" class="site-title lh-tight">
   <div class="site-logo"></div>
 
 </a>
@@ -99,65 +103,94 @@
         <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
       </a>
     </div>
-    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
-      
-        <ul class="nav-list"><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/" class="nav-list-link">Home</a></li><li class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/tutorials/" class="nav-list-link">Tutorials</a><ul class="nav-list "><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/tutorials/building-a-protocol/" class="nav-list-link">Building a protocol using Architect</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/tutorials/offline-data-management-workflow/" class="nav-list-link">Offline Data Management Workflow</a></li><li class="nav-list-item  active"><a href="https://documentation.networkcanvas.com/tutorials/using-interviewer/" class="nav-list-link active">Using Interviewer</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/tutorials/using-server/" class="nav-list-link">Using Server to manage a study</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/tutorials/working-with-data/" class="nav-list-link">Working with Network Canvas data in R</a></li></ul></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/installation-guide/" class="nav-list-link">Installation Guide</a></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/project-overview/" class="nav-list-link">Project Overview</a></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/how-to/" class="nav-list-link">How-to Guides</a><ul class="nav-list "><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/choosing-hardware/" class="nav-list-link">Choosing Hardware for a Network Canvas Study</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/configuring-devices/" class="nav-list-link">Configuring Devices Prior To Starting Data Collection</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/server-workspaces/" class="nav-list-link">Creating and Managing Workspaces in Server</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/exporting-data-from-interviewer/" class="nav-list-link">Exporting Data from Interviewer</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/import-a-protocol/" class="nav-list-link">Import a Protocol into Interviewer</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/importing-roster-data/" class="nav-list-link">Importing Roster Data</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/pairing/" class="nav-list-link">Pairing Interviewer Devices with Server</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/how-to/updating-from-beta/" class="nav-list-link">Updating from Beta to the Stable Release</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/reference/" class="nav-list-link">Reference</a><ul class="nav-list "><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/developer-contribution-guide/" class="nav-list-link">Developer Contribution Guide</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/irb-best-practices/" class="nav-list-link">IRB and Security Best Practices</a></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/reference/interface-documentation/" class="nav-list-link">Interface Documentation</a><ul class="nav-list"><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/categorical-bin/" class="nav-list-link">Categorical Bin</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/dyad-census/" class="nav-list-link">Dyad Census</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/ego-form/" class="nav-list-link">Ego Form</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/information/" class="nav-list-link">Information</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/large-roster-name-generator/" class="nav-list-link">Large Roster Name Generator</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/name-generator-using-forms/" class="nav-list-link">Name Generator using Forms</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/name-generator-using-quick-add/" class="nav-list-link">Name Generators using Quick Add</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/narrative/" class="nav-list-link">Narrative</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/ordinal-bin/" class="nav-list-link">Ordinal Bin</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/per-alter-edge-form/" class="nav-list-link">Per Alter Edge Form</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/per-alter-form/" class="nav-list-link">Per Alter Form</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/shared/" class="nav-list-link">Shared Interface Options</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/small-roster-name-generator/" class="nav-list-link">Small Roster Name Generator</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/sociogram/" class="nav-list-link">Sociogram</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/interface-documentation/tie-strength-census/" class="nav-list-link">Tie-Strength Census</a>
-                  </li></ul></li><li class="nav-list-item "><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><a href="https://documentation.networkcanvas.com/reference/key-concepts/" class="nav-list-link">Key Concepts</a><ul class="nav-list"><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/additional-variables/" class="nav-list-link">Additional Variables</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/codebook/" class="nav-list-link">Codebook</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/field-validation/" class="nav-list-link">Field Validation</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/forms/" class="nav-list-link">Forms</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/interfaces/" class="nav-list-link">Interfaces</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/network-filtering/" class="nav-list-link">Network Filtering</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/pairing/" class="nav-list-link">Pairing</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/preview-mode/" class="nav-list-link">Preview Mode</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/prompts/" class="nav-list-link">Prompts</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/resources/" class="nav-list-link">Resources</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/skip-logic/" class="nav-list-link">Skip Logic</a>
-                  </li><li class="nav-list-item ">
-                    <a href="https://documentation.networkcanvas.com/reference/key-concepts/the-protocol-file/" class="nav-list-link">The Protocol File</a>
-                  </li></ul></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/node-labelling/" class="nav-list-link">Node Labelling</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/security-model/" class="nav-list-link">Overview of Security Model</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/testing-strategy/" class="nav-list-link">Project Testing Strategy</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/protocol-file-format/" class="nav-list-link">Protocol File Format</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/protocol-schema-information/" class="nav-list-link">Protocol Schema Information</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/variable-naming/" class="nav-list-link">Variable Naming</a></li><li class="nav-list-item "><a href="https://documentation.networkcanvas.com/reference/variable-types/" class="nav-list-link">Variable Types</a></li></ul></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/citing-the-software/" class="nav-list-link">Citing the Software</a></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/protocol-gallery/" class="nav-list-link">Protocol Gallery</a></li><li class="nav-list-item"><a href="https://documentation.networkcanvas.com/faq/" class="nav-list-link">Frequently Asked Questions</a></li></ul>
+    
+    
 
-      
+
+    <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Home</a></li>
+<li class="nav-list-item"><a href="/installation-guide/" class="nav-list-link">Installation Guide</a></li>
+<li class="nav-list-item"><a href="/project-overview/" class="nav-list-link">Project Overview</a></li>
+<li class="nav-list-item"><a href="/citing-the-software/" class="nav-list-link">Citing the Software</a></li>
+<li class="nav-list-item"><a href="/protocol-gallery/" class="nav-list-link">Protocol Gallery</a></li>
+<li class="nav-list-item"><a href="/faq/" class="nav-list-link">Frequently Asked Questions</a></li>
+</ul>
+
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item active"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">Tutorials</div><ul class="nav-list"><li class="nav-list-item"><a href="/tutorials/building-a-protocol/" class="nav-list-link">Building a protocol using Architect</a></li>
+<li class="nav-list-item"><a href="/tutorials/offline-data-management-workflow/" class="nav-list-link">Offline Data Management Workflow</a></li>
+<li class="nav-list-item active"><a href="/tutorials/using-interviewer/" class="nav-list-link active">Using Interviewer</a></li>
+<li class="nav-list-item"><a href="/tutorials/using-server/" class="nav-list-link">Using Server to manage a study</a></li>
+<li class="nav-list-item"><a href="/tutorials/working-with-data/" class="nav-list-link">Working with Network Canvas data in R</a></li>
+</ul>
+</li>
+          </ul>
+        
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">How-To Guides</div><ul class="nav-list"><li class="nav-list-item"><a href="/how-to/choosing-hardware/" class="nav-list-link">Choosing Hardware for a Network Canvas Study</a></li>
+<li class="nav-list-item"><a href="/how-to/configuring-devices/" class="nav-list-link">Configuring Devices Prior To Starting Data Collection</a></li>
+<li class="nav-list-item"><a href="/how-to/server-workspaces/" class="nav-list-link">Creating and Managing Workspaces in Server</a></li>
+<li class="nav-list-item"><a href="/how-to/exporting-data-from-interviewer/" class="nav-list-link">Exporting Data from Interviewer</a></li>
+<li class="nav-list-item"><a href="/how-to/import-a-protocol/" class="nav-list-link">Import a Protocol into Interviewer</a></li>
+<li class="nav-list-item"><a href="/how-to/importing-roster-data/" class="nav-list-link">Importing Roster Data</a></li>
+<li class="nav-list-item"><a href="/how-to/pairing/" class="nav-list-link">Pairing Interviewer Devices with Server</a></li>
+<li class="nav-list-item"><a href="/how-to/updating-from-beta/" class="nav-list-link">Updating from Beta to the Stable Release</a></li>
+</ul>
+</li>
+          </ul>
+        
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">Interface Documentation</div><ul class="nav-list"><li class="nav-list-item"><a href="/interface-documentation/categorical-bin/" class="nav-list-link">Categorical Bin</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/dyad-census/" class="nav-list-link">Dyad Census</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/ego-form/" class="nav-list-link">Ego Form</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/information/" class="nav-list-link">Information</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/large-roster-name-generator/" class="nav-list-link">Large Roster Name Generator</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/name-generator-using-forms/" class="nav-list-link">Name Generator using Forms</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/name-generator-using-quick-add/" class="nav-list-link">Name Generators using Quick Add</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/narrative/" class="nav-list-link">Narrative</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/ordinal-bin/" class="nav-list-link">Ordinal Bin</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/per-alter-edge-form/" class="nav-list-link">Per Alter Edge Form</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/per-alter-form/" class="nav-list-link">Per Alter Form</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/shared/" class="nav-list-link">Shared Interface Options</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/small-roster-name-generator/" class="nav-list-link">Small Roster Name Generator</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/sociogram/" class="nav-list-link">Sociogram</a></li>
+<li class="nav-list-item"><a href="/interface-documentation/tie-strength-census/" class="nav-list-link">Tie-Strength Census</a></li>
+</ul>
+</li>
+          </ul>
+        
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">Key Concepts</div><ul class="nav-list"><li class="nav-list-item"><a href="/key-concepts/additional-variables/" class="nav-list-link">Additional Variables</a></li>
+<li class="nav-list-item"><a href="/key-concepts/codebook/" class="nav-list-link">Codebook</a></li>
+<li class="nav-list-item"><a href="/key-concepts/field-validation/" class="nav-list-link">Field Validation</a></li>
+<li class="nav-list-item"><a href="/key-concepts/forms/" class="nav-list-link">Forms</a></li>
+<li class="nav-list-item"><a href="/key-concepts/input-controls/" class="nav-list-link">Input Controls</a></li>
+<li class="nav-list-item"><a href="/key-concepts/interfaces/" class="nav-list-link">Interfaces</a></li>
+<li class="nav-list-item"><a href="/key-concepts/network-filtering/" class="nav-list-link">Network Filtering</a></li>
+<li class="nav-list-item"><a href="/key-concepts/pairing/" class="nav-list-link">Pairing</a></li>
+<li class="nav-list-item"><a href="/key-concepts/preview-mode/" class="nav-list-link">Preview Mode</a></li>
+<li class="nav-list-item"><a href="/key-concepts/prompts/" class="nav-list-link">Prompts</a></li>
+<li class="nav-list-item"><a href="/key-concepts/resources/" class="nav-list-link">Resources</a></li>
+<li class="nav-list-item"><a href="/key-concepts/skip-logic/" class="nav-list-link">Skip Logic</a></li>
+<li class="nav-list-item"><a href="/key-concepts/the-protocol-file/" class="nav-list-link">The Protocol File</a></li>
+</ul>
+</li>
+          </ul>
+        
+          <ul class="nav-list nav-category-list">
+            <li class="nav-list-item"><a href="#" class="nav-list-expander"><svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg></a><div class="nav-category">Technical Reference</div><ul class="nav-list"><li class="nav-list-item"><a href="/reference/developer-contribution-guide/" class="nav-list-link">Developer Contribution Guide</a></li>
+<li class="nav-list-item"><a href="/reference/irb-best-practices/" class="nav-list-link">IRB and Security Best Practices</a></li>
+<li class="nav-list-item"><a href="/reference/node-labelling/" class="nav-list-link">Node Labelling</a></li>
+<li class="nav-list-item"><a href="/reference/security-model/" class="nav-list-link">Overview of Security Model</a></li>
+<li class="nav-list-item"><a href="/reference/testing-strategy/" class="nav-list-link">Project Testing Strategy</a></li>
+<li class="nav-list-item"><a href="/reference/protocol-file-format/" class="nav-list-link">Protocol File Format</a></li>
+<li class="nav-list-item"><a href="/reference/protocol-schema-information/" class="nav-list-link">Protocol Schema Information</a></li>
+<li class="nav-list-item"><a href="/reference/variable-naming/" class="nav-list-link">Variable Naming</a></li>
+<li class="nav-list-item"><a href="/reference/variable-types/" class="nav-list-link">Variable Types</a></li>
+</ul>
+</li>
+          </ul>
+        
     </nav>
     <footer class="site-footer">
       This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
@@ -192,17 +225,24 @@
       
     </div>
     <div id="main-content-wrap" class="main-content-wrap">
+
       
-        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list">
-              
-                <li class="breadcrumb-nav-list-item"><a href="https://documentation.networkcanvas.com/tutorials/">Tutorials</a></li>
-              
-              <li class="breadcrumb-nav-list-item"><span>Using Interviewer</span></li>
-            </ol>
-          </nav>
-        
-      
+
+<nav class="nav-rel">
+  
+    <a href="/tutorials/offline-data-management-workflow/" class="nav-rel-link">&larr;</a>
+  
+  
+  
+    <a href="/tutorials/using-server/" class="nav-rel-link">&rarr;</a>
+  
+</nav>
+
+
+
+
+
+
       <div id="main-content" class="main-content" role="main">
         
           <h1>
@@ -319,9 +359,9 @@
 
 <p><img src="/assets/img/sample-protocol/welcome-section.png" alt="image" class="img-float-left" />The <strong>welcome section</strong> which contains links to install the sample protocol, visit the documentation website, or watch an overview video. The welcome section can be hidden when no longer needed, using the toggle in the top right hand corner. The welcome section also contains a button (the cog icon) that opens the main device settings screen. We encourage you to open the settings screen and explore the various options.</p>
 
-<p><img src="/assets/img/sample-protocol/protocols-section.png" alt="image" class="img-float-left" />The <strong>protocols section</strong> which allows you to quickly import a <a href="/reference/key-concepts/the-protocol-file/">Network Canvas protocol file</a> from a URL or by choosing a file ( and later, also by importing from a computer running Server). Once you have installed one or more protocol files, this section will also contain a button that allows you to manage your installed protocols.</p>
+<p><img src="/assets/img/sample-protocol/protocols-section.png" alt="image" class="img-float-left" />The <strong>protocols section</strong> which allows you to quickly import a <a href="/key-concepts/the-protocol-file/">Network Canvas protocol file</a> from a URL or by choosing a file ( and later, also by importing from a computer running Server). Once you have installed one or more protocol files, this section will also contain a button that allows you to manage your installed protocols.</p>
 
-<p><img src="/assets/img/sample-protocol/server-section.png" alt="image" class="img-float-left" /> The <strong>server status section</strong> which initially shows nearby computers running Server that you may wish to <a href="/reference/key-concepts/pairing/">pair with</a>, and once paired shows the communication status of the device with your paired Server.</p>
+<p><img src="/assets/img/sample-protocol/server-section.png" alt="image" class="img-float-left" /> The <strong>server status section</strong> which initially shows nearby computers running Server that you may wish to <a href="/key-concepts/pairing/">pair with</a>, and once paired shows the communication status of the device with your paired Server.</p>
 
 <p>As you use Interviewer to collect data, sections and options will appear that expose additional functionality as you need it.</p>
       <h2 id="installing-and-managing-protocols">
@@ -464,9 +504,9 @@
 
 <p>With Network Canvas, each interview is made up of a series of screens that we call “stages”, where a specific task is to be completed. You can have as many stages in your interview as you feel you need, and as you will see in other tutorials, there are many ways to structure your interview using different combinations of screens and different front or back loadings of tasks.</p>
 
-<p>Each stage is an <em>instance</em> of a category of task-based screen that we call an <a href="/reference/key-concepts/interfaces/">“Interface”</a>. That is to say that an Interface is the broad “type” of task, and a stage is the specifically configured version of that task embedded in your interview.</p>
+<p>Each stage is an <em>instance</em> of a category of task-based screen that we call an <a href="/key-concepts/interfaces/">“Interface”</a>. That is to say that an Interface is the broad “type” of task, and a stage is the specifically configured version of that task embedded in your interview.</p>
 
-<p>For example, Network Canvas has several “name generator” <strong>Interfaces</strong>, but the specific screen at the start of your interview may be called the “person name generator <strong>stage</strong>”. Each Interface is designed for a specific data collection task, such as generating names, collecting ordinal data, or showing a form. Each Interface has <a href="/reference/interface-documentation/">dedicated documentation</a> that tells you about its features, and gives hints about when and where you should use it.</p>
+<p>For example, Network Canvas has several “name generator” <strong>Interfaces</strong>, but the specific screen at the start of your interview may be called the “person name generator <strong>stage</strong>”. Each Interface is designed for a specific data collection task, such as generating names, collecting ordinal data, or showing a form. Each Interface has dedicated documentation (see the “Interface Documentation” section on the left) that explains its features, and gives hints about when and where you should use it.</p>
       <h3 id="the-information-interface">
         
         
@@ -478,7 +518,7 @@
 
 <p><img src="/assets/img/sample-protocol/welcome-info.png" alt="Image" /></p>
 
-<p>The first thing we see after starting the interview is the welcome stage, which is configured using the <a href="/reference/interface-documentation/information/">information interface</a>. The information interface can be used to communicate information to a participant, such as a study description or instructions for completing a task on a subsequent screen. It can also contain media, such as audio, images or video. We have used numerous Information Interfaces throughout this sample protocol to clarify the primary tasks performed in Interviewer, but we will not describe them in this article to avoid redundancy.</p>
+<p>The first thing we see after starting the interview is the welcome stage, which is configured using the <a href="/interface-documentation/information/">information interface</a>. The information interface can be used to communicate information to a participant, such as a study description or instructions for completing a task on a subsequent screen. It can also contain media, such as audio, images or video. We have used numerous Information Interfaces throughout this sample protocol to clarify the primary tasks performed in Interviewer, but we will not describe them in this article to avoid redundancy.</p>
       <h3 id="name-generators">
         
         
@@ -498,11 +538,11 @@
       </h4>
     
 
-<p>Our first stage uses the <a href="/reference/interface-documentation/name-generator-using-quick-add/">“quick add”</a> name generator Interface, which is designed to be ultra-low response burden, and only require that a participant provide a name or label to create a node. We add nodes by clicking the button on the bottom right, typing a name, and pressing enter (or clicking the node icon). When you are finished, either click the button again, or click away, to close the input.</p>
+<p>Our first stage uses the <a href="/interface-documentation/name-generator-using-quick-add/">“quick add”</a> name generator Interface, which is designed to be ultra-low response burden, and only require that a participant provide a name or label to create a node. We add nodes by clicking the button on the bottom right, typing a name, and pressing enter (or clicking the node icon). When you are finished, either click the button again, or click away, to close the input.</p>
 
 <p><img src="/assets/img/sample-protocol/quick-add.png" alt="Image" /></p>
 
-<p>The stage is configured with a single <a href="/reference/key-concepts/prompts/">prompt</a> (“Within the past 6 months, who have you felt close to, or discussed important personal matters with”). Prompts are defined by the researcher for a given stage, and frame the data collection task. Many Interfaces support the use of multiple prompts on a stage. If a stage is configured with multiple prompts, the “next” and “previous” buttons will move between them automatically.</p>
+<p>The stage is configured with a single <a href="/key-concepts/prompts/">prompt</a> (“Within the past 6 months, who have you felt close to, or discussed important personal matters with”). Prompts are defined by the researcher for a given stage, and frame the data collection task. Many Interfaces support the use of multiple prompts on a stage. If a stage is configured with multiple prompts, the “next” and “previous” buttons will move between them automatically.</p>
       <h4 id="side-panels">
         
         
@@ -520,14 +560,14 @@
 
 <ol>
   <li>
-    <p>To allow participants to nominate alters they have already mentioned <em>again</em> in response to later prompts. For example, if a first prompt asks “Who are you close to?”, and second prompt asks “Who are your family members?”, the participant may wish to nominate existing close alters as also being family members. This is especially powerful when used in combination with the <a href="/reference/key-concepts/additional-variables/">assign additional variables</a> feature.</p>
+    <p>To allow participants to nominate alters they have already mentioned <em>again</em> in response to later prompts. For example, if a first prompt asks “Who are you close to?”, and second prompt asks “Who are your family members?”, the participant may wish to nominate existing close alters as also being family members. This is especially powerful when used in combination with the <a href="/key-concepts/additional-variables/">assign additional variables</a> feature.</p>
   </li>
   <li>
     <p>As a container for displaying small amounts of roster data, where you still need to retain the ability for the participant to add network members not listed in the roster.</p>
   </li>
 </ol>
 
-<p>You can display up to two panels, with different content in each. More information about can panels can be <a href="/reference/interface-documentation/name-generator-using-forms/#side-panels">found here</a>.</p>
+<p>You can display up to two panels, with different content in each. More information about can panels can be <a href="/interface-documentation/name-generator-using-forms/#side-panels">found here</a>.</p>
       <h4 id="forms">
         
         
@@ -539,7 +579,7 @@
 
 <p>Moving forwards until you arrive at the next name generator, you will find a prompt asking about clinics or healthcare providers. This stage demonstrates two important concepts.</p>
 
-<p>The first is that the name generators in Network Canvas can be configured to collect more in-depth node information at the time of elicitation. In this example, clicking the “add” button in the bottom right shows a form with three fields (name, visit date, and treatment summary). This is the <a href="/reference/interface-documentation/name-generator-using-forms/">“form”</a> version of the name generator interface.</p>
+<p>The first is that the name generators in Network Canvas can be configured to collect more in-depth node information at the time of elicitation. In this example, clicking the “add” button in the bottom right shows a form with three fields (name, visit date, and treatment summary). This is the <a href="/interface-documentation/name-generator-using-forms/">“form”</a> version of the name generator interface.</p>
 
 <p><img src="/assets/img/sample-protocol/using-forms.png" alt="Image" /></p>
 
@@ -595,7 +635,7 @@
 
 <p>For other situations where general purpose data collection is required, we provided form-based interfaces targeted at both nodes and edges. By clicking next, we come to a stage using the per-alter form Interface. This Interface can be used to ask name interpreter questions about alters the participant has nominated. The researcher is able to choose which alter type is used, as well as to define the form itself. Any data in these forms is stored directly on the alter as an attribute.</p>
 
-<p>In this particular Per Alter Form, we ask whether you visited or studied at the university you nominated and to indicate your level of satisfaction with the experience. The Per Alter Form stage will cycle through all alters of a given type in the interview network, unless <a href="/reference/key-concepts/skip-logic/">skip logic</a> or <a href="/reference/key-concepts/network-filtering/">network filtering</a> have been implemented causing the stage to be skipped altogether or filtering only a subset of the alters on the stage, respectively. As with all <a href="/reference/key-concepts/forms/">forms</a> used by Interviewer, the Per Alter Form allows you to capture different types of data in a series of fields utilizing a variety of input controls.</p>
+<p>In this particular Per Alter Form, we ask whether you visited or studied at the university you nominated and to indicate your level of satisfaction with the experience. The Per Alter Form stage will cycle through all alters of a given type in the interview network, unless <a href="/key-concepts/skip-logic/">skip logic</a> or <a href="/key-concepts/network-filtering/">network filtering</a> have been implemented causing the stage to be skipped altogether or filtering only a subset of the alters on the stage, respectively. As with all <a href="/key-concepts/forms/">forms</a> used by Interviewer, the Per Alter Form allows you to capture different types of data in a series of fields utilizing a variety of input controls.</p>
 
 <p><img src="/assets/img/sample-protocol/per-alter-form.png" alt="Image" /></p>
 
@@ -609,7 +649,7 @@
       </h3>
     
 
-<p>Next is the <a href="/reference/interface-documentation/sociogram/">sociogram Interface</a>. Network Canvas has been heavily inspired by the long tradition of using visual methods in social networks research, which often features the sociogram as a means of presenting the network in a way that is intuitive to participants.</p>
+<p>Next is the <a href="/interface-documentation/sociogram/">sociogram Interface</a>. Network Canvas has been heavily inspired by the long tradition of using visual methods in social networks research, which often features the sociogram as a means of presenting the network in a way that is intuitive to participants.</p>
 
 <p>The sociogram in Interviewer is capable of three main tasks:</p>
 
@@ -667,7 +707,7 @@
       </h3>
     
 
-<p>One of the simplest ways to reduce response burden in an interview is to avoid showing the participant tasks that are not applicable or redundant based on earlier answers. In conventional survey software sections of an interview can be skipped based on responses, but Network Canvas extends this concept and allows the researcher to construct powerful queries built on the structure of the interview network itself. These queries can be applied to both <a href="/reference/key-concepts/skip-logic/">skip logic</a> and stage level <a href="/reference/key-concepts/network-filtering/">network filtering</a>.</p>
+<p>One of the simplest ways to reduce response burden in an interview is to avoid showing the participant tasks that are not applicable or redundant based on earlier answers. In conventional survey software sections of an interview can be skipped based on responses, but Network Canvas extends this concept and allows the researcher to construct powerful queries built on the structure of the interview network itself. These queries can be applied to both <a href="/key-concepts/skip-logic/">skip logic</a> and stage level <a href="/key-concepts/network-filtering/">network filtering</a>.</p>
 
 <p><img src="/assets/img/sample-protocol/catbin-other-rules.png" alt="Image" /></p>
 
@@ -687,7 +727,7 @@
       </h3>
     
 
-<p>The final stage of the sample protocol demonstrates an Interface that is designed for qualitative personal network’s research. The <a href="/reference/interface-documentation/narrative/">narrative </a> Interface does not collect any additional data, but rather can map data collected elsewhere in the interview to aspects of the visual representation of the network. It therefore aims to represent aspects of the participant’s network back to them, with the intent to facilitate narrative interrogation of the data in an interview setting.</p>
+<p>The final stage of the sample protocol demonstrates an Interface that is designed for qualitative personal network’s research. The <a href="/interface-documentation/narrative/">narrative </a> Interface does not collect any additional data, but rather can map data collected elsewhere in the interview to aspects of the visual representation of the network. It therefore aims to represent aspects of the participant’s network back to them, with the intent to facilitate narrative interrogation of the data in an interview setting.</p>
 
 <p><img src="/assets/img/sample-protocol/narrative.png" alt="Image" /></p>
 
@@ -742,6 +782,23 @@
         
 
         
+          <hr>
+
+  
+
+
+  <p class="nav-rel">
+    
+      <a href="/tutorials/offline-data-management-workflow/" class="nav-rel-link">&larr;</a>
+    
+    
+    
+      <a href="/tutorials/using-server/" class="nav-rel-link">&rarr;</a>
+    
+  </p>
+
+
+        
 
         
         
@@ -766,6 +823,9 @@
       <div class="search-overlay"></div>
     
   </div>
+
+  <script type="text/javascript" src="/assets/js/toggle_mode.js"></script>
+
 </body>
 </html>
 
