@@ -21,40 +21,92 @@ defaults:
     values:
       layout: "page"
   - scope:
-      path: "tutorials"
+      path: "_tutorials"
     values:
       toc: true
       layout: "tutorial"
   - scope:
-      path: "how-to"
+      path: "_how-to"
     values:
       toc: true
       layout: "page"
   - scope:
-      path: "reference/key-concepts"
+      path: "_key-concepts"
     values:
       layout: "key-concept"
   - scope:
-      path: "reference/interface-documentation"
+      path: "_interface-documentation"
     values:
       layout: "interface-documentation"
-remote_theme: pmarsceill/just-the-docs
+remote_theme: pdmosses/just-the-docs@combination-rec-nav
 color_scheme: network-canvas
 # Back to top link
 back_to_top: true
 back_to_top_text: "Back to top"
 
 footer_content: "Copyright &copy; 2016-2021 Complex Data Collective."
+# Sort order for navigation links
+# nav_sort: case_insensitive # default, equivalent to nil
+nav_sort: case_sensitive # Capital letters sorted before lowercase
 
+# Include links to parent and sibling pages when showing the automatic TOC. Default is false
+nav_next_prev: true
+#
+# The default arrows can be changed to other characters or words
+# nav_prev_text: "&larr;"
+# nav_up_text:   "&uarr;"
+# nav_next_text: "&rarr;"
+
+# Caching navigation links
+nav_cache: true # default, equivalent to nil
 plugins:
   - jekyll-feed
   - jekyll-relative-links
   - jekyll-toc
+  - jekyll-include-cache
+
+relative_links:
+  enabled:     true
+  collections: true
+
 search_enabled: true
 aux_links:
   Network Canvas Home:
   - "//networkcanvas.com"
 permalink: pretty
+collections:
+  tutorials:
+    permalink: "/:collection/:path/"
+    output: true
+  how-to:
+    permalink: "/:collection/:path/"
+    output: true
+  interface-documentation:
+    permalink: "/:collection/:path/"
+    output: true
+  key-concepts:
+    permalink: "/:collection/:path/"
+    output: true
+  reference:
+    permalink: "/:collection/:path/"
+    output: true
+just_the_docs:
+  collections:
+    tutorials:
+      name: "Tutorials"
+      nav_fold: true
+    how-to:
+      name: "How-To Guides"
+      nav_fold: true
+    interface-documentation:
+      name: "Interface Documentation"
+      nav_fold: true
+    key-concepts:
+      name: "Key Concepts"
+      nav_fold: true
+    reference:
+      name: "Technical Reference"
+      nav_fold: true
 ga_tracking: "UA-100029443-1"
 exclude:
   - "Gemfile"
