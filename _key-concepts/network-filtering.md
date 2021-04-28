@@ -8,7 +8,7 @@ definition: This feature allows you to only show a subset of nodes or edges on a
 
 Network filtering is a configuration feature you will find in several areas of Architect. Simply put, it allows you to define one or more rules that determine which nodes or edges should be shown on a given stage (or in a side panel - [see below](#network-filtering-in-a-side-panel)). It can be used to only show a subset of the network.
 
-This is particularly useful in cases where the content of the stage does not apply to all network entities. Consider the example of an interview protocol with two stages - a [Name Generator](../interface-documentation/name-generator-using-forms.md), and an [Ordinal Bin](../interface-documentation/ordinal-bin.md). On the first stage, for each alter named the participant is asked if they play sports with the individual. The second stage asks "how often do you play sports with each of these people?". Filtering the network for this second stage to show only those alters with the "plays sports with" attribute will reduce the response burden of the task, and will make the interview protocol more efficient.
+This is particularly useful in cases where the content of the stage does not apply to all network entities. Consider the example of an interview protocol with two stages - a [Name Generator](../_interface-documentation/name-generator-using-forms.md), and an [Ordinal Bin](../_interface-documentation/ordinal-bin.md). On the first stage, for each alter named the participant is asked if they play sports with the individual. The second stage asks "how often do you play sports with each of these people?". Filtering the network for this second stage to show only those alters with the "plays sports with" attribute will reduce the response burden of the task, and will make the interview protocol more efficient.
 
 Network filtering is different from [skip logic](./skip-logic.md)! Although the two sound similar in principle, they achieve very different design goals. Whereas network filtering determines which nodes to show *within* a stage, skip logic determines if a stage should be shown at all. Consult the article on [skip logic](./skip-logic.md) to learn more.
 {: .tip-box}
@@ -47,7 +47,7 @@ This means that the choice of join operator can have an extremely significant im
 
 Since network filtering can be confusing to new users, here is an extended example to illustrate the feature that includes both node and edge rules.
 
-Consider an interview where you use the [Sociogram](../interface-documentation/sociogram.md) to generate sex ties between alters and to collect boolean attribute data on HIV status of alters. Let's imagine that you then want to use a [Per Alter Form](../interface-documentation/per-alter-form.md) or another name interpreter to capture data on drug use behavior of alters, but only those who are HIV positive *and* who have a sex relationship with another alter in the network.
+Consider an interview where you use the [Sociogram](../_interface-documentation/sociogram.md) to generate sex ties between alters and to collect boolean attribute data on HIV status of alters. Let's imagine that you then want to use a [Per Alter Form](../_interface-documentation/per-alter-form.md) or another name interpreter to capture data on drug use behavior of alters, but only those who are HIV positive *and* who have a sex relationship with another alter in the network.
 
 To achieve this using network filtering, we implemented the following edge and node rules on the Per Alter Form:
 
@@ -60,7 +60,7 @@ If your filter query (the sum of all defined rules within the stage) includes an
 
 ## Network Filtering in a Side Panel
 
-You also have the ability to filter the content of Name Generator [side panels](../interface-documentation/name-generator-using-forms.md#side-panels) (where they are used). This features works exactly the same way as stage level network filtering, except that the results are only applied to the specific side panel you are configuring. Any filtering you set will apply across all prompts for that stage.
+You also have the ability to filter the content of Name Generator [side panels](../_interface-documentation/name-generator-using-forms.md#side-panels) (where they are used). This features works exactly the same way as stage level network filtering, except that the results are only applied to the specific side panel you are configuring. Any filtering you set will apply across all prompts for that stage.
 
 This feature can be particularly useful if you wish to filter elements of a roster. For example, your roster may contain an attribute that represents graduation year that you could use to filter the side panel content for a question about classmates known from a certain year group.
 

@@ -12,14 +12,14 @@ bad:
   - Set all properties to be searchable. This will cause slow performance and less accurate search results. Ensure that you test your search feature thoroughly.
 
 good:
-  - Ensure that the roster data file used has `name` attribute to avoid seeing "No name variable!" on your cards. See our article on [node labelling](../../node-labelling) for more information on this topic.
+  - Ensure that the roster data file used has `name` attribute to avoid seeing "No name variable!" on your cards. See our article on [node labelling](../../reference/node-labelling) for more information on this topic.
   - Configure the display options of the cards to help improve a participant's ability to identify and disambiguate nodes within the roster.
   - Define and test appropriate searchable properties and search accuracy criteria to help participants locate nodes within the roster.
 ---
 
 Name Generators are one of the fundamental components of a network interview. They allow your participant to create alters, thereby describing one of the two main entities in your study's networks.
 
-There are four name generator [Interfaces](../key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
+There are four name generator [Interfaces](../_key-concepts/interfaces.md) in Network Canvas that can be added to your study, all of which can be configured within Architect.
 
 Each of these Interfaces is designed for a specific type of alter elicitation, with several associated advantages and disadvantages. Although they have some configuration options that are [shared with all other Network Canvas Interfaces](./shared.md), this article will focus on options specific to roster based name generators.
 
@@ -30,9 +30,9 @@ Roster name generators are useful when you have a known set of network members t
 
 ## Defining a Roster
 
-Both of these interfaces require you to have a datafile that represents your roster. See our article on [importing roster data](../../../how-to/importing-roster-data/) for more information about how to create such a file. Have this file, or a suitable mock file, ready before you attempt to configure either of these interfaces.
+Both of these interfaces require you to have a datafile that represents your roster. See our article on [importing roster data](../_how-to/importing-roster-data.md) for more information about how to create such a file. Have this file, or a suitable mock file, ready before you attempt to configure either of these interfaces.
 
-We have tested a 60,000 node roster in the Large Roster Name Generator with success, however, rosters of this size are not without problems. If your study requires such a roster, please be prepared for the loading and search functions to slow down considerably. The upper limit of this interface is largely dependent on both the device you use and your usability threshold, so a powerful laptop might be required particularly for larger datasets. For information on devices, please see our article on [choosing a device for your study](../../../how-to/choosing-hardware).
+We have tested a 60,000 node roster in the Large Roster Name Generator with success, however, rosters of this size are not without problems. If your study requires such a roster, please be prepared for the loading and search functions to slow down considerably. The upper limit of this interface is largely dependent on both the device you use and your usability threshold, so a powerful laptop might be required particularly for larger datasets. For information on devices, please see our article on [choosing a device for your study](../_how-to/choosing-hardware.md).
 {: .key-concept data-title="Roster size constraints"}
 
 ## Large Roster Name Generator

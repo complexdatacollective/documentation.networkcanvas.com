@@ -37,7 +37,7 @@ Once you have created or opened a protocol, you will be taken to the **protocol 
 
 ![Image](../../assets/img/architect-guide/overview-screen.png)
 
-The panel at the top is the protocol card that you will see when you import this protocol into Server or Interviewer. It shows the protocol name and description, and has two buttons for accessing the protocol's [resource library](../reference/key-concepts/resources.md) and managing the [codebook](../reference/key-concepts/codebook.md) (these areas are discussed later). The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.
+The panel at the top is the protocol card that you will see when you import this protocol into Server or Interviewer. It shows the protocol name and description, and has two buttons for accessing the protocol's [resource library](../_key-concepts/resources.md) and managing the [codebook](../_key-concepts/codebook.md) (these areas are discussed later). The protocol description is optional. Whatever you enter will show up in the Interviewer App on the start screen, and when browsing the list of available protocols from Server.
 
 In the bottom left, you can see the "Return to Start Screen" button. Clicking this button will take you out of the current protocol, and back to the start screen.
 
@@ -216,7 +216,7 @@ Next we will develop a name generator that uses a small roster brought in as an 
 
 As we did in prior name generators above, we will first select the interface we want to configure (Small Roster Name Generator), add a stage name, and create a new node type for "Classmate".
 
-Next we will select the external data source to bring into the protocol that will populate the nodes on the roster. For this example, we have used a fictitious classroom roster. To use the same roster as the sample protocol, please [click here](../class-roster.csv) to download our CSV file. Alternatively, use any other roster you have on hand.
+Next we will select the external data source to bring into the protocol that will populate the nodes on the roster. For this example, we have used a fictitious classroom roster. To use the same roster as the sample protocol, please [click here](../assets/class-roster.csv) to download our CSV file. Alternatively, use any other roster you have on hand.
 
 Just as you added resources to the Information Interface above, you will also browse for your external data source from the protocol resource library if you saved it there or else from another location on your device.
 
@@ -226,7 +226,7 @@ We will then define what display properties are used to identify the nodes in th
 
 We can optionally choose to include sorting controls. Sorting controls are especially useful when a roster is large enough to make discoverability difficult at first glance. In this example, we choose to implement an initial sort order that uses the "first_name" variable to order the roster cards in an ascending order.
 
-Refer to our Interface Documentation for more in depth instruction, including useful Do's and Don'ts of working with [roster data](../reference/interface-documentation/small-roster-name-generator.md).
+Refer to our Interface Documentation for more in depth instruction, including useful Do's and Don'ts of working with [roster data](../_interface-documentation/small-roster-name-generator.md).
 {: .tip-box}
 
 Last, we implement a prompt for the stage, following the same process we did in the previous stages. We enter the prompt that includes instructions for how to nominate a node from the roster, "Please select any members of your degree class that you spend time with **other than when studying**. Tap a card to select, and press the **down arrow** when you are finished."
@@ -236,7 +236,7 @@ Last, we implement a prompt for the stage, following the same process we did in 
 
 By our definition, large rosters are datasets with more than 100 nodes. 
 
-Following the example from the prior stage, we will first select the interface we want to configure (Large Roster Name Generator), add a stage name, and create a new node type, this time for "University". Again, we will pull in a data source we plan to use to populate our roster. In our example, we use a large CSV that includes universities around the world. [Click here](../class-roster.csv) to download it.
+Following the example from the prior stage, we will first select the interface we want to configure (Large Roster Name Generator), add a stage name, and create a new node type, this time for "University". Again, we will pull in a data source we plan to use to populate our roster. In our example, we use a large CSV that includes universities around the world. [Click here](../assets/world-universities.csv) to download it.
 
 By default, the roster cards will use the "name" attribute from your external data file as the main card title. In this example, we choose to also include "website" as an attribute to display. 
 
@@ -276,7 +276,7 @@ Next, we will create the following fields with associated variables, question pr
 
 ![Image](../../assets/img/architect-guide/ego-form-fields.png)
 
-To demonstrate the range of input control options, we implemented far more fields than are likely to be best practice for a form within an interview. You can [learn more about input controls here](../reference/key-concepts/input-controls.md)
+To demonstrate the range of input control options, we implemented far more fields than are likely to be best practice for a form within an interview. You can [learn more about input controls here](../_key-concepts/input-controls.md)
 
 We click "Save and Return" and go back to the timeline view to implement the next stage.
 

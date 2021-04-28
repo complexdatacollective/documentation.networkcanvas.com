@@ -21,12 +21,12 @@ Set the form heading, and then create fields for each of the variables you wish 
 
 When creating a new field, you will first either create a new variable or select an existing one to use from the variable chooser. Next, you will type the question prompt to be shown next to the input control.
 
-Next you must decide which [input control](../input-controls) to use, which for new variables will determine the type that this variable will be set to.
+Next you must decide which [input control](./input-controls.md) to use, which for new variables will determine the type that this variable will be set to.
 
 Remember that once a variable type has been set, such as by choosing its input type when it is first used, it cannot be changed later. You may still adjust the specific input control on your form even once the type is set, as long as the input control is compatible with the variable type.
 {: .tip-box .caution}
 
-After setting the input control, set any [variable specific options](../variable-types.md) and configure the [validation options](./field-validation.md) you require.
+After setting the input control, set any [variable specific options](../_reference/variable-types.md) and configure the [validation options](./field-validation.md) you require.
 
 ![Image](../../assets/img/key-concepts/forms/field.png)
 

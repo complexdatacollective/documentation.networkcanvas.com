@@ -17,7 +17,7 @@ The Categorical Bin is a name interpreter Interface that collects nominal data o
 
 ## Configuring Categorical Bin
 
-An Categorical Bin screen can include multiple [prompts](../key-concepts/prompts.md), each of which relates to a single [categorical variable](../variable-types.md#categorical).
+An Categorical Bin screen can include multiple [prompts](../_key-concepts/prompts.md), each of which relates to a single [categorical variable](../_reference/variable-types.md#categorical).
 
 Additionally an _other_ variable can be specified for custom responses that don't fit into the pre-configured categories.
 

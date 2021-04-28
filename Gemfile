@@ -27,5 +27,5 @@ gem "jekyll-watch"
 gem "jekyll-include-cache"
 
 # Help us to find dead links
-gem 'html-proofer'
+# gem 'html-proofer'
 

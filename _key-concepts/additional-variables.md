@@ -5,7 +5,7 @@ title: Additional Variables
 
 definition: The additional variables feature provides a way to automatically assign a the value of a variable when creating a node or edge.
 ---
-"Additional variables" are defined on individual prompts in [Name Generator](../interface-documentation/name-generator-using-forms.md) stages and automatically assigned to any entity that is active on that given prompt. These variables are optional, and can be used to keep track of where within an interview an entity was used, or to add to an element. Additional variables are boolean values, either "true" or "false". These variables can then be used in skip logic or filtering rules.
+"Additional variables" are defined on individual prompts in [Name Generator](../_interface-documentation/name-generator-using-forms.md) stages and automatically assigned to any entity that is active on that given prompt. These variables are optional, and can be used to keep track of where within an interview an entity was used, or to add to an element. Additional variables are boolean values, either "true" or "false". These variables can then be used in skip logic or filtering rules.
 
 ![Managing additional variables on a Name Generator prompt in Architect](../../assets/img/key-concepts/additional-variables/additional-variables.png){:standalone}
 

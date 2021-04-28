@@ -18,10 +18,10 @@ The Ordinal Bin is a name interpreter Interface that captures ordinal data on th
 
 ## Configuring Ordinal Bin
 
-A single node type is selectable per screen. This screen supports [filtering](../key-concepts/network-filtering.md) those nodes by their attributes.
+A single node type is selectable per screen. This screen supports [filtering](../_key-concepts/network-filtering.md) those nodes by their attributes.
 
 ![Image](/assets/img/interface-documentation/ordinal-bin/architect_1.png)
 
-An Ordinal Bin screen can include multiple [prompts](../key-concepts/prompts.md), each of which relates to a single [ordinal variable](../variable-types.md#ordinal).
+An Ordinal Bin screen can include multiple [prompts](../_key-concepts/prompts.md), each of which relates to a single [ordinal variable](../_reference/variable-types.md#ordinal).
 
 ![Image](/assets/img/interface-documentation/ordinal-bin/architect_2.png)

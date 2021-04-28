@@ -64,6 +64,11 @@ plugins:
   - jekyll-relative-links
   - jekyll-toc
   - jekyll-include-cache
+
+relative_links:
+  enabled:     true
+  collections: true
+
 search_enabled: true
 aux_links:
   Network Canvas Home:
