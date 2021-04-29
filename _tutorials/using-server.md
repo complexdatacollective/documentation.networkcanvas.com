@@ -60,7 +60,7 @@ This process runs in the background so that you can continue to receive data wit
 
 To exit the app completely, including closing this background process, click the status icon in the system tray/status bar and then click "quit".
 
-![Quitting the app from the system tray](/assets/uploads/screen-shot-2021-04-29-at-4.55.48-pm.png)
+![Quitting the app from the system tray](/assets/uploads/screen-shot-2021-04-29-at-4.55.48-pm.png){: .img-float-left}
 
 ### Creating a Workspace by Importing a Protocol
 
@@ -68,7 +68,7 @@ Server is organized around the concept of 'workspaces', where each workspace is 
 
 Workspaces are shown in the purple column on the left hand side of the app once created, with a large plus button always visible that can be used to create a new workspace.
 
-![Workspaces](/assets/uploads/screen-shot-2021-04-29-at-5.03.54-pm.png)
+![Workspaces](/assets/uploads/screen-shot-2021-04-29-at-5.03.54-pm.png){: .img-float-left}
 
 To create a new workspace, locate a `.netcanvas` protocol file. For the purposes of this demonstration, we can use the sample protocol file that has been discussed in the tutorials on Interviewer and Architect (which can be downloaded [here](https://github.com/complexdatacollective/Documentation/blob/master/protocols/Sample%20Protocol%20v2.netcanvas)). 
 
