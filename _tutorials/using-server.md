@@ -37,7 +37,7 @@ Despite its name, Server is not a headless or command line application designed 
 
 ### System Requirements
 
-Because it is not a true 'server' application, Server has no special system requirements beyond the rest of the applications in the Network Canvas suite. That means you should follow the guidelines listed in the [installation guide](../installation-guide.md).
+Because it is not a true 'server' application, Server has no special system requirements beyond the rest of the applications in the Network Canvas suite. That means you should follow the guidelines listed in the [installation guide](../installation-guide.md#system-requirements).
 
 One additional consideration with Server is that since it acts as an endpoint for data transfer, its networking should be fast and reliable. This means using wired networking and not WiFi, and adjusting the power management settings of your operating system to make sure that the computer does not 'sleep' when not in use, so that it can still receive data.
 
