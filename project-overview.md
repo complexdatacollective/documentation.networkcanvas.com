@@ -3,6 +3,8 @@ title: Project Overview
 nav_order: 2
 last_modified_at: 2020-12-14
 wip: false
+has_children: false
+has_toc: true
 ---
 Across diverse disciplines there is increasing recognition of the important role that structural factors play in a variety of outcomes, as well the power of structural explanations to elucidate the causes of persistent inequality. However, capturing the complex network data required by these analyses remains high-burden – both for researchers and research participants.
 
