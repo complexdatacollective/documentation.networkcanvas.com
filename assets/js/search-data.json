@@ -553,7 +553,7 @@
   },"92": {
     "doc": "Categorical Bin",
     "title": "Configuring Categorical Bin",
-    "content": "An Categorical Bin screen can include multiple prompts, each of which relates to a single categorical variable. Additionally an other variable can be specified for custom responses that don’t fit into the pre-configured categories. Configuring the 'other' variable for a categorical bin prompt ",
+    "content": "A Categorical Bin screen can include multiple prompts, each of which relates to a single categorical variable. Additionally an other variable can be specified for custom responses that don’t fit into the pre-configured categories. Configuring the 'other' variable for a categorical bin prompt ",
     "url": "/interface-documentation/categorical-bin/#configuring-categorical-bin",
     "relUrl": "/interface-documentation/categorical-bin/#configuring-categorical-bin"
   },"93": {
