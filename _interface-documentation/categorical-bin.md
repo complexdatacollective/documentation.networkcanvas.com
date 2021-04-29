@@ -13,11 +13,11 @@ bad:
   - Avoid using the Categorical Bin to capture dichotomous variables. Dichotomous variables are best captured using the Toggle [input control](../../key-concepts/input-controls) (on a [Name Generator](../name-generator-using-forms) or [Per Alter Form](../per-alter-form)) or using the variable toggling feature on the [Sociogram](../sociogram).
 ---
 
-The Categorical Bin is a name interpreter Interface that collects nominal data on the alters in a participant's network. When using the Categorical Bin, participants drag and drop alters one-by-one into colorful circles which each represent a category of the categorical variable. Once placed, participants can tap on any category and move alters within that category to any other. 
+The Categorical Bin is a name interpreter Interface that collects nominal data on the alters in a participant's network. When using the Categorical Bin, participants drag and drop alters one-by-one into colorful circles which each represent a category of the categorical variable. Once placed, participants can tap on any category and move alters within that category to any other.
 
 ## Configuring Categorical Bin
 
-An Categorical Bin screen can include multiple [prompts](../_key-concepts/prompts.md), each of which relates to a single [categorical variable](../_reference/variable-types.md#categorical).
+A Categorical Bin screen can include multiple [prompts](../_key-concepts/prompts.md), each of which relates to a single [categorical variable](../_reference/variable-types.md#categorical).
 
 Additionally an _other_ variable can be specified for custom responses that don't fit into the pre-configured categories.
 
