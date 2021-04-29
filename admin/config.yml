@@ -93,6 +93,7 @@ collections:
       - { name: summary, label: "Summary", widget: markdown, minimal: true }
       - { name: prerequisites, label: "Prerequisites", widget: markdown, minimal: true }
       - { name: completion_time, label: "Duration", widget: text }
+      - { name: nav_order, widget: "number", required: false }
       - { name: title, label: Title }
       - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
       - { name: body, label: body, widget: markdown }
