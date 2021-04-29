@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 wip: false
 has_children: false
 toc: true
-nav_order: 11
+nav_order: 5
 ---
 ## What is Network Canvas?
 
