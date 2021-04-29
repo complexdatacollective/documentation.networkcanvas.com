@@ -4,10 +4,10 @@ wip: false
 nav_order: 1
 ---
 # Project Documentation
-
 {: .fs-9 }
 
-A home for tutorials, guides, and information about the Network Canvas project. {: .fs-6 .fw-300 }
+A home for tutorials, guides, and information about the Network Canvas project.
+{: .fs-6 .fw-300 }
 
 [Project Overview](./project-overview.md){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Installation Guide](./installation-guide.md){: .btn .btn-secondary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Download Software](https://networkcanvas.com/download.html){: .btn .fs-5 .mb-4 .mb-md-0 }
 
