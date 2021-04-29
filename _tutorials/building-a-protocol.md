@@ -25,11 +25,8 @@ Upon opening Architect, you are greeted by the **start screen**. Like the start 
 
 In this tutorial we will be building a protocol from scratch, so we are going to start by creating a blank protocol. Click the "Create New Protocol" button within the tasks panel. Save the file with a name and location that you will be able to find later.
 
-<div class="key-concept" data-title="Key Concept: the Protocol File" markdown="1">
-Network Canvas protocols are stored in a file with the extension `.netcanvas`.They are just like any other files on your computer, meaning you can move them around, rename them (more about this later), and you can (and should!) back them up.
-
-The `.netcanvas` file contains all of the data in your protocol. So if you use roster data, images, or video, these will be embedded within the file.
-</div>
+Network Canvas protocols are stored in a file with the extension `.netcanvas`.They are just like any other files on your computer, meaning you can move them around, rename them (more about this later), and you can (and should!) back them up. The `.netcanvas` file contains all of the data in your protocol. So if you use roster data, images, or video, these will be embedded within the file.
+{: .key-concept data-title="Key Concept: the Protocol File"}
 
 ## The protocol overview screen
 

@@ -11,7 +11,6 @@ prerequisites: "
   "
 completion_time: 1 hour
 ---
-
 ## Initial setup
 
 Set the path to your data files below.
@@ -33,28 +32,27 @@ edgeDataFrame <- read.csv(dataFileList[6])
 ```
 
 Import the ego-r package, and any other packages we might use
+
 ```R
 library(egor)
-
 ```
 
 Create an egoR object from our dataframe
-```R
 
+```R
 tf <- threefiles_to_egor(
     egos = egoDataFrame,
     alters = alterDataFrame,
     edges = edgeDataFrame,
     ID.vars = list(ego="networkCanvasEgoUUID", alter="networkCanvasUUID", source="networkCanvasSourceUUID", target="networkCanvasTargetUUID")
 )
-
 ```
 
 ## Converting categorical variables to factors
 
-Convert categorical variable format into factors
-```R
+Convert categorical variable format into factors.
 
+```R
 catToFactor <- function(dataframe,variableName) {
     fullVariableName <- paste0(variableName,"_")
     catVariables <- grep(fullVariableName, names(dataframe), value=TRUE)
@@ -79,5 +77,4 @@ categoricalVariablesList <- list('group', 'social_networks_research_relationship
 for (variable in categoricalVariablesList) {
   dataFrame[variable] <- catToFactor(dataFrame, variable)
 }
-
 ```

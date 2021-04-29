@@ -53,9 +53,9 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 nav_next_prev: true
 #
 # The default arrows can be changed to other characters or words
-# nav_prev_text: "&larr;"
+nav_prev_text: "&larr; Previous article in section&nbsp;&nbsp;"
 # nav_up_text:   "&uarr;"
-# nav_next_text: "&rarr;"
+nav_next_text: "&nbsp;&nbsp;Next article in section &rarr;"
 
 # Caching navigation links
 nav_cache: true # default, equivalent to nil

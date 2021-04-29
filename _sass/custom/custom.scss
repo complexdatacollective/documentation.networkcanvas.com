@@ -10,10 +10,11 @@ li, ol, ul {
 
 // Figures
 
-
 @media only screen and (min-width: #{map-get($media-queries, "md")}) {
   figure {
-    text-align: center;
+    &:not(.highlight) {
+      text-align: center;
+    }
     img {
       max-width: 80%;
     }
@@ -227,3 +228,6 @@ ul.avoid li:before {
   letter-spacing: 1.25px !important;
   line-height: 1.25;
 }
+
+
+
