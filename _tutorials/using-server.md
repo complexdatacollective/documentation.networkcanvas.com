@@ -2,8 +2,10 @@
 summary: This tutorial will discuss using Server to deploy protocols to devices
   running Interviewer, receive data back from those devices, and then export
   this data for further analysis.
-prerequisites: You should install Server and Interviewer on one or more devices
-  if you would like to follow along with the steps in this tutorial.
+prerequisites: You should have read and understood the project overview, and be
+  familiar with the concept of protocol files. You should install Server and
+  Interviewer on one or more devices if you would like to follow along with the
+  steps in this tutorial.
 completion_time: 1 hour
 nav_order: 3
 title: Using Server to manage a study
@@ -44,15 +46,39 @@ One additional consideration with Server is that since it acts as an endpoint fo
 
 ## Using Server
 
-![Welcome](../../assets/img/server-guide/welcome.png)
+After opening the Server application on your computer, you are greeted by the setup screen.
 
-The start screen of Server provides instructions for how to create a workspace for your protocol and how to pair a device to facilitate secure encrypted data transmission. The icons in the top right corner of the screen also provide important details about the network connectivity of the computer running Server. These details can be used to manually pair Server to Interviewer field devices if necessary (details on manual pairing below).
+![The setup screen](../../assets/img/server-guide/welcome.png)
 
-### Importing a Protocol to Server
+The setup screen of Server provides instructions for how to create a workspace, and how to pair with a device running Interviewer to facilitate secure encrypted data transmission. The icons in the top right corner of the screen also provide important details about the network connectivity of the computer running Server. These details can be used to manually pair Server to Interviewer field devices if necessary (details on manual pairing below).
 
-A `.netcanvas` protocol file can be imported into Server by 1) dragging the file directly into the sidebar of the Server, 2) using the + button to open a file dialog to manually select the file, or 3) selecting 'Import Protocol' from the file menu to browse and select your file.
+#### Server's background process
 
-Once imported, Server will create a dedicated workspace with an "overview dashboard" for this protocol file. This process occurs for every protocol you import, allowing you to have multiple protocols / studies running in parallel in Server. Each unique overview dashboard is navigable by selecting the appropriate protocol initials on the side bar. 
+When you open Server, a 'background' process is also launched, which will remain running even if you close the main window of the app. You can find this background process in the system tray on a computer running Windows, and in the status bar on macOS.
+
+This process runs in the background so that you can continue to receive data without having to have the main GUI window open.
+
+To exit the app completely, including closing this background process, click the status icon in the system tray/status bar and then click "quit".
+
+![Quitting the app from the system tray](/assets/uploads/screen-shot-2021-04-29-at-4.55.48-pm.png)
+
+### Creating a Workspace by Importing a Protocol
+
+Server is organized around the concept of 'workspaces', where each workspace is based on a protocol file. A workspace contains all the data and functions associated with that protocol file.
+
+Workspaces are shown in the purple column on the left hand side of the app once created, with a large plus button always visible that can be used to create a new workspace.
+
+![Workspaces](/assets/uploads/screen-shot-2021-04-29-at-5.03.54-pm.png)
+
+To create a new workspace, locate a `.netcanvas` protocol file. For the purposes of this demonstration, we can use the sample protocol file that has been discussed in the tutorials on Interviewer and Architect (which can be downloaded [here](https://github.com/complexdatacollective/Documentation/blob/master/protocols/Sample%20Protocol%20v2.netcanvas)). 
+
+To create a workspace from the protocol file either:
+
+1. drag the file directly into the purple sidebar
+2. use the 'plus' button to open a file dialog and browse to the file
+3. select 'Import Protocol' from the file menu and browse to the file.
+
+Once imported, Server will create a workspace represented by an icon contain with an "overview dashboard" for this protocol file. This process occurs for every protocol you import, allowing you to have multiple protocols / studies running in parallel in Server. Each unique overview dashboard is navigable by selecting the appropriate protocol initials on the side bar. 
 
 ![Image](../../assets/img/server-guide/imported-protocol-server.png)
 
