@@ -1,10 +1,12 @@
 ---
-
+summary: This tutorial will discuss using Server to deploy protocols to devices
+  running Interviewer, receive data back from those devices, and then export
+  this data for further analysis.
+prerequisites: You should have installed Server and Interviewer on one or more
+  devices if you would like to follow along with the steps in this tutorial.
+completion_time: 1 hour
 title: Using Server to manage a study
 wip: true
-summary: "Tutorial on using Server"
-prerequisites: "none."
-completion_time: 1 hour
 ---
 
 ## Introducing Network Canvas Server
