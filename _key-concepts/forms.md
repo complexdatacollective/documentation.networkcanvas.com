@@ -1,8 +1,6 @@
 ---
 title: Forms
-
-
-definition: Forms provide a means to assign variables to ego, nodes, or edges, using a familiar and easy to use interface.
+definition: A means to assign variables to ego, nodes, or edges, using a familiar and easy to use interface.
 ---
 
 Forms are one of the primary ways that that you will assign values to your variables in Interviewer. They work by associating each **variable** with an **input control**, a **question prompt** and **validation options**, to form a **field**. Each form can have as many fields as you wish, and in any order.

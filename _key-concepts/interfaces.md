@@ -2,7 +2,7 @@
 title: Interfaces
 
 
-definition: An interface is a data collection instrument designed for a specific task. Interfaces are configured in Architect, and added to the interview protocol, where they are subsequently called stages.
+definition: Data collection instruments designed for a specific task. Interfaces are configured in Architect, and added to the interview protocol, where they are subsequently called stages.
 ---
 
 Interviews in Network Canvas are comprised of one or more 'stages', which can be thought of as the individual screens that a participant sees. Each stage is an _instance_ of an 'Interface', which has been configured to collect specific variables, or create nodes/edges. Interfaces are therefore the most fundamental building blocks of a Network Canvas interview.

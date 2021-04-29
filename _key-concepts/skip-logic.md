@@ -2,7 +2,7 @@
 title: Skip Logic
 
 
-definition: Skip logic is a feature within Interviewer that allows you to conditionally skip or show stages within the interview, based on the current information in the interview network. 
+definition: Conditionally skip or show stages within the interview, based on the current information in the interview network. 
 ---
 
 

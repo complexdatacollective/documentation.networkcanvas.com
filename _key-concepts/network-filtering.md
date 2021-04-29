@@ -2,7 +2,7 @@
 title: Network Filtering
 
 
-definition: This feature allows you to only show a subset of nodes or edges on a given interview stage based on their attributes.
+definition: Only show a subset of nodes or edges on a given interview stage based on their attributes.
 ---
 
 

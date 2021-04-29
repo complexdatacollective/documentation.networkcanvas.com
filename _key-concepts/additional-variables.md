@@ -3,7 +3,7 @@
 title: Additional Variables
 
 
-definition: The additional variables feature provides a way to automatically assign a the value of a variable when creating a node or edge.
+definition: A means of automatically assigning a variable when a node or edge is created.
 ---
 "Additional variables" are defined on individual prompts in [Name Generator](../_interface-documentation/name-generator-using-forms.md) stages and automatically assigned to any entity that is active on that given prompt. These variables are optional, and can be used to keep track of where within an interview an entity was used, or to add to an element. Additional variables are boolean values, either "true" or "false". These variables can then be used in skip logic or filtering rules.
 

@@ -2,7 +2,7 @@
 title: Field Validation
 
 
-definition: This feature allows you to validate the value of a form field automatically, according to constraints that you define.
+definition: Validate the value of a form field automatically, according to constraints that you define.
 ---
 
 Configuring validation refers to the process of setting constraints on the answers a participant can give in response to question prompts within a [form](./forms.md). One or multiple validations can be configured for each field of a form depending on the needs of the particular study, but none appear by default.

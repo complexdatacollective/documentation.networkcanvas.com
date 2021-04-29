@@ -1,7 +1,7 @@
 ---
 title: Input Controls
 
-definition: Input controls provide a flexible way to assign values to variables in [forms](../forms). By separating the visible control from the variable type, you can choose the best possible interview experience for your participant.
+definition: A flexible way to assign values to variables in [forms](../forms). By separating the visible control from the variable type, you can choose the best possible interview experience for your participant.
 ---
 
 

@@ -2,7 +2,7 @@
 title: Codebook
 
 
-definition: The codebook is an area of Architect that summarizes the variables and entity types that are in use within your interview protocol.
+definition: An area of the protocol accessible from Architect that contains all variables and entity types.
 ---
 
 The protocol's codebook gives an overview of the entities and variables defined for the protocol. Architect automatically constructs the codebook as you create variables in a protocol. The codebook can be visualized in the codebook view. To access the codebook in Architect, click on the "Manage codebook" button at the top of a protocol file.

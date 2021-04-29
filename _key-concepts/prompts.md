@@ -1,8 +1,6 @@
 ---
 title: Prompts
-
-
-definition: Prompts are participant-facing questions, or instructions, that explain which data should be provided or how to complete the task on a given stage.
+definition: Participant-facing questions, or instructions, that explain which data should be provided or how to complete the task on a given stage.
 ---
 
 
