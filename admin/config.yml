@@ -6,7 +6,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 local_backend: true
 media_folder: '/assets/uploads'
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 collections:
   - name: "page"
     label: "Page"
@@ -24,7 +24,7 @@ collections:
       - { name: nav_exclude, widget: "boolean", required: false }
   - name: "reference"
     label: "Reference"
-    folder: "/reference"
+    folder: "_reference"
     create: true
     sortable_fields: ["title"]
     fields:
@@ -36,7 +36,7 @@ collections:
       - { name: nav_exclude, widget: "boolean", required: false }
   - name: "interface-documentation"
     label: "Interface Documentation"
-    folder: "/reference/interface-documentation"
+    folder: "_interface-documentation"
     create: true
     sortable_fields: ["title"]
     fields:
@@ -71,7 +71,7 @@ collections:
         field: {label: "Item Text", name: item, widget: markdown, minimal: true, buttons: [bold, italic, code, link]}
   - name: "key-concepts"
     label: "Key Concepts"
-    folder: "/reference/key-concepts"
+    folder: "_key-concepts"
     create: true
     sortable_fields: ["title"]
     fields:
@@ -84,7 +84,7 @@ collections:
       - { name: body, label: body, widget: markdown }
   - name: "tutorial"
     label: "Tutorial"
-    folder: "/tutorials"
+    folder: "_tutorials"
     create: true
     sortable_fields: ["title"]
     fields:
