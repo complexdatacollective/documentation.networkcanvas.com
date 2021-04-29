@@ -23,12 +23,12 @@ defaults:
   - scope:
       path: "_tutorials"
     values:
-      has_toc: true
+      toc: true
       layout: "tutorial"
   - scope:
       path: "_how-to"
     values:
-      has_toc: true
+      toc: true
       layout: "page"
   - scope:
       path: "_key-concepts"
