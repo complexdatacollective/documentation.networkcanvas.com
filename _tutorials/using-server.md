@@ -5,6 +5,7 @@ summary: This tutorial will discuss using Server to deploy protocols to devices
 prerequisites: You should install Server and Interviewer on one or more devices
   if you would like to follow along with the steps in this tutorial.
 completion_time: 1 hour
+nav_order: 3
 title: Using Server to manage a study
 wip: true
 ---
