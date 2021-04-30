@@ -4,7 +4,7 @@ summary: " This tutorial will guide you through the process of creating a
   protocol that is available to install within Interviewer, which was discussed
   extensively in the tutorial on [using Interviewer](../using-interviewer). If
   you would like to download and open the finished protocol, you can do so [from
-  here](../../protocols/Sample Protocol v1.netcanvas)."
+  here](../../protocols/Sample Protocol v2.netcanvas)."
 prerequisites: >-2
    This tutorial assumes you are familiar with the general concepts of the Network Canvas software, have read the [project overview](../../project-overview), and have read the tutorial on [using Interviewer](../using-interviewer).
 
@@ -28,7 +28,7 @@ Upon opening Architect, you are greeted by the **start screen**. Like the start 
 
 In this tutorial we will be building a protocol from scratch, so we are going to start by creating a blank protocol. Click the "Create New Protocol" button within the tasks panel. Save the file with a name and location that you will be able to find later.
 
-Network Canvas protocols are stored in a file with the extension `.netcanvas`.They are just like any other files on your computer, meaning you can move them around, rename them (more about this later), and you can (and should!) back them up. The `.netcanvas` file contains all of the data in your protocol. So if you use roster data, images, or video, these will be embedded within the file.
+Network Canvas protocols are stored in a file with the extension `.netcanvas`. They are just like any other files on your computer, meaning you can move them around, rename them (more about this later), and you can (and should!) back them up. The `.netcanvas` file contains all of the data in your protocol. So if you use roster data, images, or video, these will be embedded within the file.
 {: .key-concept data-title="Key Concept: the Protocol File"}
 
 ## The protocol overview screen
@@ -179,7 +179,7 @@ For the first field, we want to know the name of the clinic the participant is n
 
 ![Image](../../assets/img/architect-guide/form-fields.png)
 
-<div class="key-concept" data-title="Key Concept: Creating vs selecting existing variables" markdown="1">
+<div class="tip-box" markdown="1">
 Many screens in Architect allow you to either create a new variable, or select an existing variable. If this is the case, the text next to the input will usually tell you.
 
 When you want to create a new variable, click the box and select "Create New" from the drop down menu.

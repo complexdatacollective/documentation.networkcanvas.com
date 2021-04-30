@@ -13,7 +13,7 @@ ol, ul {
 
 @media only screen and (min-width: #{map-get($media-queries, "md")}) {
   img {
-    max-width: 30rem !important;
+    max-width: 30rem;
   }
 }
 
@@ -42,6 +42,11 @@ p > img {
     padding: 1em;
     float: left;
   }
+}
+
+.img-width-full {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .img-width-20 {
@@ -121,9 +126,17 @@ nav.nav-rel {
 .inline-box {
   background-color: #f5f6fa;
   position: relative;
-  padding: $sp-3 $sp-5;
+  padding: $sp-5;
   border-radius: 5px;
   margin: 2em auto;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
 
   @media only screen and (min-width: #{map-get($media-queries, "lg")}) {
     font-size: 0.85rem;
@@ -232,6 +245,10 @@ ul.avoid li:before {
   @extend .inline-box;
   background-color: #7253ed;
   color: white;
+
+  a {
+    color: white;
+  }
 
   code {
     color: #d1395d;

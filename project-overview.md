@@ -28,7 +28,7 @@ Network Canvas is organized around the stages of the research process, from desi
 
 These three applications work together to provide a seamless end-to-end workflow up to the point of analysis.
 
-![End to end workflow](/assets/img/introduction-images/workflow@2x.png)
+![End to end workflow](/assets/img/introduction-images/workflow@2x.png){: .img-width-full}
 
 ## Five Key Design Principles
 

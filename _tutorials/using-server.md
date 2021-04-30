@@ -76,20 +76,22 @@ To create a workspace from the protocol file either:
 2. Use the 'plus' button to open a file dialog and browse to the file
 3. Select 'Import Protocol' from the file menu and browse to the file
 
-Once imported, Server will create a workspace represented by an icon contain with an "overview dashboard" for this protocol file. This process occurs for every protocol you import, allowing you to have multiple protocols / studies running in parallel in Server. Each unique overview dashboard is navigable by selecting the appropriate protocol initials on the side bar.
+Once imported, Server will create a workspace represented using the initials of the protocol name, with a unique icon generated based on the protocol content. Clicking this icon will switch to that workspace, and show the "overview" tab. Every protocol you import will have a dedicated workspace. This allows you the flexibility have multiple protocols or studies running in parallel.
 
 ![The overview tab of a newly created workspace](../../assets/img/server-guide/imported-protocol-server.png){:standalone}
 
 To preserve the quality of your data, it is not possible to change most of the details of a protocol once in use. If a protocol is in the field and the question names and ordering are changed it will make it difficult, if not impossible, to export all this data in a single table.
 {: .tip-box .caution}
 
-Every time you export interview data to Server, these data will immediately update and display on the overview dashboard linked to the specific protocol.
+### Navigating a protocol workspace
 
-The overview tab displays key details about your study and updates in real time as new interview data are uploaded. The dashboard will show details like the name of the protocol, the number of interviews completed and summary statistics from your study, such as the number of alters named per interview. This dashboard allows you to monitor the progress of your social network studies as well as help you identify potential issues in the data, such as an interviewee who nominates far more or fewer alters than the others. 
+A workspace is divided into tabs:
 
-The 'cards' that display such information on the dashboard can be reordered by dragging, and toggled on and off in the "Settings" tab. The "Export Data" tab allows you to determine export file type and content, and the "Manage Cases" tab allows you to view a complete list of all cases exported to Server associated with a particular study protocol.
-
-![The workspace overview tab](../../assets/img/server-guide/overview.png){:standalone}
+* **Overview**: This tab displays key summary information about your study and updates in real time as new interview data is uploaded. The 'cards' can be reordered by dragging.
+* **Manage cases**: A simple list of interview session data allowing you to individually delete a session.
+* **Export data**: Allows you to export data from Server in a format of your choosing, as well as specify export options such as merging.
+* **Resolve data**: An advanced feature that allows you to match alters across interviews using a custom python script.
+* **Settings**: The settings tab allows you to delete the workspace, as well as customize which charts are visible on the overview tab.
 
 ## Pairing a Field Device Running Interviewer with Server
 
