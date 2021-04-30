@@ -23,15 +23,21 @@ wip: false
 
 After opening Interviewer, the first thing you will see is the 'start screen'.
 
-![The Interviewer Start Screen](/assets/img/sample-protocol/start-screen.png)
+![The Interviewer Start Screen](/assets/img/sample-protocol/start-screen.png){:standalone}
 
 The start screen is a 'back-stage' area of Interviewer, designed to enable the person conducting the study to be able to configure the device and manage its data. The start screen is divided into sections that group related tasks together, such as "starting an interview" or "exporting and managing interview data". The start screen is designed to intelligently show options that are appropriate, and to hide options when they are not applicable. Because of this, when we open interviewer for the first time, we see the three default sections:
 
-![image](/assets/img/sample-protocol/welcome-section.png){: .img-float-left}The **welcome section** which contains links to install the sample protocol, visit the documentation website, or watch an overview video. The welcome section can be hidden when no longer needed, using the toggle in the top right hand corner. The welcome section also contains a button (the cog icon) that opens the main device settings screen. We encourage you to open the settings screen and explore the various options.
+![The Welcome Section](/assets/img/sample-protocol/welcome-section.png){:standalone}
 
-![image](/assets/img/sample-protocol/protocols-section.png){: .img-float-left}The **protocols section** which allows you to quickly import a [Network Canvas protocol file](../_key-concepts/the-protocol-file.md) from a URL or by choosing a file ( and later, also by importing from a computer running Server). Once you have installed one or more protocol files, this section will also contain a button that allows you to manage your installed protocols.
+The **welcome section** which contains links to install the sample protocol, visit the documentation website, or watch an overview video. The welcome section can be hidden when no longer needed, using the toggle in the top right hand corner. The welcome section also contains a button (the cog icon) that opens the main device settings screen. We encourage you to open the settings screen and explore the various options.
 
-![image](/assets/img/sample-protocol/server-section.png){: .img-float-left} The **server status section** which initially shows nearby computers running Server that you may wish to [pair with](../_key-concepts/pairing.md), and once paired shows the communication status of the device with your paired Server.
+![The Protocols Section](/assets/img/sample-protocol/protocols-section.png){:standalone}
+
+The **protocols section** which allows you to quickly import a [Network Canvas protocol file](../_key-concepts/the-protocol-file.md) from a URL or by choosing a file ( and later, also by importing from a computer running Server). Once you have installed one or more protocol files, this section will also contain a button that allows you to manage your installed protocols.
+
+![The Server Status Section](/assets/img/sample-protocol/server-section.png){:standalone}
+
+The **server status section** which initially shows nearby computers running Server that you may wish to [pair with](../_key-concepts/pairing.md), and once paired shows the communication status of the device with your paired Server.
 
 As you use Interviewer to collect data, sections and options will appear that expose additional functionality as you need it.
 
@@ -40,7 +46,7 @@ As you use Interviewer to collect data, sections and options will appear that ex
 Interviewer must be programmed using one or more interview protocols before it can be used to collect data. Once you have authored a protocol file in Architect, there are three ways to import it into your devices running Interviewer. Which one you choose will depend on the needs of your study.
 
 - **Importing a file directly**. This option can be accessed either from the file menu if running Interviewer on Windows/MacOS/Linux, or from the protocols section of the start screen. It provides a simple means to import a protocol file that is already stored on your device.
-- **Importing from URL**. This option is accessed from the protocols section of the start screen, and allows you to download a protocol file directly from any URL that is accessible from the device running Interviewer. This option can be useful in circumstances where you have a study website or intranet, and need to quickly install a protocol on a device **but you do not wish to use Server** as part of your workflow (see ["which applications do I need?"](../project-overview.md#which-applications-do-i-need) for more on this).
+- **Importing from URL**. This option is accessed from the protocols section of the start screen, and allows you to download a protocol file directly from any URL that is accessible from the device running Interviewer. This option can be useful in circumstances where you have a study website or intranet, and need to quickly install a protocol on a device **but you do not wish to use Server** as part of your workflow (see ["when to use Server"](./using-server.md#when-to-use-server) for more on this).
 - **Importing from Server**. When you have paired your device running Interviewer with a computer running Server, you can securely transfer a protocol file to your interview device by clicking the "Import from Server" option in the protocols section.
 
 For the purposes of this tutorial, we will proceed using the built-in sample protocol. To follow along on your own device, **click the "install sample protocol" button in the welcome section of the app** to install the protocol that we will be using. Alternatively, [click here](../../../protocols/Sample Protocol v1.netcanvas) to download the file to this device, and then import it into Interviewer using the import from file method described above.
@@ -102,7 +108,9 @@ Interviewer's user interface is designed to be simple, unobtrusive, and intuitiv
 
 In terms of the user interface elements that are always visible when within the interview, there are several features of note.
 
-![image](/assets/img/sample-protocol/interviewer-ui.png){: .img-float-left}The **menu button** at the very top of the screen opens the primary app menu, which allows you to:
+![image](/assets/img/sample-protocol/interviewer-ui.png)
+
+The **menu button** at the very top of the screen opens the primary app menu, which allows you to:
 
 - Exit the interview
 - See a summary of the session, including numbers of nodes and edges and current duration

@@ -179,17 +179,21 @@ For the first field, we want to know the name of the clinic the participant is n
 
 ![Image](../../assets/img/architect-guide/form-fields.png)
 
-| Key Concept: Creating vs selecting variables                          |
-| :----------------------------------------------------------- |
-| Many screens in Architect allow you to either create a new variable, or select an existing variable. If this is the case, the text next to the input will usually tell you.<br/><br/>When you want to create a new variable, click the box and select "Create New" from the drop down menu.<br/><br/>Otherwise, click an existing variable from the list in the drop down menu. |
-{: .key-concept }
+<div class="key-concept" data-title="Key Concept: Creating vs selecting existing variables" markdown="1">
+Many screens in Architect allow you to either create a new variable, or select an existing variable. If this is the case, the text next to the input will usually tell you.
+
+When you want to create a new variable, click the box and select "Create New" from the drop down menu.
+
+Otherwise, click an existing variable from the list in the drop down menu.
+</div>
 
 Finally, we choose the input control that will be shown to collect this variable. 
 
-| Key Concept: Input controls                          |
-| :----------------------------------------------------------- |
-| Architect and Interviewer implement many different types of input control [text, number, checkbox group, toggle, radio button group, toggle button group, date picker, likert scale, visual analog scale].<br/><br/>This is because the most appropriate interface for assigning a variable depends very much on the specific nature of the variable, and not just on its data type. For example, when collecting an ordinal variable that represents a likert scale, you might prefer a range slider OR a group of radio buttons. |
-{: .key-concept }
+<div class="key-concept" data-title="Key Concept: Input controls" markdown="1">
+Architect and Interviewer implement many different types of input control (text, number, checkbox group, toggle, radio button group, toggle button group, date picker, likert scale, visual analog scale).
+
+This is because the most appropriate interface for assigning a variable depends very much on the specific nature of the variable, and not just on its data type. For example, when collecting an ordinal variable that represents a likert scale, you might prefer a range slider OR a group of radio buttons.
+</div>
 
 Because we are asking for the name of the clinic - a simple text variable - a text input is the most appropriate option.
 
@@ -230,6 +234,7 @@ Refer to our Interface Documentation for more in depth instruction, including us
 {: .tip-box}
 
 Last, we implement a prompt for the stage, following the same process we did in the previous stages. We enter the prompt that includes instructions for how to nominate a node from the roster, "Please select any members of your degree class that you spend time with **other than when studying**. Tap a card to select, and press the **down arrow** when you are finished."
+
 ![Image](../../assets/img/architect-guide/roster-sort.png)
 
 ## Large Roster Name Generator
@@ -295,7 +300,13 @@ As before, save when you are finished, and return to the overview screen of your
 
 ## Creating Sociograms
 
-For the next stage, we use the Sociogram Interface. Create the stage, set a stage name, and select the "Person" node type.
+For the next stage, we use the Sociogram Interface. The Sociogram is an interface designed to allow participants to interact with the alters produced within Name Generator stages in three principle ways.
+
+1. Layout, where the participant spatially arranges the nodes
+2. Edge creation, where the participant can create alter-alter ties
+3. Variable toggling, where the participant can nominate alters has having a given boolean attribute
+
+Create the stage, set a stage name, and select the "Person" node type.
 
 ### Node Positioning
 
@@ -322,18 +333,21 @@ You should think carefully about how the choices you make regarding the backgrou
 
 As before, we will enter a prompt and not assign a task for the stage. The prompt text is, "Please position the people you have named in the boxes according to which group you feel they most belong to." We save the stage and move on to the next.
 
-The Sociogram is an interface designed to allow participants to interact with the alters produced within Name Generator stages in three principle ways.<br/><br/>(1) Layout, where the participant spatially arranges the nodes; (2) Edge creation, where the participant can create alter-alter ties; (3) Variable toggling, where the participant can nominate alters has having a given boolean attribute.
-{: .key-concept data-title="Key Concept: Features of the Sociogram"}
-
 ## Edge Creation
 
-We will create another Sociogram stage to experiment with creating edges. For this stage we'll use node type "Person" and the concentric circles background with 3 circles skewed. 
+We will create another Sociogram stage to experiment with creating edges. For this stage we'll use node type "Person" and the concentric circles background with 3 circles skewed.
 
-We create our first prompt, "Please connect any two people who might spend time together without you being there" and we use the sociogram_layout variable we already created. 
+We create our first prompt, "Please connect any two people who might spend time together without you being there" and we use the sociogram_layout variable we already created.
 
-Now we will enable edge creation on a Sociogram prompt, by toggling the switch "create edges by tapping on a node" option, in the "Edge Display and Creation" section. 
+Now we will enable edge creation on a Sociogram prompt, by toggling the switch "create edges by tapping on a node" option, in the "Edge Display and Creation" section.
 
-In the next box, we will either create a new edge type or select an existing one. Since we have not yet created any edge types, we will define one as "know" to correspond with the prompt.
+The sociogram is the primary location within the interview where edges are created. A sociogram prompt can only create a single edge type at a time, but note that it can display several.
+
+In the scenario where multiple edge types are selected for display, creating a new edge that would cover an existing one works simply - the existing edge is visually replaced with the new edge type. Both edges are still stored in the interview network. Removing this new edge will revert the visual display to the previously visible edge type (only one edge type can be created or removed on a prompt). 
+
+You may consider using this feature to progressively build up a network, by allowing the participant to use the visual "scaffolding" of existing edges to quickly identify where to create new ones.
+
+In the next box, we will either create a new edge type or select an existing one. Since we have not yet created any edge types, we will create a new type called "know" to correspond with the prompt.
 
 We click "Save and Close" to return to the Sociogram editor.
 
@@ -342,9 +356,6 @@ We click "Save and Close" to return to the Sociogram editor.
 Next, we add another prompt, "Please connect any two people who have conflict, or who don't get on well with each other" and use the same sociogram_layout variable. 
 
 We also choose edge creation as the task for the stage, but create a new edge type of "conflict" as we will now be capturing alter-alter ties that are conflictual.
-
-The sociogram is the primary location within the interview where edges are created.<br/><br/>A sociogram prompt can only create a single edge type at a time, but note that it can display several.<br/><br/>In the scenario where multiple edge types are selected for display, creating a new edge that would cover an existing one works simply - the existing edge is visually replaced with the new edge type. Both edges are still stored in the interview network. Removing this new edge will revert the visual display to the previously visible edge type (only one edge type can be created or removed on a prompt).<br/><br/>You may consider using this feature to progressively build up a network, by allowing the participant to use the visual "scaffolding" of existing edges to quickly identify where to create new ones.
-{: .key-concept data-title="Key Concept: Creating and displaying edges"}
 
 ## Implementing the Dyad Census
 
@@ -386,12 +397,25 @@ We will now complete the exact same steps for the second prompt, which reads, "P
 
 We have now finished configuring this sociogram stage.
 
-When previewing a stage using an interface type that does not create nodes, you may notice that no nodes are available to test the stage's functionality.<br/><br/>To address this, the preview mode allows you to create nodes from any earlier stages in your interview that are capable of this (primarily name generators or roster interfaces).<br/><br/>Simply navigate to a stage that creates nodes from within preview mode, create some nodes suitable for your sociogram stage, and then navigate to the sociogram stage - your nodes will appear, and you will be able to test edge creation, variable toggling, and positioning.
-{: .key-concept data-title="Key Concept: Preview mode for Sociogram"}
+<div class="tip-box caution" markdown="1">
+When previewing a stage using an interface type that does not create nodes, you may notice that no nodes are available to test the stage's functionality.
+
+To address this, the preview mode allows you to create nodes from any earlier stages in your interview that are capable of this (primarily name generators or roster interfaces).
+
+Simply navigate to a stage that creates nodes from within preview mode, create some nodes suitable for your sociogram stage, and then navigate to the sociogram stage - your nodes will appear, and you will be able to test edge creation, variable toggling, and positioning.
+</div>
 
 ## Creating an Ordinal Bin
 
 We now wish to create an Ordinal Bin interface so that we can quickly and efficiently ask our participant about the frequency of contact they have with each alter. From the timeline overview, add a new stage using the Ordinal Bin interface.
+
+<div class="key-concept" data-title="Key Concept: 'Bins' and 'Buckets'" markdown="1">
+By convention, the Network Canvas software uses two terms for the containers that nodes are dragged between on the Ordinal Bin, Categorical Bin, and Sociogram interfaces.
+
+Buckets are where nodes are found initially, before they have been placed, or dragged. Bins are where nodes are placed are dragged _to_. This is where nodes end up.
+
+Both bins and buckets can have the sort order of the nodes within them defined. You can use this to (for example) make the bucket show nodes with a certain attribute, such as closeness, first. This may help with a task such as positioning nodes on a sociogram.
+</div>
 
 As with previous interfaces, begin with naming the stage ("Contact Frequency"), and selecting our node type ("Person").
 
@@ -439,11 +463,6 @@ Create a variable named "communication_freq" with the following possible options
    </td>
   </tr>
 </table>
-
-![Image](../../assets/img/architect-guide/ordinal-bin.png)
-
-By convention, the Network Canvas software uses two terms for the containers that nodes are dragged between on the Ordinal Bin, Categorical Bin, and Sociogram interfaces.<br/><br/>Buckets are where nodes are found initially, before they have been placed, or dragged.<br/><br/>Bins are where nodes are placed are dragged to. This is where nodes end up.<br/><br/>Both bins and buckets can have the sort order of the nodes within them defined. You can use this to (for example) make the bucket show nodes with a certain attribute, such as closeness, first. This may help with a task such as positioning nodes on a sociogram.
-{: .key-concept data-title="Key Concept: &quot;Bins&quot; and &quot;Buckets&quot;"}
 
 In the case of our prompt, we will use the default node bin and bucket sort options. Click "Save and Close" to finish editing this prompt, and then click "Save and Return" to return to the timeline view.
 

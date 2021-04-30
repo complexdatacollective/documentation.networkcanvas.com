@@ -60,44 +60,43 @@ This process runs in the background so that you can continue to receive data wit
 
 To exit the app completely, including closing this background process, click the status icon in the system tray/status bar and then click "quit".
 
-![Quitting the app from the system tray](/assets/uploads/screen-shot-2021-04-29-at-4.55.48-pm.png){: .img-float-left}
+![Quitting the app from the system tray](/assets/uploads/screen-shot-2021-04-29-at-4.55.48-pm.png){:standalone}
 
 ### Creating a Workspace by Importing a Protocol
 
 Server is organized around the concept of 'workspaces', where each workspace is based on a protocol file. A workspace contains all the data and functions associated with that protocol file.
 
-Workspaces are shown in the purple column on the left hand side of the app once created, with a large plus button always visible that can be used to create a new workspace.
+![Workspaces](/assets/uploads/screen-shot-2021-04-29-at-5.03.54-pm.png){: .img-float-left .img-width-20}Workspaces are shown in the purple column on the left hand side of the app once created, with a large plus button always visible that can be used to create a new workspace.
 
-![Workspaces](/assets/uploads/screen-shot-2021-04-29-at-5.03.54-pm.png){: .img-float-left}
-
-To create a new workspace, locate a `.netcanvas` protocol file. For the purposes of this demonstration, we can use the sample protocol file that has been discussed in the tutorials on Interviewer and Architect (which can be downloaded [here](https://github.com/complexdatacollective/Documentation/blob/master/protocols/Sample%20Protocol%20v2.netcanvas)). 
+To create a new workspace, locate a `.netcanvas` protocol file. For the purposes of this demonstration, we can use the sample protocol file that has been discussed in the tutorials on Interviewer and Architect (which can be downloaded [here](https://github.com/complexdatacollective/Documentation/blob/master/protocols/Sample%20Protocol%20v2.netcanvas)).
 
 To create a workspace from the protocol file either:
 
-1. drag the file directly into the purple sidebar
-2. use the 'plus' button to open a file dialog and browse to the file
-3. select 'Import Protocol' from the file menu and browse to the file.
+1. Drag the file directly into the purple sidebar
+2. Use the 'plus' button to open a file dialog and browse to the file
+3. Select 'Import Protocol' from the file menu and browse to the file
 
-Once imported, Server will create a workspace represented by an icon contain with an "overview dashboard" for this protocol file. This process occurs for every protocol you import, allowing you to have multiple protocols / studies running in parallel in Server. Each unique overview dashboard is navigable by selecting the appropriate protocol initials on the side bar. 
+Once imported, Server will create a workspace represented by an icon contain with an "overview dashboard" for this protocol file. This process occurs for every protocol you import, allowing you to have multiple protocols / studies running in parallel in Server. Each unique overview dashboard is navigable by selecting the appropriate protocol initials on the side bar.
 
-![Image](../../assets/img/server-guide/imported-protocol-server.png)
+![The overview tab of a newly created workspace](../../assets/img/server-guide/imported-protocol-server.png){:standalone}
 
-After a protocol is imported into Server, it is ready to be deployed to Interviewer on your field device(s) once secure pairing is completed. To preserve the quality of your data, it is not possible to change most of the details of a protocol once in use. If a protocol is in the field and the question names and ordering are changed it will make it difficult, if not impossible, to export all this data in a single table.
+To preserve the quality of your data, it is not possible to change most of the details of a protocol once in use. If a protocol is in the field and the question names and ordering are changed it will make it difficult, if not impossible, to export all this data in a single table.
+{: .tip-box .caution}
 
 Every time you export interview data to Server, these data will immediately update and display on the overview dashboard linked to the specific protocol.
 
-The overview tab displays key details about your study and updates in real time as new interview data are uploaded. The dashboard will show details like the name of the protocol, the number of interviews completed and summary statistics from your study, such as the number of alters named per interview. This dashboard allows you to monitor the progress of your social network studies as well as help you identify potential issues in the data, such as an interviewee who nominates far more or fewer alters than the others. The 'cards' that display such information on the dashboard can be reordered by dragging, and toggled on and off in the "Settings" tab. The "Export Data" tab allows you to determine export file type and content, and the "Manage Cases" tab allows you to view a complete list of all cases exported to Server associated with a particular study protocol.
-{: .key-concept data-title="Key Concept: the Overview"}
+The overview tab displays key details about your study and updates in real time as new interview data are uploaded. The dashboard will show details like the name of the protocol, the number of interviews completed and summary statistics from your study, such as the number of alters named per interview. This dashboard allows you to monitor the progress of your social network studies as well as help you identify potential issues in the data, such as an interviewee who nominates far more or fewer alters than the others. 
 
-![Image](../../assets/img/server-guide/overview.png)
+The 'cards' that display such information on the dashboard can be reordered by dragging, and toggled on and off in the "Settings" tab. The "Export Data" tab allows you to determine export file type and content, and the "Manage Cases" tab allows you to view a complete list of all cases exported to Server associated with a particular study protocol.
 
-Once your interview protocol is imported, the next step is to securely pair Server with your field device(s). Pairing Server with your field device(s) establishes a secure connection that allows you to 1) deploy your protocol to the Interviewer application running on the field device(s), and 2) securely transmit data collected back to the Server for monitoring and export. 
-
-Note: a 'field device' is any device that collects data using Interviewer. It could be a tablet or the very same computer running Server.
+![The workspace overview tab](../../assets/img/server-guide/overview.png){:standalone}
 
 ## Pairing a Field Device Running Interviewer with Server
 
 To use Server with a field device, you will first have to pair the device with Server. Pairing requires exchanging encryption keys between Server and the field device. Once paired, you can download a protocol from Server to Interviewer and upload data collected in Interviewer back to Server.
+
+A 'field device' is any device that collects data using Interviewer. It could be a tablet or the very same computer running Server.
+{: .tip-box}
 
 Getting data from Interviewer into Server requires "pairing". To pair, Server produces a unique encryption key that must be manually entered into the Interviewer application running on a field device. Once paired, Interviewer is able to securely transmit data collected in the field directly to Server. Utilizing Server allows you to avoid using third party servers, such as Dropbox or Google Drive, and instead transfer your data directly to a computer with full-disk encryption (such as FileVault on Mac or BitLocker on Windows). Transferring data to Server in this way is an example of peer-to-peer connection whereby only your field device and your copy of Server are able to access your data.
 {: .key-concept data-title="Key Concept: Encryption for data security"}
@@ -126,8 +125,15 @@ After you submit the encryption code in Interviewer, you will see notifications 
 
 ![Image](../../assets/img/server-guide/pairing-successful.png)
 
-Automatic discovery is a feature that allows Interviewer to find Server automatically so long as both devices in question are on the same network connection (i.e. the same WiFi or wired Ethernet connection). This feature is available on both Windows and Mac computers, but not Linux.<br/><br/>If automatic discovery fails or is unavailable (which can occur if you are on a highly secured network), you can manually facilitate the pairing process between Server and the field device running Interviewer. To manually pair, select the white "provide manual connection details" button on the bottom right corner of the "Server Status" panel in Interviewer. You will be prompted to enter the Server IP address and Pairing Port number, both of which can be found by clicking on the network status icon in the top right corner Server. Once these details are provided, the field device will search for Server to pair.<br/><br/>Problem solving: If you cannot reach Server using automatic discovery or the manual pairing steps, try the following: 1) make sure Server is open, 2) restart Server and Interviewer on their respective devices (note: restarting will not drop data), 3) contact your network administrator or refer to the details of the error message for further troubleshooting tips.<br><br>Some details that might help your network administrator: Server uses the Bonjour protocol and requires multicast DNS packets to be able to pass through the network.
-{: .key-concept data-title="Key Concept: Server advertising and automatic discovery"}
+<div class="key-concept" data-title="Key Concept: Server advertising and automatic discovery" markdown="1">
+Automatic discovery is a feature that allows Interviewer to find Server automatically so long as both devices in question are on the same network connection (i.e. the same WiFi or wired Ethernet connection). This feature is available on both Windows and Mac computers, but not Linux.
+</div>
+
+If automatic discovery fails or is unavailable (which can occur if you are on a highly secured network), you can manually facilitate the pairing process between Server and the field device running Interviewer. To manually pair, select the white "provide manual connection details" button on the bottom right corner of the "Server Status" panel in Interviewer. You will be prompted to enter the Server IP address and Pairing Port number, both of which can be found by clicking on the network status icon in the top right corner Server. Once these details are provided, the field device will search for Server to pair.
+
+Problem solving: If you cannot reach Server using automatic discovery or the manual pairing steps, try the following: 1) make sure Server is open, 2) restart Server and Interviewer on their respective devices (note: restarting will not drop data), 3) contact your network administrator or refer to the details of the error message for further troubleshooting tips.
+
+Some details that might help your network administrator: Server uses the Bonjour protocol and requires multicast DNS packets to be able to pass through the network.
 
 ## Some Guidance on Pairing
 
