@@ -1,24 +1,24 @@
 ---
-summary: This tutorial will discuss using Server to deploy protocols to devices
-  running Interviewer, receive data back from those devices, and then export
+summary: This tutorial will introduce you to using Server. It it will demonstrate how to deploy interview protocols to devices
+  running Interviewer, how to receive data back from those devices, and then how to export
   this data for further analysis.
 prerequisites: You should have read and understood the project overview, and be
   familiar with the concept of protocol files. You should install Server and
-  Interviewer on one or more devices if you would like to follow along with the
+  Interviewer on one or more devices and have an interview protocol ready if you would like to follow along with the
   steps in this tutorial.
 completion_time: 1 hour
 nav_order: 3
 title: Using Server to manage a study
-wip: true
+wip: false
 ---
-## Introducing Network Canvas Server
+## Introducing Server
 
-Server is an optional companion program to Interviewer and Architect, which is used to:
+Server is an optional companion program to Interviewer and Architect, which has the following useful features:
 
-* Deploy interview protocol files to field devices running Interviewer
-* Receive data directly from field devices, and provide a central repository for interview data
-* Monitor the data collection process in real-time
-* Export data for further analysis
+* It can deploy interview protocol files to field devices running Interviewer
+* It receives data directly from field devices, and provides a central repository for interview data
+* Allows you to monitor the data collection process in real-time
+* Allows you to export data for further analysis in a variety of formats, and including some basic data merging/processing
 
 ### When to use Server
 
@@ -32,27 +32,51 @@ However, if your study has a single designated data manager, entails working wit
 
 Server is particularly useful when you have multiple devices in the field that all need to transmit interview data to a single location. Each device running Interviewer can be connected to a single instance of Server, which allows you to manage interview protocol deployment, view cases as they are uploaded, and monitor the progress of your project in real time. From this same instance of Server, you are able to export all of your social network data in a format suitable for analysis in standard network and statistical software packages.
 
-## Installing and Running Server
+## Installing and running server
 
 Server is a desktop program that is designed to be run by a researcher on a dedicated computer in their lab, university, or workplace.
 
-Despite its name, Server is not a headless or command line application designed to be run on your institution's server hardware, or in a data-center. Instead, it is a GUI application that is intended to be run by end-users on their desktop machines as a convenient way to centralize data collection and manage a study.
+Despite its name, Server is not a headless or command line application designed to be run on your institution's server hardware, or in a data-center. Instead, it is a GUI application that is intended to be run by end-users on their desktop machine.
 
-### System Requirements
+### System requirements
 
-Because it is not a true 'server' application, Server has no special system requirements beyond the rest of the applications in the Network Canvas suite. That means you should follow the guidelines listed in the [installation guide](../installation-guide.md#system-requirements).
+Because it is not a true 'server' application, Server has no special system requirements beyond the rest of the applications in the Network Canvas suite. That means you should follow the requirements listed in the [installation guide](../installation-guide.md#system-requirements).
 
-One additional consideration with Server is that since it acts as an endpoint for data transfer, its networking should be fast and reliable. This means using wired networking and not WiFi, and adjusting the power management settings of your operating system to make sure that the computer does not 'sleep' when not in use, so that it can still receive data.
+One additional consideration unique to Server is that since it acts as an endpoint for data transfer, its networking should be fast and reliable. This means using wired networking and not WiFi, and adjusting the power management settings of your operating system to make sure that the computer does not 'sleep' when not in use, so that it can still receive data.
+
+### Networking configuration
+
+Using the remote data transfer functionality of Server requires that the device running Server and the device(s) running Interviewer be able to communicate with each other. To enable this communication requires a degree of knowledge about computer networks and associated concepts. This tutorial will not go into detail on these topics, so you may need to either consult with technical exports within your institution, use the offline workflow, or consider a workflow that does not use Server if you do not have experience with them.
+
+If you are familiar with these concepts, the networking requirements of Server are simple:
+
+* Server listens on TCP port **61001** for pairing requests, using an unsecured HTTP service.
+* Server listens on TCP port **61002** for secure API requests using the HTTPS protocol, including data upload, protocol listing, and protocol download.
+* Server binds to these ports on all interfaces addresses, in both IPv4 and IPv6.
+* The automatic Server discovery feature uses multicast DNS (also known as Bonjour, or Zeroconf). Server sends service advertisement packets of this type on UDP port **5353**.
+
+You must configure your firewall and/or routing settings to allow the computer running server to receive traffic on the above ports, on whichever interfaces you want to use. If your devices running Interviewer will not be operating on the same LAN, or you are otherwise in an untrusted network environment, **take extreme care over the decision to open these ports**. See the following section for further information on security practices.
+
+### Securing Server
+
+Since Server will store study data, and provides remote data import functionality (meaning it is 'exposed' to other computers) it is important to understand security best practices around its use.
+
+Some key points to keep in mind are:
+
+* Server's data store is **not encrypted** at rest. We made this decision because it would be trivial for a malicious party with access to the computer running Server to uncover the encryption key and decrypt the data. Instead, we strongly advise you to use both the operating level disk encryption features available to you, and strong physical security/user access controls.
+* Server is **not intended to be exposed directly to general internet traffic**. Although every effort has been taken to secure Server, no software is completely impervious to attack. You should not allow Server to face internet traffic directly. If your devices running Interviewer are not on the same LAN as the computer running Server, you should use additional transport security in the form of a VPN.
+
+For more information on these topics, see our articles on [IRB and security best practices](../_reference/irb-best-practices.md) and [configuring your devices prior to starting data collection](../_how-to/configuring-devices.md).
 
 ## Using Server
 
 After opening the Server application on your computer, you are greeted by the setup screen.
 
-![The setup screen](../../assets/img/server-guide/welcome.png)
+![The setup screen](../../assets/img/server-guide/server-welcome.png){: .img-width-full}
 
-The setup screen of Server provides instructions for how to create a workspace, and how to pair with a device running Interviewer to facilitate secure encrypted data transmission. The icons in the top right corner of the screen also provide important details about the network connectivity of the computer running Server. These details can be used to manually pair Server to Interviewer field devices if necessary (details on manual pairing below).
+The setup screen of Server provides instructions for how to create a workspace, and how to pair with a device running Interviewer to facilitate secure encrypted data transmission. The icons in the top right corner of the screen also provide important details about the network connectivity of the computer running Server. These details can be used to manually pair Server to Interviewer field devices if necessary.
 
-#### Server's background process
+### Server's background process
 
 When you open Server, a 'background' process is also launched, which will remain running even if you close the main window of the app. You can find this background process in the system tray on a computer running Windows, and in the status bar on macOS.
 
@@ -62,11 +86,11 @@ To exit the app completely, including closing this background process, click the
 
 ![Quitting the app from the system tray](/assets/uploads/screen-shot-2021-04-29-at-4.55.48-pm.png){:standalone}
 
-### Creating a Workspace by Importing a Protocol
+### Creating a workspace by importing a protocol
 
-Server is organized around the concept of 'workspaces', where each workspace is based on a protocol file. A workspace contains all the data and functions associated with that protocol file.
+Server is organized around the concept of 'workspaces', where each workspace is based on a protocol file. A workspace contains all the data and functionality associated with that protocol file. Every protocol you import will have a dedicated workspace. This allows you the flexibility have multiple protocols or studies running in parallel.
 
-![Workspaces](/assets/uploads/screen-shot-2021-04-29-at-5.03.54-pm.png){: .img-float-left .img-width-20}Workspaces are shown in the purple column on the left hand side of the app once created, with a large plus button always visible that can be used to create a new workspace.
+![Workspaces](/assets/uploads/screen-shot-2021-04-29-at-5.03.54-pm.png){: .img-float-left .img-width-20}Your workspaces are shown in the purple column on the left hand side of the app, with a large plus button always visible that can be used to create a new workspace.
 
 To create a new workspace, locate a `.netcanvas` protocol file. For the purposes of this demonstration, we can use the sample protocol file that has been discussed in the tutorials on Interviewer and Architect (which can be downloaded [here](https://github.com/complexdatacollective/Documentation/blob/master/protocols/Sample%20Protocol%20v2.netcanvas)).
 
@@ -76,162 +100,155 @@ To create a workspace from the protocol file either:
 2. Use the 'plus' button to open a file dialog and browse to the file
 3. Select 'Import Protocol' from the file menu and browse to the file
 
-Once imported, Server will create a workspace represented using the initials of the protocol name, with a unique icon generated based on the protocol content. Clicking this icon will switch to that workspace, and show the "overview" tab. Every protocol you import will have a dedicated workspace. This allows you the flexibility have multiple protocols or studies running in parallel.
+Once imported, you will see a workspace icon that contains the initials of the protocol name, with a unique background that is generated based on the protocol content. Clicking this icon will switch to that workspace, and show the "overview" tab.
 
 ![The overview tab of a newly created workspace](../../assets/img/server-guide/imported-protocol-server.png){:standalone}
 
-To preserve the quality of your data, it is not possible to change most of the details of a protocol once in use. If a protocol is in the field and the question names and ordering are changed it will make it difficult, if not impossible, to export all this data in a single table.
-{: .tip-box .caution}
+Once you have created a workspace from a protocol, it is not possible to update or replace the protocol. This is to ensure that there can be no confusion regarding protocol versions, which could lead to inaccurate or missing data. Server identifies a protocol based on its name, which means that if you attempt to create a new workspace with a protocol whose name is already used by another workspace, you will receive an error message.
+
+If you need to update a protocol after you have created a workspace for it, you should instead rename the protocol to indicate that it is a different version, and then create a new workspace. If you need to merge the data from the two protocols, you should handle this process manually outside of Server. This ensures that all data cleaning and merging steps are conducted deliberately as directed by you, which in turn leads to greater confidence in the data.
 
 ### Navigating a protocol workspace
 
-A workspace is divided into tabs:
+A workspace is divided, which are visible along the top of the screen:
 
-* **Overview**: This tab displays key summary information about your study and updates in real time as new interview data is uploaded. The 'cards' can be reordered by dragging.
-* **Manage cases**: A simple list of interview session data allowing you to individually delete a session.
+* **Overview**: This tab displays key summary information about your study and updates in real time as new interview data is uploaded. The 'cards' containing summary charts for your variables can be reordered by dragging them.
+* **Manage cases**: A simple list of interview sessions allowing you to individually delete a session.
 * **Export data**: Allows you to export data from Server in a format of your choosing, as well as specify export options such as merging.
 * **Resolve data**: An advanced feature that allows you to match alters across interviews using a custom python script.
 * **Settings**: The settings tab allows you to delete the workspace, as well as customize which charts are visible on the overview tab.
 
-## Pairing a Field Device Running Interviewer with Server
+## Pairing Server with interview devices
 
-To use Server with a field device, you will first have to pair the device with Server. Pairing requires exchanging encryption keys between Server and the field device. Once paired, you can download a protocol from Server to Interviewer and upload data collected in Interviewer back to Server.
+Getting data from Interviewer into Server requires "[pairing](../_key-concepts/pairing.md)" the two devices. The pairing process works by using an "out of band" code that is generated by Server and used by both Server and Interviewer to generate a unique encryption key. This key is used by both apps in all subsequent security sensitive communication, such as when downloading interview protocols, or uploading data.
 
-A 'field device' is any device that collects data using Interviewer. It could be a tablet or the very same computer running Server.
+To pair a device with Server, make sure you have both Interviewer and Server programs open and running, and you have configured your network as [described above](#networking-configuration).
+
+For testing purposes, and to follow along with this tutorial, you may wish to run Interviewer and Server on the same computer, which will avoid the need to configure networking.
 {: .tip-box}
 
-Getting data from Interviewer into Server requires "pairing". To pair, Server produces a unique encryption key that must be manually entered into the Interviewer application running on a field device. Once paired, Interviewer is able to securely transmit data collected in the field directly to Server. Utilizing Server allows you to avoid using third party servers, such as Dropbox or Google Drive, and instead transfer your data directly to a computer with full-disk encryption (such as FileVault on Mac or BitLocker on Windows). Transferring data to Server in this way is an example of peer-to-peer connection whereby only your field device and your copy of Server are able to access your data.
-{: .key-concept data-title="Key Concept: Encryption for data security"}
+### Using automatic Server discovery
 
-To begin, make sure you have both Interviewer and Server programs open and running on the same network. With Interviewer open on your field device, scroll down to the 'Server Status' panel at the bottom of the start screen. Interviewer will automatically search for any Servers available on the same network. This process is called 'automatic discovery.' If Interviewer detects an instance of Server, it will appear as a card on the panel displaying the name of the computer, IP address, and network on which the Server program is running.
+Your device running Interviewer needs to know the IP address of the computer running Server so that can send a pairing request. As a convenience, we implemented a discovery protocol that can enable your devices to find each other automatically. We call this feature "automatic Server discovery".
 
-To trigger the pairing process, click the card. The Interviewer screen will then show a message that the pairing request has been initiated and must now be acknowledged within the Server app. 
+This feature uses a technology called multicast DNS (also known as Bonjour or Zeroconf), which is also used for Apple's AirPlay feature, and in Google's Chromecast devices. Multicast DNS typically only works when devices are on the same LAN, but is enabled by default in both Server and Interviewer as a 'best case' option.
 
-![Image](../../assets/img/server-guide/pairing-message-interviewer.png)
-
-Next, you will acknowledge the request to pair the devices by clicking the pink "Pair with Device" button in Server. 
-
-![Image](../../assets/img/server-guide/pair-confirmation-server.png)
-
-Once the request is acknowledged, Server will produce a unique 16 character encryption code that must be typed into the Interviewer app in order for the devices to pair successfully. 
-
-![Image](../../assets/img/server-guide/pairing-code-server.png)
-
-The encryption code produced by Server must now be typed into the dialog appearing in Interviewer. 
-
-Note: once the encryption code is provided by Server, you have 30 seconds to submit it to Interviewer before the pairing window will time out. If that window passes, you can reinitiate the pairing process or else pair manually.
-
-![Image](../../assets/img/server-guide/pairing-code-interviewer.png)
-
-After you submit the encryption code in Interviewer, you will see notifications on both apps that the pairing was completed. Once paired, Interviewer can fetch protocols from Server and upload data back to Server.
-
-![Image](../../assets/img/server-guide/pairing-successful.png)
-
-<div class="key-concept" data-title="Key Concept: Server advertising and automatic discovery" markdown="1">
-Automatic discovery is a feature that allows Interviewer to find Server automatically so long as both devices in question are on the same network connection (i.e. the same WiFi or wired Ethernet connection). This feature is available on both Windows and Mac computers, but not Linux.
-</div>
-
-If automatic discovery fails or is unavailable (which can occur if you are on a highly secured network), you can manually facilitate the pairing process between Server and the field device running Interviewer. To manually pair, select the white "provide manual connection details" button on the bottom right corner of the "Server Status" panel in Interviewer. You will be prompted to enter the Server IP address and Pairing Port number, both of which can be found by clicking on the network status icon in the top right corner Server. Once these details are provided, the field device will search for Server to pair.
-
-Problem solving: If you cannot reach Server using automatic discovery or the manual pairing steps, try the following: 1) make sure Server is open, 2) restart Server and Interviewer on their respective devices (note: restarting will not drop data), 3) contact your network administrator or refer to the details of the error message for further troubleshooting tips.
-
-Some details that might help your network administrator: Server uses the Bonjour protocol and requires multicast DNS packets to be able to pass through the network.
-
-## Some Guidance on Pairing
-
-* A field device can only pair with one Server at any given time, but a Server can deploy multiple protocols and be paired with multiple field devices simultaneously. If you want to pair with a new instance of Server, the connection to the formerly paired Server will be removed. Protocols that exist on the device will *not* removed, nor will any cases that have not been uploaded. 
-* You can see what devices are paired with Server by clicking on the 'devices' icon in the upper right corner of the app. From there, you can check to see what devices are paired and remove any devices which should not be paired. Note: cleaning out old paired devices is not necessary nor will maintaining a list of old devices on Server affect performance.
-* If a field device is not paired with a Server before the interview, you can pair with it at a later time. This can be done from the start screen of Interviewer by going to the "Server Status" panel and initiating the pairing process through automatic discovery or pairing manually. Please note that the protocol must have already been uploaded to Server even if the device is not currently paired. You cannot "push" a protocol upstream to Server, only download a protocol that already exists and upload a new interview case.
-* Server will not enforce unique Case IDs. Instead, there is an internally generated UID which will be unique for all cases. Distinguishing cases based on Case ID is the interviewer's responsibility. 
-
-## Importing a Protocol in Interviewer
-
-There are three ways to import a protocol in Interviewer: from a URL, from a file, and from Server. 
-
-![Image](../../assets/img/server-guide/import-protocol-interviewer.png)
-
-To fetch a protocol from a URL, click the "Import from URL" button on the start screen of Interviewer under the "Protocols" panel. A dialog will appear where you can enter the URL where your protocol is hosted. 
-
-![Image](../../assets/img/server-guide/from-URL.png)
-
-To import a protocol as a file, click the "Import from File" button. A new dialog will appear that allows you to browse for the file you want to import. When you locate the file, click "open" to import the protocol into Interviewer.
-
-Note: remember only .netcanvas files can be read by Network Canvas applications.
-
-![Image](../../assets/img/server-guide/from-file.png)
-
-To import a protocol from Server, click the "Import from Server" button. You will then see a dialog containing all protocols currently uploaded to the instance of Server to which you are paired. Each protocol will display as a card. Click the card of whichever protocol you wish to import.  
-
-![Image](../../assets/img/server-guide/from-Server.png)
-
-Once you have imported a protocol to Interviewer, you will be able to view it displayed as a card under the "Start a New Interview" panel on the start screen. Click on the protocol you wish to use to collect interview data. 
-
-![Image](../../assets/img/server-guide/protocol-card.png)
-
-## Exporting and Managing Data in Interviewer
-
-All interviews completed in Interviewer will appear as cards in the "Export & Manage Interview Data" of the app start screen. Each card represents a unique interview session and contains:
-
-* the case ID, 
-* the name of the protocol used to conduct the interview, 
-* the date and time the interview was initiated, 
-* the date and time the interview was completed, 
-* the percentage complete, and 
-* the export status of the interview data.
-
-In this panel, cases can be sorted by "last changed", "case ID", or "progress." You can also filter cases by case ID. 
-
-### Case Selection
-
-Cases can be selected individually by tapping on the card. You can also select all unexported cases or select all cases by toggling the corresponding switches in the bottom right of the panel to "on."
-
-Once cases are selected, there are three actions you can complete from this panel: 1) delete selected cases, 2) export selected cases to Server, and 3) export selected cases to a file. Each action has a corresponding button at the bottom of the panel. 
-
-![Image](../../assets/img/server-guide/export-manage.png)
-
-Deleting selected cases from Interviewer **permanently deletes the data**, so only complete this action if you are absolutely sure that your data have already been saved in a secure location or that you will not be requiring the data from these cases. 
-
-When you export selected cases to Server, Interviewer will indicate whether the upload was successful. You can also cross check the data was successfully uploaded to Server by viewing the overview dashboard for the protocol workspace you are using, which will show the case IDs in real time. 
-
-If you export selected cases to a file, a dialog will appear for you to save the zip to a location of your choice. 
-
-Before exporting interview data to a file from Interviewer, be sure the 'Data Export Options' are configured to meet your needs. By default, interview data from interviewer will export in GraphML unless you toggle the CSV export option. Configure data export options in the Settings menu by clicking the gears icon in the top left of the start screen.
+Click the networking status indicator in the top right of Server to see information about the status of the automatic discovery feature, as well as other useful networking information.
 {: .tip-box}
 
-## Managing and Exporting Data in Server
+With Interviewer open, scroll down to the 'Server Status' panel at the bottom of the start screen. Interviewer will automatically search for any Servers available on the same network. If Interviewer detects a nearby computer running Server, it will appear as a card on the panel displaying the name of the computer and its IP address.
 
-Server's overview dashboards allow you to monitor data quality and project progress for each of your studies. The overview dashboard of each protocol workspace tracks the total number of nodes (across all node types) as well as some average node statistics and the date the interview was uploaded. It will also give a list of the five most recent cases that have been uploaded. 
+![Image](../../assets/img/server-guide/discovery-section.png){: .img-width-full}
 
-### Manage Cases
+To trigger the pairing process, click the card.
 
-Under the "Manage Cases" tab you can find the complete list of uploaded cases for the study protocol. You can use this list to cross check the uploaded cases from your devices. Cases can also be deleted from Server by selecting the checkbox next to the case and clicking the green "Delete Selected Cases" button at the top of the case list.
+### Using manual connection details
 
-![Image](../../assets/img/server-guide/manage-cases.png)
+If you cannot utilize automatic discovery (either because it fails or is unavailable), you can also enter manual connection details for Server. To do this, follow the same steps as above (scroll to the bottom of the Interviewer start screen, to the "Server Status" section). Click the white button in the bottom right hand corner ("provide manual connection details").
 
-### Export Data
+![The manual connection details form](../../assets/img/key-concepts/pairing/nc-manual-pairing.png){:standalone}
 
-Every completed interview can be exported from Server under the "Export Data" tab. Under this tab you can: 1) select one or more preferred data export formats (CSV and GraphML), 2) choose export options, and 3) select CSV specific file export options.  
+In the manual connection dialog, you must enter in the IP address and port number of the Server with which you wish to pair. The Server IP address and port number can be found by clicking on the Network Status icon on the top right of the main interface in Server.
 
-![Image](../../assets/img/server-guide/export-data.png)
+![Network information panel in Server](../../assets/img/key-concepts/pairing/server-manual-details.png){:standalone}
 
-### Settings
+Please note that the connection information listed here may not reflect the publicly routable address for Server if you have configured NAT or port forwarding through a gateway.
+{: .tip-box}
 
-As noted above, the "Settings" tab is where you are able to toggle "on" or "off" the presence of specific study metrics on the overview dashboard of the protocol workspace. From this tab, you can also delete a workspace. 
+### The pairing flow
 
-Note: deleting a workspace will permanently remove a copy of the protocol file and any associated data that has been imported from Server.
+Whether you use automatic discovery or manual connection information to locate Server, the pairing process itself will be the same. Once you have attempted to connect to Server, a pairing request will be sent. When Server receives it, a notification will be shown, which you must respond to.
 
-### File Type
+![The pairing request is shown as a notification in Server](../../assets/img/key-concepts/pairing/server-acknowledge.png){:standalone}
 
-A CSV file is a comma separated file of values. This is readable as a table (or series of tables) in Excel, LibreOffice, Keynote, and other tabular programs. The CSV version also complies with the `egor` package standard. This is a specification for egocentric data in R. A GraphML file is a file that is compliant with many social network analysis programs including UCINET, Gephi, NodeXL, Pajek, Visone, ORA and others. While the CSV files will have separate files for edges, egos and alters, the GraphML file contains data on ego, alters, and edges in the same file. This means it cannot be tabular (i.e. used in Excel) but it can still be effectively read by using the network analysis packages above. 
+To accept this request, click the "pair with device". As soon as you accept the pairing request, a new dialog will open in Server with a unique sixteen letter pairing code.
 
-We recommend entering some test data in Interviewer and exporting it before going into the field. This is to confirm your data structure is as expected.   
+![The pairing code, shown in Server](../../assets/img/server-guide/key-server.png){:standalone}
 
-### Interview Networks
+At the same time, a new dialog will open in Interviewer with space to enter this code. To complete pairing, enter the code provided by Server into the empty box, then click the green "pair" button.
 
-Networks can either be seen as individual cases or as part of one large set of nodes and edges. The option to **"Merge Sessions by Protocol"** under the "Export Data" tab will produce a consolidated file for all the cases in the data on a per-protocol basis. If this option is not selected, the file export will produce a folder with a separate file for each of the interviews completed. This will include all the data for that case. The filename will be the name of the case followed by the unique system ID for that case. 
+You can copy and paste the pairing code from within Server. This may make entering it less error-prone.
+{: .tip-box}
 
-* *Ego file*: This will have one row per ego, with ego-level variables and some summary statistics. The key will be caseID_uid
-* *Alter file*: This will have one row per alter (i.e. per nominated node). Alters will have their own unique ID. The alters can be linked to their respective ego through the key caseID_uid 
-* *Edge file*: This will have one row per relationship. Each row will have a key to link to ego (caseID_uid), the ID of alter 1, the ID of alter 2, and any edge-level variables. 
+Once confirmed, the Server status section in Interviewer will update to show the connection status with Server, and a new option to import from Server will appear in the protocols section. Additionally, data export to Server will be enabled.
 
-While we try to make the export of data as painless as possible, complex data often requires considerable data wrangling nonetheless. For example, if you have two node types (e.g., "Person" and "Place"), then they will both exist in any exported data. If you only want networks between people, then you will have to manually remove the other place nodes. We cannot overstate how important it is to test the collection *and* export of these data before going into the field. Being unable, for example, to distinguish whether a node was nominated from one prompt or another is possible but might seriously impede analysis. Consider utilizing the data export features in Server to view your data before your study begins.
+![The updated Server section, and new protocol import option in Interviewer](../../assets/img/server-guide/import-protocol-interviewer.png){:standalone}
+
+## Pushing interview data to Server
+
+Once a device running Interviewer is paired with Server, new data export options become available in the "Export & Manage Interview Data" section of the Interviewer start screen.
+
+To securely transfer data to Server from interviewer, select one or more cases from this section, and click "export selected to Server".
+
+When you export selected cases to Server, Interviewer will indicate whether the upload was successful. You can also cross check the data was successfully uploaded to Server by viewing the overview tab for the protocol workspace you are using, which will show the data in real time.
+
+### Manually importing data into Server
+
+As per the [offline workflow](./offline-data-management-workflow.md) it is also possible to import interview data into Server manually.
+
+For this to work, you **must** export your data from Interviewer in the enhanced GraphML format we have implemented. This is because this format contains Network Canvas specific metadata that is needed to ensure the integrity of the data, as well as to encode the ego-level variables from your protocol.
+
+Once you have exported one or more interview sessions in GraphML format, transfer them to the computer running Server. To import them, either:
+
+1. Drag and drop one or more files into the protocol workspace (not the purple sidebar!), or
+2. Select "Import Interview Files" from the File menu.
+
+## Exporting data
+
+Interview data can be exported from Server using the "Export Data" tab. The content of this tab is split into steps, which determine the details of the data export.
+
+![The data export tab](../../assets/img/server-guide/export-data.png){:standalone}
+
+### File type
+
+The first choice you must make during export concerns the file type. Server supports two types of network data files:
+
+* **CSV**. A common format for representing network data. This format is readable as a table (or series of tables) in Excel, LibreOffice, Keynote, and other tabular programs. The CSV version also complies with the `egor` package standard. Selecting this option will output multiple files, including node and edge lists for each type, and an ego attribute list that also includes session metadata:
+  * **Ego attribute list**: This file will have one row per ego, with ego-level variables session metadata. The filename will be in the format `caseID_sessionUUID_ego.csv`.
+  * **Alter attribute list**: This file will have one row per alter (i.e. per nominated node). All alters have their own unique ID, as well as an automatically incrementing ID that is only consistent on a per-export basis. The filename will be in the format `caseID_sessionUUID_alterType.csv`.
+  * **Edge attribute list**: This will have one row per relationship, with columns representing edge attributes. Each row will have a key to link to ego (`networkCanvasEgoUUID`), as well as source and target columns that reference both the UUID and the automatically incrementing export ID. The filename will be in the format `caseID_sessionUUID_edgeType.csv`.
+* **GraphML**. An XML based open standard for representing graph data, that is compatible with many social network analysis programs including UCINET, Gephi, NodeXL, Pajek, Visone, and ORA. Server outputs a [slightly modified](../_reference/network-canvas-graphml.md) version of the GraphML format, which also contains ego data and Network Canvas session metadata. The filename will be in the format `caseID_sessionUUID.graphml`.
+
+Which file type you should choose depends largely on the needs of your analysis tools. We recommend exporting data in both formats, and experimenting with the data you receive to ensure that it needs your needs.
+
+### Export options
+
+Next, you may configure a variety of specialized export options that will impact the data you receive in a variety of ways. These options can be left at their default values unless you know that you need to change them.
+
+#### Merge sessions by protocol
+
+The option to "Merge Sessions by Protocol" will produce a consolidated file (or files in the case of CSV) that contains all interviews. Although the file(s) will contain all egos, nodes, and edges across all interviews, the ego networks themselves will not be merged in any way.
+
+If this option is left deselected, the export process will produce separate files for each of the interviews completed.
+
+#### Use screen layout coordinates
+
+Position data from layout variables used on the Sociogram interface in Interviewer is stored on nodes as normalized x/y coordinates, with the origin in the top left of the screen. This allows you to later visualize these layouts on a canvas of arbitrary size, and to compare layouts that were created on screens with different proportions.
+
+As part of the export flow in Server, you can optionally transpose these normalized values to screen space coordinates. When you enable this option, you will be required to specify 'virtual' screen dimensions. New variables will then be created and added to your exported data, based on scaling each layout variable by these dimensions. This will result in pixel value X/Y coordinates.
+
+### CSV specific file options
+
+When exporting CSV data is enabled in step 1, an additional step appears that allows you to specify which files you would like to export.
+
+By default the export does not include an adjacency matrix, since this format will result in an extremely large file with relatively little data. It is included for compatibility reasons, should you need it.
+
+It is **very** easy to create unmanageably large files by combining the "merge sessions by protocol" and "adjacency matrix" export options. A study containing 2000 cases will produce a single 13gb CSV file when using these options together! Ensure that you require both options before enabling them.
+{: .tip-box .caution}
+
+### Concluding the export
+
+Once you have selected the options you desire, click "begin export" to start the export process. Depending on the size of your dataset, and the options you select, this process may take several minutes to complete. At the end of the process, you will receive a ZIP archive that you can save to your filesystem that contains your data.
+
+
+## Resolving data
+
+This tab is used to access an advanced 'entity resolution' feature, which allows you to write a python script that can match alter nodes across interviews, thereby creating a pseudo whole-network from a series of ego networks. The specifics of using this feature are covered in a [dedicated tutorial](./resolving-entities.md).
+
+## Further reading
+
+This concludes our introductory tutorial on using Server. You may now wish to read further on several more advanced topics.
+
+* Learn about how to analyze the data you have exported from Server in the tutorial on [working with Network Canvas data in R](./working-with-data.md). 
+* Consult the tutorial on the [offline workflow](./offline-data-management-workflow.md) for further information about alternative approaches to managing study data, both with and without using Server.
+* Read the advanced tutorial on [resolving entities across interviews](./resolving-entities.md) if you are interested in creating pseudo whole-networks from a collection of ego networks.

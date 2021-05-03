@@ -53,9 +53,18 @@ Clicking on "Import From Server" will display any protocols that have been uploa
 
 ![Image](../../assets/img/key-concepts/pairing/protocol-list.png)
 
+## Some Guidance on Pairing
+
+* A field device can only pair with one Server at any given time, but a Server can deploy multiple protocols and be paired with multiple field devices simultaneously. If you want to pair with a new instance of Server, the connection to the formerly paired Server will be removed. Protocols that exist on the device will *not* removed, nor will any cases that have not been uploaded. 
+* You can see what devices are paired with Server by clicking on the 'devices' icon in the upper right corner of the app. From there, you can check to see what devices are paired and remove any devices which should not be paired. Note: cleaning out old paired devices is not necessary nor will maintaining a list of old devices on Server affect performance.
+* If a field device is not paired with a Server before the interview, you can pair with it at a later time. This can be done from the start screen of Interviewer by going to the "Server Status" panel and initiating the pairing process through automatic discovery or pairing manually. Please note that the protocol must have already been uploaded to Server even if the device is not currently paired. You cannot "push" a protocol upstream to Server, only download a protocol that already exists and upload a new interview case.
+* Server will not enforce unique Case IDs. Instead, there is an internally generated UID which will be unique for all cases. Distinguishing cases based on Case ID is the interviewer's responsibility. 
+
 ## Troubleshooting
 
 If you cannot reach Server using automatic or manual discovery following the steps above, please try the following:
+
+
 
 * Make sure Server is running.
 * Ensure both Server and Interviewer are connected to the same local network. If you wish to connect over the internet, ensure you have configured a VPN or similar.
