@@ -12,8 +12,11 @@ Interviewer and Architect (from version 4.2.0 onward) implement a feature that t
 
 Although every effort is made to maintain compatibility with new schema versions, any features implemented that require a schema update will be unavailable to you until you migrate your protocol. We _strongly_ encourage you to update your protocol files wherever possible, so that you are able to use the newest Network Canvas features.
 
-We urge iPadOS and Android users to follow the advice set out in the [configuring devices prior to starting data collection](../_how-to/configuring-devices.md) article, and disable automatic app updates so that they are not caught out by breaking changes that result from new protocol schema versions. This is essential if users wish to continue using a particular version of an app to ensure it remains compatible with their existing protocols (rollback to prior versions is not possible on these platforms).
-{: .tip-box .caution}
+<div class="tip-box caution" markdown="1">
+We urge iPadOS and Android users to follow the advice set out in the [configuring devices prior to starting data collection](../_how-to/configuring-devices.md) article, and disable automatic app updates so that they are not caught out by breaking changes that result from new protocol schema versions.
+
+This is essential if users wish to continue using a particular version of an app to ensure it remains compatible with their existing protocols (rollback to prior versions is not possible on these platforms!).
+</div>
 
 ## What is a protocol schema?
 
@@ -27,11 +30,15 @@ Our priority when implementing schema versioning has been to not burden the end 
 
 When you update Interviewer or Architect, you may encounter messages when using protocols that were authored in prior versions of the apps.
 
+### Within Interviewer
+
 In Interviewer, you may see a blue light bulb icon, or a red robot icon, on your protocol card. Where a new schema is backward-compatible with a prior version you will see a blue light bulb, and Interviewer will continue to support installing and running protocols of that version without any issues. This means that if you are happy with your protocol file **you do not need to take any action**. Your protocol will continue to function as before, albeit without access to new functionality implemented with the new schema version (see the [schema versions table](#schema-versions) below for details on this).
 
 If you wish to update the protocol file to the new schema version, follow the instructions provided below under [migrating a protocol](#migrating-a-protocol).
 
 If your protocol is no longer compatible with the version of Interviewer that you have installed, you will see a red robot icon, and will no longer be able to start an interview. Please see the section below on [handling obsolete protocols](#handling-obsolete-protocols) for further assistance.
+
+### Within Architect
 
 In Architect, you may see a prompt that a protocol must be migrated to a newer version before it can be opened (see below).
 
@@ -63,14 +70,19 @@ Migrating a protocol happens within Architect, and is automatic. The process wor
  3. Architect will inform you that the protocol file can be upgraded, which happens by creating a copy (so that your original file is preserved). If you choose to continue, you will be prompted for a location to save your upgraded protocol.
  4. Architect will automatically append "(schema version X)" to the filename, which may help you to keep track of the different versions of your protocol, and to differentiate them within Server and Interviewer.
 
-Schema changes may represent changes to the underlying network data model and, therefore, protocols migrated from one schema version to another must be treated as different workspaces within Server (shown below). Users that do migrate their protocols to a new schema compatible version will need to create a merging script to handle combining the two data sources from the two workspaces once exported. Although this process introduces an extra step in a user workflow, it promotes better quality data and greater user control.
-{: .tip-box .caution}
+<div class="tip-box caution" markdown="1">
+Schema changes may represent changes to the underlying network data model and, therefore, protocols migrated from one schema version to another must be treated as different workspaces within Server.
+
+Users that migrate their protocols to a new schema version will need to create a merging script to handle combining the two data sources from the two workspaces once exported.
+
+Although this process introduces an extra step in a user workflow, it promotes better quality data and greater user control.
+</div>
 
 ## Compatibility Table
 
 Consult the table below for information about which schema versions are supported by each released version of the Network Canvas software.
 
-| Interviewer Version           | Main Schema Version | Interviewer Supported Schema Versions |
+| App Version |
 |-------------------------------|---------------------|---------------------------------------|
 | 6.1.0                         | 5                   | 4,5                                   |
 | 6.0.1                         | 4                   | 4                                     |
@@ -78,7 +90,7 @@ Consult the table below for information about which schema versions are supporte
 
 ## Schema Versions
 
-### Version 5 (planned)
+### Version 5
 
 - Implements the "tie-strength census" interface
 - Includes new validation options for form fields

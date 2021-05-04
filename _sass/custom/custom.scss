@@ -12,7 +12,9 @@ ol, ul {
 // Figures
 
 @media only screen and (min-width: #{map-get($media-queries, "md")}) {
-  img {
+  img, figcaption {
+    display: block;
+    margin: 0 auto;
     max-width: 30rem;
   }
 }
@@ -148,7 +150,7 @@ nav.nav-rel {
 .tip-box {
   @extend .inline-box;
 
-  @media only screen and (min-width: #{map-get($media-queries, "sm")}) {
+  @media only screen and (min-width: #{map-get($media-queries, "md")}) {
     margin-top: 3em;
   }
 
