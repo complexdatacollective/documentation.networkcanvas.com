@@ -6,7 +6,7 @@ prerequisites: You should have read and understood the project overview, and be
   familiar with the concept of protocol files. You should install Server and
   Interviewer on one or more devices and have an interview protocol ready if you would like to follow along with the
   steps in this tutorial.
-completion_time: 1 hour
+completion_time: 30 minutes
 nav_order: 3
 title: Using Server to manage a study
 wip: false
