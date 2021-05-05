@@ -10,7 +10,7 @@ prerequisites: >-
   To get the most from this tutorial, you should have first:
 
   - Read and understood the [project overview](../../project-overview).
-  - To follow along using your own computer or device, you should have [downloaded and installed Interviewer](https://networkcanvas.com/download.html).
+   - To follow along using your own computer or device, you should have [downloaded and installed Interviewer](https://networkcanvas.com/download.html).
 
   Please note that we have created a separate tutorial article covering how to create a protocol, called [building a protocol using Architect](../building-a-protocol). We suggest you continue with the current tutorial before learning the more advanced concepts involved in protocol creation, but you can read this articles in any order you wish. 
 completion_time: 30 minutes
