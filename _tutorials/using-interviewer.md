@@ -345,7 +345,7 @@ Remember that at any time during the interview, you can view a menu of all proto
 
 ## The Narrative Interface
 
-The final stage of the sample protocol demonstrates an interface that is designed for qualitative personal network's research. The [narrative \](../_interface-documentation/narrative.md) interface does not collect any additional data, but rather can map data collected elsewhere in the interview to aspects of the visual representation of the network. It therefore aims to represent aspects of the participant's network back to them, with the intent to facilitate narrative interrogation of the data in an interview setting.
+The final stage of the sample protocol demonstrates an interface that is designed for qualitative personal network's research. The [narrative](../_interface-documentation/narrative.md) interface does not collect any additional data, but rather can map data collected elsewhere in the interview to aspects of the visual representation of the network. It therefore aims to represent aspects of the participant's network back to them, with the intent to facilitate narrative interrogation of the data in an interview setting.
 
 ![Image](/assets/img/sample-protocol/narrative.png)
 

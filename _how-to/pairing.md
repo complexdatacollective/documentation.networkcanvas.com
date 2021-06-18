@@ -70,4 +70,4 @@ If you cannot reach Server using automatic or manual discovery following the ste
 * Ensure both Server and Interviewer are connected to the same local network. If you wish to connect over the internet, ensure you have configured a VPN or similar.
 * Restart Server and Interviewer on their respective devices. Note: restarting will not drop data.
 * Contact your network administrator or refer to the details of the error message for further troubleshooting tips. Note: Server uses the Bonjour protocol and requires multicast DNS packets to be able to pass through the network.
-* As a final step, please contact us by emailing `info@networkcanvas.com` with details of any error messages you may be receiving.
+* As a final step, please contact us by emailing [info@networkcanvas.com](mailto:info@networkcanvas.com) with details of any error messages you may be receiving.
