@@ -11,5 +11,5 @@ This section will eventually contain protocol files that have been developed for
 
 The following are protocols used for demonstration purposes only.
 
-* [Demonstration protocol for workshop attendees at Sunbelt 2021](../../protocols/SB21_workshop_protocol_1.netcanvas)
+* [Demonstration protocol for workshop attendees at Networks 2021 conference](../../protocols/SB21_workshop_protocol_1.netcanvas)
 * [Example of collecting data in three different ways](../../protocols/SB21_workshop_protocol_2alterDemo.netcanvas)
