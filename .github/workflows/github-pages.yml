@@ -26,3 +26,13 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site
+        name: DEPLOY
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@5.1
+      with:
+        switches: -avzr --delete
+        path: ./_site
+        remote_path: /var/www/documentation.networkcanvas.com/
+        remote_host: networkcanvas.com
+        remote_user: deploy
+        remote_key: ${{ secrets.DEPLOY_PK }}
