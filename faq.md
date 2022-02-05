@@ -21,7 +21,7 @@ Network Canvas has been in development since 2016, with extensive alpha and beta
 
 Throughout the remaining duration of our funding we will be working through a backlog of missing features, improvements, and bug fixes. These will be released as updates, and you will receive a notification within the software when they are available.
 
-## How does the software cost? What is your funding model?
+## How much does the software cost? What is your funding model?
 
 The Network Canvas suite is free! It is licensed under the GPLv3 open source license. The project team has a strong ideological commitment to producing high quality free academic software for the benefit of researchers, students, and any other interested parties. We were funded to produce this software via [a grant from the National Institutes for Health](https://projectreporter.nih.gov/project_info_description.cfm?aid=9306043&icde=35540823&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC&pball=), for which we are extremely grateful.
 
