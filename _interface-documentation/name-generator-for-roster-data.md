@@ -8,8 +8,8 @@ type: Name Generator
 creates: Creates nodes of a single type, based on data from a roster
 uses_prompts: true
 good:
-  - Ensure that the roster data file used has \`name\` attribute to avoid seeing
-    "No name variable!" on your cards. See our article on \[node
+  - Ensure that the roster data file used has `name` attribute to avoid seeing
+    "No name variable!" on your cards. See our article on [node
     labelling](../../reference/node-labelling) for more information on this
     topic.
 bad:
