@@ -1,7 +1,5 @@
 ---
 layout: interface-documentation
-grand_parent: Reference
-parent: Interface Documentation
 image: /assets/uploads/stage-namegeneratorroster.png
 title: Name Generator for Roster Data
 type: Name Generator
