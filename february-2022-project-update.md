@@ -28,6 +28,6 @@ The release of these latest versions, also marks a shift for our project going f
 
 ##  Future Projects
 
-Future projects are in the works, so please look for an update later this spring once we are able to share more! As always, our team is grateful for the ongoing support we receive from the community and thank you for partnering with us to make ths tool what it is. 
+Future projects are in the works, so please look for an update later this spring once we are able to share more! As always, our team is grateful for the ongoing support we receive from the community and thank you for partnering with us to make this tool what it is. 
 
 As always, please feel free to contact us at [info@networkcanvas.com](mailto:info@networkcanvas.com).
