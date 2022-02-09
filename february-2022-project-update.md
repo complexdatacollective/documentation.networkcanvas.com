@@ -4,7 +4,7 @@ title: February 2022 Project Update
 wip: false
 toc: false
 ---
-# New Releases of Architect, Interview, and Server Available Now
+## New Releases of Architect, Interview, and Server Available Now
 
 We are thrilled to announce the release of Architect Version 6.3.0, Interviewer Version 6.2.0, and Server Version 6.1.1 of the Network Canvas Suite. These releases are all available now for download directly from our [website](https://networkcanvas.com/download.html) and through Google Play Store for Android. If you are a current user, the next time you open the software you will be prompted to upgrade to the latest release. 
 
