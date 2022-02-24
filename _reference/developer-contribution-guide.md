@@ -2,7 +2,38 @@
 title: Contributing Code and Funded Collaboration
 wip: true
 ---
-## Definitions
+## Contributing Code
+
+We welcome all code contributions, however small. These could take the form of bug fixes, new features, or improvements to existing functionality. We do not (yet) have a formal developer contribution guide. Please contact us on GitHub should you have specific questions regarding technical matters.
+
+We will evaluate all requests to merge code into the main repositories according to the following criteria:
+
+1. Sustainability of proposed addition. It is essential that any contribution not hinder the overall sustainability of the project. Factors that may impact this include centralization, the use of paid third-party services, and the use of technologies that are obsolete or unmaintained.
+2. Maintainability of proposed addition. We must be capable of reasonably maintaining and upgrading the proposed addition. This means the contribution must be of a high technical quality, and must include accompanying technical documentation.
+3. General-purpose utility to Network Canvas end-users. The proposed addition must be of clear benefit to a significant element of our end-users. Features unique to individual research projects or experiments do not make good candidates for inclusion in the main repositories.
+4. Alignment with product purpose. The proposed addition must offer a meaningful enhancement to the tool for its intended purpose, which is to simplify complex network data collection.
+
+For a contribution to be considered for merging into the main repositories, all authors must submit a copyright transfer agreement (CTA), that grants CODACO copyright holder status. This agreement will be provided upon request.
+
+Authors are entitled to recognition for their contributions. The nature of this recognition should be proportional to the level of contribution, and will be discussed as appropriate.
+
+Decisions regarding merging external code contributions into the main repositories are made solely by the CODACO Board of Directors following a simple majority rule. In the event of a tie, the motion to merge external code is deemed to have failed to pass.
+
+To submit code for consideration, file a pull request (PR) in the relevant GitHub repository, or contact info@networkcanvas.com.
+
+## Funded Collaborations
+
+We welcome collaboration requests from individual investigators, research groups, and other organizations. Collaboration requests may include, but are not limited to, the following:
+
+1. Writing Network Canvas into a grant, where use in the grant would require additional development and/or consultancy, and Network Canvas project team members are to be given specific academic or staff roles within the new grant.
+2. Commissioning the development of features for Network Canvas by CODACO.
+3. Requesting some form of Network Canvas technical support from the Network Canvas project team, or CODACO.
+
+All collaboration requests should be sent by email to [info@networkcanvas.com](mailto:info@networkcanvas.com) for consideration. 
+
+Decisions regarding engaging in an external collaboration are to be made solely by the CODACO Board of Directors or the Network Canvas project team (depending on which entity is engaged in the collaboration), following a simple majority rule.
+
+## Definitions used Above
 
 ### CODACO 
 
@@ -25,35 +56,4 @@ The core Network Canvas project team consists of the following individuals:
 * Patrick Janulis
 * Bernie Hogan
 * Kate Banner
-* Joshua Melville 
-
-## Contributing Code
-
-We welcome all contributions, however small. We will evaluate all requests to merge code into the main repositories according to the following criteria:
-
-1. Sustainability of proposed addition. It is essential that any contribution not hinder the overall sustainability of the project. Factors that may impact this include centralisation, the use of paid third-party services, and the use of technologies that are obsolete or unmaintained.
-2. Maintainability of proposed addition. We must be capable of reasonably maintaining and upgrading the proposed addition. This means the contribution must be of a high technical quality, and must include accompanying technical documentation.
-3. General-purpose utility to Network Canvas end-users. The proposed addition must be of clear benefit to a significant element of our end-users. Features unique to individual research projects or experiments do not make good candidates for inclusion in the main repositories.
-4. Alignment with product purpose. The proposed addition must offer a meaningful enhancement to the tool for its intended purpose, which is to simplify complex network data collection.
-
-For a contribution to be considered for merging into the main repositories, all authors must submit a copyright transfer agreement (CTA), that grants CODACO copyright holder status. 
-
-Authors are entitled to recognition for their contributions. The nature of this recognition should be proportional to the level of contribution, and will be discussed as appropriate.
-
-Decisions regarding merging external code contributions into the main repositories are made solely by the CODACO Board of Directors following a simple majority rule. In the event of a tie, the motion to merge external code is deemed to have failed to pass.
-
-To submit code for consideration, file a pull request (PR) in the relevant GitHub repository, or contact info@networkcanvas.com.
-
-## Funded Collaborations
-
-We welcome collaboration requests from individual investigators, research groups, and other organizations. For more information about collaboration opportunities, including paid development work, see here: TBD 
-
-Collaboration requests include, but are not limited to, the following:
-
-1. Writing Network Canvas into a grant, where use in the grant would require additional development and/or consultancy, and Network Canvas project team members are to be given specific academic or staff roles within the new grant.
-2. Commissioning the development of features for Network Canvas by CODACO.
-3. Requesting some form of Network Canvas technical support from the Network Canvas project team, or CODACO.
-
-All collaboration requests should be sent by email to [info@networkcanvas.com](mailto:info@networkcanvas.com) for consideration. 
-
-Decisions regarding engaging in an external collaboration are to be made solely by the CODACO Board of Directors or the Network Canvas project team (depending on which entity is engaged in the collaboration), following a simple majority rule.
+* Joshua Melville
