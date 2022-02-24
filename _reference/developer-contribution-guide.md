@@ -1,5 +1,5 @@
 ---
-title: Contributing Code and Funded Collaboration
+title: Contributing Code and Entering Into a Funded Collaboration
 wip: true
 ---
 ## Contributing Code
