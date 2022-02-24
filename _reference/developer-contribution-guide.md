@@ -19,7 +19,7 @@ Authors are entitled to recognition for their contributions. The nature of this 
 
 Decisions regarding merging external code contributions into the main repositories are made solely by the CODACO Board of Directors following a simple majority rule. In the event of a tie, the motion to merge external code is deemed to have failed to pass.
 
-To submit code for consideration, file a pull request (PR) in the relevant GitHub repository, or contact info@networkcanvas.com.
+To submit code for consideration, file a pull request (PR) in the relevant GitHub repository, or contact [info@networkcanvas.com](mailto:info@networkcanvas.com).
 
 ## Funded Collaborations
 
