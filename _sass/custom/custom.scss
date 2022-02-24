@@ -278,5 +278,14 @@ ul.avoid li:before {
   line-height: 1.25;
 }
 
+// Citation blockquote
+blockquote.citation {
+  margin-top: 0.5em;
+  border-left: 4px solid #13b3e2;
+  font-size: 0.85rem;
+  padding: 0.1em 1.25em;
+  font-family: monospace;
+}
+
 
 
