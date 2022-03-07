@@ -1,6 +1,6 @@
 ---
 title: Contributing Code and Initiating Paid Collaborations
-wip: true
+wip: false
 ---
 ## Contributing Code
 
