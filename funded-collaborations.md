@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Funded Collaboration
+title: Requests for Collaboration
 wip: false
 ---
 ## Collaboration with the Network Canvas Team
