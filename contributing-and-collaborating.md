@@ -1,8 +1,8 @@
 ---
-title: Code Contributions
+title: Contributing Code
 wip: false
 ---
-## Contributing Code
+## Contributing Code to Network Canvas
 
 We welcome all code contributions, however small. These could take the form of bug fixes, new features, or improvements to existing functionality. We do not (yet) have a formal developer contribution guide. Please contact us on GitHub should you have specific questions regarding technical matters.
 
