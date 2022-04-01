@@ -1,28 +1,31 @@
 ---
-
 title: Protocol Schema Information
-
+wip: false
 ---
-
 ## Summary
 
-Interviewer and Architect (from version 4.2.0 onward) implement a feature that tracks the version of the protocol file format, or "schema", associated with any protocol files that you author or work with. You may notice messaging within the app that informs you of "out of date", or "obsolete" schema versions associated with your protocol. This article will explain these concepts in greater detail.
+Interviewer and Architect (from version 4.2.0 onward) implement a feature that tracks the version of the protocol file format, or "schema", associated with protocols that you author. You may notice messaging within the app that informs you of "out of date", or "obsolete" schema versions associated with your protocol. This article will explain these concepts in greater detail.
 
 **The key takeaway is that as long as your schema is not marked "obsolete", you can continue to use Interviewer to collect and export data, exactly as before.**
 
-Although every effort is made to maintain compatibility with new schema versions, any features implemented that require a schema update will be unavailable to you until you migrate your protocol. We _strongly_ encourage you to update your protocol files wherever possible, so that you are able to use the newest Network Canvas features.
+Although every effort is made to maintain compatibility with new schema versions, any features implemented that require a schema update will be unavailable to you until you migrate your protocol. We *strongly* encourage you to update your protocol files wherever possible, so that you are able to use the newest Network Canvas features.
 
 <div class="tip-box caution" markdown="1">
-We urge iPadOS and Android users to follow the advice set out in the [configuring devices prior to starting data collection](../_how-to/configuring-devices.md) article, and disable automatic app updates so that they are not caught out by breaking changes that result from new protocol schema versions.
+We urge iPadOS and Android users to follow the advice set out in the \\\\[configuring devices prior to starting data collection](../_how-to/configuring-devices.md) article, and disable automatic app updates so that they are not caught out by breaking changes that result from new protocol schema versions.
 
 This is essential if users wish to continue using a particular version of an app to ensure it remains compatible with their existing protocols (rollback to prior versions is not possible on these platforms!).
+
 </div>
 
 ## What is a protocol schema?
 
-A protocol "schema" is a description of which configuration options a protocol can or cannot have in order to be considered 'valid. It takes the form of a series of constraints and logical rules that define property names, data types, and structure. When a protocol is used within Architect or Interviewer, it is validated against a schema. Unexpected values, properties, or structures will trigger various types of warning or error message. We adopted schemas in an effort to ensure stability and consistency within the functioning of the software. If a protocol is valid according to its schema, it should function without issues.
+A protocol "schema" is a description of the structure of a protocol file. It takes the form of a series of constraints and logical rules that define property names, data types, and so on. When a protocol is used within Architect or Interviewer, it is validated against a schema. Unexpected values, properties, or structures will trigger various types of warning or error message.
+
+## Why do we need protocol schemas?
 
 We need to "version" Network Canvas protocol schemas so that we can add or change features as we develop them. This could mean implementing a new interface, or changing the way that an existing function, such as skip logic, works. Simply changing an existing schema would make previously authored protocols invalid, or would lead to the software crashing.
+
+We also adopted schemas in an effort to ensure stability and consistency within the functioning of the software. If a protocol is valid according to its schema, it should function without issues.
 
 Our priority when implementing schema versioning has been to not burden the end user, either through creating "maintenance work" (for example by requiring older protocols to be updated manually), or by disrupting your workflow (for example by preventing existing protocols from functioning).
 
@@ -43,7 +46,7 @@ If your protocol is no longer compatible with the version of Interviewer that yo
 In Architect, you may see a prompt that a protocol must be migrated to a newer version before it can be opened (see below).
 
 ![Image](/assets/img/protocol-schema/architect-migrate.png)
-  
+
 If you wish to update their protocol file to the new schema version, follow the instructions provided below under [migrating a protocol](#migrating-a-protocol).
 
 If you would like to continue editing this protocol without migrating it to the latest version, you will need to downgrade your version of Architect. See the [GitHub releases page](https://github.com/complexdatacollective/Architect/releases) for an archive of old versions, and consult for the [compatibility table](#compatibility-table) for information about which version you need.
@@ -65,10 +68,10 @@ If your protocol is marked as obsolete, and you wish to continue collecting data
 
 Migrating a protocol happens within Architect, and is automatic. The process works as follows:
 
- 1. Ensure you are on the latest version of the Architect app. When opening the app with an active internet connection, the app will check for updates automatically, and notify you if any are found. Alternatively, you can manually update the app, by visiting our download page and installing the latest version for your platform.
- 2. Once you are running the latest version, open the protocol file that you wish to migrate.
- 3. Architect will inform you that the protocol file can be upgraded, which happens by creating a copy (so that your original file is preserved). If you choose to continue, you will be prompted for a location to save your upgraded protocol.
- 4. Architect will automatically append "(schema version X)" to the filename, which may help you to keep track of the different versions of your protocol, and to differentiate them within Server and Interviewer.
+1. Ensure you are on the latest version of the Architect app. When opening the app with an active internet connection, the app will check for updates automatically, and notify you if any are found. Alternatively, you can manually update the app, by visiting our download page and installing the latest version for your platform.
+2. Once you are running the latest version, open the protocol file that you wish to migrate.
+3. Architect will inform you that the protocol file can be upgraded, which happens by creating a copy (so that your original file is preserved). If you choose to continue, you will be prompted for a location to save your upgraded protocol.
+4. Architect will automatically append "(schema version X)" to the filename, which may help you to keep track of the different versions of your protocol, and to differentiate them within Server and Interviewer.
 
 <div class="tip-box caution" markdown="1">
 Schema changes may represent changes to the underlying network data model and, therefore, protocols migrated from one schema version to another must be treated as different workspaces within Server.
@@ -76,34 +79,27 @@ Schema changes may represent changes to the underlying network data model and, t
 Users that migrate their protocols to a new schema version will need to create a merging script to handle combining the two data sources from the two workspaces once exported.
 
 Although this process introduces an extra step in a user workflow, it promotes better quality data and greater user control.
+
 </div>
 
 ## Compatibility Table
 
 Consult the table below for information about which schema versions are supported by each released version of the Network Canvas software.
 
-| App Version |
-|-------------------------------|---------------------|---------------------------------------|
-| 6.1.0                         | 5                   | 4,5                                   |
-| 6.0.1                         | 4                   | 4                                     |
-| 6.0.0                         | 4                   | 4                                     |
+| Schema Version | Features                                                                                                                                        | Architect Versions                | Interviewer Versions |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | -------------------- |
+| 7              | Minimum/maximum alter counts on name generators. Additional skip logic options for categorical variables.                                       | 6.4.0                             | \> 6.3.0             |
+| 6              | New "roster name generator" interface. Automatic node layout on the sociogram.                                                                  | 6.3.0, 6.3.1                      | \> 6.2.0             |
+| 5              | Supports "tie-strength census" interface. Adds "unique", "same as", and "different from" validation options. Adds the interview script section. | 6.1.0, 6.1.1, 6.2.0, 6.2.1, 6.2.2 | \> 6.1.0             |
+| 4              | Initial stable release schema. Introduces stricter variable naming requirements.                                                                | 6.0.0, 6.0.1, 6.0.2, 6.0.3        | \> 6.0.0             |
+| 1.0.0          | Obsolete alpha schema.                                                                                                                          |                                   |                      |
 
-## Schema Versions
 
-### Version 5
-
-- Implements the "tie-strength census" interface
-- Includes new validation options for form fields
-- Adds a separate variable type for multiple-option categorical variables
-
-### Version 4
-
-- Initial stable release version of the protocol schema
 
 ## Technical implementation of schema migration
 
 The following section may be useful if you are attempting to understand how schema migration is performed on a technical level. In rare cases, this may help you to troubleshoot an issue with a migrated protocol yourself, should you wish.
 
-- A migration between two sequential schema versions is a functional transformation of the protocol object. These transformations are written as simple functions that take a protocol object, mutate it, and return the mutated protocol. Migration functions are defined in the [protocol-validation submodule](https://github.com/complexdatacollective/protocol-validation/tree/master/migrations/migrations).
-- Transformations can be chained together, meaning that a protocol can be migrated from version 1 to version n by applying all transformations in between in sequence [1 … n].
-- We plan a parallel system of "patching", which will use the same technique as migration, but is designed to address any data corruption issues caused as a result of bugs in Architect. Patches are designed to fix protocol issues without updating the schema version.
+* A migration between two sequential schema versions is a functional transformation of the protocol object. These transformations are written as simple functions that take a protocol object, mutate it, and return the mutated protocol. Migration functions are defined in the [protocol-validation submodule](https://github.com/complexdatacollective/protocol-validation/tree/master/migrations/migrations).
+* Transformations can be chained together, meaning that a protocol can be migrated from version 1 to version n by applying all transformations in between in sequence \[1 … n].
+* We plan a parallel system of "patching", which will use the same technique as migration, but is designed to address any data corruption issues caused as a result of bugs in Architect. Patches are designed to fix protocol issues without updating the schema version.
