@@ -108,6 +108,7 @@ collections:
           }
   - name: "key-concepts"
     label: "Key Concepts"
+    label_singular: "Key Concept"
     folder: "_key-concepts"
     create: true
     sortable_fields: ["title"]
@@ -141,6 +142,7 @@ collections:
       - { name: body, label: body, widget: markdown }
   - name: "how-to"
     label: "How-to Guides"
+    label_singular: "How-to Guide"
     folder: "_how-to"
     create: true
     sortable_fields: ["title"]
@@ -156,7 +158,8 @@ collections:
         }
       - { name: body, label: body, widget: markdown }
   - name: "tutorial"
-    label: "Tutorial"
+    label: "Tutorials"
+    label_singular: "Tutorial"
     folder: "_tutorials"
     create: true
     sortable_fields: ["title"]
