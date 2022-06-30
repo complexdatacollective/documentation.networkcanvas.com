@@ -50,14 +50,14 @@ The setting you most often need to adjust is the overall **text size** of the In
 
 ![Settings menu](/assets/uploads/screen-shot-2022-06-30-at-11.58.52-am.png "The visual properties tab of the settings menu in Interviewer")
 
-To scale all text *and interface elements*, increase or decrese the "interface scale" dropdown. By default, Interviewer will automatically increase text size and spacing as its window size increases. To disable this behavior and set a static window size, turn of "use dynamic scaling".
+To scale all text *and interface elements*, increase or decrease the "interface scale" dropdown. By default, Interviewer will automatically increase text size and spacing as its window size increases. To disable this behavior and set a static window size, turn of "use dynamic scaling".
 
 Remember that these settings can, and should, be adjusted when required during the interview.
 {:.tip-box}
 
-### Full Screen Forms
+### Fullscreen Forms
 
-If you are using a device that lacks a physical keyboard, we reccomend turning on the "use fullscreen forms" option. This will enable a specially adapted full screen interface for name generator forms, which will allow the participant to see the input that they are typing into while the software keyboard is shown. Consult the images below to see how this looks in practice.
+If you are using a device that lacks a physical keyboard, we recommend turning on the "use fullscreen forms" option. This will enable a specially adapted full screen interface for name generator forms, which will allow the participant to see the input that they are typing into while the software keyboard is shown. Consult the images below to see how this looks in practice.
 
 
 
