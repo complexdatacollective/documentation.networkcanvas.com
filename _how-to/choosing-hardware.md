@@ -18,12 +18,12 @@ The third is that **hardware performance is directly correlated with user experi
 
 ### Android Tablet
 
-✅ Widely available, including outside of the west/global north.
-✅ Can be very affordable.
-👎 Often have poor performance, and run old versions of Android.
-👎 Tend to use very wide aspect ratio displays, which are not ideal for Interviewer.
-👎 Not generally capable of running other research software.
-👎 Can be difficult to import protocols and manage data.
+✅ Widely available, including outside of the west/global north.  
+✅ Can be very affordable.  
+👎 Often have poor performance, and run old versions of Android.  
+👎 Tend to use very wide aspect ratio displays, which are not ideal for Interviewer.  
+👎 Not generally capable of running other research software.  
+👎 Can be difficult to import protocols and manage data.  
 
 ### Chromebook
 
