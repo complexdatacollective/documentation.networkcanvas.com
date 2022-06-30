@@ -5,7 +5,7 @@ backend:
   repo: complexdatacollective/Documentation # Path to your GitHub repository
   branch: master # Branch to update (optional; defaults to master)
 local_backend: true
-media_folder: '/assets/uploads'
+media_folder: "/assets/uploads"
 # publish_mode: editorial_workflow
 collections:
   - name: "page"
@@ -16,7 +16,12 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { name: title, label: Title }
-      - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
+      - {
+          label: "Work in Progress",
+          name: wip,
+          widget: "boolean",
+          default: false,
+        }
       - { name: body, label: body, widget: markdown }
       - { name: has_children, widget: "boolean", required: false }
       - { name: toc, widget: "boolean", required: false }
@@ -30,7 +35,12 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { name: title, label: Title }
-      - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
+      - {
+          label: "Work in Progress",
+          name: wip,
+          widget: "boolean",
+          default: false,
+        }
       - { name: body, label: body, widget: markdown }
       - { name: nav_order, widget: "number", required: false }
       - { name: nav_exclude, widget: "boolean", required: false }
@@ -40,9 +50,24 @@ collections:
     create: true
     sortable_fields: ["title"]
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "interface-documentation" }
-      - { label: "Grand Parent", name: "grand_parent", widget: "hidden", default: "Reference" }
-      - { label: "Parent", name: "parent", widget: "hidden", default: "Interface Documentation" }
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "interface-documentation",
+        }
+      - {
+          label: "Grand Parent",
+          name: "grand_parent",
+          widget: "hidden",
+          default: "Reference",
+        }
+      - {
+          label: "Parent",
+          name: "parent",
+          widget: "hidden",
+          default: "Interface Documentation",
+        }
       - { name: image, label: "Screenshot", widget: image }
       - { name: title, label: "Interface Name" }
       - { name: body, label: "Interface Summary", widget: markdown }
@@ -55,32 +80,80 @@ collections:
       - label: "Does the interface use prompts?"
         name: "uses_prompts"
         widget: "boolean"
-      - 
-        name: good
+      - name: good
         label: "Best Practices"
         widget: list
         allow_add: true
-        summary: '{{fields.item}}'
-        field: {label: "Item Text", name: item, widget: markdown, minimal: true, buttons: [bold, italic, code, link]}
-      - 
-        name: bad
+        summary: "{{fields.item}}"
+        field:
+          {
+            label: "Item Text",
+            name: item,
+            widget: markdown,
+            minimal: true,
+            buttons: [bold, italic, code, link],
+          }
+      - name: bad
         label: "Things to Avoid"
         widget: list
         allow_add: true
-        summary: '{{fields.item}}'
-        field: {label: "Item Text", name: item, widget: markdown, minimal: true, buttons: [bold, italic, code, link]}
+        summary: "{{fields.item}}"
+        field:
+          {
+            label: "Item Text",
+            name: item,
+            widget: markdown,
+            minimal: true,
+            buttons: [bold, italic, code, link],
+          }
   - name: "key-concepts"
     label: "Key Concepts"
     folder: "_key-concepts"
     create: true
     sortable_fields: ["title"]
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "key-concept" }
-      - { label: "Grand Parent", name: "grand_parent", widget: "hidden", default: "Reference" }
-      - { label: "Parent", name: "parent", widget: "hidden", default: "Key Concepts" }
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "key-concept",
+        }
+      - {
+          label: "Grand Parent",
+          name: "grand_parent",
+          widget: "hidden",
+          default: "Reference",
+        }
+      - {
+          label: "Parent",
+          name: "parent",
+          widget: "hidden",
+          default: "Key Concepts",
+        }
       - { name: title, label: "Title" }
-      - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
+      - {
+          label: "Work in Progress",
+          name: wip,
+          widget: "boolean",
+          default: false,
+        }
       - { name: definition, label: "Short Definition", widget: text }
+      - { name: body, label: body, widget: markdown }
+  - name: "how-to"
+    label: "How-to Guides"
+    folder: "_how-to"
+    create: true
+    sortable_fields: ["title"]
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+      - { name: nav_order, widget: "number", required: false }
+      - { name: title, label: Title }
+      - {
+          label: "Work in Progress",
+          name: wip,
+          widget: "boolean",
+          default: false,
+        }
       - { name: body, label: body, widget: markdown }
   - name: "tutorial"
     label: "Tutorial"
@@ -88,12 +161,26 @@ collections:
     create: true
     sortable_fields: ["title"]
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "tutorial" }
-      - { label: "Parent", name: "parent", widget: "hidden", default: "Tutorials" }
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "tutorial",
+        }
       - { name: summary, label: "Summary", widget: markdown, minimal: true }
-      - { name: prerequisites, label: "Prerequisites", widget: markdown, minimal: true }
+      - {
+          name: prerequisites,
+          label: "Prerequisites",
+          widget: markdown,
+          minimal: true,
+        }
       - { name: completion_time, label: "Duration", widget: text }
       - { name: nav_order, widget: "number", required: false }
       - { name: title, label: Title }
-      - { label: "Work in Progress", name: wip, widget: "boolean", default: false }
+      - {
+          label: "Work in Progress",
+          name: wip,
+          widget: "boolean",
+          default: false,
+        }
       - { name: body, label: body, widget: markdown }
