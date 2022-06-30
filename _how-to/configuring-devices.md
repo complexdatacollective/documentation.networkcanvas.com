@@ -12,11 +12,7 @@ Because both Google and Apple tablet devices are set to automatically update sof
 
 <details markdown="1">
 
-<summary markdown="1">
-
-Instructions for disabling app auto-updates on Android devices  
-
-</summary>
+<summary>Instructions for disabling app auto-updates on Android devices</summary>
 
 1. Open the Google Play Store app.  
 2. On the upper left side of the screen, tap the menu icon.  
@@ -27,7 +23,7 @@ Instructions for disabling app auto-updates on Android devices
 
 </details>  
 
-<details>
+<details markdown="1">
 
 <summary>Instructions for disabling auto-updates on iOS devices</summary>
 
@@ -61,4 +57,10 @@ Remember that these settings can, and should, be adjusted when required during t
 
 ### Full Screen Forms
 
-A
+If you are using a device that lacks a physical keyboard, we reccomend turning on the "use fullscreen forms" option. This will enable a specially adapted full screen interface for name generator forms, which will allow the participant to see the input that they are typing into while the software keyboard is shown. Consult the images below to see how this looks in practice.
+
+
+
+![A form with "use fullscreen forms" turned off](/assets/uploads/screen-shot-2022-06-30-at-11.43.40-am.png "A form with \"use fullscreen forms\" turned off")
+
+![A form with "use fullscreen forms" turned on](/assets/uploads/screen-shot-2022-06-30-at-11.43.58-am.png "A form with \"use fullscreen forms\" turned on")
