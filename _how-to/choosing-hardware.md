@@ -1,8 +1,8 @@
 ---
 title: Choosing a Hardware Device for Interviewer
-wip: true
+wip: false
 ---
-Choosing a device for running Interviewer is an important step in optimizing the quality of the
+Choosing a device for running Interviewer is an important step in optimizing the quality of the data that you collect, as well as the overall workflow of running a Network Canvas study.
 
 ## Key Concerns
 
@@ -16,13 +16,43 @@ The third is that **hardware performance is directly correlated with user experi
 
 ## Platform Comparison
 
-| Android Tablet                                                                                                                                                                                                                                                                       | Chromebook                                                                                                                                                                                                                                           | iPad                                                                                                                                                                                               | Laptop                                                                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ✅ Widely available, including outside of the west/global north.<br>✅ Can be very affordable.                                                                                                                                                                                         | ✅ Devices usually include a touchscreen and a keyboard.<br>✅ Can be very affordable, but can also be specified with more powerful hardware.<br>✅ Portable form factor, similar to a laptop or tablet with keyboard.<br>✅ Usually use latest Android. | ✅ Extremely powerful in terms of GPU and CPU, with high quality displays.<br>✅ Potentially more acceptable in certain settings.                                                                    | ✅ Familiar environment for researchers and and participants.<br>✅ Simple to manage protocols and interview data.<br>✅ Able to run other general purpose software if required.<br>✅ Easy to purchase through IT procurement processes. |
-| 👎 Often have poor performance, and run old versions of Android.<br>👎 Tend to use very wide aspect ratio displays, which are not ideal for Interviewer.<br>👎 Not generally capable of running other research software.<br>👎 Can be difficult to import protocols and manage data. | 👎 Some models perform poorly when running Android apps.<br>👎 Not generally capable of running other research software.                                                                                                                             | ⛔️ No longer generally available due to situation with Apple App Store Review.<br>👎 Can be difficult to import protocols and manage data.<br>👎 Expensive! Keyboard must be purchased separately. | 👎 Can be less portable and have poorer battery life.<br>👎 Higher quality displays are more expensive.                                                                                                                               |
+### Android Tablet
+
+✅ Widely available, including outside of the west/global north.
+✅ Can be very affordable.
+👎 Often have poor performance, and run old versions of Android.
+👎 Tend to use very wide aspect ratio displays, which are not ideal for Interviewer.
+👎 Not generally capable of running other research software.
+👎 Can be difficult to import protocols and manage data.
+
+### Chromebook
+
+✅ Devices usually include a touchscreen and a keyboard.
+✅ Can be very affordable, but can also be specified with more powerful hardware.
+✅ Portable form factor, similar to a laptop or tablet with keyboard.
+✅ Usually use latest Android.
+👎 Some models perform poorly when running Android apps.
+👎 Not generally capable of running other research software.
+
+### iPad
+
+✅ Extremely powerful in terms of GPU and CPU, with high quality displays.
+✅ Potentially more acceptable in certain settings.
+⛔️ **No longer generally available due to situation with Apple App Store Review.**
+👎 Can be difficult to import protocols and manage data.
+👎 Expensive! Keyboard must be purchased separately.
+
+### Laptop
+
+✅ Familiar environment for researchers and and participants.
+✅ Simple to manage protocols and interview data.
+✅ Able to run other general purpose software if required.
+✅ Easy to purchase through IT procurement processes.
+👎 Can be less portable and have poorer battery life.
+👎 Higher quality displays are more expensive.
 
 ## Overall Recommendation
 
 For most of our users, the best overall option will be to run Interviewer on a **laptop with a touchscreen, from one of the big manufacturers** (Dell, HP, Lenovo, Acer, Asus).
 
-Where these manufacturers offer different configurations, you should prioritise the quality of the display (look for displays that are as large, bright, and high resolution as possible), as well as GPU performance. Dedicated graphics will provide the best performance, but recent CPUs (such as Intel's 11th and 12th generation) provide powerful onboard graphics.
+Where these manufacturers offer different configurations, you should prioritize the quality of the display (look for displays that are as large, bright, and high resolution as possible), as well as GPU performance. Dedicated graphics will provide the best performance, but recent CPUs (such as Intel's 11th and 12th generation) provide powerful onboard graphics.
