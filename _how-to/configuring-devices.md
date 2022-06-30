@@ -50,7 +50,14 @@ The settings menu in Interviewer provides several important options that can hel
 
 ### Text Size
 
-The setting you most often need to adjust is the overall **text size** of the Interviewer interface. From the "visual properties" tab of the settings menu, there are two options
+The setting you most often need to adjust is the overall **text size** of the Interviewer interface. From the "visual properties" tab of the settings menu, there are two options that impact this.
+
+![Settings menu](/assets/uploads/screen-shot-2022-06-30-at-11.58.52-am.png "The visual properties tab of the settings menu in Interviewer")
+
+To scale all text *and interface elements*, increase or decrese the "interface scale" dropdown. By default, Interviewer will automatically increase text size and spacing as its window size increases. To disable this behavior and set a static window size, turn of "use dynamic scaling".
+
+Remember that these settings can, and should, be adjusted when required during the interview.
+{:.tip-box}
 
 ### Full Screen Forms
 
