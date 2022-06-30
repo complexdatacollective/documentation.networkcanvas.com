@@ -8,14 +8,15 @@ Aside from these concerns, there are also some fundamental steps you should take
 
 ## Disable automatic updates
 
-If you are running Interviewer on a mac or PC, you do not need to complete this step.
-{:.tip-box}
-
 Because both Google and Apple tablet devices are set to automatically update software by default, you could end up in a situation where a new release of Interviewer renders your protocol unable to run. Alternatively, an update to Interviewer may change behavior in the middle of your data collection, leading to inconsistency. For this reason, **we recommend that you disable app updates entirely on these devices**, and handle this process manually.
 
 <details markdown="1">
 
-<summary markdown="1">Instructions for disabling app auto-updates on Android devices</summary>
+<summary markdown="1">
+
+Instructions for disabling app auto-updates on Android devices  
+
+</summary>
 
 1. Open the Google Play Store app.  
 2. On the upper left side of the screen, tap the menu icon.  
@@ -36,12 +37,21 @@ Because both Google and Apple tablet devices are set to automatically update sof
 
 </details>
 
+If you are running Interviewer on a mac or PC, you do not need to complete this step.
+{:.tip-box}
+
 ## Turn on device-level encryption features
 
 The nature of the technologies used by Network Canvas means that we cannot meaningfully secure your data at rest, or when someone else has physical access to your device. To mitigate risks associated with this, please take the time to ensure general security best practices are observed. Specifically, ensure that you enable disk encryption on your device, and use strong user-authentication, screen lock timeouts, and other physical security measures to lock down your device.
 
-## Configure the behaviour and visual properties of Interviewer
+## Configure the behavior and visual properties of Interviewer
 
 The settings menu in Interviewer provides several important options that can help you to make the experience of the interview better suited to your device and your participant's needs.
 
-The most fre
+### Text Size
+
+The setting you most often need to adjust is the overall **text size** of the Interviewer interface. From the "visual properties" tab of the settings menu, there are two options
+
+### Full Screen Forms
+
+A
