@@ -47,12 +47,12 @@ The third is that **hardware performance is directly correlated with user experi
 
 ### Laptop
 
-✅ Familiar environment for researchers and and participants.
-✅ Simple to manage protocols and interview data.
-✅ Able to run other general purpose software if required.
-✅ Easy to purchase through IT procurement processes.
-👎 Can be less portable and have poorer battery life.
-👎 Higher quality displays are more expensive.
+✅ Familiar environment for researchers and and participants.  
+✅ Simple to manage protocols and interview data.  
+✅ Able to run other general purpose software if required.  
+✅ Easy to purchase through IT procurement processes.  
+👎 Can be less portable and have poorer battery life.  
+👎 Higher quality displays are more expensive.  
 
 ## Overall Recommendation
 
