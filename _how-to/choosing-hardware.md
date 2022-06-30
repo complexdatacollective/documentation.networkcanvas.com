@@ -21,26 +21,29 @@ The third is that **hardware performance is directly correlated with user experi
 ✅ Widely available, including outside of the west/global north.  
 ✅ Can be very affordable.  
 👎 Often have poor performance, and run old versions of Android.  
+👎 Limited number of manufacturers of quality hardware (Samsung, and Huawei).  
 👎 Tend to use very wide aspect ratio displays, which are not ideal for Interviewer.  
 👎 Not generally capable of running other research software.  
 👎 Can be difficult to import protocols and manage data.  
+👎 Keyboard must be purchased separately.  
 
 ### Chromebook
 
-✅ Devices usually include a touchscreen and a keyboard.
-✅ Can be very affordable, but can also be specified with more powerful hardware.
-✅ Portable form factor, similar to a laptop or tablet with keyboard.
-✅ Usually use latest Android.
-👎 Some models perform poorly when running Android apps.
-👎 Not generally capable of running other research software.
+✅ Devices usually include both a touchscreen and a keyboard.  
+✅ Can be very affordable, but can also be specified with more powerful hardware.  
+✅ Portable form factor, similar to a laptop or tablet with keyboard.  
+✅ Usually use the latest Android version.  
+👎 Some models perform poorly when running Android apps.  
+👎 Not all models support running Android apps.  
+👎 Not generally capable of running other research software.  
 
 ### iPad
 
-✅ Extremely powerful in terms of GPU and CPU, with high quality displays.
-✅ Potentially more acceptable in certain settings.
-⛔️ **No longer generally available due to situation with Apple App Store Review.**
-👎 Can be difficult to import protocols and manage data.
-👎 Expensive! Keyboard must be purchased separately.
+✅ Extremely powerful in terms of GPU and CPU, with high quality displays.  
+✅ Potentially more acceptable in certain settings.  
+⛔️ **No longer generally available due to situation with Apple App Store Review.**  
+👎 Can be difficult to import protocols and manage data.  
+👎 Expensive! Keyboard must be purchased separately.  
 
 ### Laptop
 
