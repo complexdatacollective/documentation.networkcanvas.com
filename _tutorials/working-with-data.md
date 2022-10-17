@@ -35,9 +35,11 @@ Import the ego-r package, and any other packages we might use
 
 ```R
 library(egor)
+library(sna)
+library(ggplot2)
 ```
 
-Create an egoR object from our dataframe
+Create an egoR object from our dataframe. The alter data file contains a unique alter identifier (i.e., "networkCanvasUUID") as well as a unique ego identifier (i.e., "networkCanvasEgoUUID") which will both be used to define the egor object.
 
 ```R
 tf <- threefiles_to_egor(
@@ -50,7 +52,7 @@ tf <- threefiles_to_egor(
 
 ## Converting categorical variables to factors
 
-Convert categorical variable format into factors.
+Convert categorical variable format into factors. 
 
 ```R
 catToFactor <- function(dataframe,variableName) {
@@ -78,3 +80,85 @@ for (variable in categoricalVariablesList) {
   dataFrame[variable] <- catToFactor(dataFrame, variable)
 }
 ```
+
+## Data visualization
+
+Create a simple visualization of one ego network. To do this, we'll first convert it to a 'network' object and use the gplot function from the sna package. This visualization shows the new node labels and colors each node by the communication frequency with the participant.
+
+```R
+oneEgoNet <- as_network(egorNetworkCanvas)[[1]]
+oneEgoNet%v%"vertex.names" <- oneEgoNet%v%"name"
+
+colorScheme <- c( "#CC6677", "#117733", "#AA4499",
+                  "#6699CC")
+
+# A little recoding to get a color for each frequency
+nodeColors <- ifelse(oneEgoNet%v%"communication_freq"=="-1",colorScheme[1],
+                    ifelse(oneEgoNet%v%"communication_freq"=="1",colorScheme[2],
+                           ifelse(oneEgoNet%v%"communication_freq"=="2",colorScheme[3],
+                                  colorScheme[4])))
+
+gplot(oneEgoNet,
+       usearrows = FALSE,
+       label = oneEgoNet%v%"name",
+       displaylabels = TRUE,
+       vertex.col=nodeColors,
+       edge.col="gray")
+```
+
+This only shows a single egocentric network. However, the egor package has several functions that facilitate comparision of networks across ego nets. 
+
+For example, here is a visualization showing each ego net with nodes' location being dependent on their communication with the participant and their status as a family member (i.e., true/false).
+
+```R
+plot(egorNetworkCanvas, venn_var = "family_member2",
+     pie_var = "communication_freq2",vertex_label_var="nodeID",
+     type = "egogram")
+```
+
+## Data Analysis
+
+The egor package has numerous functions that help with basic data analysis of ego networks. For example, the *summary* function provides an overview of all ego networks in the egor object while *ego_density* function provides density for each network.
+
+```R
+summary(egorNetworkCanvas)
+
+ego_density(egorNetworkCanvas)
+```
+
+We can also the sna package to look at these networks by applying functions (i.e., lapply) to each of these networks and aggregating the results. 
+
+For example, here we first make a simple histogram of alter degrees across all ego networks.
+
+```R
+networkNetworkCanvas <- as_network(egorNetworkCanvas)
+
+histData <- networkNetworkCanvas %>%
+  lapply(degree,cmode="indegree") %>%
+  unlist(recursive = FALSE) %>%
+  as.data.frame()
+
+histData$degree <- as.numeric(histData$".")
+
+ggplot(histData, aes(x=degree)) +
+    geom_histogram(color="black", fill="white",bins=5) +
+    theme_classic()
+```
+
+Finally, we often want to examine how an ego attribute may be associated with ego network characteristics.
+
+For example, here we look at the association between the level of reported enjoyment of conferences and the density of their ego network.
+
+```R
+ego_density(egorNetworkCanvas) %>%
+  full_join(egorNetworkCanvas$ego,by=".egoID") %>%
+  ggplot(aes(x = enjoy_conferences, y = density)) +
+    geom_point(size=5) +
+    geom_text(label=egorNetworkCanvas$ego$networkCanvasCaseID, aes(vjust=c(-1.5))) +
+    ylim(0,0.6) + theme_classic()
+```
+
+
+
+
+
