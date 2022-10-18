@@ -134,7 +134,7 @@ plot(egorNetworkCanvas, venn_var = "family_member2",
      type = "egogram")
 ```
 
-## Data Analysis
+## Data analysis
 
 The egor package has numerous functions that help with basic data analysis of ego networks. For example, the *summary* function provides an overview of all ego networks in the egor object while *ego_density* function provides density for each network.
 
