@@ -24,30 +24,22 @@ file_name <- 'Joshua_caa8fa0b-a66b-4f34-ada0-502ec1f76667_attributeList_Person.c
 # Get a list of all files
 dataFileList <- list.files(dataDirectoryPath, pattern=NULL, all.files=FALSE, full.names=TRUE)
 
-# todo iterate dataFileList, filter into cases, and create a list of ego, alter, and edge dataframes per case
+# Read each type of file into a list and combine into a single data frame
 
-egoDataFrame <- read.csv(dataFileList[7])
-alterDataFrame <- read.csv(dataFileList[3])
-edgeDataFrame <- read.csv(dataFileList[6])
-```
+alterData <- dataDirectoryPath %>%
+  list.files(full.names=TRUE,pattern="attributeList_Person.csv") %>%
+  lapply(read.csv) %>%
+  bind_rows()
 
-Import the ego-r package, and any other packages we might use
+edgelistData <- dataDirectoryPath %>%
+  list.files(full.names=TRUE,pattern="edgeList_friends.csv") %>%
+  lapply(read.csv) %>%
+  bind_rows()
 
-```R
-library(egor)
-library(sna)
-library(ggplot2)
-```
-
-Create an egoR object from our dataframe. The alter data file contains a unique alter identifier (i.e., "networkCanvasUUID") as well as a unique ego identifier (i.e., "networkCanvasEgoUUID") which will both be used to define the egor object.
-
-```R
-tf <- threefiles_to_egor(
-    egos = egoDataFrame,
-    alters = alterDataFrame,
-    edges = edgeDataFrame,
-    ID.vars = list(ego="networkCanvasEgoUUID", alter="networkCanvasUUID", source="networkCanvasSourceUUID", target="networkCanvasTargetUUID")
-)
+egoData <- dataDirectoryPath %>%
+  list.files(full.names=TRUE,pattern="ego.csv") %>%
+  lapply(read.csv) %>%
+  bind_rows()
 ```
 
 ## Converting categorical variables to factors
@@ -79,6 +71,32 @@ categoricalVariablesList <- list('group', 'social_networks_research_relationship
 for (variable in categoricalVariablesList) {
   dataFrame[variable] <- catToFactor(dataFrame, variable)
 }
+```
+
+## Creating an egoR object
+
+Import the ego-r package, and any other packages we might use.
+
+```R
+library(egor)
+library(sna)
+library(ggplot2)
+```
+
+Create an egoR object from our dataframe. The alter data file contains a unique alter identifier (i.e., "networkCanvasUUID") as well as a unique ego identifier (i.e., "networkCanvasEgoUUID") which will both be used to define the egor object.
+
+```R
+egorNetworkCanvas <- egor(
+    alters = alterData,
+    egos = egoData,
+    aaties = edgelistData,
+    ID.vars = list(
+      ego = "networkCanvasEgoUUID",
+      alter = "networkCanvasUUID",
+      source = "networkCanvasSourceUUID",
+      target = "networkCanvasTargetUUID"))
+    )
+)
 ```
 
 ## Data visualization
