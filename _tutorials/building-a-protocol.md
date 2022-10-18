@@ -304,7 +304,15 @@ Create the stage, set a stage name, and select the "Person" node type.
 
 Next we need to choose a background image for the Sociogram. We can decide between using a default concentric circles background or adding our own image file from the resource library or from another location on our device. For this first example, we will choose the default option and specify that we want 3 circles skewed so that the middle is proportionally larger.
 
+Interviewer offers two modes for positioning nodes on the sociogram: "Manual", and "Automatic".
+
+- **Automatic mode** positions nodes when the stage is first shown by simulating physical forces such as attraction and repulsion. This simulation can be paused and resumed within the interview. When paused, the position of nodes can be adjusted manually.
+- **Manual mode** first places all nodes into a "bucket" at the bottom of the screen, from which the participant can drag nodes to their desired position.
+
+For this example, we will choose manual mode.
+
 ![Image](../../assets/img/architect-guide/sociogram-background.png)
+
 
 We will add a prompt for the stage that reads, "Please position the people you have named amongst the concentric circles. Place people who know each other together, and put people you are closer to towards the center of the circles." 
 
@@ -331,7 +339,7 @@ We will create another Sociogram stage to experiment with creating edges. For th
 
 We create our first prompt, "Please connect any two people who might spend time together without you being there" and we use the sociogram_layout variable we already created.
 
-Now we will enable edge creation on a Sociogram prompt, by toggling the switch "create edges by tapping on a node" option, in the "Edge Display and Creation" section.
+Now we will enable edge creation on a Sociogram prompt, by toggling the switch "Interaction Behavior" and selecting the "Edge Creation" option, in the "Edge Display and Creation" section.
 
 The sociogram is the primary location within the interview where edges are created. A sociogram prompt can only create a single edge type at a time, but note that it can display several.
 
@@ -366,22 +374,22 @@ We previously created two edge types on the sociogram which appear available for
 
 ![Image](../../assets/img/architect-guide/dyad-prompt.png)
 
-### Toggling a Variable
+### Toggling an Attribute
 
-In our final Sociogram stage in this protocol, we will implement variable toggling - or the action that allows a participant to toggle a boolean variable to "true" or "false" by tapping a note.
+In our final Sociogram stage in this protocol, we will implement attribute toggling - or the action that allows a participant to toggle a boolean variable to "true" or "false" by tapping a note.
 
 Once again, we create the stage, set the stage name, select the "Person" node type, and use the concentric circle background with 3 circles skewed. 
 
 Next, we create a new prompt, with the text, "Please select anyone who you have asked for advice within the previous 6 months". Re-use the layout variable ("sociogram_layout") we created previously.
 
-We do not want to enable edge creation on this prompt, as it would disable the variable toggling function (the two modes are mutually exclusive). However, we can still display edges in order to help the participant locate nodes.
+We do not want to enable edge creation on this prompt, as it would disable the attribute toggling function (the two modes are mutually exclusive). However, we can still display edges in order to help the participant locate nodes.
 
 To do this, select "Know" and "Conflict" under "Display edges of the following type(s)".
 
 ![Image](../../assets/img/architect-guide/variable-toggling.png)
 
-Configuring the sociogram prompt to enable variable toggling involves two steps: (1) toggle
-"Enable variable toggling by tapping a node" to the "on" position, and (2) create (or select) a boolean variable to be assigned in the box that appears below.
+Configuring the sociogram prompt to enable attribute toggling involves three steps: (1) toggle
+"Interaction Behavior", (2) select "Attribute Toggling", and (3) create (or select) a boolean variable to be assigned in the box that appears below.
 
 In this case of this prompt, using the techniques we have already covered, create a variable called "provides_advice" and press "Save and Close". 
 
@@ -394,7 +402,7 @@ When previewing a stage using an interface type that does not create nodes, you 
 
 To address this, the preview mode allows you to create nodes from any earlier stages in your interview that are capable of this (primarily name generators or roster interfaces).
 
-Simply navigate to a stage that creates nodes from within preview mode, create some nodes suitable for your sociogram stage, and then navigate to the sociogram stage - your nodes will appear, and you will be able to test edge creation, variable toggling, and positioning.
+Simply navigate to a stage that creates nodes from within preview mode, create some nodes suitable for your sociogram stage, and then navigate to the sociogram stage - your nodes will appear, and you will be able to test edge creation, attribute toggling, and positioning.
 </div>
 
 ## Creating an Ordinal Bin
@@ -478,13 +486,11 @@ As before, we will "Save and Close" and "Save and Return" to complete and save o
 
 Next we will implement another Categorical Bin Interface. This time, we will create the stage as before, set the stage name to "Relationship Type" and select node type as "Person."
 
-Now we will configure both the network filtering on the stage as well as the skip logic for the stage. First, toggle the "Enable network filtering for this stage" to "on" and press the "Add Alter Rule" button. Next we will configure the rule according to the following: node type "Person", rule type "Attribute", variable query "discuss_network_research", operator "exactly", and attribute value of "True."
+Now we will configure both the network filtering on the stage as well as the skip logic for the stage. First, toggle "Filter" to "on" and press the "Add Alter Rule" button. Next we will configure the rule according to the following: node type "Person", rule type "Attribute", variable query "discuss_network_research", operator "exactly", and attribute value of "True."
 
 ![Image](../../assets/img/architect-guide/filter-skip.png)
 
-Click the "Finish and Close" button.
-
-To enable skip logic, we toggle the "Enable skip logic for this stage" switch to "on." Then we click the "Add Alter Rule" again. First, we configure the skip logic rule according to the following: node type "Person", rule type "Presence", and operator "Exists." Next, we configure a second skip logic rule as follows: node type "Person", rule type "Attribute", variable query "discuss_network_research", operator "is exactly", and attribute value of "True.".
+To enable skip logic, we toggle the "Skip Logic" switch to "on." Then we select "Show this stage if" and click the "Add Alter Rule" button. First, we configure the skip logic rule according to the following: node type “Person", rule type “Presence”, and operator “Exists.” Next, we configure a second skip logic rule as follows: node type “Person”, rule type “Attribute, variable query “discuss_network_research”, operator “is exactly”, and attribute value of “True.”.
 
 ![Image](../../assets/img/architect-guide/skip.png)
 
@@ -512,15 +518,16 @@ Narrative presets allow you to emphasize specific elements of a participant's ne
 
 Now, let's configure presets for our sample interview protocol. Go to the section in the Narrative stage editor titled "Narrative Presets" and press the "Create New" button. We will give the preset a label of "Sample Preset." This label will appear at the top of the menu visible to the participant on this stage.
 
-Next, we will click the "Layout Variable" box. We can choose to either create a new layout variable for this screen or use an existing one. In this case, we'll use the "sociogram_layout" variable we created before. 
+Next, we will select a variable to use to position the nodes for this preset in the "Layout Variable" section. We can choose to either create a new layout variable for this screen or use an existing one. In this case, we'll use the "sociogram_layout" variable we created before. 
 
-If we have collected data on a categorical variable and the participant has assigned that attribute to at least two nodes, we can visualize this grouping on the Narrative Interface. The drop down menu under "Group variable" will show all available categorical variables in our protocol. In this example, we choose the variable "group."
+If we have collected data on a categorical variable and the participant has assigned that attribute to at least two nodes, we can visualize this grouping on the Narrative Interface. The "Group Variable" section will show all available categorical variables in our protocol. In this example, we choose the variable "group."
 
 ![Image](../../assets/img/architect-guide/edit-preset.png)
+![Image](../../assets/img/architect-guide/edit-preset2.png)
 
-Under "Edge types to display", we will see all edge types defined within our protocol. We will select the checkbox next to the edges we want to display ("know" and "conflict").
+Under "Display Edges", we will see all edge types defined within our protocol. We will select the checkbox next to the edges we want to display ("know" and "conflict").
 
-The last step in the preset editor is to select any boolean variables we want to highlight on the participant's network. Again, all available boolean variables will appear in this section and we can choose which of these we want included in the preset. We will select the checkboxes next to both "provides_advice" and "provides_material_support." To save our work, we click "Save and Close."
+The last step in the preset editor is to select any boolean variables we want to highlight on the participant's network. All available boolean variables will appear in the "Highlight Node Attributes" section and we can choose which of these we want included in the preset. We will select the checkboxes next to both "provides_advice" and "provides_material_support." To save our work, we click "Save and Close."
 
 Back on our Narrative Interface edit screen, we can see the sample preset we just created. We will move below to the "Narrative Behaviors" section, and toggle both "Free-draw" and "Allow repositioning" to "on." (The latter should already be toggled on by default). 
 
