@@ -27,7 +27,7 @@ jobs:
       #     publish_dir: ./_site
       #     name: DEPLOY
       - name: rsync deployments
-        uses: burnett01/rsync-deployments@5.1
+        uses: burnett01/rsync-deployments@5.2.1
         with:
           switches: -avzr --delete --omit-dir-times --chown=deploy:www-data --no-perms
           path: _site/
