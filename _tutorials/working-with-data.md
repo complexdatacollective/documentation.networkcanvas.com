@@ -1,7 +1,6 @@
 ---
 
 title: Working with Network Canvas data in R
-wip: true
 summary: "
   This tutorial will show you how to work with Network Canvas data in the R statistics environment."
 prerequisites: "
