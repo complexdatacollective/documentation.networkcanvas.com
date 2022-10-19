@@ -12,7 +12,6 @@ prerequisites: >-2
 completion_time: 2 hours
 nav_order: 2
 title: Building a protocol using Architect
-wip: true
 ---
 
 
