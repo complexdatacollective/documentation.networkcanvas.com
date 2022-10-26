@@ -1,6 +1,5 @@
 ---
 title: Network Canvas GraphML Format
-wip: true
 ---
 
 ## GraphML Format
