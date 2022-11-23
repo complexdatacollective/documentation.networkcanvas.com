@@ -30,4 +30,4 @@ As mentioned, we have made several important changes to the software in the last
 
 ## Troubleshooting
 
-- If you encounter problems exporting your data from the beta versions of the software, please contact us via email at [info@networkcanvas.com](mailto:info@networkcanvas.com).
+- If you encounter problems exporting your data from the beta versions of the software, please create a post on our [user community](https://community.networkcanvas.com).

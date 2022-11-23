@@ -73,6 +73,8 @@ search_enabled: true
 aux_links:
   Network Canvas Home:
   - "//networkcanvas.com"
+  User Community:
+  - "//community.networkcanvas.com"
 permalink: pretty
 collections:
   tutorials:
