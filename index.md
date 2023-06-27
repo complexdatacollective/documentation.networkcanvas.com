@@ -9,7 +9,7 @@ nav_order: 1
 A home for tutorials, guides, and information about the Network Canvas project.
 {: .fs-6 .fw-300 }
 
-[Project Overview](./project-overview.md){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Installation Guide](./installation-guide.md){: .btn .btn-secondary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Download Software](https://networkcanvas.com/download.html){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Project Overview](./project-overview.md){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Installation Guide](./installation-guide.md){: .btn .btn-secondary .fs-5 .mb-4 .mb-md-0 .mr-2 } [Download Software](https://networkcanvas.com/download){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 Welcome to our documentation portal, and thank you for your interest in the Network Canvas project. Producing documentation is a top priority for our team, but it will take us some time to cover everything. If you spot a gap in our documentation, or have a question, please feel free to contact us. In the meantime, thank you for your patience!
 
