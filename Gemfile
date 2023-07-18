@@ -29,3 +29,5 @@ gem "jekyll-include-cache"
 # Help us to find dead links
 # gem 'html-proofer'
 
+
+gem "webrick", "~> 1.8"
