@@ -126,7 +126,7 @@ Since you can only turn a roster item into a node once that means that if people
 
 With a Name Generator (quick add), we can nominate new nodes with the new node button in the lower right. But on the left hand side we can have a side panel. In fact we can have two - one for people already nominated who are now in the alter pool and one for the remaining roster items who have not yet been nominated. Below is an example of such a screen with some of the Simpsons already nominated (in the alter pool) and some still in roster.  
 
-![Side panels in Name Generator](/assets/img/roster-tutorial/xx.png "Name Generator Interface with side panel for roster and nodes already mentioned")
+![Side panels in Name Generator](/assets/img/roster-tutorial/quick-add-roster-side-panel.png "Name Generator Interface with side panel for roster and nodes already mentioned")
 
 We recommend that you add all the nodes you can to the alter pool _before_ adding additional details so that you can add these details to _all_ the nominated nodes rather than zigzagging through the protocol. This is because all stages draw from the same alter pool if they use that type of node. Imagine the following scenario: the participant adds nodes on stage 3, adds some detail on stage 4 such as how close ego is to alter, and then adds more nodes on stage 5. These newly added nodes will be available if you go back to stage 4. For this reason,  Also note that the roster list does not change once it is in Interviewer. So all the data that you add about a node from a roster will be available when you export your case, but it will not be associated with that roster item in subsequent interview cases. 
 
