@@ -177,6 +177,5 @@ To collect this sort of data in Network Canvas we can use a roster and only coll
 2. We can attach an additional variable called `is_ego` and set it to True for that one node. 
 3. Because roster items become nodes only once, ego will then not be listed on subsequent roster prompts. 
 4. However, ego is still in the alter pool, so any time we want to do something with the alters, such as ask for data on frequency of communication, we need to filter our ego, which we can do with stage level filtering and our `is_ego` varaiable. 
-5. To combine this data, there are many approaches. The Jupyter Lab notebook (xx) walks through one way to clean all of this data from a series of GraphML files. The reason it works this way is because in a lab or classroom setting it is common for the participants to have Network Canvas on their own machine and need to send you the data rather than having all the responses on a single instance of Interview that can be merged as a part of the export. 
 
 You can find a protocol [here](</protocols/Roster Example Protocol v1.netcanvas> "Name Generator Interface with side panel for roster and nodes already mentioned") which has all of these features included. It has the small roster with Alice, Bob, Cam, and Dot but you can replace this with your own roster and modify it for your needs. 
