@@ -72,7 +72,7 @@ The comma-separated values format is more of a loose set of conventions than a s
 
 Once you are satisfied with your roster, you can add it to a Network Canvas protocol from within Architect. You can add it through the Resource Library, which is available by pressing the button at the top of any protocol you are editing. 
 
-![Resource library button](assets/img/roster-tutorial/resource-button.png "The resource library button from within a protocol in Architect")
+![Resource library button](/assets/img/roster-tutorial/resource-button.png "The resource library button from within a protocol in Architect")
 
 You can also add it when you are creating a roster name generator. Below we walk through the steps of adding it to a name generator and we will add the roster as we go along. We will use a simple roster which includes five members of the cartoon television show, "The Simpsons", but you should be able to follow by analogy for a roster of your own making. The example CSV is available [here](/assets/simpsons-roster.csv). 
 
@@ -107,8 +107,8 @@ Finally, you can permit participants to search through the roster items using a 
 
 Much like in other name generator interfaces, in order to select roster items the interface needs a prompt. This could be as simple as "Please select the people you know" however, we strongly encourage researchers to consider using common prompts or one's that relate carefully to a research question. You can use multiple prompts on the same interface. 
 
-Remember that you can use multiple prompts on the same interface but without adding additional variables you will not be able to determine which prompt elicited which node. 
-{:.tip-box}
+> Remember that you can use multiple prompts on the same interface but without adding additional variables you will not be able to determine which prompt elicited which node. 
+
 
 ## Considering additional prompt variables: What is an alter pool? 
 
@@ -145,15 +145,14 @@ Internally, the program will have assigned each of these nodes a unique UUID, bu
 
 Potential solution: When importing a roster, Network Canvas does not check that the name column contains only unique items. However, you can do this when you are preparing your roster. One way to do this is to highlight the enture column in Excel or Calc and select the menu item (in Excel) "Data" - "Table Tools" - "Remove duplicates". If your list has become shorter you have duplicates you should have removed. One way to manage this is to create a new name variable that is a composite of first and last names. This can be done by hand or by using a formula in Excel. 
 
-We do not recommend editing the name in Network Canvas after it has been created both for technical reasons but also because you run the risk of not being able to tell that this is the same Kwame or Kwame_Nk from the roster when comparing across people. Recall that with a roster we typically want to merge data across participants to see who nominates whom. 
-{:.tip-box}
+> We do not recommend editing the name in Network Canvas after it has been created both for technical reasons but also because you run the risk of not being able to tell that this is the same Kwame or Kwame_Nk from the roster when comparing across people. Recall that with a roster we typically want to merge data across participants to see who nominates whom. 
+
 
 ## Collision type 2. Collisions because there is already a node with that name 
 
 The second collision type happens when the duplicate name appears because the participant nominates someone outside of the roster with the same name. Imagine that we have one screen with a roster where the person nominates "Kwame" and then nominates a different Kwame using a "name generator (quick add)" or "name generator (using forms)". Network Canvas will not alert you that there is already a node named Kwame in the alter pool. This situation should be managed by a trained interviewer and the participant should be encouraged to use unique names. 
 
-Remember, if the participant creates a new node with a duplicate name and they want to delete that node this can be done by dragging on the node and a trash can will appear. Drag the node into the trash can and create a new node with a more unique descriptive name. 
-{:.tip-box}
+> Remember, if the participant creates a new node with a duplicate name and they want to delete that node this can be done by dragging on the node and a trash can will appear. Drag the node into the trash can and create a new node with a more unique descriptive name. 
 
 # Tips for rosters in sociocentric studies
 
@@ -178,4 +177,4 @@ To collect this sort of data in Network Canvas we can use a roster and only coll
 4. However, ego is still in the alter pool, so any time we want to do something with the alters, such as ask for data on frequency of communication, we need to filter our ego, which we can do with stage level filtering and our `is_ego` varaiable. 
 5. To combine this data, there are many approaches. The Jupyter Lab notebook (xx) walks through one way to clean all of this data from a series of GraphML files. The reason it works this way is because in a lab or classroom setting it is common for the participants to have Network Canvas on their own machine and need to send you the data rather than having all the responses on a single instance of Interview that can be merged as a part of the export. 
 
-You can find a protocol [here](</assets/protocols/Roster Example Protocol v1.netcanvas> "Name Generator Interface with side panel for roster and nodes already mentioned") which has all of these features included. It has the small roster with Alice, Bob, Cam, and Dot but you can replace this with your own roster and modify it for your needs. 
+You can find a protocol [here](</protocols/Roster Example Protocol v1.netcanvas> "Name Generator Interface with side panel for roster and nodes already mentioned") which has all of these features included. It has the small roster with Alice, Bob, Cam, and Dot but you can replace this with your own roster and modify it for your needs. 
