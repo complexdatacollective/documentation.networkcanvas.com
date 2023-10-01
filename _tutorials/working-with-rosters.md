@@ -85,11 +85,11 @@ To use a roster, you should select the interface "Name Generator for Roster Data
 
 Before you select the roster it is useful to inspect it so see that it has formatted correctly. In the upper right corner of a roster resource is a small eye icon. Clicking on that will show the CSV that has been uploaded. 
 
-![Resource preview button](/assets/img/roster-tutorial/preview-roster-button.png "Resource selection screen showing the preview button for a resource")
+![Resource preview button](/assets/img/roster-tutorial/preview-roster-button.jpg "Resource selection screen showing the preview button for a resource")
 
 With the `simpsons-roster` you can observe that there is an empty cell for occupation for Maggie. This shows the data was correctly formatted and the columns are all properly aligned. 
 
-![Resource preview](/assets/img/roster-tutorial/example-roster-preview.png =250x "Example roster visible within the preview screen")
+![Resource preview](/assets/img/roster-tutorial/example-roster-preview.png "Example roster visible within the preview screen")
 
 ## Formatting the display of the roster 
 
