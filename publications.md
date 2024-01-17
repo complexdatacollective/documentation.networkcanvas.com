@@ -8,7 +8,7 @@ Explore our collection of published papers demonstrating applications and impact
 
 If you or your team have recently published using Network Canvas or have feedback to share, reach out to us at _info@networkcanvas.com_. 
 
-> **Birkett M, Phillips G, Buckhalt H, Schneider et al	2023**	
+> **Birkett M, Phillips G, Buckhalt H, Schneider et al, 2023**	
 > 
 > Characterizing the technological, logistical, and ethical needs of Partner Services	
 > 
@@ -36,11 +36,11 @@ If you or your team have recently published using Network Canvas or have feedbac
 >
 >Tribal Reservation Adolescent Connections Study: a study protocol using mixed methods for examining social networks and associated outcomes among American Indian youth on a Northern Plains reservation
 >
->https://www.sciencedirect.com/science/article/pii/S0145213423001795?casa_token=pWh2x0P-9NoAAAAA:tf0Fkuj9dhuaTy6aQvJWio34Jc9IQcZr7QmrVUgqp4jcfx1YxWlyK7Q5ApWYY-3F2oBvR9LWiw
+> https://www.sciencedirect.com/science/article/pii/S0145213423001795?casa_token=pWh2x0P-9NoAAAAA:tf0Fkuj9dhuaTy6aQvJWio34Jc9IQcZr7QmrVUgqp4jcfx1YxWlyK7Q5ApWYY-3F2oBvR9LWiw
 
 > **Wagner G, Matovu J, Juncker M, Schneider et al, 2023**
 >
->Effects of a peer advocacy intervention on cervical cancer screening among social network members: results of a randomized controlled trial in Uganda
+> Effects of a peer advocacy intervention on cervical cancer screening among social network members: results of a randomized controlled trial in Uganda
 >
 >https://www.ncbi.nlm.nih.gov/pubmed/37702912
 
@@ -48,7 +48,7 @@ If you or your team have recently published using Network Canvas or have feedbac
 > 
 > Integrating and disseminating pre-exposure prophylaxis (PrEP) screening and dispensing for black men who have sex with men in Atlanta, Georgia: Protocol for community pharmacies	
 >
->https://www.researchprotocols.org/2022/2/e35590
+> https://www.researchprotocols.org/2022/2/e35590
 
 > **Jones S, Heerey E, 2022**
 >
@@ -86,7 +86,6 @@ If you or your team have recently published using Network Canvas or have feedbac
 >
 > https://www.researchgate.net/publication/346753600_Tracking_the_trajectories_of_international_students'_pragmatic_choices_in_studying_abroad_in_China_a_social_network_perspective
 
-
 > **Hogan B, Janulis P, Phillips G, Schneider et al,	2020**	
 > 
 > Assessing the stability of egocentric networks over time using the digital participant-aided sociogram tool Network Canvas	
@@ -98,7 +97,6 @@ If you or your team have recently published using Network Canvas or have feedbac
 > Health prototype and pilot protocol to enhance social support for persons living with dementia
 > 
 > https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6846075/
-
 
 > **Phillips G, Neray B, Janulis P, Schneider et al,	2019**
 >
