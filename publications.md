@@ -24,7 +24,7 @@ If you or your team have recently published using Network Canvas or have feedbac
 >
 > Assessing Reach and Adoption of a New Approach to Increase HIV Testing and PrEP Knowledge Using HIV Self-Test Kit Distribution Through PrEP Clients' Social Networks	
 >
-> https://journals.lww.com/jaids/fulltext/2023/12150/_test_to_prep___assessing_reach_and_adoption_of_a.6.aspx?context=latestarticles&casa_token=ECEf9JZBmvIAAAAA:uAVkpqLbCwdTfQ4psWE1hqPrAVbxCOZ-KTUL5_e_Oj3naxxG-T3mprzA8gVuzjwZVgpw4i5-uP20sq-	Journal of acquired Immune Deficiency Syndrome
+> https://journals.lww.com/jaids/fulltext/2023/12150/_test_to_prep___assessing_reach_and_adoption_of_a.6.aspx?context=latestarticles&casa_token=ECEf9JZBmvIAAAAA:uAVkpqLbCwdTfQ4psWE1hqPrAVbxCOZ-KTUL5_e_Oj3naxxG-T3mprzA8gVuzjwZVgpw4i5-uP20sq-
 
 > **Phillips G, Rodriguez-Ortiz A, Adewumi O, Schneider et al,	2023**
 >
