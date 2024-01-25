@@ -1,8 +1,8 @@
 ---
 title: Network Canvas Documentation
 timezone: UTC
-url: 'https://documentation.networkcanvas.com'
-baseurl: ''
+url: "https://complexdatacollective.github.io"
+baseurl: "/documentation.networkcanvas.com/"
 email: info@networkcanvas.com
 description: Documentation and information about the Network Canvas project. Network Canvas is free suite of tools that facilitate cutting edge personal networks research.
 logo: "/assets/img/logo.svg"
@@ -66,15 +66,15 @@ plugins:
   - jekyll-include-cache
 
 relative_links:
-  enabled:     true
+  enabled: true
   collections: true
 
 search_enabled: true
 aux_links:
   Network Canvas Home:
-  - "//networkcanvas.com"
+    - "//networkcanvas.com"
   User Community:
-  - "//community.networkcanvas.com"
+    - "//community.networkcanvas.com"
 permalink: pretty
 collections:
   tutorials:
