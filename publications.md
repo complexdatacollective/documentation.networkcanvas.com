@@ -10,7 +10,7 @@ If you or your team have recently published using Network Canvas or have feedbac
 
 > **Janulis P, Phillips G, Melville J, Schneider et al,	2023**
 >
-> [Network Canvas: an open-source tool for capturing social and contact network data]	(https://www.researchgate.net/profile/Joshua-Melville-2/publication/369415126_Network_canvas_an_open-source_tool_for_capturing_social_and_contact_network_data/links/64be777ac41fb852dd98a878/Network-canvas-an-open-source-tool-for-capturing-social-and-contact-network-data.pdf)
+> [Network Canvas: an open-source tool for capturing social and contact network data](https://www.researchgate.net/profile/Joshua-Melville-2/publication/369415126_Network_canvas_an_open-source_tool_for_capturing_social_and_contact_network_data/links/64be777ac41fb852dd98a878/Network-canvas-an-open-source-tool-for-capturing-social-and-contact-network-data.pdf)
 >
 > _International journal of epidemiology_
 
