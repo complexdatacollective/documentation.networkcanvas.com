@@ -6,7 +6,7 @@ wip: false
 
 Explore our collection of published papers demonstrating applications and impactful research conducted using Network Canvas. These papers showcase the versatility of Network Canvas in capturing, analyzing, and interpreting social network data across different domains. 
 
-If you or your team have recently published using Network Canvas or have feedback to share, reach out to us at _[info@networkcanvas.com](info@networkcanvas.com)_ or comment in [this thread](https://community.networkcanvas.com/t/share-your-work-using-network-canvas/149). 
+If you or your team have recently published using Network Canvas or have feedback to share, reach out to us at _info@networkcanvas.com_ or comment in [this thread](https://community.networkcanvas.com/t/share-your-work-using-network-canvas/149). 
 <!-- 
 > Author format: **Author** | Mac: Command + B | Windows/Linux: Control + B
 >    
