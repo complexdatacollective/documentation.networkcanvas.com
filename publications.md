@@ -2,7 +2,6 @@
 title: Publications using Network Canvas
 wip: false
 ---
-## Publications using Network Canvas
 
 Explore our collection of published papers demonstrating applications and impactful research conducted using Network Canvas. These papers showcase the versatility of Network Canvas in capturing, analyzing, and interpreting social network data across different domains. 
 
