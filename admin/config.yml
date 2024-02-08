@@ -2,7 +2,7 @@
 
 backend:
   name: github
-  repo: complexdatacollective/Documentation # Path to your GitHub repository
+  repo: complexdatacollective/documentation.networkcanvas.com # Path to your GitHub repository
   branch: master # Branch to update (optional; defaults to master)
 local_backend: true
 media_folder: "/assets/uploads"
