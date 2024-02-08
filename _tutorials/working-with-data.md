@@ -129,7 +129,7 @@ factor column in R. This helper function can help you achieve that.
         catValues <- sub(paste0('.*',fullVariableName), '', catVariables)
         factorVariable <- c()
         for(i in 1:length(catVariables)){
-          factorVariable[dataframe[catVariables[i]]=="true"] <- catValues[i]
+          factorVariable[dataframe[catVariables[i]]=="TRUE"] <- catValues[i]
         }
         return(factor(factorVariable,levels=catValues))
     }
